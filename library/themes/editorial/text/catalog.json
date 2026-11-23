@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Title cards and text overlays as pages of a magazine: condensed serif headlines in sentence case that rise from behind hairlines, ONE word in accent italic, Didone mastheads and numerals, small tracked capitals, mono folios, running heads and feet, on paper, stone, blush, ink or wine grounds taken from the footage.",
+  "usage": "Title cards fill the frame (square to 9:16): {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"The quiet\", \"*edit*\"]}}} or a footage \"cutaway\". Write text in sentence case and mark the one accent word *like this*; text in capitals from another theme is set in sentence case. `field`: paper (default), stone, blush, ink, wine. `labels` are the running head [left, right] and foot [left, right]. Title cards hold their last state unless given `life`. Overlays are see-through, in 1080x1920 frame pixels, and keep to the app-safe zone (x 70-1010, y 250-1440) and off the face by default: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"Effortless\", \"y\": 290}}; they leave before `life` ends. Type on footage sits on a soft paper veil or a card (ground: paper|ink|none). Props match the other themes so storyboards can switch. Kit: library/themes/editorial/kit.js (text helpers: text/pieces/_local.js).",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Cover line",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A magazine cover: the masthead in Didone capitals fades up letter by letter, a rule draws under it with the issue labels, then the cover line rises line by line with one *marked* word in accent italic; kicker above, note below, running foot. Props: masthead, lines, kicker, note, labels [issue left, issue right, foot left, foot right], foot, field.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Two-deck headline",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Top word in upright serif set left, a hairline with a small caption, bottom word in accent italic set right; note under it. Props: top, bottom, caption, note, labels (4: running head left/right, foot left/right), field.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "End-papers",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Rows of serif and italic drifting slowly in opposite directions between hairlines, set faint like a printed pattern; one row at a time comes forward in full colour. Props: rows, speed, field.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "An opinion page: a tracked tag, one sentence in large serif rising line by line with the word that matters in accent italic (*marked*, or named in emphasis), a rule and a foot line. Shrinks to fit long sentences. Props: statement, emphasis, tag, foot, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "By the numbers",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "A tracked kicker, one huge Didone figure that counts up as it comes into focus, a rule that draws, a serif line under it (*accent* word) and a mono note (say 'illustrative' for sample figures). Props: value, kicker, label, note, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Pull quote",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A large Didone quotation mark in the accent colour, the quote in serif rising line by line (one *marked* word in italic), a short rule and the attribution in tracked capitals. Props: quote, by, role, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Contents page",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "The title rises over a rule, then each item arrives in turn: a mono number, the item rising in serif, a hairline drawing under it; the newest number is in the accent colour. Up to 7 items. Props: title, kicker, items, step (seconds between items) or times [seconds], labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus spread",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two grounds: the upper page holds word A in upright serif, the lower page slides up in a second ground with word B in accent italic set right; a small printed seal on the seam carries 'or' / 'vs'. Props: a, b, mark, aNote, bNote, labels (4), fields [upper, lower].",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter opener",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A tracked kicker, a huge Didone numeral in the accent colour rising from a rule that draws, the chapter title in serif under it (one *marked* word in italic) and a small note. Props: number, kicker, title, note, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Page numbers turning: each count is a huge Didone numeral that rises from behind a hairline and leaves upward as the next arrives; a row of mono folios keeps the place; the go word rises in accent italic on the last beat. Props: from, go, label, note, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "Last page",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The closing lines rise centred (one *marked* word in italic), a short rule draws, the action in tracked capitals, the handle in mono inside a hairline box that draws itself, a quiet sign-off. Props: lines, action, handle, strip, labels (4), field.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One big serif word at the top of the footage: tracked kicker, a hairline drawing from the centre, the word rising from behind it on a soft paper veil; a long phrase wraps onto two lines. Props: word (*mark* part of it, or italic: true), kicker, x (centre), y (top), width, maxSize, ground (paper|ink|none), color.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A sentence in serif rising line by line on a soft veil; then a tint and a wine underline draw under the words of `mark`, left to right, also across a line break. Props: text, mark, x (centre), y (top), width, maxSize, align (center|left), ground (paper|ink|none), color.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Name card",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A paper card glides up below the face; a wine rule draws down its edge, the name rises in serif, a hairline draws and the role fades up in tracked capitals (two lines when long). Props: name, role, x, y (top of the card), field (paper|ink|wine|stone|blush), folio.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Spine",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "A magazine spine down the edge of the frame: a narrow paper strip glides in and the title rises along it in serif, then a short accent rule and a tracked sub line. Keep the title short. Props: text, sub, side (left|right), top, bottom, edge, field.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Running band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A paper strip between two hairlines wipes in across the footage; the phrase runs slowly through it, alternately upright serif and accent italic; an ink tab at the left holds the sub line. Props: text, sub, y (centre), height, speed, tilt, field.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner furniture",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Page furniture in the four corners inside the app-safe zone: each draws a short hairline, a first line in tracked capitals and further lines in small serif italic, on a soft patch of paper so it reads on any footage. Props: topLeft, topRight, bottomLeft, bottomRight ('\\n' = new line), mark (small Didone word, top centre), inset, top, bottom, color (ink|paper), ground (soft|none).",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture mount",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "A paper mat with a window around a region of the footage (fill: 0 see-through, 1 a stone card): tracked label and figure number in its top margin, an italic caption and a running mono timecode in its bottom margin, a hairline drawing around the window. `box` {x, y, w, h} in shares of the frame is the outside of the mount. Props: box, label, caption, figure, fill, field.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Printed seal",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A round paper seal (solid: true = wine) with two hairline rings, the ring text in tracked capitals turning very slowly around the circle and one word in serif italic at the centre; it settles with a small turn. Props: text, ring, x, y (centre), r, tilt, solid.",
+      "over": true
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Vector accents in the comic look, generated from code in lottie/generate.mjs: flat fills, thick ink outlines and hard shadows that pop in with an overshoot and boil. Impacts, balloons, stamps, marks and two looping print backdrops.",
+  "usage": "{\"piece\": \"lottie/pow-burst\"}. Files: library/themes/comic/lottie/animations/.",
+  "groups": [
+    "Impacts",
+    "Balloons",
+    "Stamps and marks",
+    "Backdrops"
+  ],
+  "items": [
+    {
+      "id": "pow-burst",
+      "name": "Pow burst",
+      "group": "Impacts",
+      "piece": "lottie/pow-burst",
+      "description": "A red burst, a yellow one and a white star pop in turn over zoom lines, with sparks: impact, big news."
+    },
+    {
+      "id": "star-pop",
+      "name": "Star pop",
+      "group": "Impacts",
+      "piece": "lottie/star-pop",
+      "description": "A big star pops out of a white burst and throws six small stars outward: a win, a rating, a reward."
+    },
+    {
+      "id": "lightning-bolt",
+      "name": "Lightning bolt",
+      "group": "Impacts",
+      "piece": "lottie/lightning-bolt",
+      "description": "A bolt strikes down the frame and flashes where it lands: speed, power, a shock."
+    },
+    {
+      "id": "smoke-puff",
+      "name": "Smoke puff",
+      "group": "Impacts",
+      "piece": "lottie/smoke-puff",
+      "description": "A cloud bursts into puffs that scatter and vanish, leaving a star: poof, a reveal, a change."
+    },
+    {
+      "id": "speech-pop",
+      "name": "Speech pop",
+      "group": "Balloons",
+      "piece": "lottie/speech-pop",
+      "description": "A speech balloon swings out from its tail and three dots bounce inside: talking, typing, a reply."
+    },
+    {
+      "id": "thought-bubbles",
+      "name": "Thought bubbles",
+      "group": "Balloons",
+      "piece": "lottie/thought-bubbles",
+      "description": "Bubbles rise into a thought cloud where a star lights up: thinking, an idea."
+    },
+    {
+      "id": "exclaim",
+      "name": "Exclaim",
+      "group": "Balloons",
+      "piece": "lottie/exclaim",
+      "description": "An exclamation mark jumps up and a question mark drops in beside it: surprise, wait, what?"
+    },
+    {
+      "id": "check-stamp",
+      "name": "Check stamp",
+      "group": "Stamps and marks",
+      "piece": "lottie/check-stamp",
+      "description": "A green seal slams down with impact lines and a tick is inked across it: done, approved, correct."
+    },
+    {
+      "id": "cross-stamp",
+      "name": "Cross stamp",
+      "group": "Stamps and marks",
+      "piece": "lottie/cross-stamp",
+      "description": "A red jagged seal slams down, a cross is inked on and it shakes: no, wrong, rejected."
+    },
+    {
+      "id": "arrow-zip",
+      "name": "Arrow zip",
+      "group": "Stamps and marks",
+      "piece": "lottie/arrow-zip",
+      "description": "An arrow zips in stretched by its speed, trailing streaks and a puff, and snaps to rest: next, go, this way."
+    },
+    {
+      "id": "heart-thump",
+      "name": "Heart thump",
+      "group": "Stamps and marks",
+      "piece": "lottie/heart-thump",
+      "description": "A heart beats twice a loop with ink tick marks on each beat: love it, a like, a pulse. Loops."
+    },
+    {
+      "id": "zoom-lines",
+      "name": "Zoom lines",
+      "group": "Backdrops",
+      "piece": "lottie/zoom-lines",
+      "description": "Boiling zoom lines around a pulsing burst: a loud looping backdrop for a number or a word."
+    },
+    {
+      "id": "halftone-pulse",
+      "name": "Halftone pulse",
+      "group": "Backdrops",
+      "piece": "lottie/halftone-pulse",
+      "description": "A screen of red and blue Ben-Day dots swelling in a diagonal wave: a quiet looping backdrop."
+    }
+  ]
+}

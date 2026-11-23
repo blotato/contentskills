@@ -1,0 +1,61 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D put through a photocopier: flat-shaded paper, plaster and wire in soot, bone and one red, broken into halftone dots and toner grain by a hand-written post pass. Scenes move on twos and twitch like stop-motion; dust and scratches change 8 times a second.",
+  "usage": "{\"piece\": \"three/paper-stack\"}. Words are props, e.g. {\"piece\": \"three/ransom-cubes\", \"props\": {\"word\": \"CHAOS\"}}. Files: library/themes/grunge/three/pieces/ (shared look: _fx.js).",
+  "groups": [
+    "Backdrops",
+    "Objects"
+  ],
+  "items": [
+    {
+      "id": "paper-stack",
+      "name": "Paper stack",
+      "group": "Backdrops",
+      "piece": "three/paper-stack",
+      "description": "A collage table from above: torn sheets, red scraps, halftone offcuts and tape stacked in depth, sliding over each other as the camera drifts. Loops; the top scrap carries a typed label."
+    },
+    {
+      "id": "plaster-wall",
+      "name": "Plaster wall",
+      "group": "Backdrops",
+      "piece": "three/plaster-wall",
+      "description": "A cracked plaster wall under a raking light that swings across it, with a word stencilled in chipped red paint. Loops; a background for titles and diagrams."
+    },
+    {
+      "id": "chain-link",
+      "name": "Chain link",
+      "group": "Backdrops",
+      "piece": "three/chain-link",
+      "description": "Walking through layers of chain-link fence at night with a halftone moon behind and red rags knotted to the wire. Loops."
+    },
+    {
+      "id": "crumpled-paper",
+      "name": "Crumpled paper",
+      "group": "Objects",
+      "piece": "three/crumpled-paper",
+      "description": "A balled-up sheet opens out in held steps until the words printed on it can be read, still creased under a side light."
+    },
+    {
+      "id": "ransom-cubes",
+      "name": "Ransom cubes",
+      "group": "Objects",
+      "piece": "three/ransom-cubes",
+      "description": "Ransom-note letters as paper blocks, each cut from a different page, tumbling down onto a torn strip to spell a word."
+    },
+    {
+      "id": "halftone-globe",
+      "name": "Halftone globe",
+      "group": "Objects",
+      "piece": "three/halftone-globe",
+      "description": "A globe printed as coarse halftone dots, turning inside a hand-drawn red orbit with a red pin stuck in it. Loops."
+    },
+    {
+      "id": "vinyl-spin",
+      "name": "Vinyl spin",
+      "group": "Objects",
+      "piece": "three/vinyl-spin",
+      "description": "A record half out of its torn paper sleeve, spinning; grooves catch the light, the red label carries your text. Loops."
+    }
+  ]
+}

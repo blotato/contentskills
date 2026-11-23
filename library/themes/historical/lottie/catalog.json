@@ -1,0 +1,97 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Small vector accents in the theme look: flat ink drawings in bone and silver on the navy field with crimson as the only colour. Lines draw on, stamps press, hands sweep. Generated from code in lottie/generate.mjs.",
+  "usage": "{\"piece\": \"lottie/hourglass\"}. Files: library/themes/historical/lottie/animations/.",
+  "groups": [
+    "Time",
+    "Record",
+    "Place"
+  ],
+  "items": [
+    {
+      "id": "hourglass",
+      "name": "Hourglass",
+      "group": "Time",
+      "piece": "lottie/hourglass",
+      "description": "Crimson sand runs through, then the glass turns over. Loops."
+    },
+    {
+      "id": "clock-sweep",
+      "name": "Clock sweep",
+      "group": "Time",
+      "piece": "lottie/clock-sweep",
+      "description": "Clock hands sweep three hours forward and settle: time passing."
+    },
+    {
+      "id": "date-flip",
+      "name": "Date flip",
+      "group": "Time",
+      "piece": "lottie/date-flip",
+      "description": "Two leaves of a wall calendar flip away to the marked day."
+    },
+    {
+      "id": "candle",
+      "name": "Candle",
+      "group": "Time",
+      "piece": "lottie/candle",
+      "description": "A candle flame wavering in a cold glow. Loops."
+    },
+    {
+      "id": "quill-line",
+      "name": "Quill line",
+      "group": "Record",
+      "piece": "lottie/quill-line",
+      "description": "A quill crosses the frame and leaves a crimson ink line behind it."
+    },
+    {
+      "id": "scroll-open",
+      "name": "Scroll open",
+      "group": "Record",
+      "piece": "lottie/scroll-open",
+      "description": "A scroll unrolls from the middle, its lines write on and a seal lands."
+    },
+    {
+      "id": "stamp-press",
+      "name": "Stamp press",
+      "group": "Record",
+      "piece": "lottie/stamp-press",
+      "description": "A rubber stamp comes down on a sheet, leaves its crimson mark and lifts away."
+    },
+    {
+      "id": "wax-seal",
+      "name": "Wax seal",
+      "group": "Record",
+      "piece": "lottie/wax-seal",
+      "description": "A crimson wax seal is pressed on over two ribbons and its emblem appears."
+    },
+    {
+      "id": "film-reel",
+      "name": "Film reel",
+      "group": "Record",
+      "piece": "lottie/film-reel",
+      "description": "A film reel turning over a strip of leader. Loops."
+    },
+    {
+      "id": "route-pin",
+      "name": "Route pin",
+      "group": "Place",
+      "piece": "lottie/route-pin",
+      "description": "A dashed route travels across a made-up island and a pin settles at its end."
+    },
+    {
+      "id": "compass-settle",
+      "name": "Compass settle",
+      "group": "Place",
+      "piece": "lottie/compass-settle",
+      "description": "A compass needle swings and settles on north."
+    },
+    {
+      "id": "laurel",
+      "name": "Laurel",
+      "group": "Place",
+      "piece": "lottie/laurel",
+      "description": "A laurel wreath draws on leaf by leaf around a crimson mark: an honour, a victory, a founding."
+    }
+  ]
+}

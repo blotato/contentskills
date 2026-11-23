@@ -1,0 +1,104 @@
+{
+ "id": "lottie",
+ "title": "Lottie",
+ "summary": "Small accents in the editorial style, generated from code in lottie/generate.mjs: ink strokes with butt ends and mitred corners on paper, one wine accent per mark, hairlines beside heavy rules. Rules draw, shapes glide in on a quart-out curve and settle; nothing bounces, flashes or glows.",
+ "usage": "{\"piece\": \"lottie/rule-draw\"}. Files: library/themes/editorial/lottie/animations/ (regenerate with node library/themes/editorial/lottie/generate.mjs).",
+ "groups": [
+  "Rules",
+  "Marks",
+  "Pages"
+ ],
+ "items": [
+  {
+   "id": "rule-draw",
+   "name": "Rule draw",
+   "group": "Rules",
+   "piece": "lottie/rule-draw",
+   "description": "A heavy ink rule draws from the left with a hairline under it a moment later and a small wine square above its start: a section opening."
+  },
+  {
+   "id": "underline-swipe",
+   "name": "Underline swipe",
+   "group": "Rules",
+   "piece": "lottie/underline-swipe",
+   "description": "A wine underline draws from the left over a hairline, holds, and leaves to the right the way it came."
+  },
+  {
+   "id": "arrow",
+   "name": "Arrow",
+   "group": "Rules",
+   "piece": "lottie/arrow",
+   "description": "An ink arrow: the shaft draws, the head opens from its point, and the arrow glides a little forward over a short wine rule."
+  },
+  {
+   "id": "bracket-pair",
+   "name": "Bracket pair",
+   "group": "Rules",
+   "piece": "lottie/bracket-pair",
+   "description": "Square brackets open outwards from the middle around two short bars, one wine, one ink."
+  },
+  {
+   "id": "quote-marks",
+   "name": "Quote marks",
+   "group": "Marks",
+   "piece": "lottie/quote-marks",
+   "description": "Two wine opening quotation marks rise into place one after the other over a hairline."
+  },
+  {
+   "id": "asterisk-spin",
+   "name": "Asterisk spin",
+   "group": "Marks",
+   "piece": "lottie/asterisk-spin",
+   "description": "A six-armed wine asterisk opens from its centre and keeps turning slowly: the footnote mark."
+  },
+  {
+   "id": "check",
+   "name": "Check",
+   "group": "Marks",
+   "piece": "lottie/check",
+   "description": "An ink ring draws round, then a wine tick draws inside it."
+  },
+  {
+   "id": "plus",
+   "name": "Plus",
+   "group": "Marks",
+   "piece": "lottie/plus",
+   "description": "A plus drawn from its centre: the ink stroke across, then the wine stroke down."
+  },
+  {
+   "id": "seal-ring",
+   "name": "Seal ring",
+   "group": "Marks",
+   "piece": "lottie/seal-ring",
+   "description": "A seal: a wine ring draws, a circle of short ink ticks appears round it one by one and turns slowly, and a small asterisk opens in the middle."
+  },
+  {
+   "id": "folio-flip",
+   "name": "Folio flip",
+   "group": "Pages",
+   "piece": "lottie/folio-flip",
+   "description": "A page turns over about its spine twice (paper, stone, then the wine cover with two lines) above a short folio rule."
+  },
+  {
+   "id": "column-grid",
+   "name": "Column grid",
+   "group": "Pages",
+   "piece": "lottie/column-grid",
+   "description": "The columns of a page grid drop from a head rule one after another in umber and fog; one column is wine."
+  },
+  {
+   "id": "bookmark",
+   "name": "Bookmark",
+   "group": "Pages",
+   "piece": "lottie/bookmark",
+   "description": "A wine ribbon bookmark with a swallow-tail slides down from the top edge of a stone page and settles."
+  },
+  {
+   "id": "drop-cap",
+   "name": "Drop cap",
+   "group": "Pages",
+   "piece": "lottie/drop-cap",
+   "description": "A wine drop-cap block lands at the head of a paragraph whose lines draw beside and under it."
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "One clean sans throughout: Inter Tight, heavy and tight for words, light for big numerals, medium tracked caps for small print. All bundled locally with open licences (see files/*-LICENSE.txt).",
+  "usage": "The theme uses Inter Tight 800 for words, 200-300 for numerals and 600 tracked for labels. The others are alternates.",
+  "groups": [
+    "Wide",
+    "Condensed",
+    "Text"
+  ],
+  "items": [
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "file": "files/Montserrat-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Theme word face: heavy geometric caps (800) for the single word, set tight; 500 with wide tracking for credits-style labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        500
+      ],
+      "note": "Theme condensed face: tall light caps for the opening word (its tracking starts very wide and settles) and thin numerals.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "A blunter all-caps condensed alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "antonio",
+      "family": "Antonio",
+      "file": "files/Antonio-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        600
+      ],
+      "note": "A narrower, more refined condensed alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "league-gothic",
+      "family": "League Gothic",
+      "file": "files/LeagueGothic-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "Very tall and tight: for one enormous word.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "big-shoulders",
+      "family": "Big Shoulders Display",
+      "file": "files/BigShouldersDisplay-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        800
+      ],
+      "note": "Squared condensed caps with a wide weight range.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "Heavy condensed: the loudest alternate, use sparingly.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "unbounded",
+      "family": "Unbounded",
+      "file": "files/Unbounded-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        400,
+        800
+      ],
+      "note": "Extra-wide rounded caps: an alternate for the heavy word.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "syne",
+      "family": "Syne",
+      "file": "files/Syne-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        600,
+        800
+      ],
+      "note": "A wide display sans with character at 800.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "outfit",
+      "family": "Outfit",
+      "file": "files/Outfit-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        300,
+        700
+      ],
+      "note": "A clean geometric alternate for the word or labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "inter-tight",
+      "family": "Inter Tight",
+      "file": "files/InterTight-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        500,
+        700
+      ],
+      "note": "Neutral tight grotesque for longer lines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "dm-sans",
+      "family": "DM Sans",
+      "file": "files/DMSans-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Soft geometric text alternate.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

@@ -1,0 +1,287 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Digital-signal treatments shown on the sample clip: glitches for cuts, signal looks for “screen” moments, and a cold grade as the base look. Previews run at full strength; use far less in a video.",
+  "usage": "In a footage storyboard: {\"name\": \"rgb_split\", \"at\": 2.4, \"seconds\": 0.3, \"amount\": 0.8}. On a shot candidate: {\"effect\": {\"name\": \"glitch\", \"amount\": 0.6, \"where\": \"in\"}}. Engine: library/_shared/effects_engine.py (OpenCV).",
+  "groups": [
+    "Glitch",
+    "Signal",
+    "Look",
+    "Transitions",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "rgb_split",
+      "name": "rgb split",
+      "group": "Glitch",
+      "src": "clips/rgb_split.mp4",
+      "portrait": true,
+      "description": "Red and blue slide apart sideways for a hard chromatic split."
+    },
+    {
+      "id": "glitch",
+      "name": "glitch",
+      "group": "Glitch",
+      "src": "clips/glitch.mp4",
+      "portrait": true,
+      "description": "Rows of the picture jump sideways with color fringing."
+    },
+    {
+      "id": "pixelate",
+      "name": "pixelate",
+      "group": "Glitch",
+      "src": "clips/pixelate.mp4",
+      "portrait": true,
+      "description": "The picture collapses into large blocks."
+    },
+    {
+      "id": "pixel_stretch",
+      "name": "pixel stretch",
+      "group": "Glitch",
+      "src": "clips/pixel_stretch.mp4",
+      "portrait": true,
+      "description": "One column of pixels smeared across the frame."
+    },
+    {
+      "id": "vhs",
+      "name": "vhs",
+      "group": "Glitch",
+      "src": "clips/vhs.mp4",
+      "portrait": true,
+      "description": "Tape playback: colour bleed, a rolling tracking band and noise."
+    },
+    {
+      "id": "chroma_bars",
+      "name": "chroma bars",
+      "group": "Glitch",
+      "src": "clips/chroma_bars.mp4",
+      "portrait": true,
+      "description": "Vertical strips slip up and down with colour fringes."
+    },
+    {
+      "id": "hologram",
+      "name": "hologram",
+      "group": "Signal",
+      "src": "clips/hologram.mp4",
+      "portrait": true,
+      "description": "Cyan projection: tint, scanlines and jittering rows."
+    },
+    {
+      "id": "scanlines",
+      "name": "scanlines",
+      "group": "Signal",
+      "src": "clips/scanlines.mp4",
+      "portrait": true,
+      "description": "Fine rolling horizontal lines."
+    },
+    {
+      "id": "crt",
+      "name": "crt",
+      "group": "Signal",
+      "src": "clips/crt.mp4",
+      "portrait": true,
+      "description": "Curved monitor: bulge, scanlines and fringing."
+    },
+    {
+      "id": "neon_edges",
+      "name": "neon edges",
+      "group": "Signal",
+      "src": "clips/neon_edges.mp4",
+      "portrait": true,
+      "description": "Glowing outlines traced along edges."
+    },
+    {
+      "id": "night_vision",
+      "name": "night vision",
+      "group": "Signal",
+      "src": "clips/night_vision.mp4",
+      "portrait": true,
+      "description": "Green phosphor scope with grain and a circular falloff."
+    },
+    {
+      "id": "thermal",
+      "name": "thermal",
+      "group": "Signal",
+      "src": "clips/thermal.mp4",
+      "portrait": true,
+      "description": "False-colour heat camera."
+    },
+    {
+      "id": "edge_hud",
+      "name": "edge hud",
+      "group": "Signal",
+      "src": "clips/edge_hud.mp4",
+      "portrait": true,
+      "description": "The picture darkens and its outlines redraw in glowing cyan."
+    },
+    {
+      "id": "cool_grade",
+      "name": "cool grade",
+      "group": "Look",
+      "src": "clips/cool_grade.mp4",
+      "portrait": true,
+      "description": "A cold, contrasty grade with teal in the shadows. The theme’s base look for footage."
+    },
+    {
+      "id": "duotone",
+      "name": "duotone",
+      "group": "Look",
+      "src": "clips/duotone.mp4",
+      "portrait": true,
+      "description": "Two-color treatment: navy shadows, mint highlights."
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "group": "Look",
+      "src": "clips/vignette.mp4",
+      "portrait": true,
+      "description": "Darkened corners that pull the eye inward."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Look",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Fine monochrome grain."
+    },
+    {
+      "id": "cyber_poster",
+      "name": "cyber poster",
+      "group": "Look",
+      "src": "clips/cyber_poster.mp4",
+      "portrait": true,
+      "description": "Flattens the picture into bands of the theme colours."
+    },
+    {
+      "id": "halftone",
+      "name": "halftone",
+      "group": "Look",
+      "src": "clips/halftone.mp4",
+      "portrait": true,
+      "description": "A screen of cyan dots sized by brightness."
+    },
+    {
+      "id": "neon_bloom",
+      "name": "neon bloom",
+      "group": "Look",
+      "src": "clips/neon_bloom.mp4",
+      "portrait": true,
+      "description": "Highlights bleed cyan and mid-tones magenta: a neon haze."
+    },
+    {
+      "id": "flash",
+      "name": "flash",
+      "group": "Transitions",
+      "src": "clips/flash.mp4",
+      "portrait": true,
+      "description": "A cyan-white flash for hard cuts."
+    },
+    {
+      "id": "zoom_blur",
+      "name": "zoom blur",
+      "group": "Transitions",
+      "src": "clips/zoom_blur.mp4",
+      "portrait": true,
+      "description": "A radial punch toward the centre."
+    },
+    {
+      "id": "whip",
+      "name": "whip",
+      "group": "Transitions",
+      "src": "clips/whip.mp4",
+      "portrait": true,
+      "description": "Sideways motion blur for a whip cut."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

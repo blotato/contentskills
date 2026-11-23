@@ -1,0 +1,196 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Quiet, cold lettering: tall condensed capitals for titles, a tracked condensed sans for small lines, worn typewriters for case files, tape readouts, old book type and handwriting. All bundled locally with open licences.",
+  "usage": "The theme uses Bebas Neue for titles, Barlow Condensed for small lines and captions, Special Elite and Courier Prime for documents, VT323 for camcorder readouts and Homemade Apple for handwritten notes. The others are alternates.",
+  "groups": [
+    "Display",
+    "Caption",
+    "Typewriter",
+    "Tape",
+    "Old print",
+    "Hand"
+  ],
+  "items": [
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Theme heading face. Tall condensed capitals, set small and widely tracked; one letter per line takes the rose accent.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "league-gothic",
+      "family": "League Gothic",
+      "file": "files/LeagueGothic-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Narrower, heavier alternate for long titles that must stay on one line.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "A blunter poster face for single-word impact cards.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "special-gothic-condensed-one",
+      "family": "Special Gothic Condensed One",
+      "file": "files/SpecialGothicCondensedOne-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "A tight grotesque with a newspaper-headline feel, for true-crime mastheads.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Display",
+      "weights": [
+        300,
+        500,
+        700
+      ],
+      "note": "Variable condensed sans: lighter weights for quiet credits.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "barlow-condensed",
+      "family": "Barlow Condensed",
+      "file": "files/BarlowCondensed-SemiBold.ttf",
+      "group": "Caption",
+      "weights": [
+        600
+      ],
+      "note": "Theme caption and label face: the small tracked lines above and below a title, and the captions.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "barlow-condensed-medium",
+      "family": "Barlow Condensed",
+      "file": "files/BarlowCondensed-Medium.ttf",
+      "group": "Caption",
+      "weights": [
+        500
+      ],
+      "note": "Medium weight of the label face, for corner labels and notes.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "special-elite",
+      "family": "Special Elite",
+      "file": "files/SpecialElite-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "Theme typewriter face: case files, evidence cards and date stamps. Worn, uneven keys.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "courier-prime",
+      "family": "Courier Prime",
+      "file": "files/CourierPrime-Bold.ttf",
+      "group": "Typewriter",
+      "weights": [
+        700
+      ],
+      "note": "A cleaner typewriter for redacted document lines and figures.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "cutive-mono",
+      "family": "Cutive Mono",
+      "file": "files/CutiveMono-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "A lighter, older typewriter alternate for transcripts.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "vt323",
+      "family": "VT323",
+      "file": "files/VT323-Regular.ttf",
+      "group": "Tape",
+      "weights": [
+        400
+      ],
+      "note": "Camcorder and monitor readouts: REC, timecode, NO SIGNAL.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "im-fell-english",
+      "family": "IM Fell English",
+      "file": "files/IMFellEnglish-Regular.ttf",
+      "group": "Old print",
+      "weights": [
+        400
+      ],
+      "note": "Rough seventeenth-century book type for folklore, epigraphs and old letters.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "cinzel",
+      "family": "Cinzel",
+      "file": "files/Cinzel-Variable.ttf",
+      "group": "Old print",
+      "weights": [
+        400,
+        700,
+        900
+      ],
+      "note": "Carved Roman capitals for gothic chapter titles and inscriptions.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "homemade-apple",
+      "family": "Homemade Apple",
+      "file": "files/HomemadeApple-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "Theme handwriting: margin notes on case files and evidence boards.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "rock-salt",
+      "family": "Rock Salt",
+      "file": "files/RockSalt-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "A scratchy marker scrawl for a warning left on a wall.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "creepster",
+      "family": "Creepster",
+      "file": "files/Creepster-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "The classic monster-movie face. Use sparingly; the theme's own look is restraint.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Small vector accents in the theme look: marker marks, stamps, tape, torn paper and ink, drawn on in held steps and then boiling between three wobbling redraws. Generated from code in lottie/generate.mjs.",
+  "usage": "{\"piece\": \"lottie/scribble-circle\"}. Files: library/themes/grunge/lottie/animations/.",
+  "groups": [
+    "Marks",
+    "Paper and ink",
+    "Status"
+  ],
+  "items": [
+    {
+      "id": "scribble-circle",
+      "name": "Scribble circle",
+      "group": "Marks",
+      "piece": "lottie/scribble-circle",
+      "description": "A marker circle drawn one and a half times round, then a thinner second pass; both keep boiling."
+    },
+    {
+      "id": "scribble-underline",
+      "name": "Scribble underline",
+      "group": "Marks",
+      "piece": "lottie/scribble-underline",
+      "description": "A red underline scrawled back and forth under two grey word bars."
+    },
+    {
+      "id": "arrow-scrawl",
+      "name": "Arrow scrawl",
+      "group": "Marks",
+      "piece": "lottie/arrow-scrawl",
+      "description": "A wandering marker arrow draws itself to a point and lands a red dot."
+    },
+    {
+      "id": "cross-out",
+      "name": "Cross out",
+      "group": "Marks",
+      "piece": "lottie/cross-out",
+      "description": "Two fat red slashes struck on in a few frames each, with a shake on every hit."
+    },
+    {
+      "id": "check-scrawl",
+      "name": "Check scrawl",
+      "group": "Marks",
+      "piece": "lottie/check-scrawl",
+      "description": "A rough hand-drawn box, then a lime tick thrown through it."
+    },
+    {
+      "id": "burst-star",
+      "name": "Burst star",
+      "group": "Marks",
+      "piece": "lottie/burst-star",
+      "description": "A spiky hand-drawn burst pops on around a red blot and boils, with a few flicked ticks."
+    },
+    {
+      "id": "question-scrawl",
+      "name": "Question scrawl",
+      "group": "Marks",
+      "piece": "lottie/question-scrawl",
+      "description": "A fat marker question mark draws on, its red dot slams down, a thin loop circles it."
+    },
+    {
+      "id": "asterisk-boil",
+      "name": "Asterisk boil",
+      "group": "Status",
+      "piece": "lottie/asterisk-boil",
+      "description": "A worn red asterisk turning in held steps while its strokes boil: loading, thinking, hold on. Loops."
+    },
+    {
+      "id": "pen-test",
+      "name": "Pen test",
+      "group": "Status",
+      "piece": "lottie/pen-test",
+      "description": "A pen-test zigzag drawn across behind a red nib, then eaten away from the start. Loops."
+    },
+    {
+      "id": "tally-count",
+      "name": "Tally count",
+      "group": "Status",
+      "piece": "lottie/tally-count",
+      "description": "Four tally strokes drawn one at a time, then a red slash through them: five."
+    },
+    {
+      "id": "target-scribble",
+      "name": "Target scribble",
+      "group": "Status",
+      "piece": "lottie/target-scribble",
+      "description": "A spiral scribbled inward to its centre, marked with a red cross."
+    },
+    {
+      "id": "stamp-hit",
+      "name": "Stamp hit",
+      "group": "Paper and ink",
+      "piece": "lottie/stamp-hit",
+      "description": "A round red rubber stamp slams down from oversized, shakes, and leaves a worn print with a faint double."
+    },
+    {
+      "id": "tape-slap",
+      "name": "Tape slap",
+      "group": "Paper and ink",
+      "piece": "lottie/tape-slap",
+      "description": "A torn scrap of paper jumps in and a strip of masking tape slaps down over its top edge."
+    },
+    {
+      "id": "ink-splat",
+      "name": "Ink splat",
+      "group": "Paper and ink",
+      "piece": "lottie/ink-splat",
+      "description": "A red ink blot bursts open, throws droplets and runs three drips."
+    },
+    {
+      "id": "highlight-stroke",
+      "name": "Highlight stroke",
+      "group": "Paper and ink",
+      "piece": "lottie/highlight-stroke",
+      "description": "A lime highlighter dragged in steps through the middle of three lines."
+    },
+    {
+      "id": "torn-strip-wipe",
+      "name": "Torn strip wipe",
+      "group": "Paper and ink",
+      "piece": "lottie/torn-strip-wipe",
+      "description": "A torn bone-paper strip steps in from the right and a red strip from the left, each with ragged edges."
+    }
+  ]
+}

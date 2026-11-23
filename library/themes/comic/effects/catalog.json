@@ -1,0 +1,223 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Footage treated as printed comic art (flat inks, key lines, Ben-Day dots, aged paper) plus impact accents for cuts, shown on the sample clip. Previews run at full strength; print looks hold up at half.",
+  "usage": "As the footage look: {\"look\": {\"name\": \"inked_print\", \"amount\": 0.6}}. In a footage storyboard: {\"name\": \"impact_burst\", \"at\": 2.4, \"seconds\": 0.4, \"amount\": 0.9}. On a shot candidate: {\"effect\": {\"name\": \"speed_lines\", \"amount\": 0.7, \"where\": \"in\"}}. Own effects: library/themes/comic/effects/theme_effects.py; the rest come from library/_shared/effects_engine.py.",
+  "groups": [
+    "Print looks",
+    "Impact",
+    "Shared",
+    "Lighting",
+    "Look"
+  ],
+  "items": [
+    {
+      "id": "inked_print",
+      "name": "inked print",
+      "group": "Print looks",
+      "src": "clips/inked_print.mp4",
+      "portrait": true,
+      "description": "The theme’s base look: footage redrawn as flat inks in a few steps with black outlines, dot shading in the shadows and a cream paper cast. Use at 0.5–0.8 as the footage look."
+    },
+    {
+      "id": "benday_dots",
+      "name": "benday dots",
+      "group": "Print looks",
+      "src": "clips/benday_dots.mp4",
+      "portrait": true,
+      "description": "Colour printed the cheap way: cyan, magenta and yellow dot screens at different angles on paper, under a black key line."
+    },
+    {
+      "id": "fourcolor_print",
+      "name": "fourcolor print",
+      "group": "Print looks",
+      "src": "clips/fourcolor_print.mp4",
+      "portrait": true,
+      "description": "A limited set of flat inks with the colour plates slightly out of register and a black key line."
+    },
+    {
+      "id": "newsprint",
+      "name": "newsprint",
+      "group": "Print looks",
+      "src": "clips/newsprint.mp4",
+      "portrait": true,
+      "description": "Old newsprint: faded colour on yellowed, blotchy paper with specks, soft blacks and browned edges."
+    },
+    {
+      "id": "manga_ink",
+      "name": "manga ink",
+      "group": "Print looks",
+      "src": "clips/manga_ink.mp4",
+      "portrait": true,
+      "description": "Black and white: solid ink shadows, bare paper highlights and a dot screen for the greys between."
+    },
+    {
+      "id": "pop_duotone",
+      "name": "pop duotone",
+      "group": "Print looks",
+      "src": "clips/pop_duotone.mp4",
+      "portrait": true,
+      "description": "Pop-art poster: red shadows and yellow lights joined by dots, blue in the darks, with ink lines."
+    },
+    {
+      "id": "impact_burst",
+      "name": "impact burst",
+      "group": "Impact",
+      "src": "clips/impact_burst.mp4",
+      "portrait": true,
+      "description": "A hit: a jagged yellow-and-white burst closes in from the frame edges behind black zoom lines, then the frame flashes. For cuts and punchlines."
+    },
+    {
+      "id": "speed_lines",
+      "name": "speed lines",
+      "group": "Impact",
+      "src": "clips/speed_lines.mp4",
+      "portrait": true,
+      "description": "Ink zoom lines converge on the middle of the frame from every edge, redrawn on twos. For emphasis on the speaker."
+    },
+    {
+      "id": "panel_shake",
+      "name": "panel shake",
+      "group": "Impact",
+      "src": "clips/panel_shake.mp4",
+      "portrait": true,
+      "description": "The frame becomes a panel that takes a hit: it jolts and tilts on twos, showing paper gutter, its ink border and hard shadow."
+    },
+    {
+      "id": "whip",
+      "name": "whip",
+      "group": "Shared",
+      "src": "clips/whip.mp4",
+      "portrait": true,
+      "description": "A fast sideways smear: the whip-pan between panels."
+    },
+    {
+      "id": "zoom_blur",
+      "name": "zoom blur",
+      "group": "Shared",
+      "src": "clips/zoom_blur.mp4",
+      "portrait": true,
+      "description": "A radial rush toward the centre."
+    },
+    {
+      "id": "camera_shake",
+      "name": "camera shake",
+      "group": "Shared",
+      "src": "clips/camera_shake.mp4",
+      "portrait": true,
+      "description": "A smooth handheld jolt."
+    },
+    {
+      "id": "flash",
+      "name": "flash",
+      "group": "Shared",
+      "src": "clips/flash.mp4",
+      "portrait": true,
+      "description": "A white flash for cuts."
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "group": "Shared",
+      "src": "clips/vignette.mp4",
+      "portrait": true,
+      "description": "Darkened corners, like ink soaking toward the panel edge."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Shared",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Fine print noise."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

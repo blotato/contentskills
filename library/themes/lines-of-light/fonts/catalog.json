@@ -1,0 +1,29 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Wide, quiet lettering for light drawn on the dark: an extended sans in tracked capitals for titles, a light monospace for small UI text, and thin geometric alternates. All bundled locally with open licences.",
+  "usage": "The theme sets titles in Michroma (tracked capitals, letter-spacing .3em or more) and small labels, readouts and notes in IBM Plex Mono Light. Syncopate and Lexend Zetta are wider alternates for one-word titles; Jura, Exo 2 and Oxanium are thinner geometric alternates; Space Mono, Share Tech Mono and Major Mono Display are alternate monos. Kit names: F.head = Michroma, F.mono = IBM Plex Mono.",
+  "groups": [
+    "Display",
+    "Mono",
+    "Geometric",
+    "Sans"
+  ],
+  "items": [
+    {"id": "michroma", "family": "Michroma", "file": "files/Michroma-Regular.ttf", "group": "Display", "weights": [400], "note": "Theme heading face. A wide extended sans: set in capitals, widely tracked, landing orange, burning red and cooling to white.", "license": "OFL-1.1"},
+    {"id": "ibm-plex-mono-light", "family": "IBM Plex Mono", "file": "files/IBMPlexMono-Light.ttf", "group": "Mono", "weights": [300], "note": "Theme UI face (weight 300): small readouts, notes, prompts and captions under the light.", "license": "OFL-1.1"},
+    {"id": "ibm-plex-mono", "family": "IBM Plex Mono", "file": "files/IBMPlexMono-Medium.ttf", "group": "Mono", "weights": [500], "note": "Medium weight of the UI face, for small text that must read over bright footage.", "license": "OFL-1.1"},
+    {"id": "syncopate", "family": "Syncopate", "file": "files/Syncopate-Regular.ttf", "group": "Display", "weights": [400], "note": "Even wider caps-only alternate for one- or two-word titles.", "license": "Apache-2.0"},
+    {"id": "lexend-zetta", "family": "Lexend Zetta", "file": "files/LexendZetta-Variable.ttf", "group": "Display", "weights": [100, 900], "note": "Very widely spaced variable sans; at weight 200 it reads like a thin line of light.", "license": "OFL-1.1"},
+    {"id": "jura", "family": "Jura", "file": "files/Jura-Variable.ttf", "group": "Geometric", "weights": [300, 700], "note": "Thin rounded geometric alternate for subtitles and kickers.", "license": "OFL-1.1"},
+    {"id": "exo-2", "family": "Exo 2", "file": "files/Exo2-Variable.ttf", "group": "Geometric", "weights": [100, 900], "note": "Light geometric sans for longer captions.", "license": "OFL-1.1"},
+    {"id": "oxanium", "family": "Oxanium", "file": "files/Oxanium-Variable.ttf", "group": "Geometric", "weights": [200, 800], "note": "Squared technical alternate for numbers and readouts.", "license": "OFL-1.1"},
+    {"id": "space-mono", "family": "Space Mono", "file": "files/SpaceMono-Bold.ttf", "group": "Mono", "weights": [700], "note": "Heavier mono for counters that must read over busy footage.", "license": "OFL-1.1"},
+    {"id": "share-tech-mono", "family": "Share Tech Mono", "file": "files/ShareTechMono-Regular.ttf", "group": "Mono", "weights": [400], "note": "Narrow technical mono for timecodes.", "license": "OFL-1.1"},
+    {"id": "major-mono-display", "family": "Major Mono Display", "file": "files/MajorMonoDisplay-Regular.ttf", "group": "Mono", "weights": [400], "note": "Thin mono display face for single labels.", "license": "OFL-1.1"},
+    {"id": "space-grotesk", "family": "Space Grotesk", "file": "files/SpaceGrotesk-Variable.ttf", "group": "Sans", "weights": [300, 700], "note": "Neutral grotesk for sentence-case notes.", "license": "OFL-1.1"},
+    {"id": "manrope", "family": "Manrope", "file": "files/Manrope-Variable.ttf", "group": "Sans", "weights": [200, 800], "note": "Light modern sans for sentence-case captions.", "license": "OFL-1.1"},
+    {"id": "outfit", "family": "Outfit", "file": "files/Outfit-Variable.ttf", "group": "Sans", "weights": [100, 900], "note": "Geometric sans with a thin weight for quiet subtitles.", "license": "OFL-1.1"},
+    {"id": "inter-tight", "family": "Inter Tight", "file": "files/InterTight-Variable.ttf", "group": "Sans", "weights": [100, 900], "note": "Compact sans for dense lists.", "license": "OFL-1.1"}
+  ]
+}

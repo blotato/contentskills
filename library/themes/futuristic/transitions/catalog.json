@@ -1,0 +1,172 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions between two shots, shown going from the sample clip to a graphics frame. Pixel transitions rework the picture point by point; 3D mesh transitions cut it into tiles and move them in space.",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"cube_spin\", \"seconds\": 0.5}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"scan_wipe\", \"at\": 7.8, \"seconds\": 0.4}]. Engine: library/_shared/shader_transitions.py (moderngl).",
+  "groups": [
+    "Pixel",
+    "3D mesh"
+  ],
+  "items": [
+    {
+      "id": "rgb_glitch",
+      "name": "rgb glitch",
+      "group": "Pixel",
+      "src": "clips/rgb_glitch.mp4",
+      "portrait": true,
+      "description": "Blocks and rows jump sideways with red and blue pulled apart while the picture swaps underneath."
+    },
+    {
+      "id": "datamosh",
+      "name": "datamosh",
+      "group": "Pixel",
+      "src": "clips/datamosh.mp4",
+      "portrait": true,
+      "description": "Blocks freeze, smear along their own motion and are replaced out of order, like a corrupted stream."
+    },
+    {
+      "id": "pixel_dissolve",
+      "name": "pixel dissolve",
+      "group": "Pixel",
+      "src": "clips/pixel_dissolve.mp4",
+      "portrait": true,
+      "description": "The picture drops to coarse blocks, swaps, and sharpens again."
+    },
+    {
+      "id": "scan_wipe",
+      "name": "scan wipe",
+      "group": "Pixel",
+      "src": "clips/scan_wipe.mp4",
+      "portrait": true,
+      "description": "A bright scanning beam travels down the frame and draws the next shot behind it."
+    },
+    {
+      "id": "hex_reveal",
+      "name": "hex reveal",
+      "group": "Pixel",
+      "src": "clips/hex_reveal.mp4",
+      "portrait": true,
+      "description": "Hexagonal cells close and reopen on the next shot, rippling out from the centre."
+    },
+    {
+      "id": "warp_wipe",
+      "name": "warp wipe",
+      "group": "Pixel",
+      "src": "clips/warp_wipe.mp4",
+      "portrait": true,
+      "description": "A diagonal wipe whose edge stretches both pictures, with a glowing seam."
+    },
+    {
+      "id": "luma_melt",
+      "name": "luma melt",
+      "group": "Pixel",
+      "src": "clips/luma_melt.mp4",
+      "portrait": true,
+      "description": "Columns drip down at different speeds while the bright areas burn through first."
+    },
+    {
+      "id": "iris_glow",
+      "name": "iris glow",
+      "group": "Pixel",
+      "src": "clips/iris_glow.mp4",
+      "portrait": true,
+      "description": "An iris opens from the centre behind a glowing, ticked ring that bends the picture at its edge."
+    },
+    {
+      "id": "zoom_through",
+      "name": "zoom through",
+      "group": "Pixel",
+      "src": "clips/zoom_through.mp4",
+      "portrait": true,
+      "description": "The camera punches through the shot in a zoom blur and lands on the next one."
+    },
+    {
+      "id": "noise_dissolve",
+      "name": "noise dissolve",
+      "group": "Pixel",
+      "src": "clips/noise_dissolve.mp4",
+      "portrait": true,
+      "description": "Blocky digital noise eats the shot away behind a hot cyan edge."
+    },
+    {
+      "id": "hologram_in",
+      "name": "hologram in",
+      "group": "Pixel",
+      "src": "clips/hologram_in.mp4",
+      "portrait": true,
+      "description": "The next shot flickers in as a cyan projection, then gains its real color."
+    },
+    {
+      "id": "crt_collapse",
+      "name": "crt collapse",
+      "group": "Pixel",
+      "src": "clips/crt_collapse.mp4",
+      "portrait": true,
+      "description": "The shot switches off like a tube monitor, down to a line and a dot, and the next one switches on."
+    },
+    {
+      "id": "radar_sweep",
+      "name": "radar sweep",
+      "group": "Pixel",
+      "src": "clips/radar_sweep.mp4",
+      "portrait": true,
+      "description": "A radar arm sweeps once around the centre, leaving the next shot under a fading trail."
+    },
+    {
+      "id": "cube_spin",
+      "name": "cube spin",
+      "group": "3D mesh",
+      "src": "clips/cube_spin.mp4",
+      "portrait": true,
+      "description": "Both shots are faces of a box that turns a quarter of the way round."
+    },
+    {
+      "id": "accordion_fold",
+      "name": "accordion fold",
+      "group": "3D mesh",
+      "src": "clips/accordion_fold.mp4",
+      "portrait": true,
+      "description": "The shot folds up like a concertina toward the left edge, uncovering the next one."
+    },
+    {
+      "id": "shatter",
+      "name": "shatter",
+      "group": "3D mesh",
+      "src": "clips/shatter.mp4",
+      "portrait": true,
+      "description": "The shot breaks into tiles that tumble toward the camera, the centre first."
+    },
+    {
+      "id": "wave_sheet",
+      "name": "wave sheet",
+      "group": "3D mesh",
+      "src": "clips/wave_sheet.mp4",
+      "portrait": true,
+      "description": "A ring of ripples runs out across the picture; behind it is already the next shot."
+    },
+    {
+      "id": "swing_doors",
+      "name": "swing doors",
+      "group": "3D mesh",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The shot splits down the middle into two doors that swing open onto the next shot."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slice slide",
+      "group": "3D mesh",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "Horizontal slices tilt and slide off to alternate sides at different speeds."
+    },
+    {
+      "id": "tile_flip",
+      "name": "tile flip",
+      "group": "3D mesh",
+      "src": "clips/tile_flip.mp4",
+      "portrait": true,
+      "description": "A grid of cards turns over in a diagonal wave, with the next shot on the back of each."
+    }
+  ]
+}

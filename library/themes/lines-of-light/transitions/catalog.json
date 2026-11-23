@@ -1,0 +1,38 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the sample clip (under the night look) to a title card: seven of its own, where a thin line of light does the cutting (a sweeping line, an iris fired from the red dot, a sunburst, rows drawn in by a pen of light, a red-cause/blue-result cut, an echo split, a horizon that opens), and five from the shared set drawn in the theme's colours (lilac light, red and orange accents, a white core on the near-black teal room).",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"light_wipe\", \"seconds\": 0.8}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"origin_iris\", \"at\": 7.8, \"seconds\": 0.7}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Line",
+    "Burst",
+    "Signal",
+    "Moves"
+  ],
+  "items": [
+    {"id": "light_wipe", "name": "light wipe", "group": "Line", "src": "clips/light_wipe.mp4", "portrait": true,
+     "description": "One line of light sweeps down the frame with the next shot behind it: red echo trailing, blue leading, a lilac wake. The theme default."},
+    {"id": "horizon_open", "name": "horizon open", "group": "Line", "src": "clips/horizon_open.mp4", "portrait": true,
+     "description": "A horizon line draws out from the middle, then splits and the halves travel apart, opening the next shot between them."},
+    {"id": "scan_draw", "name": "scan draw", "group": "Line", "src": "clips/scan_draw.mp4", "portrait": true,
+     "description": "The next shot is drawn in row by row by a travelling point of light, top row first, like a fast pen."},
+    {"id": "origin_iris", "name": "origin iris", "group": "Burst", "src": "clips/origin_iris.mp4", "portrait": true,
+     "description": "The red dot top-left fires and a ring of light opens from it across the frame, the next shot inside (red outside the ring, blue in)."},
+    {"id": "ray_burst", "name": "ray burst", "group": "Burst", "src": "clips/ray_burst.mp4", "portrait": true,
+     "description": "A sunburst: rays shoot out of the middle one after another and widen into lit wedges of the next shot until they meet."},
+    {"id": "red_blue_cut", "name": "red blue cut", "group": "Signal", "src": "clips/red_blue_cut.mp4", "portrait": true,
+     "description": "Cause, then result: the shot burns red from the edges, cuts hard on a blue flash, and the next shot cools to itself."},
+    {"id": "echo_split", "name": "echo split", "group": "Signal", "src": "clips/echo_split.mp4", "portrait": true,
+     "description": "The shot pulls apart into red and blue echoes and drops into the dark; the next arrives split and locks hard on its core."},
+    {"id": "scan_wipe", "name": "scan wipe", "group": "Line", "src": "clips/scan_wipe.mp4", "portrait": true,
+     "description": "Shared: a bright scan beam reveals the next shot with a short interlaced trail, in lilac and white."},
+    {"id": "iris_glow", "name": "iris glow", "group": "Burst", "src": "clips/iris_glow.mp4", "portrait": true,
+     "description": "Shared: a circle opens from the centre with a glowing lilac rim and red ticks."},
+    {"id": "zoom_through", "name": "zoom through", "group": "Moves", "src": "clips/zoom_through.mp4", "portrait": true,
+     "description": "Shared: the camera flies through the shot into the next with a radial streak."},
+    {"id": "crt_collapse", "name": "crt collapse", "group": "Signal", "src": "clips/crt_collapse.mp4", "portrait": true,
+     "description": "Shared: the picture collapses to a white line and a point, and the next shot opens from it."},
+    {"id": "slice_slide", "name": "slice slide", "group": "Moves", "src": "clips/slice_slide.mp4", "portrait": true,
+     "description": "Shared: the shot slides away in horizontal slices over the dark room, lit at the rims."}
+  ]
+}

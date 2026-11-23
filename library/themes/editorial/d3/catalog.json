@@ -1,0 +1,148 @@
+{
+ "id": "d3",
+ "title": "Diagrams",
+ "summary": "A magazine's data pages on 1000x1000 cards: a small tracked kicker over a rule that draws, the title in the condensed serif rising from behind it with one *italic accent* word, thick filled marks with one accent for the datum that matters (wine on light grounds, blush on dark) and ink, umber and fog for the rest, direct labels, mono figures, headline figures in the Didone, a source line and a folio. Bars grow on the kit's glide, figures count up; every chart is fully readable by 1.0 s. Grounds: paper (default), stone, blush, ink, wine. Pass \"clear\": true to float a chart over footage (type gets a paper halo). Sample data is illustrative and says so.",
+ "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"Reach by *format*\", \"unit\": \"Thousand views\", \"items\": [{\"label\": \"...\", \"value\": 1}]}}. Every chart takes title, unit (kicker), note (source line, false to hide), index (folio), field (paper | stone | blush | ink | wine), clear. The \"This video\" charts take \"use\": \"project\" and then draw this video's own edit (props.project); without a project they fall back to sample data labelled illustrative. Files: library/themes/editorial/d3/pieces/ (shared page: _card.js).",
+ "groups": [
+  "Charts",
+  "Shares",
+  "Figures",
+  "Sequences",
+  "This video"
+ ],
+ "items": [
+  {
+   "id": "bar-chart",
+   "name": "Bar chart",
+   "group": "Charts",
+   "piece": "d3/bar-chart",
+   "description": "Thick filled columns growing from a baseline; the one that matters in the accent with its figure in the Didone, the rest in umber with mono figures, names in small capitals underneath. Props: items [{label, value}], highlight (index; the largest by default), decimals, prefix, suffix."
+  },
+  {
+   "id": "line-chart",
+   "name": "Line chart",
+   "group": "Charts",
+   "piece": "d3/line-chart",
+   "description": "One trend as a thick ink line drawn over a tinted area, the last point marked in the accent and its value printed big, counting up. Props: values [...], labels [first, last], caption, decimals, prefix, suffix."
+  },
+  {
+   "id": "ranking",
+   "name": "Ranking",
+   "group": "Charts",
+   "piece": "d3/ranking",
+   "description": "A league table: mono rank, serif name, figure at the right and a thick bar to scale under each name; hairlines between rows, the leader in the accent. Props: items [{label, value}] (3-5), highlight (index), decimals, prefix, suffix."
+  },
+  {
+   "id": "slope",
+   "name": "Slope",
+   "group": "Charts",
+   "piece": "d3/slope",
+   "description": "Before and after as thick slopes between two headed columns, both ends labelled directly; the item that matters in the accent. Props: from, to, items [{label, a, b}], highlight (index; the biggest rise by default), decimals, prefix, suffix."
+  },
+  {
+   "id": "bar-race",
+   "name": "Bar race",
+   "group": "Charts",
+   "piece": "d3/bar-race",
+   "description": "Horizontal bars that grow, then re-sort smoothly as the figures change; at flagAt the leader takes the accent, its name turns italic and a word lands in the end of its bar. No figures unless showValues. Props: items [{label, values: [...]}], times, showValues, decimals, prefix, suffix, flag, flagAt, colors."
+  },
+  {
+   "id": "reel-stats",
+   "name": "Reel stats",
+   "group": "Charts",
+   "piece": "d3/reel-stats",
+   "description": "An analytics table of reels: one row per reel (up to 5, best on top) with its 9:16 picture, its title in the serif, a small area chart of its views over time drawn left to right (one scale for all rows) and the final figure in the Didone, counting up; tracked column heads over a hairline. At flagAt the best reel takes the accent: chart and figure turn wine, the title turns italic and a small filled tag lands under it. Draws the figures it is given: set unit and note to say where they come from. Props: items [{label, values: [...]}], images [...] (server paths, by item; a tint of the footage without), columns [reel, chart, figure], decimals, prefix, suffix, flag, flagAt, drawFor."
+  },
+  {
+   "id": "reel-cards",
+   "name": "Reel cards",
+   "group": "Charts",
+   "piece": "d3/reel-cards",
+   "description": "An analytics view of up to five reels as cards with pictures: the best is a large card with its picture, Didone figure and a filled area chart of views over time; the others a 2 x 2 of small cards, each with picture, title, figure and sparkline (own scale from zero). At flagAt the best takes the accent and a tag lands on its picture. Props: title, unit, note, index, field, clear, items [{label, values}], images, decimals, prefix, suffix, flag, flagAt, drawFor."
+  },
+  {
+   "id": "donut",
+   "name": "Donut",
+   "group": "Shares",
+   "piece": "d3/donut",
+   "description": "Shares as one thick ring sweeping round from twelve o'clock, the share that matters in the accent with its percentage in the centre; every segment labelled where it sits. Props: items [{label, value}], highlight (index; the largest by default)."
+  },
+  {
+   "id": "big-number",
+   "name": "Big number",
+   "group": "Figures",
+   "piece": "d3/big-number",
+   "description": "One figure set huge in the Didone, counting up over a rule, with a serif line (one *italic* word) and a small caption. Props: value, prefix, suffix, line, caption (no title: the figure is the headline)."
+  },
+  {
+   "id": "versus",
+   "name": "Versus",
+   "group": "Figures",
+   "piece": "d3/versus",
+   "description": "Two figures side by side, parted by a hairline, each over a thick bar to scale; the winner in the accent with a small filled badge. Reads as a punchline in under a second (0 against 12). Props: a {label, value, suffix, prefix}, b {...}, winner ('a' | 'b'; the larger by default), badge, bars."
+  },
+  {
+   "id": "table",
+   "name": "Table",
+   "group": "Figures",
+   "piece": "d3/table",
+   "description": "A typeset figures table: tracked column heads over a rule, serif names, mono figures, hairlines drawing between rows; one column stands on a tinted band in the accent. Props: columns ['', 'Before', 'After'], rows [{label, values: [...]}], highlight (column; the last by default)."
+  },
+  {
+   "id": "timeline",
+   "name": "Timeline",
+   "group": "Sequences",
+   "piece": "d3/timeline",
+   "description": "Moments along one thick line that draws left to right: filled dots, the time in mono above, what happened in the serif below; the moment that matters in the accent. Props: items [{when, label}] (3-5), highlight (index; the last by default)."
+  },
+  {
+   "id": "steps",
+   "name": "Steps",
+   "group": "Sequences",
+   "piece": "d3/steps",
+   "description": "A numbered process set like a contents page: Didone numerals in the accent, the step in the serif, an optional mono detail at the right, hairlines between. Props: items ['step', ...] or [{label, detail}], times (seconds, a cue per row)."
+  },
+  {
+   "id": "pause-bars",
+   "name": "Pause bars",
+   "group": "This video",
+   "piece": "d3/pause-bars",
+   "description": "The pauses that were cut: one thick bar per pause by length, the longest few in the accent with their figures; the headline is the total seconds removed and the count. With \"use\": \"project\" it reads the video's own edit list (project.edl.pauses). Props: use, pauses [...] (fallback, seconds), top, caption, countLabel, suffix, decimals, ends [left, right]."
+  },
+  {
+   "id": "cut-strip",
+   "name": "Cut strip",
+   "group": "This video",
+   "piece": "d3/cut-strip",
+   "description": "Raw take against edited reel, to scale: the kept takes drop out of the long strip and close up into a shorter one; both lengths printed, the edit in the accent, with the cuts and time removed. With \"use\": \"project\" it reads project.edl (before, after, cuts, segments). Props: use, before, segments [{in, out}] (fallback), a, b, suffix, decimals, cutAt."
+  },
+  {
+   "id": "cut-timeline",
+   "name": "Cut timeline",
+   "group": "This video",
+   "piece": "d3/cut-timeline",
+   "description": "The edit happening, as a video editor's sketch: one film strip of the raw take made of real frames (images) with sprocket holes over a mono timecode ruler, the pauses hatched in crimson; a blade runs across, each pause drops out and leaves a cut mark while the Didone figure counts down and the cut counter counts up; then the kept takes glide together into the shorter edited reel, to scale, and the figure takes the accent. With \"use\": \"project\" it reads project.edl (before, after, cuts, segments). Props: use, images [...] (frames evenly spaced over the raw take, server paths; tints without), a, b, cutsLabel, removed, suffix, decimals, bladeAt, bladeFor, closeAt, closeFor, before, segments [{in, out}] (fallback)."
+  },
+  {
+   "id": "edit-pulse",
+   "name": "Edit pulse",
+   "group": "This video",
+   "piece": "d3/edit-pulse",
+   "description": "Authored changes per second across the clip as a thick line over a filled area, the busiest second marked, the average as the headline and up to four counts beneath. With \"use\": \"project\" it reads project.pace, changes, duration and the counts. Props: use, values [...], counts [{label, value}] (fallback), show (cuts, graphics, effects, transitions, sounds, layouts, zooms), caption, decimals."
+  },
+  {
+   "id": "cut-tally",
+   "name": "Cut tally",
+   "group": "Charts",
+   "piece": "d3/cut-tally",
+   "description": "Who made the cuts: a round portrait and a Didone figure against the Claude spark (from library/ui/claude) and its figure counting up, while a blade travels along a strip of film leaving one cut mark per count. Props: title, unit, note, index, a {label, value, image}, b {label, value}, countAt, countFor, field, clear."
+  },
+  {
+   "id": "quit-year",
+   "name": "Year of half-tries",
+   "group": "Sequences",
+   "piece": "d3/quit-year",
+   "description": "A year of half-tries: one row per attempt across a 52-week year (month letters on top); each attempt's accent bar grows for its few weeks, then stops with a struck X, the rest of the row an empty faint track. Props: tries [{label, start (week), weeks}], rowAt, step, growFor, quitAt."
+  }
+ ]
+}

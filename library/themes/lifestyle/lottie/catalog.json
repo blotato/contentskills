@@ -1,0 +1,112 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Vector accents in the theme style, generated from code in lottie/generate.mjs: brushed marks that draw on, soft reactions, small nature motifs and looping backgrounds on mint-cream paper.",
+  "usage": "{\"piece\": \"lottie/scribble-loops\"}. Files: library/themes/lifestyle/lottie/animations/.",
+  "groups": [
+    "Brush marks",
+    "Reactions",
+    "Nature",
+    "Backgrounds"
+  ],
+  "items": [
+    {
+      "id": "scribble-loops",
+      "name": "Scribble loops",
+      "group": "Brush marks",
+      "piece": "lottie/scribble-loops",
+      "description": "The theme’s brush mark: three loose green loops drawn in one stroke, finished with a dot."
+    },
+    {
+      "id": "underline-squiggle",
+      "name": "Underline squiggle",
+      "group": "Brush marks",
+      "piece": "lottie/underline-squiggle",
+      "description": "A wavy green underline draws on, with a thinner ink line beneath: emphasis under a word."
+    },
+    {
+      "id": "circle-highlight",
+      "name": "Circle highlight",
+      "group": "Brush marks",
+      "piece": "lottie/circle-highlight",
+      "description": "A hand-drawn clay ring loops around a word, with three little emphasis ticks."
+    },
+    {
+      "id": "arrow-draw",
+      "name": "Arrow draw",
+      "group": "Brush marks",
+      "piece": "lottie/arrow-draw",
+      "description": "A hand-drawn arrow that starts at a dot, loops once and points right: “look here”, “next”."
+    },
+    {
+      "id": "heart-pop",
+      "name": "Heart pop",
+      "group": "Reactions",
+      "piece": "lottie/heart-pop",
+      "description": "A clay heart swells up softly on a blush disc while small rays draw out: love it, saved, favourite."
+    },
+    {
+      "id": "star-rating",
+      "name": "Star rating",
+      "group": "Reactions",
+      "piece": "lottie/star-rating",
+      "description": "Five stars fill one after another (the last one half strength): reviews and ratings."
+    },
+    {
+      "id": "check-tick",
+      "name": "Check tick",
+      "group": "Reactions",
+      "piece": "lottie/check-tick",
+      "description": "A leaf-green disc grows inside a drawn ring and the tick writes itself: done, yes, packed."
+    },
+    {
+      "id": "pin-drop",
+      "name": "Pin drop",
+      "group": "Reactions",
+      "piece": "lottie/pin-drop",
+      "description": "A map pin glides down onto its shadow and a ring spreads out: location, “we are here”."
+    },
+    {
+      "id": "sprig-grow",
+      "name": "Sprig grow",
+      "group": "Nature",
+      "piece": "lottie/sprig-grow",
+      "description": "A stem draws upward and six leaves unfold in turn: growth, habits, a fresh start."
+    },
+    {
+      "id": "sun-turn",
+      "name": "Sun turn",
+      "group": "Nature",
+      "piece": "lottie/sun-turn",
+      "description": "A warm sun with slowly turning rays and a breathing glow (loop): morning, good weather, energy."
+    },
+    {
+      "id": "coffee-steam",
+      "name": "Coffee steam",
+      "group": "Nature",
+      "piece": "lottie/coffee-steam",
+      "description": "A clay cup on a saucer with wisps of steam rising (loop): mornings, breaks, routines."
+    },
+    {
+      "id": "sparkles",
+      "name": "Sparkles",
+      "group": "Backgrounds",
+      "piece": "lottie/sparkles",
+      "description": "Four-point sparkles twinkling in the theme colours (loop): new, clean, a little magic."
+    },
+    {
+      "id": "blob-breathe",
+      "name": "Blob breathe",
+      "group": "Backgrounds",
+      "piece": "lottie/blob-breathe",
+      "description": "Three soft nested blobs slowly turning and changing shape (loop): calm ambient backdrop."
+    },
+    {
+      "id": "petal-drift",
+      "name": "Petal drift",
+      "group": "Backgrounds",
+      "piece": "lottie/petal-drift",
+      "description": "Petals and leaves drifting down and swaying (loop): gentle ambient motion."
+    }
+  ]
+}

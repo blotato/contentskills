@@ -1,0 +1,38 @@
+{
+  "id": "futuristic",
+  "title": "Futuristic",
+  "summary": "A sci-fi interface look: thin glowing line-work, notched frames, corner brackets and small mono readouts in cyan with magenta and amber accents.",
+  "categories": [
+    "hud",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "800 20px Orbitron",
+    "700 20px Rajdhani",
+    "20px \"Share Tech Mono\"",
+    "900 20px Tektur"
+  ],
+  "look": {"surface":"#04070c","ink":"#e9fcff","dim":"#6c93a8","line":"#17b9cf","accent":"#3ef0ff","accent2":"#ff3fa4","head":"Orbitron","headWeight":800,"body":"Rajdhani","mono":"Share Tech Mono","card":"outline","radius":6},
+  "colors": {
+    "bg": "#04070c",
+    "cyan": "#3ef0ff",
+    "teal": "#17b9cf",
+    "magenta": "#ff3fa4",
+    "amber": "#ffb300",
+    "white": "#e9fcff",
+    "dim": "#6c93a8"
+  },
+  "frame": {
+    "background": "#04070c",
+    "headingFont": "Orbitron",
+    "headingColor": "#e9fcff"
+  }
+}

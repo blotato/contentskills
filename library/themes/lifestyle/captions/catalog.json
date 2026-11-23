@@ -1,0 +1,41 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Seven caption styles in the theme look, playing over the sample clip with its real word timings. Words fade up softly as they are spoken; nothing pops or bounces.",
+  "usage": "In a storyboard: {\"captions\": \"soft-word\"}. Over footage use the cream styles (soft-word is the theme default; wide-caps, handwritten, serif-note, big-word). On the theme's pale paper cards (shot storyboards built from title cards and diagrams) cream text disappears: use \"ink-pill\" or \"paper-slip\" there. Styles: library/themes/lifestyle/captions/styles.js.",
+  "groups": [
+    "On footage",
+    "On paper",
+    "Build-up"
+  ],
+  "items": [
+    {
+      "id": "soft-word",
+      "group": "On footage"
+    },
+    {
+      "id": "wide-caps",
+      "group": "On footage"
+    },
+    {
+      "id": "handwritten",
+      "group": "On footage"
+    },
+    {
+      "id": "paper-slip",
+      "group": "On paper"
+    },
+    {
+      "id": "ink-pill",
+      "group": "On paper"
+    },
+    {
+      "id": "serif-note",
+      "group": "Build-up"
+    },
+    {
+      "id": "big-word",
+      "group": "Build-up"
+    }
+  ]
+}

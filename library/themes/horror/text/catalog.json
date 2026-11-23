@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Title cards and text overlays in the horror title-sequence look: bone-white condensed capitals, small and widely tracked on near-black, with a single rose letter. Letters switch on one at a time in random order under a failing lamp, the accent letter drops into the baseline late, and lines leave as vertical streaks.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"field\": \"slate\"}}}, or as a footage \"cutaway\". Fields: slate, void, cold, blood, mist (field and colour names from other themes are mapped onto these). Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"LISTEN\", \"y\": 330}}. Every word, colour and position is a prop. Kit: library/themes/horror/kit.js. Files: library/themes/horror/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A headline switching on letter by letter in random order under a failing lamp, with a tracked line above, a note and one rose letter per line.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two words stacked either side of a hairline that draws itself across the dark; the second word arrives late.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Whisper wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Rows of the same few phrases drifting past each other, barely lit, one row at a time coming up to full brightness.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "A sentence assembling itself out of the dark letter by letter; the words you pick come up in rose.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "One large figure rolling through wrong digits before it settles, with a tracked line above and a label below.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Transcript quote",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quotation typed out on a worn typewriter beside a thin rose rule, then who said it.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Case list",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A numbered list read off one line at a time; the current line is bright, the earlier ones fall back to grey.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two accounts one above the other, split by a hairline: one lit cold, one lit dark red.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A chapter card: the number huge and barely there in outline, behind a small tracked line and the title.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Film-leader countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Numbers cutting in under lamp flashes inside a thin ring with a sweeping hand, then the go word.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The sign-off on black: the lines come up while a lamp behind them catches and fails, then the handle in rose.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One word over the footage, switching on in a pool of shadow and leaving as vertical streaks.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Scratched highlight",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A sentence over the footage; the marked words turn rose and a rough line is scratched under them.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "Names the speaker: a short rose bar, the name in tracked capitals and the role beneath.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "Tracked capitals running up one edge of the frame beside a hairline.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Crawl band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A dark band with a line of capitals crawling through it between two hairlines.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Four small tracked labels in the corners, each by a short tick, stuttering on one after another.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Exhibit frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "An unsteady thin border with corner ticks, a typewritten label tab and a caption, for an inset picture.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Rubber stamp",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A worn round stamp thumped onto the footage, with a word across it and small text round the ring.",
+      "over": true
+    }
+  ]
+}

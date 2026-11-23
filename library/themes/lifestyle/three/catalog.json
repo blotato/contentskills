@@ -1,0 +1,62 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D as a sunlit paper tabletop: matte pastel forms under soft daylight with blurred contact shadows on the theme’s mint-cream paper — pebbles, an arch still life, photo prints, ribbons, petals, a sunrise and a soft bar chart. Everything glides into place and keeps drifting.",
+  "usage": "{\"piece\": \"three/arch-still-life\"}; explainers take data: {\"piece\": \"three/soft-bars\", \"props\": {\"items\": [{\"label\": \"A\", \"value\": 3}]}}. Files: library/themes/lifestyle/three/pieces/ (_soft.js is the shared daylight stage, not a piece).",
+  "groups": [
+    "Objects",
+    "Backdrops",
+    "Explainers"
+  ],
+  "items": [
+    {
+      "id": "soft-pebbles",
+      "name": "Soft pebbles",
+      "group": "Objects",
+      "piece": "three/soft-pebbles",
+      "description": "Smooth pastel pebbles floating over the paper above soft shadows, bobbing and turning. Props: count."
+    },
+    {
+      "id": "arch-still-life",
+      "name": "Arch still life",
+      "group": "Objects",
+      "piece": "three/arch-still-life",
+      "description": "An arch, steps, a ball, a column and a disc settle into a tabletop still life while the camera drifts around it."
+    },
+    {
+      "id": "print-stack",
+      "name": "Print stack",
+      "group": "Objects",
+      "piece": "three/print-stack",
+      "description": "Photo prints dealt onto the paper one by one, fanning out as they land. Props: prints [scene name or image URL, ...]."
+    },
+    {
+      "id": "paper-ribbons",
+      "name": "Paper ribbons",
+      "group": "Backdrops",
+      "piece": "three/paper-ribbons",
+      "description": "Wide paper ribbons rolling slowly across the frame like cloth in a breeze (loop). Props: colors."
+    },
+    {
+      "id": "petal-field",
+      "name": "Petal field",
+      "group": "Backdrops",
+      "piece": "three/petal-field",
+      "description": "Petals and soft discs drifting down through the frame, tumbling as they go (loop). Props: count."
+    },
+    {
+      "id": "sun-horizon",
+      "name": "Sun horizon",
+      "group": "Backdrops",
+      "piece": "three/sun-horizon",
+      "description": "A warm sun lifting over soft layered hills while small clouds slide past, with a slow parallax."
+    },
+    {
+      "id": "soft-bars",
+      "name": "Soft bars",
+      "group": "Explainers",
+      "piece": "three/soft-bars",
+      "description": "A bar chart as matte rounded columns growing out of the paper, values above and names in front. Props: title, unit, max, items [{label, value}]."
+    }
+  ]
+}

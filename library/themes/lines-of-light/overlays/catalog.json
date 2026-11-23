@@ -1,0 +1,127 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through graphics in light for footage, shown over the sample clip: a red dot fires the first line, shapes open from where it touches them, red marks the cause and a blue flash the result arriving. Thin lines with a white core and red/blue echoes; a faint pool of shade sits behind text (props.shade: 0 under the theme's night look, about 1 on bright ungraded footage; 0.3 by default). By default they keep to the top, bottom and edges so the face stays clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/fire-label\", \"start\": 1.2, \"end\": 4.4, \"props\": {\"label\": \"STEP 01\", \"sub\": \"WRITE THE CAPTION\", \"y\": 420}}. Positions are in 1080×1920 frame pixels; every piece animates out before its end when the player passes `life`. viewfinder and haze can run the whole clip. Kit: library/themes/lines-of-light/kit.js. Files: library/themes/lines-of-light/overlays/pieces/.",
+  "groups": [
+    "Frame",
+    "Signals",
+    "Meters",
+    "Lists",
+    "Light"
+  ],
+  "items": [
+    {
+      "id": "viewfinder",
+      "name": "Viewfinder",
+      "group": "Frame",
+      "piece": "overlays/viewfinder",
+      "description": "A viewfinder drawn in light round the safe area: the red dot fires the first corner bracket, the other three open in turn; a label, a running clock and a note sit inside. Runs for a whole clip.",
+      "over": true
+    },
+    {
+      "id": "haze",
+      "name": "Haze finish",
+      "group": "Frame",
+      "piece": "overlays/haze",
+      "description": "The analog finish for a whole clip: footage sinks into near-black teal at the edges, faint stepped grain, two hairlines of light across the top and bottom of the safe zone.",
+      "over": true
+    },
+    {
+      "id": "face-lock",
+      "name": "Face lock",
+      "group": "Frame",
+      "piece": "overlays/face-lock",
+      "description": "Corner brackets of light that lock onto the speaker's face and follow it, a red dot at the lock, a blue flash, and a label on a rule of light above. Uses the face track.",
+      "over": true
+    },
+    {
+      "id": "fire-label",
+      "name": "Red-dot label",
+      "group": "Signals",
+      "piece": "overlays/fire-label",
+      "description": "The signature beat: a red dot fires a line down and across to a label; a rule opens under it and the label lands orange, red, white, with a mono sub-line.",
+      "over": true
+    },
+    {
+      "id": "callout",
+      "name": "Callout",
+      "group": "Signals",
+      "piece": "overlays/callout",
+      "description": "A red dot beside a label fires an elbow line to a target spot; a ring opens round the target and flashes blue, an arrowhead draws in.",
+      "over": true
+    },
+    {
+      "id": "check",
+      "name": "Tick or cross",
+      "group": "Signals",
+      "piece": "overlays/check",
+      "description": "A ring of light with a white tick that lands in a blue flash, or (mark: cross) two red strikes; a label lands below.",
+      "over": true
+    },
+    {
+      "id": "strike",
+      "name": "Struck out",
+      "group": "Signals",
+      "piece": "overlays/strike",
+      "description": "A word lands under a line of light, a red strike crosses it out, and the replacement lands below in a blue flash.",
+      "over": true
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline, struck",
+      "group": "Signals",
+      "piece": "overlays/timeline",
+      "description": "The timeline beat: the red dot fires the timeline, ruler and clips draw, a red playhead lights each clip blue, then at the cue two red strikes cross it out, it collapses into a blue flash and NO TIMELINE lands alone.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Meters",
+      "piece": "overlays/counter",
+      "description": "A figure that counts up over the footage while it lands orange to white, on a rule fired by a red dot, with a kicker above, a label below and a blue flash at the final value.",
+      "over": true
+    },
+    {
+      "id": "progress",
+      "name": "Progress meter",
+      "group": "Meters",
+      "piece": "overlays/progress",
+      "description": "A dim track of light with ticks, a bright line filling it led by a red pulse, the percentage counting in mono, a blue flash when it arrives.",
+      "over": true
+    },
+    {
+      "id": "clock",
+      "name": "Clock dial",
+      "group": "Meters",
+      "piece": "overlays/clock",
+      "description": "A dial of light with sixty ticks; a red hand sweeps round leaving a trail, then a blue flash lands the value in the middle. Sits top-right by default.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "Building list",
+      "group": "Lists",
+      "piece": "overlays/list",
+      "description": "A list that builds item by item on a spine of light: at each item's time a triple bar reaches out and the item lands with its number. The v1 rules list as an overlay.",
+      "over": true
+    },
+    {
+      "id": "sunburst",
+      "name": "Sunburst behind",
+      "group": "Light",
+      "piece": "overlays/sunburst",
+      "description": "Uneven rays fanning out across the upper half from behind the speaker's head, starting well outside the face; follows the face when tracked.",
+      "over": true
+    },
+    {
+      "id": "horizon",
+      "name": "Horizon and sun",
+      "group": "Light",
+      "piece": "overlays/horizon",
+      "description": "A horizon line opening from the centre, a setting sun rising as an arc of light with strands across it, a fan of rays and dashed reflections. Placed clear of the face when tracked: under the chin if the sun fits, otherwise above the head (y sets it by hand).",
+      "over": true
+    }
+  ]
+}

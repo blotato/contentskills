@@ -1,0 +1,21 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Data diagrams printed on a cream comic panel: flat primary colours with Ben-Day shading, thick ink outlines and hard shadows, titles shouted in inked lettering with the unit in a yellow caption box. Bars punch out and overshoot, numbers count up, bursts pop on the value that matters. Use them full-screen as cutaways, or pass \"clear\": true to float them over footage as a paper sheet.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"…\", \"unit\": \"…\", \"items\": [{\"label\": \"A\", \"value\": 3}]}}. Every label, number and colour is a prop; \"accent\" picks the panel colour (paper by default). Files: library/themes/comic/d3/pieces/ (_card.js is the shared card, not a piece).",
+  "groups": ["Charts", "Comparisons", "Stories", "Numbers"],
+  "items": [
+    {"id": "bar-chart", "name": "Bar chart", "group": "Charts", "piece": "d3/bar-chart", "description": "Halftone-shaded bars shoot up from an ink baseline and overshoot; a burst pops behind the tallest."},
+    {"id": "line-chart", "name": "Line chart", "group": "Charts", "piece": "d3/line-chart", "description": "A thick inked trend line drawn left to right over halftone, with a speech balloon calling out the last value."},
+    {"id": "donut", "name": "Donut", "group": "Charts", "piece": "d3/donut", "description": "Slices sweep round an inked ring, the biggest jumps out and its share is shouted in the hole, with a key beside it."},
+    {"id": "ranking", "name": "Ranking", "group": "Charts", "piece": "d3/ranking", "description": "A league table: numbered discs pop, slabs punch out to the right and values count up at their tips."},
+    {"id": "versus", "name": "Versus", "group": "Comparisons", "piece": "d3/versus", "description": "A red panel and a blue panel whip in from each side with counting numbers and a VS burst on the seam."},
+    {"id": "funnel", "name": "Funnel", "group": "Comparisons", "piece": "d3/funnel", "description": "Inked slabs drop into a funnel, each with the share that is left shouted inside and the count beside it."},
+    {"id": "gauge", "name": "Gauge", "group": "Comparisons", "piece": "d3/gauge", "description": "A three-zone dial; the needle whips round, overshoots and quivers on the reading, and a caption names the zone."},
+    {"id": "timeline", "name": "Timeline", "group": "Stories", "piece": "d3/timeline", "description": "An ink line runs across the panel while discs, caption boxes and shouted dates pop above and below it in turn."},
+    {"id": "steps", "name": "Steps", "group": "Stories", "piece": "d3/steps", "description": "A how-to as a page of numbered, crooked colour panels that pop on in reading order."},
+    {"id": "node-graph", "name": "Hub and spokes", "group": "Stories", "piece": "d3/node-graph", "description": "A burst in the middle with labelled slabs popping out around it on ink lines: one thing feeding many."},
+    {"id": "pictogram", "name": "Pictogram", "group": "Numbers", "piece": "d3/pictogram", "description": "Rows of inked figures pop on, the counted ones in colour and bouncing, with “7 out of 10” shouted underneath."},
+    {"id": "big-number", "name": "Big number", "group": "Numbers", "piece": "d3/big-number", "description": "Zoom lines, a two-colour burst and one number counting up inside it, with a slab label and a balloon aside."}
+  ]
+}

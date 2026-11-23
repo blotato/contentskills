@@ -1,0 +1,97 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Calm paper diagrams for everyday subjects: arch bars, a soft trend line, donut, before-and-after, a seasons wheel and breathing bubbles; planners (habit week, routine, checklist, calendar) and comparisons (star ratings, prices). They fade up, grow and draw on softly, with handwritten notes in the accent colour, then keep drifting. Use them full-screen as cutaways, or pass \"clear\": true to float the card as a paper sheet over footage.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"…\", \"unit\": \"…\", \"items\": […], \"accent\": \"leaf\"}}. accent: leaf, clay, teal or sun. Sample data is illustrative. Files: library/themes/lifestyle/d3/pieces/ (_local.js holds two shared motion helpers, not a piece).",
+  "groups": [
+    "Charts",
+    "Planners",
+    "Compare"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Arch-topped bars grow from a hairline; the tallest takes the accent and a handwritten note with an arrow."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "One soft line draws across a faint colour wash, dots land as it passes and a note points at the peak."
+    },
+    {
+      "id": "donut",
+      "name": "Donut",
+      "group": "Charts",
+      "piece": "d3/donut",
+      "description": "A ring sweeps round in soft colours with a big number in the middle and a legend beside it: a day, a budget, a plate."
+    },
+    {
+      "id": "slope",
+      "name": "Before and after",
+      "group": "Charts",
+      "piece": "d3/slope",
+      "description": "Two columns joined by lines that draw across; what rose takes the accent, what fell stays quiet."
+    },
+    {
+      "id": "seasons",
+      "name": "Seasons wheel",
+      "group": "Charts",
+      "piece": "d3/seasons",
+      "description": "The year as a ring of twelve leaves, each grown to its month's value and coloured by season."
+    },
+    {
+      "id": "bubbles",
+      "name": "Soft bubbles",
+      "group": "Charts",
+      "piece": "d3/bubbles",
+      "description": "Breathing blobs sized by value and packed together: what is in the bag, the bowl or the budget."
+    },
+    {
+      "id": "habit-tracker",
+      "name": "Habit tracker",
+      "group": "Planners",
+      "piece": "d3/habit-tracker",
+      "description": "A week of habits: done days fill and tick one after another, missed days stay open, each row totals up."
+    },
+    {
+      "id": "routine-timeline",
+      "name": "Routine timeline",
+      "group": "Planners",
+      "piece": "d3/routine-timeline",
+      "description": "A routine down one line: heavy times on the left, steps on the right, a handwritten aside on the one that matters."
+    },
+    {
+      "id": "steps",
+      "name": "Checklist progress",
+      "group": "Planners",
+      "piece": "d3/steps",
+      "description": "Steps tick themselves off while a progress bar fills and a big count keeps up. `times` ticks each on its word."
+    },
+    {
+      "id": "calendar",
+      "name": "Calendar month",
+      "group": "Planners",
+      "piece": "d3/calendar",
+      "description": "A month at a glance: marked days fill in, a run of days joins into one soft pill and a note points at it."
+    },
+    {
+      "id": "rating-bars",
+      "name": "Star ratings",
+      "group": "Compare",
+      "piece": "d3/rating-bars",
+      "description": "Scores out of five as rows of stars that fill to the exact score; the best row takes the accent."
+    },
+    {
+      "id": "price-compare",
+      "name": "Price compare",
+      "group": "Compare",
+      "piece": "d3/price-compare",
+      "description": "Three options as paper slips with heavy prices and ticked points; the recommended one is inked dark and tagged."
+    }
+  ]
+}

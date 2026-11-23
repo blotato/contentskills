@@ -1,0 +1,196 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Poster and photocopy lettering: heavy grotesque and extra-wide capitals, tall condensed caps, battered typewriters, marker handwriting and a few pre-wrecked stencil faces. All bundled locally with open licences.",
+  "usage": "The theme uses Montserrat Black for headings, Unbounded for extra-wide words, Anton for condensed lines and captions, Special Elite for labels and Permanent Marker for handwriting. The others are alternates.",
+  "groups": [
+    "Headline",
+    "Typewriter",
+    "Hand",
+    "Distressed",
+    "Small print"
+  ],
+  "items": [
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "file": "files/Montserrat-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        500,
+        600,
+        900
+      ],
+      "note": "Theme heading face at Black (900): the heavy grotesque capitals of a street poster. At 500–600 it is the small print.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "unbounded",
+      "family": "Unbounded",
+      "file": "files/Unbounded-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        400,
+        900
+      ],
+      "note": "Extra-wide black capitals for one or two huge words; pairs with Montserrat on a second line.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Tall condensed poster caps for long lines, numbers and caption words; takes the worn-print filter well.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "archivo-black",
+      "family": "Archivo Black",
+      "file": "files/ArchivoBlack-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "A squarer heavy grotesque; alternate heading face.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Lighter all-caps poster face for sublines beside Anton.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        300,
+        500,
+        700
+      ],
+      "note": "Condensed gothic with a weight range, for labels that must fit a narrow strip.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "special-elite",
+      "family": "Special Elite",
+      "file": "files/SpecialElite-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "Theme label face: a battered typewriter for tags, dates, footnotes and typed-on lines.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "courier-prime",
+      "family": "Courier Prime",
+      "file": "files/CourierPrime-Bold.ttf",
+      "group": "Typewriter",
+      "weights": [
+        700
+      ],
+      "note": "A clean bold typewriter when Special Elite is too rough to read small.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "cutive-mono",
+      "family": "Cutive Mono",
+      "file": "files/CutiveMono-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "Thin old typewriter face for long captions and form-style labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "permanent-marker",
+      "family": "Permanent Marker",
+      "file": "files/PermanentMarker-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "Theme handwriting: fat marker for scrawled notes, arrows labels and sign-offs.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "rock-salt",
+      "family": "Rock Salt",
+      "file": "files/RockSalt-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "Scratchy pen handwriting for margins and annotations.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "rubik-spray-paint",
+      "family": "Rubik Spray Paint",
+      "file": "files/RubikSprayPaint-Regular.ttf",
+      "group": "Distressed",
+      "weights": [
+        400
+      ],
+      "note": "Stencil-sprayed capitals with overspray; one word at a time.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "rubik-dirt",
+      "family": "Rubik Dirt",
+      "file": "files/RubikDirt-Regular.ttf",
+      "group": "Distressed",
+      "weights": [
+        400
+      ],
+      "note": "Heavy caps already eaten by dirt, for a single wrecked word.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "stardos-stencil",
+      "family": "Stardos Stencil",
+      "file": "files/StardosStencil-Bold.ttf",
+      "group": "Distressed",
+      "weights": [
+        700
+      ],
+      "note": "Crate stencil for stamps and shipping-mark labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "black-ops-one",
+      "family": "Black Ops One",
+      "file": "files/BlackOpsOne-Regular.ttf",
+      "group": "Distressed",
+      "weights": [
+        400
+      ],
+      "note": "Wide military stencil; alternate stamp face.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "cormorant-sc",
+      "family": "Cormorant SC",
+      "file": "files/CormorantSC-Bold.ttf",
+      "group": "Small print",
+      "weights": [
+        700
+      ],
+      "note": "Small-caps serif for the tiny centred paragraph under a big word.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

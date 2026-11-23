@@ -1,0 +1,263 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Archive-film treatments shown on the sample clip: a silver print as the base look, sepia, paper and newsprint looks, film wear (grain, scratches, gate weave, flicker, burnt corners), cold light leaks and a crimson wash for emphasis, and splice flashes and dips for cuts. Fourteen are the theme's own (effects/theme_effects.py). Previews run at full strength; use less in a video.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"silver_print\", \"amount\": 0.85}}} and {\"name\": \"splice_flash\", \"at\": 2.4, \"seconds\": 0.25, \"amount\": 0.6}. On a shot candidate: {\"effect\": {\"name\": \"old_film\", \"amount\": 0.6, \"where\": \"all\"}}. Theme effects: library/themes/historical/effects/theme_effects.py; shared engine: library/_shared/effects_engine.py (OpenCV).",
+  "groups": [
+    "Look",
+    "Wear",
+    "Light",
+    "Cuts",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "silver_print",
+      "name": "silver print",
+      "group": "Look",
+      "src": "clips/silver_print.mp4",
+      "portrait": true,
+      "description": "The theme base look: a silver black-and-white print with a cool cast, lifted blacks and firm contrast. Use 0.8–1 on footage."
+    },
+    {
+      "id": "sepia_tone",
+      "name": "sepia tone",
+      "group": "Look",
+      "src": "clips/sepia_tone.mp4",
+      "portrait": true,
+      "description": "A warm brown albumen-print tone, for older eras or a flashback."
+    },
+    {
+      "id": "old_film",
+      "name": "old film",
+      "group": "Look",
+      "src": "clips/old_film.mp4",
+      "portrait": true,
+      "description": "Everything at once: half-drained colour, coarse grain, dust, hairline scratches, lamp flicker and dark corners."
+    },
+    {
+      "id": "paper_print",
+      "name": "paper print",
+      "group": "Look",
+      "src": "clips/paper_print.mp4",
+      "portrait": true,
+      "description": "The frame becomes a photographic print lying on the dark table: silver-toned, with a mottled paper border and a slight tilt."
+    },
+    {
+      "id": "newsprint",
+      "name": "newsprint",
+      "group": "Look",
+      "src": "clips/newsprint.mp4",
+      "portrait": true,
+      "description": "Printed in a newspaper: a coarse ink halftone on yellowed paper."
+    },
+    {
+      "id": "film_grain",
+      "name": "film grain",
+      "group": "Wear",
+      "src": "clips/film_grain.mp4",
+      "portrait": true,
+      "description": "Coarse silver grain that changes twelve times a second."
+    },
+    {
+      "id": "film_scratches",
+      "name": "film scratches",
+      "group": "Wear",
+      "src": "clips/film_scratches.mp4",
+      "portrait": true,
+      "description": "Hairline scratches that wander sideways, dust specks and the odd hair in the gate."
+    },
+    {
+      "id": "gate_weave",
+      "name": "gate weave",
+      "group": "Wear",
+      "src": "clips/gate_weave.mp4",
+      "portrait": true,
+      "description": "The picture wanders in the projector gate; now and then the frame line slips into view."
+    },
+    {
+      "id": "projector_flicker",
+      "name": "projector flicker",
+      "group": "Wear",
+      "src": "clips/projector_flicker.mp4",
+      "portrait": true,
+      "description": "Lamp flicker: brightness steps unevenly, with a soft darker band drifting down."
+    },
+    {
+      "id": "burnt_vignette",
+      "name": "burnt vignette",
+      "group": "Wear",
+      "src": "clips/burnt_vignette.mp4",
+      "portrait": true,
+      "description": "Heavy, uneven dark corners with a warm-black edge."
+    },
+    {
+      "id": "blue_leak",
+      "name": "blue leak",
+      "group": "Light",
+      "src": "clips/blue_leak.mp4",
+      "portrait": true,
+      "description": "A cold steel-blue light leak crossing the frame once over the length of the effect."
+    },
+    {
+      "id": "crimson_wash",
+      "name": "crimson wash",
+      "group": "Light",
+      "src": "clips/crimson_wash.mp4",
+      "portrait": true,
+      "description": "The theme's one colour takes the frame: a black-to-crimson-to-bone duotone, for a beat of emphasis."
+    },
+    {
+      "id": "splice_flash",
+      "name": "splice flash",
+      "group": "Cuts",
+      "src": "clips/splice_flash.mp4",
+      "portrait": true,
+      "description": "A film splice: the exposure pops toward white, the picture jumps and the edges burn warm. Put it on a cut."
+    },
+    {
+      "id": "dip_to_dark",
+      "name": "dip to dark",
+      "group": "Cuts",
+      "src": "clips/dip_to_dark.mp4",
+      "portrait": true,
+      "description": "The lamp dims: the picture sinks to near-black from the corners inward. Use \"out\" before a cut or \"in\" after one."
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "group": "Wear",
+      "src": "clips/vignette.mp4",
+      "portrait": true,
+      "description": "Darkens the corners to hold the eye in the middle (shared engine)."
+    },
+    {
+      "id": "halation",
+      "name": "halation",
+      "group": "Light",
+      "src": "clips/halation.mp4",
+      "portrait": true,
+      "description": "Bright areas glow red-orange, like light bleeding through film (shared engine)."
+    },
+    {
+      "id": "film_burn",
+      "name": "film burn",
+      "group": "Light",
+      "src": "clips/film_burn.mp4",
+      "portrait": true,
+      "description": "A warm burn creeping in from the edge of the frame (shared engine)."
+    },
+    {
+      "id": "letterbox",
+      "name": "letterbox",
+      "group": "Look",
+      "src": "clips/letterbox.mp4",
+      "portrait": true,
+      "description": "Cinema bars close in from top and bottom (shared engine)."
+    },
+    {
+      "id": "focus",
+      "name": "focus",
+      "group": "Cuts",
+      "src": "clips/focus.mp4",
+      "portrait": true,
+      "description": "The lens racks out of focus and back (shared engine)."
+    },
+    {
+      "id": "camera_shake",
+      "name": "camera shake",
+      "group": "Cuts",
+      "src": "clips/camera_shake.mp4",
+      "portrait": true,
+      "description": "A handheld jolt (shared engine)."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions for a comic page, shown going from the sample clip to a comic panel: six of the theme's own (a starburst iris, a red and yellow Ben-Day dot wipe, a black ink slash, a gutter split into panels, a whip smear with speed lines, a page flip on paper stock) and nine from the shared set, drawn in the theme's colours (ink outlines and paper backs on the paper gutter).",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"burst_iris\", \"seconds\": 0.6}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"gutter_split\", \"at\": 7.8, \"seconds\": 0.5}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Impact",
+    "Panels",
+    "Page"
+  ],
+  "items": [
+    {
+      "id": "burst_iris",
+      "name": "burst iris",
+      "group": "Impact",
+      "src": "clips/burst_iris.mp4",
+      "portrait": true,
+      "description": "A jagged burst pops open from the middle: ink outline, a yellow star, a red star inside it, then the next shot, with action lines shooting out. The theme default for a hit."
+    },
+    {
+      "id": "benday_wipe",
+      "name": "Ben-Day wipe",
+      "group": "Impact",
+      "src": "clips/benday_wipe.mp4",
+      "portrait": true,
+      "description": "Ben-Day dots sweep across on a 45-degree screen: yellow dots with an ink rim swell until they join, red dots swell inside them, and the next shot grows out of each."
+    },
+    {
+      "id": "ink_slash",
+      "name": "ink slash",
+      "group": "Impact",
+      "src": "clips/ink_slash.mp4",
+      "portrait": true,
+      "description": "A slash of black ink whips down the diagonal with speed teeth and flung drops, a dotted yellow stripe riding in it; the next shot is behind it."
+    },
+    {
+      "id": "whip_smear",
+      "name": "whip smear",
+      "group": "Impact",
+      "src": "clips/whip_smear.mp4",
+      "portrait": true,
+      "description": "A whip pan: the shot is thrown off sideways, skewed and smeared, the next thrown in behind it, with ink and paper speed lines."
+    },
+    {
+      "id": "zoom_through",
+      "name": "zoom through",
+      "group": "Impact",
+      "src": "clips/zoom_through.mp4",
+      "portrait": true,
+      "description": "A crash zoom: the camera rushes through the picture into the next one, the whip between panels."
+    },
+    {
+      "id": "shatter",
+      "name": "shatter",
+      "group": "Impact",
+      "src": "clips/shatter.mp4",
+      "portrait": true,
+      "description": "The picture breaks into pieces that tumble toward the camera, centre first: the hit that ends a scene."
+    },
+    {
+      "id": "gutter_split",
+      "name": "gutter split",
+      "group": "Panels",
+      "src": "clips/gutter_split.mp4",
+      "portrait": true,
+      "description": "The frame comes apart along two angled gutters into three inked panels that slide off to alternate sides, each throwing a hard ink shadow."
+    },
+    {
+      "id": "panel_wipe",
+      "name": "panel wipe",
+      "group": "Panels",
+      "src": "clips/panel_wipe.mp4",
+      "portrait": true,
+      "description": "An angled panel edge crosses the frame: ink line, paper gutter, ink line, with the old panel nudged aside."
+    },
+    {
+      "id": "panel_slide",
+      "name": "panel slide",
+      "group": "Panels",
+      "src": "clips/panel_slide.mp4",
+      "portrait": true,
+      "description": "Four angled panels of the next shot slide in from alternating sides, each with its gutter and ink outline."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slice slide",
+      "group": "Panels",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "The picture is cut into strips that tilt and slide off to alternate sides, like a page torn into tiers."
+    },
+    {
+      "id": "tile_flip",
+      "name": "tile flip",
+      "group": "Panels",
+      "src": "clips/tile_flip.mp4",
+      "portrait": true,
+      "description": "A grid of panels turns over in a diagonal wave; the next shot is printed on the back of each."
+    },
+    {
+      "id": "cube_spin",
+      "name": "cube spin",
+      "group": "Panels",
+      "src": "clips/cube_spin.mp4",
+      "portrait": true,
+      "description": "The two shots are faces of a box that turns a quarter of the way round on the paper page, inked along its edges."
+    },
+    {
+      "id": "page_flip",
+      "name": "page flip",
+      "group": "Page",
+      "src": "clips/page_flip.mp4",
+      "portrait": true,
+      "description": "The page flips up from its top edge toward the camera, bottom edge curling, inked round its rim, paper on the back."
+    },
+    {
+      "id": "page_turn",
+      "name": "page turn",
+      "group": "Page",
+      "src": "clips/page_turn.mp4",
+      "portrait": true,
+      "description": "The page lifts from its corner, curls over and folds away, leaving the next page underneath."
+    },
+    {
+      "id": "swing_doors",
+      "name": "swing doors",
+      "group": "Page",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The picture splits down the middle and opens like a gatefold spread onto the next shot."
+    }
+  ]
+}

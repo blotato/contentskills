@@ -1,0 +1,231 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Light added to a dark room, shown on the sample clip under the theme's night look (as footage in this theme normally is): the night look itself, the red/blue echo split, the red-dot origin flare, the blue result flash, a sweeping line of light, a hard-lock frame, light trails, lilac bloom and scanline haze, plus a few quiet shared treatments. Previews run at full strength; use less in a video.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"night\", \"amount\": 0.9}}} and {\"name\": \"origin_flare\", \"at\": 2.4, \"seconds\": 0.6, \"amount\": 0.9}. On a shot candidate: {\"effect\": {\"name\": \"rgb_echo\", \"amount\": 0.8, \"where\": \"in\", \"seconds\": 0.4}}. This theme's own effects: library/themes/lines-of-light/effects/theme_effects.py; grain, vignette, halation, chromatic, scanlines and zoom_blur come from library/_shared/effects_engine.py.",
+  "groups": [
+    "Look",
+    "Light",
+    "Echo",
+    "Texture",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "night",
+      "name": "night",
+      "group": "Look",
+      "src": "clips/night.mp4",
+      "portrait": true,
+      "description": "The theme look (footage.look, about 0.9): the room drops to near-black deep teal with a soft vignette while a centre-weighted falloff keeps the speaker lit, cool and readable, so lines of light read like v1."
+    },
+    {
+      "id": "dim",
+      "name": "Dim",
+      "group": "Look",
+      "description": "Turns the footage's brightness down by the amount (0-1; 1 = 85% darker), toward the theme's near-black teal. No other change, so it stacks with the night look, lighting effects and anything else; use it under overlays on a bright room or across a whole clip.",
+      "src": "clips/dim.mp4",
+      "portrait": true
+    },
+    {
+      "id": "lilac_bloom",
+      "name": "lilac bloom",
+      "group": "Look",
+      "src": "clips/lilac_bloom.mp4",
+      "portrait": true,
+      "description": "Highlights bloom into the theme's cold lilac halo and shadows sink to teal. Holds for a whole shot."
+    },
+    {
+      "id": "origin_flare",
+      "name": "origin flare",
+      "group": "Light",
+      "src": "clips/origin_flare.mp4",
+      "portrait": true,
+      "description": "The red dot fires: a red flare blooms from the top-left origin with thin rays fanning into the frame. Red = the cause."
+    },
+    {
+      "id": "result_flash",
+      "name": "result flash",
+      "group": "Light",
+      "src": "clips/result_flash.mp4",
+      "portrait": true,
+      "description": "Blue = the result arriving: a soft blue flash swells from the bottom middle and a thin ring of light opens out of it."
+    },
+    {
+      "id": "line_sweep",
+      "name": "line sweep",
+      "group": "Light",
+      "src": "clips/line_sweep.mp4",
+      "portrait": true,
+      "description": "One line of light (white core, red echo above, blue below) sweeps down the frame and lights what it passes."
+    },
+    {
+      "id": "lock_flash",
+      "name": "lock flash",
+      "group": "Light",
+      "src": "clips/lock_flash.mp4",
+      "portrait": true,
+      "description": "The hard lock: a split red/blue frame of light snaps on round the picture and dims. Use 'in' on a cut."
+    },
+    {
+      "id": "rgb_echo",
+      "name": "rgb echo",
+      "group": "Echo",
+      "src": "clips/rgb_echo.mp4",
+      "portrait": true,
+      "description": "The style's split on the picture itself: bright edges get a red echo one way, a blue echo the other and a white-lilac core."
+    },
+    {
+      "id": "light_trails",
+      "name": "light trails",
+      "group": "Echo",
+      "src": "clips/light_trails.mp4",
+      "portrait": true,
+      "description": "Afterimages: the brightest parts leave fading red echoes behind and blue ahead, like a line still moving after the lock."
+    },
+    {
+      "id": "scan_haze",
+      "name": "scan haze",
+      "group": "Texture",
+      "src": "clips/scan_haze.mp4",
+      "portrait": true,
+      "description": "Teal haze drifting over fine scanlines with a slow bright scan band: the screen the lines are drawn on. Quiet enough to hold."
+    },
+    {
+      "id": "halation",
+      "name": "halation",
+      "group": "Texture",
+      "src": "clips/halation.mp4",
+      "portrait": true,
+      "description": "Shared: a soft glow bleeding off the brightest areas."
+    },
+    {
+      "id": "chromatic",
+      "name": "chromatic",
+      "group": "Echo",
+      "src": "clips/chromatic.mp4",
+      "portrait": true,
+      "description": "Shared: colour channels pull apart toward the edges of the frame."
+    },
+    {
+      "id": "zoom_blur",
+      "name": "zoom blur",
+      "group": "Light",
+      "src": "clips/zoom_blur.mp4",
+      "portrait": true,
+      "description": "Shared: a radial streak toward the centre, for a push on a turn in the argument."
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "group": "Texture",
+      "src": "clips/vignette.mp4",
+      "portrait": true,
+      "description": "Shared: darker corners, the light pooling in the middle."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Texture",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Shared: fine film grain, as on the theme's title cards."
+    },
+    {
+      "id": "scanlines",
+      "name": "scanlines",
+      "group": "Texture",
+      "src": "clips/scanlines.mp4",
+      "portrait": true,
+      "description": "Shared: plain horizontal scanlines."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

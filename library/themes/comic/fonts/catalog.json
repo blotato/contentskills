@@ -1,0 +1,156 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Comic lettering: slanted shout caps for big words, condensed caps for plates, and rounded hand lettering for balloons and caption boxes. All bundled locally with open licences (licence texts sit beside the files).",
+  "usage": "The theme uses Bangers for headlines, sound effects and numbers, Bebas Neue for words on plates, and Comic Neue bold caps for balloons and captions. The others are alternates.",
+  "groups": [
+    "Lettering",
+    "Plates",
+    "Balloons"
+  ],
+  "items": [
+    {
+      "id": "bangers",
+      "family": "Bangers",
+      "file": "files/Bangers-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Theme headline face: the shouted, slanted comic caps used for every big word, sound effect and number.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Plates",
+      "weights": [
+        400
+      ],
+      "note": "Theme plate face: clean condensed caps for words on slabs, labels and axes.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "comic-neue",
+      "family": "Comic Neue",
+      "file": "files/ComicNeue-Bold.ttf",
+      "group": "Balloons",
+      "weights": [
+        700
+      ],
+      "note": "Theme balloon face: bold rounded hand, set in caps for speech balloons and caption boxes.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "walter-turncoat",
+      "family": "Walter Turncoat",
+      "file": "files/WalterTurncoat-Regular.ttf",
+      "group": "Balloons",
+      "weights": [
+        400
+      ],
+      "note": "Alternate balloon lettering with a rougher, brush-pen hand.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "luckiest-guy",
+      "family": "Luckiest Guy",
+      "file": "files/LuckiestGuy-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Fat upright cartoon caps; an alternate for sound effects.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "titan-one",
+      "family": "Titan One",
+      "file": "files/TitanOne-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Rounded heavyweight for friendly titles and big numbers.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "lilita-one",
+      "family": "Lilita One",
+      "file": "files/LilitaOne-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Soft, slightly condensed display face that reads well small.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bungee",
+      "family": "Bungee",
+      "file": "files/Bungee-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Blocky sign-painter caps for cover lines and logos.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "chewy",
+      "family": "Chewy",
+      "file": "files/Chewy-Regular.ttf",
+      "group": "Lettering",
+      "weights": [
+        400
+      ],
+      "note": "Bouncy brush lettering for lighter, funnier beats.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "boogaloo",
+      "family": "Boogaloo",
+      "file": "files/Boogaloo-Regular.ttf",
+      "group": "Balloons",
+      "weights": [
+        400
+      ],
+      "note": "Narrow mid-century lettering for long captions.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "permanent-marker",
+      "family": "Permanent Marker",
+      "file": "files/PermanentMarker-Regular.ttf",
+      "group": "Balloons",
+      "weights": [
+        400
+      ],
+      "note": "Marker scrawl for margin notes and corrections.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Plates",
+      "weights": [
+        400
+      ],
+      "note": "Very heavy condensed caps for cover headlines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "rubik-mono-one",
+      "family": "Rubik Mono One",
+      "file": "files/RubikMonoOne-Regular.ttf",
+      "group": "Plates",
+      "weights": [
+        400
+      ],
+      "note": "Wide monospaced block caps for issue numbers and prices.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

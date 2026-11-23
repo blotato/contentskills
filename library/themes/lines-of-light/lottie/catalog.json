@@ -1,0 +1,98 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Small accents drawn in lines of light, generated from code in lottie/generate.mjs: every stroke has a white core, a red echo that trails it, a blue echo that leads it and a lilac glow, screen-blended on near-black. A red dot fires the first line; results land in a blue flash. Slow eased draw-ons, hard lock, no bounce.",
+  "usage": "{\"piece\": \"lottie/red-dot-fire\"}. Files: library/themes/lines-of-light/lottie/animations/.",
+  "groups": [
+    "Cause",
+    "Result",
+    "Data",
+    "Loops"
+  ],
+  "items": [
+    {
+      "id": "red-dot-fire",
+      "name": "Red dot fire",
+      "group": "Cause",
+      "piece": "lottie/red-dot-fire",
+      "description": "The theme's opening move: a red dot blooms and fires a red line to a target; a ring opens where it lands and flashes blue, then the line retracts."
+    },
+    {
+      "id": "arrow",
+      "name": "Arrow",
+      "group": "Cause",
+      "piece": "lottie/arrow",
+      "description": "A red dot fires a line of light to the right; the arrowhead draws in and the tip lands blue."
+    },
+    {
+      "id": "underline",
+      "name": "Underline",
+      "group": "Cause",
+      "piece": "lottie/underline",
+      "description": "A red dot fires a rule of light under a line of text, ending in a tick and a blue flash."
+    },
+    {
+      "id": "check-draw",
+      "name": "Check",
+      "group": "Result",
+      "piece": "lottie/check-draw",
+      "description": "A ring opens from the top round a check that draws on, landing in a blue flash."
+    },
+    {
+      "id": "ring-open",
+      "name": "Ring open",
+      "group": "Result",
+      "piece": "lottie/ring-open",
+      "description": "Two rings of light open from opposite points with ticks round them; a blue flash fills the centre. Emphasis."
+    },
+    {
+      "id": "burst",
+      "name": "Burst",
+      "group": "Result",
+      "piece": "lottie/burst",
+      "description": "A red spark opens into a ring and twelve rays of light shoot out and retract over a blue flash."
+    },
+    {
+      "id": "sparkline",
+      "name": "Sparkline",
+      "group": "Data",
+      "piece": "lottie/sparkline",
+      "description": "A rising line of light drawn behind a red head; the last point opens a ring and flashes blue."
+    },
+    {
+      "id": "pulse-ring",
+      "name": "Pulse ring",
+      "group": "Loops",
+      "piece": "lottie/pulse-ring",
+      "description": "Rings of light expanding off a beating red dot. Loops."
+    },
+    {
+      "id": "spinner-ring",
+      "name": "Spinner ring",
+      "group": "Loops",
+      "piece": "lottie/spinner-ring",
+      "description": "A loading arc of light with a red head turning round a dim track. Loops."
+    },
+    {
+      "id": "wave",
+      "name": "Wave",
+      "group": "Loops",
+      "piece": "lottie/wave",
+      "description": "A sine wave of light drawing across and retracting over a dim baseline. Loops."
+    },
+    {
+      "id": "typing-dots",
+      "name": "Typing dots",
+      "group": "Loops",
+      "piece": "lottie/typing-dots",
+      "description": "Three rings of light swelling in turn: someone is typing. Loops."
+    },
+    {
+      "id": "stars",
+      "name": "Stars",
+      "group": "Loops",
+      "piece": "lottie/stars",
+      "description": "Four-point stars drawn in light twinkling and turning slowly. Loops."
+    }
+  ]
+}

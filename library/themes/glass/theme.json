@@ -1,0 +1,42 @@
+{
+  "id": "glass",
+  "title": "Glass",
+  "extends": "fashion",
+  "summary": "Polished frosted-glass for fast, professional talking-head edits: milky or smoked glass cards with big rounded corners, a soft sheen and a bright rim, floating over the footage; one clean sans (Inter Tight), heavy for words and light for numerals; one azure accent with iris and mint; fast smooth arrivals, punch-ins and quick zoom-blur cuts. Original work in the genre of glass product UI.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "800 20px \"Inter Tight\"",
+    "700 20px \"Inter Tight\"",
+    "600 20px \"Inter Tight\"",
+    "500 20px \"Inter Tight\"",
+    "300 20px \"Inter Tight\"",
+    "200 20px \"Inter Tight\""
+  ],
+  "look": {"surface":"#FFFFFF","ink":"#0A0F1C","dim":"#8B93A7","line":"#F3F6FB","accent":"#3D7BFF","accent2":"#8B7BFF","head":"Inter Tight","headWeight":800,"body":"Inter Tight","mono":"Inter Tight","card":"glass","radius":36},
+  "colors": {
+    "white": "#FFFFFF",
+    "frost": "#F3F6FB",
+    "ink": "#0A0F1C",
+    "coal": "#141B2B",
+    "smoke": "#8B93A7",
+    "azure": "#3D7BFF",
+    "iris": "#8B7BFF",
+    "mint": "#6FE3C4"
+  },
+  "frame": {
+    "background": "#070B16",
+    "headingFont": "Inter Tight",
+    "headingColor": "#FFFFFF"
+  }
+}

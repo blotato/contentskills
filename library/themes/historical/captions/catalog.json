@@ -1,0 +1,15 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Six caption styles in the archive look, playing over the sample clip with its real word timings: condensed capitals on crimson bars, a classic italic subtitle, typewriter on paper, heavy date-box words, brush underlines and a newsreel band.",
+  "usage": "In a storyboard: {\"captions\": \"bar-word\"}. Styles: library/themes/historical/captions/styles.js.",
+  "groups": ["Word highlight", "Build-up"],
+  "items": [
+    {"id": "bar-word", "group": "Word highlight"},
+    {"id": "brush-under", "group": "Word highlight"},
+    {"id": "subtitle", "group": "Word highlight"},
+    {"id": "newsreel", "group": "Word highlight"},
+    {"id": "typewriter", "group": "Build-up"},
+    {"id": "date-box", "group": "Build-up"}
+  ]
+}

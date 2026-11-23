@@ -1,0 +1,36 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Six caption styles in the theme look, playing over the sample clip with its real word timings: torn scraps, highlighter, typewriter strip, stamped words, ransom cut-outs and marker handwriting.",
+  "usage": "In a storyboard: {\"captions\": \"torn-word\"}. Styles: library/themes/grunge/captions/styles.js.",
+  "groups": [
+    "Word highlight",
+    "Build-up"
+  ],
+  "items": [
+    {
+      "id": "torn-word",
+      "group": "Word highlight"
+    },
+    {
+      "id": "highlighter",
+      "group": "Word highlight"
+    },
+    {
+      "id": "marker",
+      "group": "Word highlight"
+    },
+    {
+      "id": "typewriter",
+      "group": "Build-up"
+    },
+    {
+      "id": "stamp-word",
+      "group": "Build-up"
+    },
+    {
+      "id": "ransom",
+      "group": "Build-up"
+    }
+  ]
+}

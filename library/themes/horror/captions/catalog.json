@@ -1,0 +1,40 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Seven caption styles in the horror look, playing over the sample clip with its real word timings: tracked bone capitals with a rose word, stuttering titles, a typewriter, redaction bars, a whisper and tape subtitles.",
+  "usage": "In a storyboard: {\"captions\": \"bone-track\"}. Styles: library/themes/horror/captions/styles.js.",
+  "groups": [
+    "Word highlight",
+    "Build-up"
+  ],
+  "items": [
+    {
+      "id": "bone-track",
+      "group": "Word highlight"
+    },
+    {
+      "id": "tape",
+      "group": "Word highlight"
+    },
+    {
+      "id": "one-word",
+      "group": "Word highlight"
+    },
+    {
+      "id": "flicker-in",
+      "group": "Build-up"
+    },
+    {
+      "id": "typewriter",
+      "group": "Build-up"
+    },
+    {
+      "id": "redacted",
+      "group": "Build-up"
+    },
+    {
+      "id": "whisper",
+      "group": "Build-up"
+    }
+  ]
+}

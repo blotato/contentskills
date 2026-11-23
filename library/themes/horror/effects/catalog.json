@@ -1,0 +1,231 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Cold, dark and damaged treatments shown on the sample clip (over the theme's cold grade, as footage in this theme normally is): a drained base grade and night tint, vignette and fog, film and tape damage, failing light, and slow distortions. Previews run at full strength; use less in a video.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"cold_grade\", \"amount\": 0.8}}} and {\"name\": \"lamp_flicker\", \"at\": 2.4, \"seconds\": 0.6, \"amount\": 0.9}. On a shot candidate: {\"effect\": {\"name\": \"static_burst\", \"amount\": 0.8, \"where\": \"in\", \"seconds\": 0.4}}. This theme's own effects: library/themes/horror/effects/theme_effects.py; grain and camera_shake come from library/_shared/effects_engine.py.",
+  "groups": [
+    "Look",
+    "Damage",
+    "Light",
+    "Distortion",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "cold_grade",
+      "name": "cold grade",
+      "group": "Look",
+      "src": "clips/cold_grade.mp4",
+      "portrait": true,
+      "description": "The theme base look: most of the colour drained, shadows pushed teal-grey and crushed, no clean whites. Use around 0.8 on footage."
+    },
+    {
+      "id": "night_tint",
+      "name": "night tint",
+      "group": "Look",
+      "src": "clips/night_tint.mp4",
+      "portrait": true,
+      "description": "Day for night: underexposed and blue-violet, with only the brightest things left glowing."
+    },
+    {
+      "id": "heavy_vignette",
+      "name": "heavy vignette",
+      "group": "Look",
+      "src": "clips/heavy_vignette.mp4",
+      "portrait": true,
+      "description": "Darkness closing round the picture: a deep, slowly wandering vignette that leaves only the middle lit."
+    },
+    {
+      "id": "dark_fog",
+      "name": "dark fog",
+      "group": "Look",
+      "src": "clips/dark_fog.mp4",
+      "portrait": true,
+      "description": "Cold mist drifting low through the frame while the picture dims under it."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Look",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Fine film grain (shared engine)."
+    },
+    {
+      "id": "film_damage",
+      "name": "film damage",
+      "group": "Damage",
+      "src": "clips/film_damage.mp4",
+      "portrait": true,
+      "description": "Worn film stock: gate weave, exposure flutter, running scratches, dust, hairs and heavy grain."
+    },
+    {
+      "id": "vhs_tracking",
+      "name": "vhs tracking",
+      "group": "Damage",
+      "src": "clips/vhs_tracking.mp4",
+      "portrait": true,
+      "description": "A tape watched too many times: washed-out colour bleeding sideways, tracking bands that tear the picture, head-switch noise along the bottom."
+    },
+    {
+      "id": "static_burst",
+      "name": "static burst",
+      "group": "Damage",
+      "src": "clips/static_burst.mp4",
+      "portrait": true,
+      "description": "Signal loss: the picture breaks into dead-channel noise and rows tear sideways. For cuts and jolts."
+    },
+    {
+      "id": "lamp_flicker",
+      "name": "lamp flicker",
+      "group": "Light",
+      "src": "clips/lamp_flicker.mp4",
+      "portrait": true,
+      "description": "A failing bulb: the picture holds, then dips hard or cuts to near black for a frame or two, with no rhythm."
+    },
+    {
+      "id": "blackout",
+      "name": "blackout",
+      "group": "Light",
+      "src": "clips/blackout.mp4",
+      "portrait": true,
+      "description": "Hard cuts to black for a few frames at a time; more often as the amount rises."
+    },
+    {
+      "id": "cold_flash",
+      "name": "cold flash",
+      "group": "Light",
+      "src": "clips/cold_flash.mp4",
+      "portrait": true,
+      "description": "A cut flash that burns out to cold blue-grey instead of white."
+    },
+    {
+      "id": "slow_warp",
+      "name": "slow warp",
+      "group": "Distortion",
+      "src": "clips/slow_warp.mp4",
+      "portrait": true,
+      "description": "The picture breathes and bends very slowly, as if seen through old glass or deep water."
+    },
+    {
+      "id": "streak_smear",
+      "name": "streak smear",
+      "group": "Distortion",
+      "src": "clips/streak_smear.mp4",
+      "portrait": true,
+      "description": "Columns of the picture drag into long vertical streaks and thin out, the way the theme's lettering leaves."
+    },
+    {
+      "id": "mirror_seam",
+      "name": "mirror seam",
+      "group": "Distortion",
+      "src": "clips/mirror_seam.mp4",
+      "portrait": true,
+      "description": "The picture folds onto itself down the middle, so everything becomes symmetrical and wrong."
+    },
+    {
+      "id": "creep_zoom",
+      "name": "creep zoom",
+      "group": "Distortion",
+      "src": "clips/creep_zoom.mp4",
+      "portrait": true,
+      "description": "The slow push-in, with a faint hand-held tremble."
+    },
+    {
+      "id": "camera_shake",
+      "name": "camera shake",
+      "group": "Distortion",
+      "src": "clips/camera_shake.mp4",
+      "portrait": true,
+      "description": "A jolt of hand-held shake (shared engine)."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

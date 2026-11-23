@@ -1,0 +1,217 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Data diagrams in the HUD style: bars, trend lines, gauges, flow bands, treemaps, bump and candlestick charts, heat grids, networks, radial and circuit trees, a dot-matrix map, rolling counters and signal scopes. Each boots up, builds, then keeps moving. Use them full-screen as cutaways, or pass \"clear\": true to float them over footage.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"…\", \"items\": […]}}. Files: library/themes/futuristic/d3/pieces/.",
+  "groups": [
+    "Charts",
+    "Diagrams",
+    "Readouts",
+    "Signals"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Bars built from segments that light up from the baseline."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "A trend line traced by crosshairs, ending on a called-out value."
+    },
+    {
+      "id": "ring-gauge",
+      "name": "Ring gauge",
+      "group": "Charts",
+      "piece": "d3/ring-gauge",
+      "description": "Shares of a whole as arcs on a dial with the total in the centre."
+    },
+    {
+      "id": "node-graph",
+      "name": "Node graph",
+      "group": "Diagrams",
+      "piece": "d3/node-graph",
+      "description": "Process steps as linked nodes with travelling pulses."
+    },
+    {
+      "id": "radar",
+      "name": "Radar",
+      "group": "Diagrams",
+      "piece": "d3/radar",
+      "description": "A sweep that discovers labelled contacts."
+    },
+    {
+      "id": "versus",
+      "name": "Versus bars",
+      "group": "Charts",
+      "piece": "d3/versus",
+      "description": "Two contenders compared metric by metric with bars growing out from a centre spine."
+    },
+    {
+      "id": "stacked-area",
+      "name": "Stacked area",
+      "group": "Charts",
+      "piece": "d3/stacked-area",
+      "description": "Layered areas revealed by a scanning cursor that keeps reading out each layer."
+    },
+    {
+      "id": "funnel",
+      "name": "Funnel",
+      "group": "Charts",
+      "piece": "d3/funnel",
+      "description": "Stages switching on from the top while particles fall through and thin out."
+    },
+    {
+      "id": "waffle",
+      "name": "Percent grid",
+      "group": "Charts",
+      "piece": "d3/waffle",
+      "description": "A hundred cells lighting up by category, one per unit, with running totals."
+    },
+    {
+      "id": "sankey",
+      "name": "Flow bands",
+      "group": "Diagrams",
+      "piece": "d3/sankey",
+      "description": "Bands pouring from sources to destinations, carrying small packets."
+    },
+    {
+      "id": "dot-map",
+      "name": "Dot map",
+      "group": "Diagrams",
+      "piece": "d3/dot-map",
+      "description": "A stylised dot-matrix world map revealed by a scan beam, with pinging hotspots and a ranked readout."
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "group": "Diagrams",
+      "piece": "d3/timeline",
+      "description": "A playhead running down a rail, switching each milestone on as it passes."
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit",
+      "group": "Diagrams",
+      "piece": "d3/orbit",
+      "description": "Bodies circling a core on ringed orbits, trailing arcs. Loops."
+    },
+    {
+      "id": "chord",
+      "name": "Chord network",
+      "group": "Diagrams",
+      "piece": "d3/chord",
+      "description": "Members on a ring joined by ribbons, with a highlight stepping from link to link."
+    },
+    {
+      "id": "tree",
+      "name": "Circuit tree",
+      "group": "Diagrams",
+      "piece": "d3/tree",
+      "description": "A hierarchy with circuit-board elbows and packets travelling to every leaf."
+    },
+    {
+      "id": "odometer",
+      "name": "Odometer",
+      "group": "Readouts",
+      "piece": "d3/odometer",
+      "description": "One big number on rolling digit wheels that lock in one by one."
+    },
+    {
+      "id": "gauge-cluster",
+      "name": "Gauge cluster",
+      "group": "Readouts",
+      "piece": "d3/gauge-cluster",
+      "description": "One large dial and smaller ones beneath, with needles that overshoot and tremble."
+    },
+    {
+      "id": "data-table",
+      "name": "Data table",
+      "group": "Readouts",
+      "piece": "d3/data-table",
+      "description": "Rows that type themselves in: decoding names, counting numbers, status chips."
+    },
+    {
+      "id": "oscilloscope",
+      "name": "Oscilloscope",
+      "group": "Signals",
+      "piece": "d3/oscilloscope",
+      "description": "Two scrolling traces on a scope grid with a cursor reading the level. Loops."
+    },
+    {
+      "id": "spectrum",
+      "name": "Spectrum",
+      "group": "Signals",
+      "piece": "d3/spectrum",
+      "description": "Bouncing equaliser columns with falling peak caps and a reflection. Loops."
+    },
+    {
+      "id": "treemap",
+      "name": "Treemap",
+      "group": "Charts",
+      "piece": "d3/treemap",
+      "description": "A block that is cut in two again and again until every item has a cell sized by its value."
+    },
+    {
+      "id": "bump",
+      "name": "Bump chart",
+      "group": "Charts",
+      "piece": "d3/bump",
+      "description": "Rank over time with crossing lines, rank badges and each contender highlighted in turn."
+    },
+    {
+      "id": "candlestick",
+      "name": "Candlesticks",
+      "group": "Charts",
+      "piece": "d3/candlestick",
+      "description": "Candles printing one by one with a riding price tag, moving average, volume and a roaming crosshair."
+    },
+    {
+      "id": "calendar-heat",
+      "name": "Calendar heat grid",
+      "group": "Charts",
+      "piece": "d3/calendar-heat",
+      "description": "One cell per day filled by a sweeping cursor, weekly totals, and the longest run traced out."
+    },
+    {
+      "id": "parallel",
+      "name": "Parallel coordinates",
+      "group": "Charts",
+      "piece": "d3/parallel",
+      "description": "One axis per measure, one line per item; value markers glide to each item in turn."
+    },
+    {
+      "id": "spider",
+      "name": "Spider chart",
+      "group": "Charts",
+      "piece": "d3/spider",
+      "description": "Radar-area shapes pushing out corner by corner on a web, with a circling sweep."
+    },
+    {
+      "id": "network",
+      "name": "Network",
+      "group": "Diagrams",
+      "piece": "d3/network",
+      "description": "A force-laid-out network that grows outward from one node, then drifts while packets run the links."
+    },
+    {
+      "id": "radial-tree",
+      "name": "Radial tree",
+      "group": "Diagrams",
+      "piece": "d3/radial-tree",
+      "description": "Branches leaving a hub along spokes and arcs, with a sweep lighting each leaf."
+    },
+    {
+      "id": "bar-city",
+      "name": "3D bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-city",
+      "description": "A grid of glowing columns in 3D on a floor plane while the camera circles it; columns rise in a ripple from the centre, then breathe on a wave. Full frame, made for a cutaway. Props: title, unit, size (columns per side), turn (degrees the camera circles), seed."
+    }
+  ]
+}

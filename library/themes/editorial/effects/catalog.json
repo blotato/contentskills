@@ -1,0 +1,223 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Smooth footage treatments for a clean magazine film, shown on the sample clip under the theme grade: a grade measured on bright daylight footage (cool paper whites held under clipping, aubergine shadows, rich reds and skin), a darker moody grade that can wipe itself on behind a paper hairline, a slow push, a glide that lands a cut with motion blur, a focus pull, a speed-ramp swell, one band of warm light and a soft crimson-and-blue siren glow, rotating red and blue siren beams, a clean low-key magazine-cover grade in three tones, plus paper grain, a soft vignette and a few quiet shared treatments. Nothing strobes, flashes, splits or shakes.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"editorial_grade\", \"amount\": 0.7}}} and, in \"effects\": {\"name\": \"glide_blur\", \"at\": 5.57, \"seconds\": 0.3, \"where\": \"in\", \"amount\": 1, \"props\": {\"dir\": \"left\"}} on a cut, {\"name\": \"moody_grade\", \"at\": 9.2, \"seconds\": 2.4, \"where\": \"all\", \"amount\": 1, \"props\": {\"wipe\": true}} over a line, {\"name\": \"siren_glow\", \"at\": 14, \"seconds\": 1.6, \"where\": \"all\", \"amount\": 0.9}. On a shot candidate: {\"effect\": {\"name\": \"focus_pull\", \"amount\": 1, \"where\": \"in\", \"seconds\": 0.4}}. soft_push, light_sweep, siren_glow and moody_grade with wipe time themselves over their seconds (\"where\": \"all\"). Own effects: library/themes/editorial/effects/theme_effects.py; halation, bloom and focus come from library/_shared/effects_engine.py.",
+  "groups": [
+    "Look",
+    "Motion",
+    "Light",
+    "Texture",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "editorial_grade",
+      "name": "editorial grade",
+      "group": "Look",
+      "src": "clips/editorial_grade.mp4",
+      "portrait": true,
+      "description": "The theme look for bright daylight footage (footage.look, about 0.7): a gentle S-curve, whites rolled off just under clipping and left cool like paper, shadows nudged toward aubergine, reds and skin kept rich, fine grain, a very light vignette. Subtle: the footage still looks like itself. Options (\"props\"): contrast (1), grain (1), vignette (1)."
+    },
+    {
+      "id": "moody_grade",
+      "name": "moody grade",
+      "group": "Look",
+      "src": "clips/moody_grade.mp4",
+      "portrait": true,
+      "description": "A clearly darker, low-key look: lower exposure, deep aubergine shadows, wine in the mid-tones, heavy soft corners, a little warm halation off the highlights. Hold it over a line (\"where\": \"all\", 1.5 s or more). Options: wipe (false). With wipe true the grade is drawn on by a soft vertical edge with a paper hairline sweeping left to right over the first 35% of the effect and taken off the same way over the last 20% (wipe_in, wipe_out), as in the preview."
+    },
+    {
+      "id": "moody_cover",
+      "name": "moody cover",
+      "group": "Look",
+      "src": "clips/moody_cover.mp4",
+      "portrait": true,
+      "description": "A clean low-key magazine-cover grade: the surroundings drop (white walls to a soft mid grey, darker toward the edges, a large soft vignette centred on the face) and lose most of their colour, while skin keeps its hue and most of its light and the jacket's reds stay red and a little richer; blacks are deep but keep their detail, the shadows carry a faint tint, with fine grain and a breath of halation. It eases itself in with no wipe line: \"where\": \"all\", 0.7 s or more, amount 1. Options (\"props\"): tone (cool: aubergine/blue-black shadows and cool grey walls | warm: brown-umber | neutral; cool), face ([.5, .42]: put it on the speaker's face), fade (.3: share of the time it takes to arrive), fade_out (0), depth (1: how far the room drops), grain (1)."
+    },
+    {
+      "id": "soft_push",
+      "name": "soft push",
+      "group": "Motion",
+      "src": "clips/soft_push.mp4",
+      "portrait": true,
+      "description": "The slow push: the picture scales up to about 1.06 over the effect's time, eased at both ends, toward the face; no blur. \"where\": \"all\", 1.5-4 s, ending on a cut. Options: face ([.5, .42]), reverse (true pulls out)."
+    },
+    {
+      "id": "glide_blur",
+      "name": "glide blur",
+      "group": "Motion",
+      "src": "clips/glide_blur.mp4",
+      "portrait": true,
+      "description": "Lands a cut smoothly: the picture arrives still travelling a few percent of the frame with a directional motion blur that is strongest on the first frame and eases out to nothing. \"where\": \"in\", 0.25-0.4 s (\"out\" leaves the same way). Options: dir (left|right|up|down, the way the picture travels; left), travel (1)."
+    },
+    {
+      "id": "focus_pull",
+      "name": "focus pull",
+      "group": "Motion",
+      "src": "clips/focus_pull.mp4",
+      "portrait": true,
+      "description": "A focus pull with a slight lens breath: \"where\": \"in\" starts soft and comes sharp (0.3-0.5 s after a cut), \"out\" goes soft before one. Options: strength (1), face."
+    },
+    {
+      "id": "speed_ramp",
+      "name": "speed ramp",
+      "group": "Motion",
+      "src": "clips/speed_ramp.mp4",
+      "portrait": true,
+      "description": "The feel of a speed ramp: a brief radial zoom-blur that swells and settles with a small push toward the face, no bounce. \"where\": \"pulse\" on a stressed word (0.3-0.5 s) or \"in\" to land a cut (0.25 s). Options: face."
+    },
+    {
+      "id": "light_sweep",
+      "name": "light sweep",
+      "group": "Light",
+      "src": "clips/light_sweep.mp4",
+      "portrait": true,
+      "description": "One soft diagonal band of warm light crosses the picture once over the effect's time while the room dims a touch; it starts and ends off-frame and never clips to white. \"where\": \"all\", 0.8-1.5 s, amount 0.6-0.9. Options: angle (degrees, 20), width (1)."
+    },
+    {
+      "id": "siren_glow",
+      "name": "siren glow",
+      "group": "Light",
+      "src": "clips/siren_glow.mp4",
+      "portrait": true,
+      "description": "Sirens outside, the quiet way: soft crimson light from the top-left corner and deep blue from the top-right swell in turn, sinusoidally, about two cycles a second, and it fades itself in and out over 0.3 s. No strobe. \"where\": \"all\", 1-3 s, amount 0.7-1. Options: rate (cycles per second, 2), reach (1)."
+    },
+    {
+      "id": "siren_beams",
+      "name": "siren beams",
+      "group": "Light",
+      "src": "clips/siren_beams.mp4",
+      "portrait": true,
+      "description": "Emergency lights sweeping the room: two rotating beacons just above the top corners, emergency red on the left and deep blue on the right, each throwing a soft-edged beam that turns like a lighthouse, in counter-phase so red and blue cross the picture in turn. Coloured light (walls and faces take the colour, nothing clips), a soft bloom at each beacon, the room dimmed a little; motion-blurred and faded in and out over 15% of its time, so it sweeps rather than strobes. \"where\": \"all\", 0.8-3 s, amount 0.85-1. Options (\"props\"): rate (turns per second, 2), dim (.15), spread (beam width, 1), phase (turns, 0; .5 starts on blue)."
+    },
+    {
+      "id": "paper_grain",
+      "name": "paper grain",
+      "group": "Texture",
+      "src": "clips/paper_grain.mp4",
+      "portrait": true,
+      "description": "Fine monochrome grain, strongest in the mid-tones, over a faint still paper tooth. Hold it (\"where\": \"all\"), amount 0.5-1."
+    },
+    {
+      "id": "vignette_soft",
+      "name": "vignette soft",
+      "group": "Texture",
+      "src": "clips/vignette_soft.mp4",
+      "portrait": true,
+      "description": "Corners fall off gently toward aubergine: no hard ring, no blur. Hold it (\"where\": \"all\"), amount 0.5-1."
+    },
+    {
+      "id": "halation",
+      "name": "halation",
+      "group": "Texture",
+      "src": "clips/halation.mp4",
+      "portrait": true,
+      "description": "Shared: a soft glow off the brightest areas. Keep it low (0.3-0.5) on this bright footage."
+    },
+    {
+      "id": "bloom",
+      "name": "bloom",
+      "group": "Texture",
+      "src": "clips/bloom.mp4",
+      "portrait": true,
+      "description": "Shared: highlights bloom softly. \"where\": \"pulse\" on a bright moment, amount 0.3-0.5."
+    },
+    {
+      "id": "focus",
+      "name": "focus",
+      "group": "Motion",
+      "src": "clips/focus.mp4",
+      "portrait": true,
+      "description": "Shared: the outer part of the frame falls out of focus while the middle stays sharp, holding the eye on the face. Hold it (\"where\": \"all\") or bring it in with \"out\"."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

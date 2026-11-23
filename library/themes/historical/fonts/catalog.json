@@ -1,0 +1,207 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Type for an archive: condensed gothic capitals for titles, dates and name plates, old book serifs for quotations and documents, worn printing and inscription faces for older eras, typewriter for references and stamps, and pen scripts for letters. All bundled locally with open licences.",
+  "usage": "The theme uses Oswald for headings, labels and numbers, Old Standard TT (and its italic) for quotations and documents, Special Elite for archive references, Pinyon Script for handwriting. The others are alternates.",
+  "groups": [
+    "Headline",
+    "Book",
+    "Antique",
+    "Typewriter",
+    "Hand"
+  ],
+  "items": [
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        300,
+        500,
+        700
+      ],
+      "note": "Theme heading, label and number face. Condensed gothic capitals for titles on crimson bars, dates in dark boxes and name plates.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "league-gothic",
+      "family": "League Gothic",
+      "file": "files/LeagueGothic-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Tall newspaper gothic; an even narrower alternate for long headlines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "All-caps poster face; lighter and more open than Oswald bold.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Very heavy condensed caps for a single word that must fill the frame.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "barlow-condensed",
+      "family": "Barlow Condensed",
+      "file": "files/BarlowCondensed-SemiBold.ttf",
+      "group": "Headline",
+      "weights": [
+        600
+      ],
+      "note": "Squarer condensed sans that stays legible very small: map labels and axis ticks.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "old-standard-tt",
+      "family": "Old Standard TT",
+      "file": "files/OldStandardTT-Regular.ttf",
+      "group": "Book",
+      "weights": [
+        400
+      ],
+      "note": "Theme serif. A nineteenth-century scholarly book face for quotations, documents and sublines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "old-standard-tt-italic",
+      "family": "Old Standard TT Italic",
+      "file": "files/OldStandardTT-Italic.ttf",
+      "group": "Book",
+      "weights": [
+        400
+      ],
+      "note": "Its italic: attributions, map sea names, captions under photographs.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "old-standard-tt-bold",
+      "family": "Old Standard TT Bold",
+      "file": "files/OldStandardTT-Bold.ttf",
+      "group": "Book",
+      "weights": [
+        700
+      ],
+      "note": "Its bold, for document headings.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "playfair-display",
+      "family": "Playfair Display",
+      "file": "files/PlayfairDisplay-Variable.ttf",
+      "group": "Book",
+      "weights": [
+        400,
+        900
+      ],
+      "note": "High-contrast display serif; an alternate for elegant era titles.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "libre-baskerville",
+      "family": "Libre Baskerville",
+      "file": "files/LibreBaskerville-Variable.ttf",
+      "group": "Book",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Sturdy transitional serif that holds up in small sizes.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "im-fell-english",
+      "family": "IM Fell English",
+      "file": "files/IMFellEnglish-Regular.ttf",
+      "group": "Antique",
+      "weights": [
+        400
+      ],
+      "note": "A revival of seventeenth-century printing type with worn, uneven edges: proclamations and old title pages.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "im-fell-english-italic",
+      "family": "IM Fell English Italic",
+      "file": "files/IMFellEnglish-Italic.ttf",
+      "group": "Antique",
+      "weights": [
+        400
+      ],
+      "note": "Its lively italic.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "cinzel",
+      "family": "Cinzel",
+      "file": "files/Cinzel-Variable.ttf",
+      "group": "Antique",
+      "weights": [
+        400,
+        900
+      ],
+      "note": "Roman inscription capitals, for antiquity and monuments.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "special-elite",
+      "family": "Special Elite",
+      "file": "files/SpecialElite-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "Theme typewriter face. Worn typewriter letters for archive references, dates, stamps and small print.",
+      "license": "Apache-2.0"
+    },
+    {
+      "id": "courier-prime",
+      "family": "Courier Prime",
+      "file": "files/CourierPrime-Regular.ttf",
+      "group": "Typewriter",
+      "weights": [
+        400
+      ],
+      "note": "A clean typewriter face; the tidy alternate for telegrams and reports.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "pinyon-script",
+      "family": "Pinyon Script",
+      "file": "files/PinyonScript-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "Theme script. Copperplate handwriting for letters, signatures and flourishes.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "homemade-apple",
+      "family": "Homemade Apple",
+      "file": "files/HomemadeApple-Regular.ttf",
+      "group": "Hand",
+      "weights": [
+        400
+      ],
+      "note": "Loose pen handwriting for margin notes and photo backs.",
+      "license": "Apache-2.0"
+    }
+  ]
+}

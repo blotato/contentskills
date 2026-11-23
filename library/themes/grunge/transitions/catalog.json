@@ -1,0 +1,126 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the graded sample clip to a graphics frame: seven of its own, moved in held steps like stop-motion (a paper rip, cross tears with tint steps, a tape peel, a xerox dissolve, a stutter cut, an ink splat, a crumple), and seven from the shared set, drawn in the theme's colours (white fibre rims and paper backs on soot).",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"paper_rip\", \"seconds\": 0.6}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"cross_tears\", \"at\": 7.8, \"seconds\": 0.5}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Paper",
+    "Cut-up",
+    "Print",
+    "Camera"
+  ],
+  "items": [
+    {
+      "id": "paper_rip",
+      "name": "paper rip",
+      "group": "Paper",
+      "src": "clips/paper_rip.mp4",
+      "portrait": true,
+      "description": "A tear runs across the frame, then the two halves are pulled apart, each with a white fibre edge. The theme default."
+    },
+    {
+      "id": "cross_tears",
+      "name": "cross tears",
+      "group": "Paper",
+      "src": "clips/cross_tears.mp4",
+      "portrait": true,
+      "description": "Four held frames: strips are ripped out at different angles while the picture flips through teal, plum and brick prints, then a hard cut."
+    },
+    {
+      "id": "tape_peel",
+      "name": "tape peel",
+      "group": "Paper",
+      "src": "clips/tape_peel.mp4",
+      "portrait": true,
+      "description": "The shot is peeled off from the top like a length of masking tape, rolling back to show a buff crepe-paper back."
+    },
+    {
+      "id": "crumple",
+      "name": "crumple",
+      "group": "Paper",
+      "src": "clips/crumple.mp4",
+      "portrait": true,
+      "description": "The shot is screwed up like a sheet of paper: creases break it into facets, it shrinks to a ragged ball and drops out of the frame."
+    },
+    {
+      "id": "stutter_cut",
+      "name": "stutter cut",
+      "group": "Cut-up",
+      "src": "clips/stutter_cut.mp4",
+      "portrait": true,
+      "description": "Eight held frames: the two shots jump, shove sideways and flash through as teal and red prints before the cut lands."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slice slide",
+      "group": "Cut-up",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "The frame is cut into nine horizontal strips that tilt and slide off to alternate sides, each with a white paper edge. A cut-up, shredded look."
+    },
+    {
+      "id": "shatter",
+      "name": "shatter",
+      "group": "Cut-up",
+      "src": "clips/shatter.mp4",
+      "portrait": true,
+      "description": "The frame breaks into small square scraps that tumble toward the camera, centre first, white-edged with paper backs. Like a handful of cut photographs thrown at the lens."
+    },
+    {
+      "id": "accordion_fold",
+      "name": "accordion fold",
+      "group": "Cut-up",
+      "src": "clips/accordion_fold.mp4",
+      "portrait": true,
+      "description": "The frame folds up like a leaflet toward the left edge, uncovering the next shot."
+    },
+    {
+      "id": "swing_doors",
+      "name": "swing doors",
+      "group": "Cut-up",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The frame splits down the middle and both halves swing away like a folded flyer opening."
+    },
+    {
+      "id": "xerox_dissolve",
+      "name": "xerox dissolve",
+      "group": "Print",
+      "src": "clips/xerox_dissolve.mp4",
+      "portrait": true,
+      "description": "The shot is photocopied down to soot and bone, breaks up into toner specks and streaks that are already the next shot, and that clears."
+    },
+    {
+      "id": "ink_splat",
+      "name": "ink splat",
+      "group": "Print",
+      "src": "clips/ink_splat.mp4",
+      "portrait": true,
+      "description": "Soot ink splats land one after another, spiky, with flung drops, and spread until they join; the next shot shows through them."
+    },
+    {
+      "id": "luma_melt",
+      "name": "luma melt",
+      "group": "Print",
+      "src": "clips/luma_melt.mp4",
+      "portrait": true,
+      "description": "Columns of the old shot drip downward at different speeds while its bright areas burn through first with an orange edge. Wet ink running down a wall."
+    },
+    {
+      "id": "noise_dissolve",
+      "name": "noise dissolve",
+      "group": "Print",
+      "src": "clips/noise_dissolve.mp4",
+      "portrait": true,
+      "description": "Three sizes of blocky noise eat the old shot away like toner dropout, with white specks on the dissolve front. Keep it short (0.3 s)."
+    },
+    {
+      "id": "zoom_through",
+      "name": "zoom through",
+      "group": "Camera",
+      "src": "clips/zoom_through.mp4",
+      "portrait": true,
+      "description": "A hard zoom-blur punch through the old shot into the new one."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "three",
+ "title": "3D",
+ "summary": "Quiet editorial 3D in the theme's colours: matte paper objects (sheets, a magazine, covers, prints, the blocks of a layout grid) on the kit's paper grounds under soft shadowless light, with printed pages drawn as small textures. Slow glides and pushes on the kit's curves; nothing spins fast, bounces or glows. Core Three.js only. Pass \"field\" for the ground (paper, stone, blush, ink, wine) or \"clear\": true for a transparent canvas over footage.",
+ "usage": "{\"piece\": \"three/paper-stack\"} or {\"background\": {\"piece\": \"three/light-table\"}}. Files: library/themes/editorial/three/pieces/ (shared stage and textures: _scene.js).",
+ "groups": [
+  "Paper",
+  "Layout"
+ ],
+ "items": [
+  {
+   "id": "paper-stack",
+   "name": "Paper stack",
+   "group": "Paper",
+   "piece": "three/paper-stack",
+   "description": "Printed sheets glide in from alternate sides and settle into a stack seen three-quarter from above; the last is a cover page in the accent ground. Props: count, top (ground of the last sheet), field, clear."
+  },
+  {
+   "id": "page-turn",
+   "name": "Page turn",
+   "group": "Paper",
+   "piece": "three/page-turn",
+   "description": "An open magazine seen from above: leaves turn from right to left one after another, bending as they lift, each showing a new printed spread. Props: turns, every (seconds between turns), field, clear."
+  },
+  {
+   "id": "ribbon",
+   "name": "Ribbon",
+   "group": "Paper",
+   "piece": "three/ribbon",
+   "description": "A wine ribbon bookmark slides down over a printed page and its swallow-tailed end curls towards the camera, breathing slowly. Props: color, page (ground of the page behind, '' for none), field, clear."
+  },
+  {
+   "id": "type-blocks",
+   "name": "Type blocks",
+   "group": "Layout",
+   "piece": "three/type-blocks",
+   "description": "A page layout as architecture: the blocks of a 12-column grid (headline, text columns, a tall picture block in the accent, caption, folios) rise from a sheet one after another while the camera drifts round. Props: accent, field, clear."
+  },
+  {
+   "id": "cover-carousel",
+   "name": "Cover carousel",
+   "group": "Layout",
+   "piece": "three/cover-carousel",
+   "description": "Eight magazine covers (a Didone numeral, a rule, a tint of the footage, two cover lines) rise into a ring and turn slowly past the camera. Props: count, fields (cover grounds), marks (masthead text per cover), speed, field, clear."
+  },
+  {
+   "id": "light-table",
+   "name": "Light table",
+   "group": "Layout",
+   "piece": "three/light-table",
+   "description": "Photographic prints (tints of the footage in paper borders) glide onto a table in a loose grid; one is picked out with a crimson marker dot and the camera pushes in on it. Props: cols, rows, pick (index, -1 for none), color, field, clear."
+  }
+ ]
+}

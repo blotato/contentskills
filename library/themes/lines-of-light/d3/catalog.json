@@ -1,0 +1,98 @@
+{
+  "id": "d3",
+  "title": "Diagrams",
+  "summary": "Data diagrams drawn only in thin lines of light on near-black teal: white cores with red and blue echoes, a red dot firing the header line, shapes opening where a line reaches them, results landing in a blue flash. 1000x1000 cards; pass \"clear\": true to float them over footage. Sample data is illustrative.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"...\", \"unit\": \"...\", \"items\": [{\"label\": \"...\", \"value\": 1}]}}. Files: library/themes/lines-of-light/d3/pieces/.",
+  "groups": [
+    "Charts",
+    "Shares",
+    "Readouts",
+    "Flows"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Bars of light opening upward from the baseline as it draws across, values counting up; the tallest lands blue."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "A trend drawn as one line of light behind a red head; each point opens a ring and shows its value, the last lands blue."
+    },
+    {
+      "id": "radial-bars",
+      "name": "Radial bars",
+      "group": "Charts",
+      "piece": "d3/radial-bars",
+      "description": "Nested arcs of light sweeping round a red centre, one per item, by value; the biggest lands blue."
+    },
+    {
+      "id": "donut",
+      "name": "Donut",
+      "group": "Shares",
+      "piece": "d3/donut",
+      "description": "Shares drawn as arcs round a ring of light with ticks at the joins and leader lines to labels; the biggest share lands in the middle."
+    },
+    {
+      "id": "funnel",
+      "name": "Funnel",
+      "group": "Shares",
+      "piece": "d3/funnel",
+      "description": "A funnel outlined in light, stage lines opening from both walls; counts and shares beside it, a red drop landing blue at the outlet."
+    },
+    {
+      "id": "ranking",
+      "name": "Ranking",
+      "group": "Shares",
+      "piece": "d3/ranking",
+      "description": "Ranked rows: the rank lands in tracked capitals and a line runs out to its value, opening a ring; the leader lands blue."
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Readouts",
+      "piece": "d3/big-number",
+      "description": "One number landing inside a dial: ring opening from the top, ticks and marks (years, steps), an inner arc sweeping to a progress share."
+    },
+    {
+      "id": "versus",
+      "name": "Before and after",
+      "group": "Readouts",
+      "piece": "d3/versus",
+      "description": "Two dials: the before fills in red, a red pulse crosses to the after, which fills in white light and lands blue."
+    },
+    {
+      "id": "timeline",
+      "name": "Steps",
+      "group": "Flows",
+      "piece": "d3/timeline",
+      "description": "Steps down a line of light: each ring opens where the line touches it and its name lands beside it; the last step arrives blue."
+    },
+    {
+      "id": "flow",
+      "name": "Cause and results",
+      "group": "Flows",
+      "piece": "d3/flow",
+      "description": "A red source sending curves of light to each result, weighted by value; rings open and flash blue where they arrive."
+    },
+    {
+      "id": "radial-fan",
+      "name": "Radial fan",
+      "group": "Flows",
+      "piece": "d3/radial-fan",
+      "description": "A fan of rays from a source at the bottom, each running out by value to a label box that opens where the ray touches it."
+    },
+    {
+      "id": "route-trace",
+      "name": "Route trace",
+      "group": "Flows",
+      "piece": "d3/route-trace",
+      "description": "A made-up coastline traced in light over a faint grid, then red arcs hop from place to place; the last place lands blue."
+    }
+  ]
+}

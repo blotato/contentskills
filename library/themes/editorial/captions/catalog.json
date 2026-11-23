@@ -1,0 +1,16 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Seven caption styles in the editorial look, playing over the sample clip with its real word timings: a small sentence-case serif on a tight box in the footage's own colours (aubergine, paper, wine), the spoken word in the accent, emphasised words in italic. Words rise from behind the baseline or clear from a soft fade; nothing bounces.",
+  "usage": "In a storyboard: {\"captions\": \"column\"}. column is the theme default and reads on any footage; column-paper for dark backdrops, column-wine as an accent, rise for the masked word-by-word reveal, one-word for a stretch read word by word, underline on paper cards, small-caps under a busy graphic. Words in \"emphasis\" are italic; level 2 stands alone. Styles: library/themes/editorial/captions/styles.js.",
+  "groups": ["Boxed serif", "Reveal", "Quiet"],
+  "items": [
+    {"id": "column", "group": "Boxed serif"},
+    {"id": "column-paper", "group": "Boxed serif"},
+    {"id": "column-wine", "group": "Boxed serif"},
+    {"id": "rise", "group": "Reveal"},
+    {"id": "one-word", "group": "Reveal"},
+    {"id": "underline", "group": "Quiet"},
+    {"id": "small-caps", "group": "Quiet"}
+  ]
+}

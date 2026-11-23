@@ -1,0 +1,130 @@
+{
+ "id": "transitions",
+ "title": "Transitions",
+ "summary": "Clean, smooth magazine transitions, shown going from the sample clip (under the editorial grade) to a title card: eleven of its own (a soft cross-zoom, pushes with motion blur, a focus pull through the cut, masked wipes whose edge is a thin drawn rule, a layout grid of columns, a soft iris, a sheet of paper passing, a page turning, a band of warm light) and three calm ones from the shared set drawn with paper edges and stone backs. Everything eases in and out; nothing flashes, glitches or shakes.",
+ "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"soft_zoom\", \"seconds\": 0.23}}. In a footage storyboard, at a cut: \"transitions\": [{\"name\": \"rule_wipe\", \"at\": 7.8, \"seconds\": 0.27}]. They are written for 5-8 frames (0.17-0.27 s at 30 fps) and stay calm at 0.35-0.5 s; each description gives its best length. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+ "groups": [
+  "Glide",
+  "Rule",
+  "Paper",
+  "Light",
+  "Shared"
+ ],
+ "items": [
+  {
+   "id": "soft_zoom",
+   "name": "soft zoom",
+   "group": "Glide",
+   "src": "clips/soft_zoom.mp4",
+   "portrait": true,
+   "description": "A soft cross-zoom: the shot pushes in and softens into a short radial blur while the next, a little larger and soft, settles to its size; they cross-fade in the middle with no flash. The theme default. Best at 0.2-0.3 s (6-8 frames); still calm at 0.5 s."
+  },
+  {
+   "id": "glide_left",
+   "name": "glide left",
+   "group": "Glide",
+   "src": "clips/glide_left.mp4",
+   "portrait": true,
+   "description": "A push to the left: the two pictures travel together as one strip, starting and ending at rest, with a soft motion blur that follows the speed. Best at 0.2-0.27 s (6-8 frames); good up to 0.45 s."
+  },
+  {
+   "id": "glide_up",
+   "name": "glide up",
+   "group": "Glide",
+   "src": "clips/glide_up.mp4",
+   "portrait": true,
+   "description": "The same push travelling upward, the next picture rising from below. Best at 0.2-0.27 s; good up to 0.45 s."
+  },
+  {
+   "id": "focus_dissolve",
+   "name": "focus dissolve",
+   "group": "Glide",
+   "src": "clips/focus_dissolve.mp4",
+   "portrait": true,
+   "description": "A focus pull through the cut: the shot goes out of focus, the next comes into focus, and they dissolve while both are soft, with a slight lens breath. Best at 0.27-0.5 s (8-15 frames); at 5 frames it reads as a soft cut."
+  },
+  {
+   "id": "rule_wipe",
+   "name": "rule wipe",
+   "group": "Rule",
+   "src": "clips/rule_wipe.mp4",
+   "portrait": true,
+   "description": "A masked wipe left to right whose edge is a thin drawn rule (paper with an ink line beside it): the edge starts and stops gently, each picture drifts a little with it and a soft shadow falls ahead of the rule. Best at 0.23-0.4 s (7-12 frames)."
+  },
+  {
+   "id": "rule_wipe_down",
+   "name": "rule wipe down",
+   "group": "Rule",
+   "src": "clips/rule_wipe_down.mp4",
+   "portrait": true,
+   "description": "The same ruled wipe travelling from the top of the frame to the bottom. Best at 0.23-0.4 s."
+  },
+  {
+   "id": "column_wipe",
+   "name": "column wipe",
+   "group": "Rule",
+   "src": "clips/column_wipe.mp4",
+   "portrait": true,
+   "description": "The frame as a layout grid: four columns hand over to the next shot one after another, left to right, each behind its own hairline travelling down, thin rules between the columns while it happens. Busier than the others: best at 0.35-0.5 s (10-15 frames), not under 0.27 s. Params: cols (4)."
+  },
+  {
+   "id": "iris_soft",
+   "name": "iris soft",
+   "group": "Rule",
+   "src": "clips/iris_soft.mp4",
+   "portrait": true,
+   "description": "A soft-edged circle opens from where the face is, a hairline on its rim, the next shot settling inside it. Best at 0.27-0.45 s (8-14 frames)."
+  },
+  {
+   "id": "paper_slide",
+   "name": "paper slide",
+   "group": "Paper",
+   "src": "clips/paper_slide.mp4",
+   "portrait": true,
+   "description": "A sheet of paper passes from right to left: its leading edge covers the shot, its trailing edge uncovers the next, soft shadows on both edges and one printed hairline on the sheet. The sheet is narrower than the frame, so the picture is never all paper. Best at 0.23-0.4 s (7-12 frames)."
+  },
+  {
+   "id": "page_turn",
+   "name": "page turn",
+   "group": "Paper",
+   "src": "clips/page_turn.mp4",
+   "portrait": true,
+   "description": "The frame turns like a page: the shot curls round from the right edge toward the left, the picture showing faintly through its stone-coloured back, and the next shot lies flat underneath. Best at 0.3-0.5 s (9-15 frames); at 7 frames it is a quick flick."
+  },
+  {
+   "id": "light_sweep",
+   "name": "light sweep",
+   "group": "Light",
+   "src": "clips/light_sweep.mp4",
+   "portrait": true,
+   "description": "A soft band of warm light crosses the frame left to right on a slight diagonal; behind it the picture is already the next shot. Never brightens to white. Best at 0.27-0.5 s (8-15 frames)."
+  },
+  {
+   "id": "swing_doors",
+   "name": "swing doors",
+   "group": "Shared",
+   "src": "clips/swing_doors.mp4",
+   "portrait": true,
+   "description": "Shared: the shot splits down the middle into two doors that swing open away from the camera onto the next, here with paper edges. Best at 0.4-0.6 s."
+  },
+  {
+   "id": "accordion_fold",
+   "name": "accordion fold",
+   "group": "Shared",
+   "src": "clips/accordion_fold.mp4",
+   "portrait": true,
+   "params": {
+    "cols": 3
+   },
+   "description": "Shared: the shot folds up like a concertina of three vertical panels toward the left edge, uncovering the next; paper edges, stone backs. Best at 0.4-0.6 s."
+  },
+  {
+   "id": "cube_spin",
+   "name": "cube spin",
+   "group": "Shared",
+   "src": "clips/cube_spin.mp4",
+   "portrait": true,
+   "description": "Shared: the two shots are faces of a box that turns a quarter of the way round, here on a paper backdrop. The largest move in the set: best at 0.45-0.6 s, once in a video."
+  }
+ ]
+}

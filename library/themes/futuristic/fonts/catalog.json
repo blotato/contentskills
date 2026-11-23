@@ -1,0 +1,466 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Squared, engineered typefaces: wide display faces for headings and numbers, a condensed technical face for captions, and monospace for readouts. All bundled locally with open licenses.",
+  "usage": "The theme uses Orbitron for headings and numbers, Rajdhani for captions and labels, Share Tech Mono for readouts. The others are alternates.",
+  "groups": [
+    "Display",
+    "Caption",
+    "Readout",
+    "Headline"
+  ],
+  "items": [
+    {
+      "id": "orbitron",
+      "family": "Orbitron",
+      "file": "files/Orbitron-Variable.ttf",
+      "group": "Display",
+      "weights": [
+        500,
+        900
+      ],
+      "note": "Theme heading and number face. Geometric, squared, unmistakably sci-fi.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "michroma",
+      "family": "Michroma",
+      "file": "files/Michroma-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Extra-wide alternate for short titles.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "audiowide",
+      "family": "Audiowide",
+      "file": "files/Audiowide-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Rounded-tech alternate; friendlier than Orbitron.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oxanium",
+      "family": "Oxanium",
+      "file": "files/Oxanium-Variable.ttf",
+      "group": "Display",
+      "weights": [
+        400,
+        800
+      ],
+      "note": "Angular alternate with cut corners, good for numbers.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "tektur",
+      "family": "Tektur",
+      "file": "files/Tektur-Variable.ttf",
+      "group": "Display",
+      "weights": [
+        500,
+        900
+      ],
+      "note": "Chiselled, mechanical caps with cut corners. Strong for headings and counters.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "zen-dots",
+      "family": "Zen Dots",
+      "file": "files/ZenDots-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Rounded-square letters with dotted details. Friendly sci-fi.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bruno-ace",
+      "family": "Bruno Ace",
+      "file": "files/BrunoAce-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Wide automotive/dashboard lettering.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "russo-one",
+      "family": "Russo One",
+      "file": "files/RussoOne-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Heavy, compact and sporty. Loud headings.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "black-ops-one",
+      "family": "Black Ops One",
+      "file": "files/BlackOpsOne-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Military stencil. For warnings and classified-file moments.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "wallpoet",
+      "family": "Wallpoet",
+      "file": "files/Wallpoet-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Geometric stencil with a tagged, hacked feel.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "goldman",
+      "family": "Goldman",
+      "file": "files/Goldman-Bold.ttf",
+      "group": "Display",
+      "weights": [
+        700
+      ],
+      "note": "Squared racing-style bold.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "monoton",
+      "family": "Monoton",
+      "file": "files/Monoton-Regular.ttf",
+      "group": "Display",
+      "weights": [
+        400
+      ],
+      "note": "Triple-line neon tubing. One-word titles only.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "rajdhani",
+      "family": "Rajdhani",
+      "file": "files/Rajdhani-Bold.ttf",
+      "group": "Caption",
+      "weights": [
+        700
+      ],
+      "note": "Theme caption and label face. Condensed, technical, very readable at size.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "rajdhani-medium",
+      "family": "Rajdhani",
+      "file": "files/Rajdhani-Medium.ttf",
+      "group": "Caption",
+      "weights": [
+        500
+      ],
+      "note": "Lighter weight of the caption face for secondary lines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "chakra-petch",
+      "family": "Chakra Petch",
+      "file": "files/ChakraPetch-Bold.ttf",
+      "group": "Caption",
+      "weights": [
+        700
+      ],
+      "note": "Caption alternate with notched corners.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "exo-2",
+      "family": "Exo 2",
+      "file": "files/Exo2-Variable.ttf",
+      "group": "Caption",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Smoother caption alternate with many weights.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "aldrich",
+      "family": "Aldrich",
+      "file": "files/Aldrich-Regular.ttf",
+      "group": "Caption",
+      "weights": [
+        400
+      ],
+      "note": "Squarish and open; reads well small.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "quantico",
+      "family": "Quantico",
+      "file": "files/Quantico-Bold.ttf",
+      "group": "Caption",
+      "weights": [
+        700
+      ],
+      "note": "Angular military-tech bold for captions.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "electrolize",
+      "family": "Electrolize",
+      "file": "files/Electrolize-Regular.ttf",
+      "group": "Caption",
+      "weights": [
+        400
+      ],
+      "note": "Clean engineered sans for supporting lines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "saira",
+      "family": "Saira",
+      "file": "files/Saira-Variable.ttf",
+      "group": "Caption",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Versatile squared sans with many weights.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "teko",
+      "family": "Teko",
+      "file": "files/Teko-Variable.ttf",
+      "group": "Caption",
+      "weights": [
+        500,
+        700
+      ],
+      "note": "Tall and condensed: fits long words in a narrow frame.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "jura",
+      "family": "Jura",
+      "file": "files/Jura-Variable.ttf",
+      "group": "Caption",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Light, elegant tech sans for calm moments.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "turret-road",
+      "family": "Turret Road",
+      "file": "files/TurretRoad-Bold.ttf",
+      "group": "Caption",
+      "weights": [
+        700
+      ],
+      "note": "Lines with rounded turns, like circuit traces.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "share-tech-mono",
+      "family": "Share Tech Mono",
+      "file": "files/ShareTechMono-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "Theme readout face for labels, timecodes and data.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "space-mono",
+      "family": "Space Mono",
+      "file": "files/SpaceMono-Bold.ttf",
+      "group": "Readout",
+      "weights": [
+        700
+      ],
+      "note": "Heavier monospace alternate for terminal moments.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "vt323",
+      "family": "VT323",
+      "file": "files/VT323-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "Old terminal pixels. Retro computer readouts.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "major-mono-display",
+      "family": "Major Mono Display",
+      "file": "files/MajorMonoDisplay-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "Monospace display with mixed-case quirks; cryptic labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "ibm-plex-mono",
+      "family": "IBM Plex Mono",
+      "file": "files/IBMPlexMono-Medium.ttf",
+      "group": "Readout",
+      "weights": [
+        500
+      ],
+      "note": "Refined monospace for code and data tables.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "silkscreen",
+      "family": "Silkscreen",
+      "file": "files/Silkscreen-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "Tiny bitmap caps for micro labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "press-start-2p",
+      "family": "Press Start 2P",
+      "file": "files/PressStart2P-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "8-bit arcade lettering.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "dotgothic16",
+      "family": "DotGothic16",
+      "file": "files/DotGothic16-Regular.ttf",
+      "group": "Readout",
+      "weights": [
+        400
+      ],
+      "note": "Dot-matrix display letters.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Kinetic-type headline face. Very heavy, tightly condensed caps for words that fill the frame.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        300,
+        500,
+        700
+      ],
+      "note": "Kinetic-type label face. Condensed gothic for sublines and micro-labels beside Anton.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "All-caps poster face; lighter and more open than Anton.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "big-shoulders-display",
+      "family": "Big Shoulders Display",
+      "file": "files/BigShouldersDisplay-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        500,
+        900
+      ],
+      "note": "Tall signage caps with squared curves, thin to black.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "antonio",
+      "family": "Antonio",
+      "file": "files/Antonio-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Refined condensed headline face with a full weight range.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "barlow-condensed",
+      "family": "Barlow Condensed",
+      "file": "files/BarlowCondensed-ExtraBold.ttf",
+      "group": "Headline",
+      "weights": [
+        800
+      ],
+      "note": "Rounded-square extra-bold condensed; reads well small.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "sofia-sans-extra-condensed",
+      "family": "Sofia Sans Extra Condensed",
+      "file": "files/SofiaSansExtraCondensed-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        500,
+        900
+      ],
+      "note": "The narrowest of the set: long headlines on one line.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "league-gothic",
+      "family": "League Gothic",
+      "file": "files/LeagueGothic-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Classic tall newspaper gothic.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "fjalla-one",
+      "family": "Fjalla One",
+      "file": "files/FjallaOne-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Medium-contrast condensed face for sublines and numbers.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

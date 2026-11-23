@@ -1,0 +1,62 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D shot like archive film of real objects: everything monochrome in silver, bone and navy with crimson as the only colour, soft light from above falling off into a dark table, and a hand-written film pass (grain, vignette, scratches, dust, lamp flicker, gate weave). The camera is always moving slowly.",
+  "usage": "{\"piece\": \"three/globe\"}. Any of them also works full-frame as a \"background\". Files: library/themes/historical/three/pieces/ (shared plumbing in _film.js).",
+  "groups": [
+    "Objects",
+    "Scenes",
+    "Backdrops"
+  ],
+  "items": [
+    {
+      "id": "globe",
+      "name": "Desk globe",
+      "group": "Objects",
+      "piece": "three/globe",
+      "description": "An old globe turning on its stand while a crimson route arcs across made-up continents and the camera pushes in."
+    },
+    {
+      "id": "pocket-watch",
+      "name": "Pocket watch",
+      "group": "Objects",
+      "piece": "three/pocket-watch",
+      "description": "A pocket watch on a letter, its hands sweeping through the hours as the camera sinks toward it: time passing."
+    },
+    {
+      "id": "open-book",
+      "name": "Open ledger",
+      "group": "Objects",
+      "piece": "three/open-book",
+      "description": "A ledger open on the table, its pages turning one after another under a crimson ribbon."
+    },
+    {
+      "id": "film-reel",
+      "name": "Film reels",
+      "group": "Objects",
+      "piece": "three/film-reel",
+      "description": "Two film reels turning with the strip running between them past a lit gate. Loops."
+    },
+    {
+      "id": "photo-table",
+      "name": "Photo table",
+      "group": "Scenes",
+      "piece": "three/photo-table",
+      "description": "The documentary pan in 3D: prints and a letter scattered on a dark table, the camera drifting across them, a crimson thread between two pins."
+    },
+    {
+      "id": "monument",
+      "name": "Monument",
+      "group": "Scenes",
+      "piece": "three/monument",
+      "description": "A ruined colonnade around an obelisk in haze, seen on a slow arc, a crimson pennant at the top."
+    },
+    {
+      "id": "dust-light",
+      "name": "Dust in light",
+      "group": "Backdrops",
+      "piece": "three/dust-light",
+      "description": "Dust motes drifting through a cold shaft of light in a dark room. A quiet full-frame background. Loops."
+    }
+  ]
+}

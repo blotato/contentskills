@@ -1,0 +1,126 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through collage graphics made to sit on footage, shown here over the sample clip: torn paper, tape, stamps, marker scrawls and wear. They are stamped or dragged on in held steps, keep boiling while they are up, and cut off before their time ends. By default they keep to the top and bottom of the frame so the speaker's face stays clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/counter\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"value\": 5, \"label\": \"WAYS TO EARN\", \"y\": 360}}. Positions are in 1080×1920 frame pixels. overlays/face-circle follows the speaker automatically; overlays/grime and overlays/paper-frame can run for the whole clip; put overlays/rip-cut on a cut.",
+  "groups": [
+    "Wear",
+    "Titles",
+    "Callouts",
+    "Marks"
+  ],
+  "items": [
+    {
+      "id": "grime",
+      "name": "Grime",
+      "group": "Wear",
+      "piece": "overlays/grime",
+      "description": "The base wear for footage: plaster cracks from the corners, dust, hairs and scratches that change eight times a second, burnt edges and one typed label.",
+      "over": true
+    },
+    {
+      "id": "paper-frame",
+      "name": "Paper frame",
+      "group": "Wear",
+      "piece": "overlays/paper-frame",
+      "description": "The footage seen through a hole torn in a sheet of paper, with a taped title scrap on the top edge and a typed line below.",
+      "over": true
+    },
+    {
+      "id": "rip-cut",
+      "name": "Rip cut",
+      "group": "Wear",
+      "piece": "overlays/rip-cut",
+      "description": "A cut accent: for a few frames white rips tear across the frame, a tint washes over and a marker doodle flashes up, then it is gone.",
+      "over": true
+    },
+    {
+      "id": "torn-strip",
+      "name": "Torn strip title",
+      "group": "Titles",
+      "piece": "overlays/torn-strip",
+      "description": "A bone paper strip dragged across the frame with the title typed onto it behind a block cursor, and a second line in the accent.",
+      "over": true
+    },
+    {
+      "id": "ransom",
+      "name": "Ransom note",
+      "group": "Titles",
+      "piece": "overlays/ransom",
+      "description": "A word as a ransom note: every letter cut from a different page, stuck down one at a time and left jittering.",
+      "over": true
+    },
+    {
+      "id": "stamp",
+      "name": "Stamp",
+      "group": "Titles",
+      "piece": "overlays/stamp",
+      "description": "A rubber stamp brought down on the footage: double-ruled box or ring, condensed word, small typed line, flecks of ink.",
+      "over": true
+    },
+    {
+      "id": "splat",
+      "name": "Ink splat",
+      "group": "Titles",
+      "piece": "overlays/splat",
+      "description": "An ink splat bursting out in held steps with a word knocked out of it and a typed line under it.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Callouts",
+      "piece": "overlays/counter",
+      "description": "A number on a torn black scrap rattling up to its value, underlined in marker, with a label scrap in the accent.",
+      "over": true
+    },
+    {
+      "id": "progress",
+      "name": "Progress",
+      "group": "Callouts",
+      "piece": "overlays/progress",
+      "description": "A meter painted on: a brush stroke dragged along a black strip to the value while the percentage counts up.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "List",
+      "group": "Callouts",
+      "piece": "overlays/list",
+      "description": "A list built as items are named: a taped title scrap, then one torn strip per item stamped down at its time and ticked in marker.",
+      "over": true
+    },
+    {
+      "id": "tape-label",
+      "name": "Tape label",
+      "group": "Callouts",
+      "piece": "overlays/tape-label",
+      "description": "A length of masking tape slapped across the footage with a note written on it in marker.",
+      "over": true
+    },
+    {
+      "id": "scribble",
+      "name": "Scribble",
+      "group": "Marks",
+      "piece": "overlays/scribble",
+      "description": "A marker mark drawn onto the footage and left boiling: circle, underline, arrow, cross, burst, zigzag or box, with an optional handwritten note.",
+      "over": true
+    },
+    {
+      "id": "face-circle",
+      "name": "Face circle",
+      "group": "Marks",
+      "piece": "overlays/face-circle",
+      "description": "The speaker circled in marker with an arrow and a label scrap; follows the face automatically in a footage project.",
+      "over": true
+    },
+    {
+      "id": "collage-card",
+      "name": "Collage card",
+      "group": "Marks",
+      "piece": "overlays/collage-card",
+      "description": "A photocopied picture taped onto the footage like evidence on a wall, with a caption scrap and a typed line.",
+      "over": true
+    }
+  ]
+}

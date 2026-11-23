@@ -1,0 +1,142 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through comic furniture made to sit on footage, shown here over the sample clip: panel frames, balloons, caption boxes, bursts, zoom lines and stamps. They pop on, boil while they are up, and shrink away before their time ends. Defaults keep the middle of the frame (the face) clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/speech-balloon\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"text\": \"Nobody tells you this part!\", \"y\": 300, \"tail\": {\"x\": 600, \"y\": 600}}}. Positions are in 1080×1920 frame pixels; \"accent\" (red, yellow, blue, green, purple, teal, orange, paper) picks the colour. overlays/speed-lines, face-marks and impact-frame follow the speaker automatically. Kit: library/themes/comic/kit.js. Files: library/themes/comic/overlays/pieces/.",
+  "groups": [
+    "Frame",
+    "Balloons",
+    "Impact",
+    "Callouts"
+  ],
+  "items": [
+    {
+      "id": "panel-frame",
+      "name": "Panel frame",
+      "group": "Frame",
+      "piece": "overlays/panel-frame",
+      "description": "Turns the whole shot into a comic panel: paper gutter, wobbly ink box, corner dots, a title caption box, an issue burst and a small plate.",
+      "over": true
+    },
+    {
+      "id": "panel-strip",
+      "name": "Panel strip",
+      "group": "Frame",
+      "piece": "overlays/panel-strip",
+      "description": "A strip of small comic panels along the top of the shot; each whips in with a skew and carries one shouted word in a burst.",
+      "over": true
+    },
+    {
+      "id": "speed-lines",
+      "name": "Speed lines",
+      "group": "Frame",
+      "piece": "overlays/speed-lines",
+      "description": "Ink zoom lines packed round the frame edges, pointing at the speaker and shivering; they follow the face and leave it clear.",
+      "over": true
+    },
+    {
+      "id": "halftone-wash",
+      "name": "Halftone wash",
+      "group": "Frame",
+      "piece": "overlays/halftone-wash",
+      "description": "Ben-Day dots creep in from the top and bottom edges to tint a beat, fading out before they reach the middle.",
+      "over": true
+    },
+    {
+      "id": "speech-balloon",
+      "name": "Speech balloon",
+      "group": "Balloons",
+      "piece": "overlays/speech-balloon",
+      "description": "A balloon pops open above the speaker with its tail toward them and letters its words on as they are spoken.",
+      "over": true
+    },
+    {
+      "id": "thought-bubble",
+      "name": "Thought bubble",
+      "group": "Balloons",
+      "piece": "overlays/thought-bubble",
+      "description": "A boiling scalloped cloud with hand lettering, trailing three bubbles toward the thinker.",
+      "over": true
+    },
+    {
+      "id": "caption-box",
+      "name": "Caption box",
+      "group": "Balloons",
+      "piece": "overlays/caption-box",
+      "description": "The narrator’s yellow box: pops into a corner and types its text, with a bold opening word.",
+      "over": true
+    },
+    {
+      "id": "sound-burst",
+      "name": "Sound burst",
+      "group": "Impact",
+      "piece": "overlays/sound-burst",
+      "description": "A sound-effect word thrown across a two-colour burst with dots, each letter bigger than the last, with zoom lines on the hit.",
+      "over": true
+    },
+    {
+      "id": "impact-frame",
+      "name": "Impact frame",
+      "group": "Impact",
+      "piece": "overlays/impact-frame",
+      "description": "For a cut or punchline: the shot is covered in flat colour, dots and zoom lines with the speaker showing through a jagged hole that blows open.",
+      "over": true
+    },
+    {
+      "id": "stamp",
+      "name": "Stamp",
+      "group": "Impact",
+      "piece": "overlays/stamp",
+      "description": "A rubber-stamp verdict slammed on crooked, with a flash of zoom lines and a spatter of ink.",
+      "over": true
+    },
+    {
+      "id": "page-wipe",
+      "name": "Page wipe",
+      "group": "Impact",
+      "piece": "overlays/page-wipe",
+      "description": "A slanted sheet with gutter, dots and speed streaks sweeps across the frame to hide a cut.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Callouts",
+      "piece": "overlays/counter",
+      "description": "A big number counts up inside a burst, its label on a slab underneath.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "List",
+      "group": "Callouts",
+      "piece": "overlays/list",
+      "description": "A title slab and numbered paper strips that pop out one by one as items are named; the newest is yellow.",
+      "over": true
+    },
+    {
+      "id": "progress",
+      "name": "Progress",
+      "group": "Callouts",
+      "piece": "overlays/progress",
+      "description": "An inked meter that fills with colour and dots, the running figure riding in a burst at the end of the fill.",
+      "over": true
+    },
+    {
+      "id": "arrow-callout",
+      "name": "Arrow callout",
+      "group": "Callouts",
+      "piece": "overlays/arrow-callout",
+      "description": "A fat inked arrow swoops from a caption box to a point in the shot and wags its head.",
+      "over": true
+    },
+    {
+      "id": "face-marks",
+      "name": "Face marks",
+      "group": "Callouts",
+      "piece": "overlays/face-marks",
+      "description": "Surprise dashes shiver round the speaker’s head with a shouted label in a balloon; follows the face.",
+      "over": true
+    }
+  ]
+}
