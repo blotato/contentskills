@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Title cards and text overlays in the archive-documentary look: tall condensed capitals in off-white, crimson brush strokes and label bars, torn paper sheets and silver prints on a near-black navy table, typewritten references and old book italics, all under grain, dust and a projector flicker. Words settle, bars wipe, small text types on, and every card keeps drifting slowly; nothing bounces.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"field\": \"night\"}}}, or as a footage \"cutaway\". Fields: night, steel, crimson, paper, sepia (field and colour names from other themes are mapped onto these). Cards with a photograph take \"scene\" (city, portrait, landscape, ship, group, ruins) or \"image\" (a URL, shown monochrome). Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/lower-third\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"name\": \"…\", \"y\": 1690}}. Every word, colour and position is a prop. Kit: library/themes/historical/kit.js. Files: library/themes/historical/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "An archival print lies tilted on the table while the headline sets itself in tall capitals across its lower edge, the last line over a crimson brush stroke.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two words stacked either side of a long panoramic print, one setting from the left above it and one from the right below.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Ticker wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Rows of newsreel tickers crawling slowly in alternating directions: bold capitals, crimson bands, outlines, typewriter and serif.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "One sentence set word by word in tall capitals on a torn sheet of bone paper; accent words print in crimson with a brush underline, then a stamp is pressed on.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "A year or figure in huge numerals on a torn charcoal block, counting up, with a label bar, a tick rule and a note.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote page",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quotation as a page from the archive: old book italic appearing line by line, a large crimson quotation mark, the source on a stacked caption.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Contents",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A contents page: the title over a brush stroke, then numbered entries wiping on one by one along a thin line, the newest number in crimson.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Then and now",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two prints of the same place in different photographic tones, one above the other, each with its word on a bar, a torn paper strip between them.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Era card",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A chapter number in very large numerals with \"Chapter\" written across it in copperplate, the title on a bar, a tick rule and a pressed stamp.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Film leader",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "A film-leader countdown: rings, cross-hairs and a sweeping wedge, the count stepping down with a flash on each change, then the go word on a bar.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "A closing card set like a silent-film intertitle: a double-ruled frame, the sign-off between ornament rules, a call to action, the handle typed on, and a slow ticker band.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword slam",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One word in tall capitals arriving letter by letter on a band of colour dragged across the frame by a dry brush, with a typed kicker.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight swipe",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A sentence on dark strips; a bar of colour wipes in behind the words you mark.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "The stacked caption: optional year box, name on a crimson bar, role on a dark strip, over a brush stroke.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "A ledger-spine label running up one edge: torn charcoal strip, brush stroke and a small end bar.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Marquee band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A slowly scrolling newsreel title band on torn colour with a thin typed strip running the other way.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Archive markings in the four corners on bars and typed strips, with brush strokes and a catalogue letter on a paper tab.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "An aged paper mount with photo corners and tape around an empty window, with a label bar and caption.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A round archive stamp pressed onto a torn, taped paper slip.",
+      "over": true
+    }
+  ]
+}

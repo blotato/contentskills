@@ -1,0 +1,167 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D in the theme colors, drawn with glowing edges and points rather than lit surfaces: wireframe solids, plus shader scenes with their own glow pass, depth and camera moves.",
+  "usage": "{\"piece\": \"three/wire-globe\"}; explainers take data: {\"piece\": \"three/data-bars\", \"props\": {\"items\": [{\"label\": \"A\", \"value\": 3}]}}. Files: library/themes/futuristic/three/pieces/ (_fx.js is the shared glow stage and shader kit, not a piece).",
+  "groups": [
+    "Objects",
+    "Backdrops",
+    "Explainers"
+  ],
+  "items": [
+    {
+      "id": "wire-globe",
+      "name": "Wire globe",
+      "group": "Objects",
+      "piece": "three/wire-globe",
+      "description": "A rotating wireframe globe with lit nodes and orbit rings."
+    },
+    {
+      "id": "data-core",
+      "name": "Data core",
+      "group": "Objects",
+      "piece": "three/data-core",
+      "description": "Nested wireframe solids turning around a bright core."
+    },
+    {
+      "id": "grid-run",
+      "name": "Grid run",
+      "group": "Backdrops",
+      "piece": "three/grid-run",
+      "description": "An endless floor grid rushing to the horizon."
+    },
+    {
+      "id": "holo-knot",
+      "name": "Hologram knot",
+      "group": "Objects",
+      "piece": "three/holo-knot",
+      "description": "A hologram of a knotted form prints itself above an emitter, then turns with rim light, scanlines and glitch slices: the prototype, the model, new tech."
+    },
+    {
+      "id": "particle-morph",
+      "name": "Particle morph",
+      "group": "Objects",
+      "piece": "three/particle-morph",
+      "description": "26,000 points flow from sphere to cube to torus to wave sheet and back (loop): transformation, data taking shape."
+    },
+    {
+      "id": "plasma-orb",
+      "name": "Plasma orb",
+      "group": "Objects",
+      "piece": "three/plasma-orb",
+      "description": "A living orb whose noise-driven surface glows in contour lines, with a halo and orbiting sparks: energy, the AI, the core idea."
+    },
+    {
+      "id": "dna-helix",
+      "name": "DNA helix",
+      "group": "Objects",
+      "piece": "three/dna-helix",
+      "description": "A double helix of points grows, turns and pulses, with depth-of-field blur: biology, the code of life, what it is made of."
+    },
+    {
+      "id": "neural-net",
+      "name": "Neural net",
+      "group": "Objects",
+      "piece": "three/neural-net",
+      "description": "Layers of ring nodes with waves of signal running down the connections: AI, learning, how the model decides."
+    },
+    {
+      "id": "net-globe",
+      "name": "Net globe",
+      "group": "Objects",
+      "piece": "three/net-globe",
+      "description": "A point-cloud planet (abstract land shapes) with an atmosphere rim and comets arcing between hubs: global, the network, traffic."
+    },
+    {
+      "id": "voxel-cube",
+      "name": "Voxel cube",
+      "group": "Objects",
+      "piece": "three/voxel-cube",
+      "description": "Hundreds of voxels fly in and lock into a cube, get scanned, then its layers twist: storage, the dataset, building blocks."
+    },
+    {
+      "id": "hex-shield",
+      "name": "Hex shield",
+      "group": "Objects",
+      "piece": "three/hex-shield",
+      "description": "A dome of hexagonal cells rises over a core and takes hits that ripple across it: security, protection, blocked."
+    },
+    {
+      "id": "event-horizon",
+      "name": "Event horizon",
+      "group": "Objects",
+      "piece": "three/event-horizon",
+      "description": "A black hole with a swirling particle disk whose far side bends over the shadow (loop): gravity, the pull, no way back."
+    },
+    {
+      "id": "circuit-pulse",
+      "name": "Circuit pulse",
+      "group": "Objects",
+      "piece": "three/circuit-pulse",
+      "description": "Traces route themselves out from a chip and carry pulses of current to their pads: hardware, processing, power on."
+    },
+    {
+      "id": "sonic-rings",
+      "name": "Sonic rings",
+      "group": "Objects",
+      "piece": "three/sonic-rings",
+      "description": "Concentric rings rippling as a 3D spectrum around a pulsing core (loop): audio, voice, signal, frequency."
+    },
+    {
+      "id": "neon-terrain",
+      "name": "Neon terrain",
+      "group": "Backdrops",
+      "piece": "three/neon-terrain",
+      "description": "A low flight down a valley of wireframe mountains toward a slotted sun (loop): the future, the journey, a title bed."
+    },
+    {
+      "id": "warp-tunnel",
+      "name": "Warp tunnel",
+      "group": "Backdrops",
+      "piece": "three/warp-tunnel",
+      "description": "Light streaks and hexagonal gates rushing past at hyperspeed (loop): speed, acceleration, the jump."
+    },
+    {
+      "id": "wire-city",
+      "name": "Wire city",
+      "group": "Backdrops",
+      "piece": "three/wire-city",
+      "description": "A flight down the avenue of a wireframe city with lit windows (loop): the city, the market, infrastructure, scale."
+    },
+    {
+      "id": "data-rain",
+      "name": "Data rain",
+      "group": "Backdrops",
+      "piece": "three/data-rain",
+      "description": "Columns of glyphs falling through depth with bright heads and fading tails (loop): data, code, the system underneath."
+    },
+    {
+      "id": "data-bars",
+      "name": "Data bars",
+      "group": "Explainers",
+      "piece": "three/data-bars",
+      "description": "A 3D bar chart on a mirrored floor: bars rise and count up, the largest in amber. Props: items [{label, value}], unit, highlight, note."
+    },
+    {
+      "id": "node-map",
+      "name": "Node map",
+      "group": "Explainers",
+      "piece": "three/node-map",
+      "description": "A labelled hub-and-spoke network that draws itself, then carries signals both ways. Props: center, nodes [label, ...]."
+    },
+    {
+      "id": "geo-arcs",
+      "name": "Geo arcs",
+      "group": "Explainers",
+      "piece": "three/geo-arcs",
+      "description": "A lattice globe with named places at real coordinates and routes arcing between them. Props: points [{name, lat, lon}], routes [[from, to], ...]."
+    },
+    {
+      "id": "layer-stack",
+      "name": "Layer stack",
+      "group": "Explainers",
+      "piece": "three/layer-stack",
+      "description": "A stack that assembles one numbered, named layer at a time, then streams light through. Props: layers [label, ...] bottom first."
+    }
+  ]
+}

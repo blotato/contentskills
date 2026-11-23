@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Calm kinetic typography in the theme’s look: a heavy tight grotesque on mint-cream paper, paired with wide caps, a serif italic and handwriting. Nothing slams: tracking settles from wide to tight, words fade up one after another, letters rise softly, giant outlined letters drift past as wallpaper, pictures wipe open and everything keeps pushing in gently. The 19 ids are the same in every theme, so a storyboard can switch themes.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\" (a candidate may then omit \"visual\") or as its \"visual\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"SLOW\", \"MORNINGS\"], \"accent\": \"leaf\"}}}, or as a footage \"cutaway\". Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"Unhurried\", \"y\": 330}}. Every word and position is a prop; \"accent\" (leaf, clay, teal or sun) picks the colour that leads; overlays animate out when given \"life\". Kit: library/themes/lifestyle/kit.js. Files: library/themes/lifestyle/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A headline rises letter by letter into the middle of the paper under a serif-italic kicker while giant outlined letters drift past as wallpaper; a brushed underline draws beneath.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two huge words slide in from opposite sides around a wide square-cornered picture that wipes open and slowly pushes in, with a serif caption and a handwritten note.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Marquee wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Slow marquee rows drifting in opposite directions: solid ink, outlined, and bands of ink and the accent colour. Calm enough to sit behind another piece.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "A sentence arrives one word at a time, pale then full strength; emphasised words turn the accent colour with a brushed underline. A soft blob breathes behind.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "One enormous number settles with its tracking closing up (counting up if numeric) over a breathing blob, with a wide-caps kicker, heavy label and serif note.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote card",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quote on a slip of cream paper taped to the card: the slip slides up, a serif quote mark fades in, the words arrive in turn, then the attribution.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A list that builds a row at a time: numbers in the accent colour, heavy items, hairlines drawing under each; the newest row carries a dot and earlier rows soften.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two choices stacked: a panel of the second accent slides up over the lower half, each word settles in its half, and an ink disc with a serif-italic “or” sits on the seam.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A huge outlined number fills with the accent colour from the bottom up while it pushes in; kicker in wide caps above, title and serif note below.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "A gentle countdown: each number rises, rests while a thin ring draws once around it, then drifts away; the last beat is the go word on a disc of the accent colour.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The sign-off: closing lines rise in, a brushed loop draws, the call to action lands in an ink pill, the handle writes on by hand, and a marquee band slides up along the bottom.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One word crosses the frame huge in outline, then settles in solid cream with its tracking closing up under a wide-caps kicker. `solid` puts it in ink on a paper band.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight swipe",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A cream sentence arrives word by word and a brushed band of the accent colour swipes in behind the marked words.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A name plate: a paper slip slides out from the left edge, the name settles onto it, the role follows on a strip of the accent colour and a brushed loop draws.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "A title running up one edge: a paper strip slides in from the side with the heavy title along it and a slim accent strip carrying a caps subline.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Marquee band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A paper band across the frame carrying a slow ink marquee, with a slim accent band beneath running the subline the other way.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Four small cream captions tucked into the corners with thin rules that draw towards the middle; the whole centre stays free.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "A paper mat for a picture-in-picture: the border grows open, a strip of tape lands on it, a pill tag names it and a handwritten caption writes on.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A round paper sticker on a soft blob of the accent colour: a short heavy word in the middle, a caps phrase turning slowly around the rim.",
+      "over": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "lifestyle",
+  "title": "Lifestyle",
+  "summary": "A bright, airy lifestyle look: pale mint-cream paper, warm brown-black ink and one fresh leaf green; a heavy tight grotesque paired with wide caps, a serif italic and handwriting; square-cornered photo collages, paper mats, pill tags and brushed scribbles. Nothing slams — tracking settles, words fade up, pictures wipe open and everything keeps drifting gently. Footage is graded faded and warm.",
+  "categories": ["overlays", "text", "effects", "transitions", "fonts", "captions", "voiceover", "d3", "three", "lottie"],
+  "pieceFonts": [
+    "900 20px \"Inter Tight\"",
+    "800 20px \"Inter Tight\"",
+    "700 20px \"Inter Tight\"",
+    "600 20px \"Inter Tight\"",
+    "800 20px Montserrat",
+    "700 20px Caveat",
+    "20px \"Instrument Serif Italic\""
+  ],
+  "look": {"surface":"#F5F8E9","ink":"#2B221C","dim":"#3E8B89","line":"#D7E5C4","accent":"#D8694A","accent2":"#6CAE48","head":"Inter Tight","headWeight":900,"body":"Inter Tight","mono":"Inter Tight","card":"paper","radius":32},
+  "colors": {
+    "paper": "#E8F1DA",
+    "deep": "#D7E5C4",
+    "cream": "#F5F8E9",
+    "ink": "#2B221C",
+    "leaf": "#6CAE48",
+    "sage": "#8FBBAA",
+    "teal": "#3E8B89",
+    "sky": "#A9D3D6",
+    "sun": "#E9B44C",
+    "clay": "#D8694A",
+    "blush": "#EFC6B2"
+  },
+  "frame": {
+    "background": "#E8F1DA",
+    "headingFont": "\"Inter Tight\"",
+    "headingColor": "#2B221C"
+  }
+}

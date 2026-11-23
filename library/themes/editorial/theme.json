@@ -1,0 +1,47 @@
+{
+  "id": "editorial",
+  "title": "Editorial",
+  "summary": "A clean, modern magazine look whose colours are measured on the footage itself: cool daylight paper, aubergine ink, the wine red of a plaid jacket and warm skin blush. A condensed high-contrast serif (Instrument Serif) with its italic for the one word that matters, a Didone (Bodoni Moda) for mastheads and big numerals, small widely tracked Inter Tight capitals, DM Mono folios. Thin rules, folios, issue numbers, pull quotes, drop caps, a 12-column grid and generous margins. Smooth, precise motion: text rises from behind a hairline, rules draw, paper cards glide and settle, letters fade up, soft focus pulls and glides between pictures. Nothing bounces, flashes or glows. Original work in the genre of editorial design.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "400 20px \"Instrument Serif\"",
+    "400 20px \"Instrument Serif Italic\"",
+    "400 20px \"Bodoni Moda\"",
+    "600 20px \"Bodoni Moda\"",
+    "500 20px \"Inter Tight\"",
+    "600 20px \"Inter Tight\"",
+    "700 20px \"Inter Tight\"",
+    "400 20px \"DM Mono\"",
+    "500 20px \"DM Mono\"",
+    "900 20px Archivo",
+    "800 20px Archivo"
+  ],
+  "look": {"surface":"#EDF0EB","ink":"#26101A","dim":"#4B3933","line":"#C3C8C1","accent":"#A70A3E","accent2":"#7A2137","head":"Instrument Serif","headWeight":400,"body":"Inter Tight","mono":"DM Mono","card":"paper","radius":2},
+  "colors": {
+    "paper": "#EDF0EB",
+    "stone": "#D5DBD5",
+    "fog": "#C3C8C1",
+    "ink": "#26101A",
+    "umber": "#4B3933",
+    "wine": "#7A2137",
+    "crimson": "#A70A3E",
+    "blush": "#DFA78C",
+    "clay": "#C98F77"
+  },
+  "frame": {
+    "background": "#EDF0EB",
+    "headingFont": "Instrument Serif",
+    "headingColor": "#26101A"
+  }
+}

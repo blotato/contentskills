@@ -1,0 +1,36 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Six caption styles in light, playing over the sample clip with its real word timings: words that land orange to white, red and blue echoes, an underline of light, one word at a time, mono subtitles and the prompt card.",
+  "usage": "In a storyboard: {\"captions\": \"landing\"}. Styles: library/themes/lines-of-light/captions/styles.js.",
+  "groups": [
+    "Word highlight",
+    "Build-up"
+  ],
+  "items": [
+    {
+      "id": "landing",
+      "group": "Word highlight"
+    },
+    {
+      "id": "echo",
+      "group": "Word highlight"
+    },
+    {
+      "id": "light-underline",
+      "group": "Word highlight"
+    },
+    {
+      "id": "one-word",
+      "group": "Word highlight"
+    },
+    {
+      "id": "mono-sub",
+      "group": "Build-up"
+    },
+    {
+      "id": "prompt",
+      "group": "Build-up"
+    }
+  ]
+}

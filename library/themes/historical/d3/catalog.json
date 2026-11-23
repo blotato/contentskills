@@ -1,0 +1,97 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Diagrams drawn as documents on the table: a torn bone paper sheet at a small angle, dark ink with crimson as the only accent, the title on a crimson bar and the unit typewritten. Lines draw themselves, bars are ruled in slowly, figures count, text types on. Maps, timelines, lineages and documents for history, plus the usual charts. Use them full-screen as cutaways, or pass \"clear\": true to float the sheet over footage.",
+  "usage": "{\"piece\": \"d3/timeline\", \"props\": {\"title\": \"\u2026\", \"stops\": [{\"label\": \"\u2026\", \"note\": \"1848\"}]}}. Sample data is illustrative and the names are invented: replace them. Shared card: library/themes/historical/d3/pieces/_card.js. Files: library/themes/historical/d3/pieces/.",
+  "groups": [
+    "History",
+    "Charts",
+    "Figures"
+  ],
+  "items": [
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "group": "History",
+      "piece": "d3/timeline",
+      "description": "Dates and events down a ruled line with tick marks; the line draws itself and each entry is made as the pen reaches it."
+    },
+    {
+      "id": "route-map",
+      "name": "Route map",
+      "group": "History",
+      "piece": "d3/route-map",
+      "description": "A paper map of a made-up coast with graticule, compass and scale; a dashed crimson route travels from place to place and each name is entered as it arrives."
+    },
+    {
+      "id": "family-tree",
+      "name": "Family tree",
+      "group": "History",
+      "piece": "d3/family-tree",
+      "description": "A lineage of name boxes joined by ruled lines, drawn on generation by generation, with one person marked in crimson."
+    },
+    {
+      "id": "then-now",
+      "name": "Then and now",
+      "group": "History",
+      "piece": "d3/then-now",
+      "description": "Two prints side by side, an older sepia one and a later silver one, each with a label bar, caption and a figure that counts up."
+    },
+    {
+      "id": "era-bands",
+      "name": "Era bands",
+      "group": "History",
+      "piece": "d3/era-bands",
+      "description": "Overlapping eras or reigns as bands ruled in along a year axis, one row each."
+    },
+    {
+      "id": "document",
+      "name": "Document",
+      "group": "History",
+      "piece": "d3/document",
+      "description": "A letter or decree: a serif heading between rules, body lines that type themselves on, a pen signature and a rubber stamp pressed on at the end."
+    },
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Ledger bars in dark ink growing from a ruled baseline, the tallest in crimson, figures counting up above."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "A pen line plotted across ruled paper, drawing itself point to point; the final figure is entered in crimson."
+    },
+    {
+      "id": "ranking",
+      "name": "Ranking",
+      "group": "Charts",
+      "piece": "d3/ranking",
+      "description": "A numbered ledger of ink bars ruled in from the left, the leader in crimson."
+    },
+    {
+      "id": "share",
+      "name": "Share ring",
+      "group": "Charts",
+      "piece": "d3/share",
+      "description": "Shares of a whole as an inked ring sweeping round, with a key and figures that count up."
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Figures",
+      "piece": "d3/big-number",
+      "description": "One figure entered large and counting up, underlined with a dry crimson brush stroke, with a label bar and a rubber stamp."
+    },
+    {
+      "id": "pictogram",
+      "name": "Pictogram",
+      "group": "Figures",
+      "piece": "d3/pictogram",
+      "description": "A muster roll of small standing figures; some are inked in crimson one by one as a tally counts up."
+    }
+  ]
+}

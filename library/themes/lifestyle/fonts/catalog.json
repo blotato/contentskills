@@ -1,0 +1,166 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "A heavy tight grotesque, wide caps, a serif italic and handwriting: the airy editorial pairing of lifestyle films. All bundled locally with open licences (see files/*-LICENSE.txt).",
+  "usage": "The theme uses Inter Tight (900) for headlines and (600) for text, Montserrat (800) for wide caps, Instrument Serif Italic for the elegant word and Caveat for handwritten notes. The others are alternates.",
+  "groups": [
+    "Headline",
+    "Wide caps",
+    "Serif",
+    "Handwriting",
+    "Text"
+  ],
+  "items": [
+    {
+      "id": "inter-tight",
+      "family": "Inter Tight",
+      "file": "files/InterTight-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        600,
+        900
+      ],
+      "note": "Theme headline and text face: a heavy, tight-set grotesque. Set at 900 with negative tracking.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "file": "files/Montserrat-Variable.ttf",
+      "group": "Wide caps",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Theme wide caps: short words and labels at 800, tracked out.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "archivo-black",
+      "family": "Archivo Black",
+      "file": "files/ArchivoBlack-Regular.ttf",
+      "group": "Headline",
+      "weights": [
+        400
+      ],
+      "note": "Broader, blunter alternate headline.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "syne",
+      "family": "Syne",
+      "file": "files/Syne-Variable.ttf",
+      "group": "Wide caps",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Extra-wide at 800: an expressive alternate for one-word titles.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "space-grotesk",
+      "family": "Space Grotesk",
+      "file": "files/SpaceGrotesk-Variable.ttf",
+      "group": "Headline",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Quirkier grotesque alternate for sublines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "instrument-serif-italic",
+      "family": "Instrument Serif Italic",
+      "file": "files/InstrumentSerif-Italic.ttf",
+      "group": "Serif",
+      "weights": [
+        400
+      ],
+      "note": "Theme serif italic: the one elegant word in a lockup.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "instrument-serif",
+      "family": "Instrument Serif",
+      "file": "files/InstrumentSerif-Regular.ttf",
+      "group": "Serif",
+      "weights": [
+        400
+      ],
+      "note": "Upright companion to the italic.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "playfair-display",
+      "family": "Playfair Display",
+      "file": "files/PlayfairDisplay-Variable.ttf",
+      "group": "Serif",
+      "weights": [
+        400,
+        800
+      ],
+      "note": "High-contrast editorial serif alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "dm-serif-display-italic",
+      "family": "DM Serif Display Italic",
+      "file": "files/DMSerifDisplay-Italic.ttf",
+      "group": "Serif",
+      "weights": [
+        400
+      ],
+      "note": "Heavier italic alternate for big elegant words.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "caveat",
+      "family": "Caveat",
+      "file": "files/Caveat-Variable.ttf",
+      "group": "Handwriting",
+      "weights": [
+        500,
+        700
+      ],
+      "note": "Theme handwriting: margin notes, arrows and asides at 700.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "reenie-beanie",
+      "family": "Reenie Beanie",
+      "file": "files/ReenieBeanie-Regular.ttf",
+      "group": "Handwriting",
+      "weights": [
+        400
+      ],
+      "note": "Scratchier ballpoint alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "dm-sans",
+      "family": "DM Sans",
+      "file": "files/DMSans-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Friendly geometric alternate for captions and body text.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "manrope",
+      "family": "Manrope",
+      "file": "files/Manrope-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        400,
+        800
+      ],
+      "note": "Soft modern alternate for captions and lists.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

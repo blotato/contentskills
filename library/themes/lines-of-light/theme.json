@@ -1,0 +1,41 @@
+{
+  "id": "lines-of-light",
+  "title": "Lines of light",
+  "summary": "Thin lines of light on near-black and deep teal haze: every 1-3 px line has a white core, a red echo offset one way, a blue echo the other and a soft lilac glow. A red dot fires the first line, red marks a cause and blue the result arriving; nothing appears until a line reaches it. Slow eased draw-ons with a hard lock, wide tracked Michroma capitals that land orange, burn red and cool to white, IBM Plex Mono for small UI text.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "20px Michroma",
+    "300 20px \"IBM Plex Mono\"",
+    "500 20px \"IBM Plex Mono\""
+  ],
+  "look": {"surface":"#0b1617","ink":"#f5f3ff","dim":"#8a9696","line":"#1d3436","accent":"#ff46aa","accent2":"#286eff","head":"Michroma","headWeight":400,"body":"IBM Plex Mono","mono":"IBM Plex Mono","card":"glass","radius":18},
+  "colors": {
+    "bg": "#040506",
+    "teal": "#1d3436",
+    "haze": "#0b1617",
+    "core": "#f5f3ff",
+    "lilac": "#f0d6f2",
+    "red": "#ff2e40",
+    "blue": "#286eff",
+    "orange": "#ff821e",
+    "violet": "#9646ff",
+    "pink": "#ff46aa",
+    "dim": "#8a9696"
+  },
+  "frame": {
+    "background": "radial-gradient(110% 70% at 50% 45%,#10201f 0%,#081011 55%,#040506 100%)",
+    "headingFont": "Michroma",
+    "headingColor": "#f5f3ff"
+  }
+}

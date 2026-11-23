@@ -1,0 +1,255 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "Photocopy, paper and wear treatments shown on the sample clip: a drained, cracked base grade, copier and newsprint looks, creases, dust and plaster cracks that boil in held steps, and the rip-and-tint cuts. Previews run at full strength; use less in a video.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"grunge_grade\", \"amount\": 0.8}}} and \"effects\": [{\"name\": \"paper_rip\", \"at\": 2.4, \"seconds\": 0.3, \"amount\": 0.9}, {\"name\": \"tint_flash\", \"at\": 2.4, \"seconds\": 0.25, \"amount\": 0.8}]. On a shot candidate: {\"effect\": {\"name\": \"xerox\", \"amount\": 0.9, \"where\": \"in\"}}. The theme’s own effects are in library/themes/grunge/effects/theme_effects.py; the ones marked Shared come from library/_shared/effects_engine.py.",
+  "groups": [
+    "Look",
+    "Print",
+    "Wear",
+    "Cuts",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "grunge_grade",
+      "name": "grunge grade",
+      "group": "Look",
+      "src": "clips/grunge_grade.mp4",
+      "portrait": true,
+      "description": "The theme base look: colour drained almost to grey, crushed blacks, a faint warm cast, heavy vignette, grain, and thin white plaster cracks and dust over the picture. Use around 0.8 on footage."
+    },
+    {
+      "id": "red_wash",
+      "name": "red wash",
+      "group": "Look",
+      "src": "clips/red_wash.mp4",
+      "portrait": true,
+      "description": "Printed in the one accent colour: shadows soot, midtones hot red-orange, highlights bone, on creased paper. For a beat, not a whole video."
+    },
+    {
+      "id": "vignette",
+      "name": "vignette",
+      "group": "Look",
+      "src": "clips/vignette.mp4",
+      "portrait": true,
+      "description": "Shared: darkens the corners. Already part of grunge grade; use alone on clean footage."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Look",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Shared: fine film grain."
+    },
+    {
+      "id": "letterbox",
+      "name": "letterbox",
+      "group": "Look",
+      "src": "clips/letterbox.mp4",
+      "portrait": true,
+      "description": "Shared: black bars close in top and bottom."
+    },
+    {
+      "id": "photocopy",
+      "name": "photocopy",
+      "group": "Print",
+      "src": "clips/photocopy.mp4",
+      "portrait": true,
+      "description": "A grey office copy: hard contrast, toner banding across the page, burnt dark edges, coarse grain."
+    },
+    {
+      "id": "xerox",
+      "name": "xerox",
+      "group": "Print",
+      "src": "clips/xerox.mp4",
+      "portrait": true,
+      "description": "A copy of a copy: pure toner on bone paper. Edges break into specks, worn patches drop out, streaks drag down the page."
+    },
+    {
+      "id": "halftone_news",
+      "name": "halftone news",
+      "group": "Print",
+      "src": "clips/halftone_news.mp4",
+      "portrait": true,
+      "description": "Cheap newsprint: one coarse black dot screen at 45 degrees on bone paper."
+    },
+    {
+      "id": "paper_overlay",
+      "name": "paper overlay",
+      "group": "Wear",
+      "src": "clips/paper_overlay.mp4",
+      "portrait": true,
+      "description": "The picture printed on crumpled, folded paper: the crumple shades it and creases wear through to white."
+    },
+    {
+      "id": "cracks",
+      "name": "cracks",
+      "group": "Wear",
+      "src": "clips/cracks.mp4",
+      "portrait": true,
+      "description": "White plaster-crack veins across the picture, as if pasted on an old wall. They boil slightly, eight steps a second."
+    },
+    {
+      "id": "dust_scratches",
+      "name": "dust scratches",
+      "group": "Wear",
+      "src": "clips/dust_scratches.mp4",
+      "portrait": true,
+      "description": "Dirt on the glass: pale specks, hairs and the odd long scratch, plus dark flecks, redrawn eight times a second."
+    },
+    {
+      "id": "paper_rip",
+      "name": "paper rip",
+      "group": "Cuts",
+      "src": "clips/paper_rip.mp4",
+      "portrait": true,
+      "description": "The signature cut: ragged bands of white torn paper open across the frame (a cross, a diagonal, two slashes), a different rip every third frame, wider with amount."
+    },
+    {
+      "id": "tint_flash",
+      "name": "tint flash",
+      "group": "Cuts",
+      "src": "clips/tint_flash.mp4",
+      "portrait": true,
+      "description": "The frame turns into a two-colour print on creased paper: teal, then plum, then brick, changing every third frame. Use 0.2 to 0.3 seconds at a cut."
+    },
+    {
+      "id": "torn_jitter",
+      "name": "torn jitter",
+      "group": "Cuts",
+      "src": "clips/torn_jitter.mp4",
+      "portrait": true,
+      "description": "Stop-motion handling: the frame becomes a torn print with a ragged white border that jumps and twists every third frame."
+    },
+    {
+      "id": "camera_shake",
+      "name": "camera shake",
+      "group": "Cuts",
+      "src": "clips/camera_shake.mp4",
+      "portrait": true,
+      "description": "Shared: a short handheld shake, for a stamp or slam landing."
+    },
+    {
+      "id": "flash",
+      "name": "flash",
+      "group": "Cuts",
+      "src": "clips/flash.mp4",
+      "portrait": true,
+      "description": "Shared: a white flash frame."
+    },
+    {
+      "id": "whip",
+      "name": "whip",
+      "group": "Cuts",
+      "src": "clips/whip.mp4",
+      "portrait": true,
+      "description": "Shared: sideways motion blur, as if the camera whipped across."
+    },
+    {
+      "id": "zoom_blur",
+      "name": "zoom blur",
+      "group": "Cuts",
+      "src": "clips/zoom_blur.mp4",
+      "portrait": true,
+      "description": "Shared: a radial blur punching in."
+    },
+    {
+      "id": "shutter",
+      "name": "shutter",
+      "group": "Cuts",
+      "src": "clips/shutter.mp4",
+      "portrait": true,
+      "description": "Shared: black shutter blades close from top and bottom."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

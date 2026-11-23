@@ -1,0 +1,143 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through graphics made to sit on top of footage, shown here over the sample clip: found-footage framing, fog, film damage and failing light for mood; flickering titles, typed date stamps and case-file documents for telling the story. They stutter on, stay uneasy while they are up, and cut out before their time ends. By default they keep to the top, bottom and edges so the speaker's face stays clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/timestamp\", \"start\": 1.2, \"end\": 4.4, \"props\": {\"date\": \"OCTOBER 31\", \"time\": \"3:14 AM\", \"place\": \"\u2026\", \"y\": 1500}}. Positions are in 1080\u00d71920 frame pixels. Mood overlays (camcorder, vignette-fog, film-damage) can run the whole clip. Files: library/themes/horror/overlays/pieces/.",
+  "groups": [
+    "Frame",
+    "Light",
+    "Titles",
+    "Documents",
+    "Meters"
+  ],
+  "items": [
+    {
+      "id": "camcorder",
+      "name": "Camcorder frame",
+      "group": "Frame",
+      "piece": "overlays/camcorder",
+      "description": "Found-footage framing: corner brackets, blinking REC, running timecode, date, tape mode, low battery and a rolling tracking line.",
+      "over": true
+    },
+    {
+      "id": "vignette-fog",
+      "name": "Vignette and fog",
+      "group": "Frame",
+      "piece": "overlays/vignette-fog",
+      "description": "Atmosphere for a whole clip: a heavy vignette, slow fog rolling along the top and bottom, fine grain.",
+      "over": true
+    },
+    {
+      "id": "film-damage",
+      "name": "Film damage",
+      "group": "Frame",
+      "piece": "overlays/film-damage",
+      "description": "Old film stock: running scratches, dust and hairs, a breathing dark gate, grain and the odd flash frame.",
+      "over": true
+    },
+    {
+      "id": "shadow-creep",
+      "name": "Creeping shadow",
+      "group": "Light",
+      "piece": "overlays/shadow-creep",
+      "description": "Soft fingers of darkness lengthening in from the edges of the frame, never quite still.",
+      "over": true
+    },
+    {
+      "id": "light-leak",
+      "name": "Light in the dark",
+      "group": "Light",
+      "piece": "overlays/light-leak",
+      "description": "A cold shaft of light from an upper corner that flares, dips and cuts out like a bad bulb, with dust drifting through it.",
+      "over": true
+    },
+    {
+      "id": "static",
+      "name": "Signal loss",
+      "group": "Light",
+      "piece": "overlays/static",
+      "description": "Bursts of dead-channel noise with torn bands and a NO SIGNAL box, and thin crawls of noise in between.",
+      "over": true
+    },
+    {
+      "id": "title-flicker",
+      "name": "Flickering title",
+      "group": "Titles",
+      "piece": "overlays/title-flicker",
+      "description": "A title switching on between two hairlines while a lamp flares and fails behind it.",
+      "over": true
+    },
+    {
+      "id": "scratch-title",
+      "name": "Scratched title",
+      "group": "Titles",
+      "piece": "overlays/scratch-title",
+      "description": "A word in chipped, worn capitals with rough gouges scratched across it and a handwritten note beneath.",
+      "over": true
+    },
+    {
+      "id": "timestamp",
+      "name": "Date and place stamp",
+      "group": "Titles",
+      "piece": "overlays/timestamp",
+      "description": "A date, time and place typed out line by line at the lower left.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Titles",
+      "piece": "overlays/counter",
+      "description": "A figure that rolls through wrong digits and settles, with a tracked line above and a label below.",
+      "over": true
+    },
+    {
+      "id": "case-file",
+      "name": "Case file",
+      "group": "Documents",
+      "piece": "overlays/case-file",
+      "description": "A case-file card on aged paper: typed heading and rows, and a worn stamp thumped across the corner.",
+      "over": true
+    },
+    {
+      "id": "redacted",
+      "name": "Redacted lines",
+      "group": "Documents",
+      "piece": "overlays/redacted",
+      "description": "Typewritten document lines; chosen words are struck out by marker bars just after they are typed.",
+      "over": true
+    },
+    {
+      "id": "evidence-tag",
+      "name": "Evidence tag",
+      "group": "Documents",
+      "piece": "overlays/evidence-tag",
+      "description": "A numbered evidence marker with a typed note and an unsteady line to the thing it marks.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "Case notes",
+      "group": "Documents",
+      "piece": "overlays/list",
+      "description": "A heading and short numbered lines that switch on one at a time.",
+      "over": true
+    },
+    {
+      "id": "heartbeat",
+      "name": "Heartbeat",
+      "group": "Meters",
+      "piece": "overlays/heartbeat",
+      "description": "A heart-monitor trace with a bright head and a BPM readout that climbs.",
+      "over": true
+    },
+    {
+      "id": "dread-meter",
+      "name": "Dread meter",
+      "group": "Meters",
+      "piece": "overlays/dread-meter",
+      "description": "A hairline meter filling toward a percentage, trembling harder the higher it gets.",
+      "over": true
+    }
+  ]
+}

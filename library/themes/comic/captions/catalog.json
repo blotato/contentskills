@@ -1,0 +1,15 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Six caption styles lettered like a comic: caption boxes, shouted caps, speech balloons, stamped words, slab plates and sound effects, playing over the sample clip with its real word timings.",
+  "usage": "In a storyboard: {\"captions\": \"caption-box\"}. Styles: library/themes/comic/captions/styles.js.",
+  "groups": ["Word highlight", "Build-up", "One word"],
+  "items": [
+    {"id": "caption-box", "group": "Word highlight"},
+    {"id": "shout", "group": "Word highlight"},
+    {"id": "slab-plate", "group": "Word highlight"},
+    {"id": "balloon", "group": "Build-up"},
+    {"id": "ink-pop", "group": "Build-up"},
+    {"id": "sound-effect", "group": "One word"}
+  ]
+}

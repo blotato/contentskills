@@ -1,0 +1,28 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Four caption styles in the theme look, playing over the sample clip with its real word timings.",
+  "usage": "In a storyboard: {\"captions\": \"hud-box\"}. Styles: library/themes/futuristic/captions/styles.js.",
+  "groups": [
+    "Word highlight",
+    "Build-up"
+  ],
+  "items": [
+    {
+      "id": "hud-box",
+      "group": "Word highlight"
+    },
+    {
+      "id": "glow-word",
+      "group": "Word highlight"
+    },
+    {
+      "id": "bracket",
+      "group": "Word highlight"
+    },
+    {
+      "id": "terminal",
+      "group": "Build-up"
+    }
+  ]
+}

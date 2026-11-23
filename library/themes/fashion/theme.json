@@ -1,0 +1,45 @@
+{
+  "id": "fashion",
+  "title": "Fashion",
+  "summary": "A fashion-film look where the footage carries everything: one short white word at a time in clean sans capitals (heavy and wide, or tall and condensed), revealed letter by letter out of a soft blur; the shot shown as a clean card over a blurred, enlarged copy of itself or split into vertical panels; soft zoom-blur, whip and colour-streak cuts; a gentle film grade; hairline rules and tiny credits-style labels. Lots of air, one accent, almost no ornament. For fast edits it adds operated mock-UI cards, kinetic type, project-fed charts and harder cuts in the same restrained look.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "800 20px Montserrat",
+    "700 20px Montserrat",
+    "500 20px Montserrat",
+    "300 20px Oswald",
+    "400 20px Oswald",
+    "500 20px Oswald"
+  ],
+  "look": {"surface":"#FFFFFF","ink":"#0D0D0F","dim":"#8D8D92","line":"#F1EEE8","accent":"#E8402A","accent2":"#2450E6","head":"Montserrat","headWeight":800,"body":"Montserrat","mono":"Oswald","card":"flat","radius":0},
+  "colors": {
+    "white": "#FFFFFF",
+    "bone": "#F1EEE8",
+    "ink": "#0D0D0F",
+    "coal": "#1B1B1F",
+    "smoke": "#8D8D92",
+    "poppy": "#E8402A",
+    "cobalt": "#2450E6",
+    "sun": "#F4B62B",
+    "sky": "#7C9BAD",
+    "meadow": "#647F52",
+    "stone": "#857D72",
+    "dusk": "#A4674F"
+  },
+  "frame": {
+    "background": "#0D0D0F",
+    "headingFont": "Montserrat",
+    "headingColor": "#FFFFFF"
+  }
+}

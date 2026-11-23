@@ -1,0 +1,61 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "Dark 3D scenes and backdrops: silhouettes in fog, rooms lit by one failing source, a moon behind cloud. Everything is nearly black with a single cold (or one warm) light, and the theme's vignette, grain and lamp dips are laid over the canvas so 3D matches the 2D pieces. Use them as a shot's visual or as the background behind a title.",
+  "usage": "{\"piece\": \"three/fog-forest\"} or {\"background\": {\"piece\": \"three/moon-clouds\"}}. Files: library/themes/horror/three/pieces/.",
+  "groups": [
+    "Scenes",
+    "Light"
+  ],
+  "items": [
+    {
+      "id": "fog-forest",
+      "name": "Fog forest",
+      "group": "Scenes",
+      "piece": "three/fog-forest",
+      "description": "Bare black trees standing in rows that fade into cold blue mist, a pale moon behind them, the camera creeping forward. Loops."
+    },
+    {
+      "id": "corridor",
+      "name": "Corridor",
+      "group": "Scenes",
+      "piece": "three/corridor",
+      "description": "A long dark corridor of doors with failing lights; the camera creeps toward the far end."
+    },
+    {
+      "id": "door-ajar",
+      "name": "Door ajar",
+      "group": "Scenes",
+      "piece": "three/door-ajar",
+      "description": "A door opening very slowly on a lit space beyond; a wedge of cold light spreads across the floor, then the light fails."
+    },
+    {
+      "id": "old-house",
+      "name": "House on the hill",
+      "group": "Scenes",
+      "piece": "three/old-house",
+      "description": "A house in silhouette against a cold sky with one unsteady lit window, mist sliding past in layers. Loops."
+    },
+    {
+      "id": "hanging-bulb",
+      "name": "Hanging bulb",
+      "group": "Light",
+      "piece": "three/hanging-bulb",
+      "description": "A bare bulb swinging on its wire in an empty room, its light sliding over a chair and boxes and flickering. Loops."
+    },
+    {
+      "id": "dust-shaft",
+      "name": "Dust in the light",
+      "group": "Light",
+      "piece": "three/dust-shaft",
+      "description": "A shaft of cold light through a barred window with dust turning slowly inside it. A quiet backdrop. Loops."
+    },
+    {
+      "id": "moon-clouds",
+      "name": "Moon and cloud",
+      "group": "Light",
+      "piece": "three/moon-clouds",
+      "description": "A full moon smothered and released by torn drifting cloud above black treetops. A backdrop for titles. Loops."
+    }
+  ]
+}

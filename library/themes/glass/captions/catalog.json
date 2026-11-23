@@ -1,0 +1,63 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Twelve caption styles in the glass look over the sample clip: frosted-glass pills (glass-pill is the default, glass-word for the fastest stretches), clean Inter Tight type, kinetic styles that mark emphasis on azure blocks.",
+  "usage": "In a storyboard: {\"captions\": \"glass-pill\"}. glass-pill is the theme default; glass-word shows one word at a time; kinetic, kinetic-ink and kinetic-bold land each word a size too large with emphasis on azure blocks. Styles: library/themes/glass/captions/styles.js.",
+  "groups": [
+    "Glass",
+    "One word",
+    "Phrases",
+    "On bone",
+    "Kinetic"
+  ],
+  "items": [
+    {
+      "id": "glass-pill",
+      "group": "Glass"
+    },
+    {
+      "id": "glass-word",
+      "group": "Glass"
+    },
+    {
+      "id": "one-word",
+      "group": "One word"
+    },
+    {
+      "id": "tall-word",
+      "group": "One word"
+    },
+    {
+      "id": "phrase",
+      "group": "Phrases"
+    },
+    {
+      "id": "hairline",
+      "group": "Phrases"
+    },
+    {
+      "id": "small-print",
+      "group": "Phrases"
+    },
+    {
+      "id": "ink-bar",
+      "group": "On bone"
+    },
+    {
+      "id": "ink-word",
+      "group": "On bone"
+    },
+    {
+      "id": "kinetic",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-ink",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-bold",
+      "group": "Kinetic"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D printed like a comic rather than lit: flat colours, thick ink outlines, Ben-Day halftone dots for the shadow tone, bursts and zoom lines behind, all inside an inked panel on a paper gutter. Objects pop and boil; backdrops loop.",
+  "usage": "{\"piece\": \"three/pow-burst\"}; the explainer takes words: {\"piece\": \"three/panel-stack\", \"props\": {\"items\": [\"IDEA\", \"SCRIPT\", \"POST\"]}}. Backdrops (speed-tunnel, city-block, dot-wave) work as a shot \"background\". Files: library/themes/comic/three/pieces/ (_toon.js is the shared print stage, toon material and ink helpers, not a piece).",
+  "groups": [
+    "Objects",
+    "Backdrops",
+    "Explainers"
+  ],
+  "items": [
+    {
+      "id": "pow-burst",
+      "name": "Pow burst",
+      "group": "Objects",
+      "piece": "three/pow-burst",
+      "description": "Three jagged bursts stacked in depth pop out and rock in space under a star, with sparks circling over turning zoom lines."
+    },
+    {
+      "id": "toon-globe",
+      "name": "Toon globe",
+      "group": "Objects",
+      "piece": "three/toon-globe",
+      "description": "A printed globe with an ink coastline and halftone night side, a tilted ring with a moon, and sparks. Loops."
+    },
+    {
+      "id": "coin-flip",
+      "name": "Coin flip",
+      "group": "Objects",
+      "piece": "three/coin-flip",
+      "description": "A gold coin is flicked up, tumbles and smacks down with a burst while its hard shadow tracks it."
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket",
+      "group": "Objects",
+      "piece": "three/rocket",
+      "description": "A toy rocket blasting up the panel with a flickering flame, inked smoke puffs and speed streaks. Loops."
+    },
+    {
+      "id": "speed-tunnel",
+      "name": "Speed tunnel",
+      "group": "Backdrops",
+      "piece": "three/speed-tunnel",
+      "description": "Flying down a corridor of inked panel frames in the primaries with speed streaks. Loops."
+    },
+    {
+      "id": "city-block",
+      "name": "City block",
+      "group": "Backdrops",
+      "piece": "three/city-block",
+      "description": "A flat inked skyline with lit windows sliding past in three depths under a burst sun and a halftone sky. Loops."
+    },
+    {
+      "id": "dot-wave",
+      "name": "Dot wave",
+      "group": "Backdrops",
+      "piece": "three/dot-wave",
+      "description": "A halftone screen seen at an angle: a floor of red and blue dots swelling as a wave rolls through. Loops."
+    },
+    {
+      "id": "panel-stack",
+      "name": "Panel stack",
+      "group": "Explainers",
+      "piece": "three/panel-stack",
+      "description": "Comic panels whip in one at a time and land in a fanned stack, each with a shouted word: steps, a list, a pipeline."
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Kinetic type as a photocopied street poster: heavy grotesque capitals worn like bad print, typed on behind a block cursor or stamped down, on torn paper strips with tape, marker scrawls and typewriter labels, all boiling at 8 frames a second.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\" (a candidate may then omit \"visual\") or as its \"visual\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"accent\": \"red\"}}}, or as a footage \"cutaway\". Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"FOCUS\", \"y\": 330}}. Every word and position is a prop; \"accent\" (red, lime or bone) picks the colour that leads. Kit: library/themes/grunge/kit.js. Files: library/themes/grunge/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline slam",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A headline typed onto the wall letter by letter behind a block cursor, first line bone and the rest in the accent, with a highlighter stroke under the kicker, a pen-test zigzag and typewriter labels. Opens on a rip.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two extra-wide words shoved in from opposite sides over a taped-down photocopy slapped between them, with caption scraps and a typed note.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Marquee wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "A wall of pasted strips, bare type, bone paper and one in the accent, each scrolling its own way in held steps.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "A sentence in heavy caps arriving word by word; the words that matter are in the accent and get circled in marker. Taped field-note tag above.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "One huge condensed number stamped down digit by digit with a hit and a shake, ringed in marker, its label slapped underneath on a scrap.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote card",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quote in black caps on bone paper taped to the wall, a huge quote mark in the accent, a marker swipe under the last line and the name scrawled by hand.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A list pasted up strip by strip: torn paper strips stamped down in turn, numbered in the accent and ticked off in marker.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "A sheet of bone paper dragged over the top half with one word in black, the other typed on the bare wall in the accent, and a scrap stamped on the tear between them.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A chapter break flooded with the accent: a huge number stamped in black and the title typed onto a black strip torn across the frame.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "A film-leader countdown: each number stamped on its beat inside a boiling marker ring with a rip flashing at the cut; the last beat is the word on a brush stroke.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The sign-off typed in two colours, the handle written in marker on tape with an arrow scrawled at it, and a torn strip scrolling along the bottom.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword slam",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One word stamped onto the footage on a torn strip (black with the accent, or solid accent with black type) with a taped typewriter tag.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight swipe",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A line of caps on black torn strips; a highlighter stroke is dragged behind the marked words, which flip to black as it passes.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A name in black on a bone strip shoved in from the left and taped down, with the role on a small scrap in the accent.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "A paper strip pasted up the side of the frame with a typed sub-label on a second scrap.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Marquee band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A torn strip in the accent scrolling heavy caps in held steps, with a thin black strip of typewriter text running the other way.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Four typed labels in the corners with marker registration crosses and a small letter scrap; keeps the middle clear.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "A torn bone-paper window for a picture-in-picture, taped at two corners, with a label scrap and a typed caption.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A roughly cut round paper sticker with a word, typewriter text round the rim and an inked ring, slapped on like a stamp.",
+      "over": true
+    }
+  ]
+}

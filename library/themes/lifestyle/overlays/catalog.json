@@ -1,0 +1,167 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through graphics made to sit on top of footage, shown here over the sample clip: paper mats and picture frames, title lockups and tags set straight on the picture, paper cards for tips, steps and checklists, handwritten notes and soft colour washes. They glide in, keep drifting gently while they are up and fade away before their time ends. Defaults keep the middle of the frame (the face) clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/title-lockup\", \"start\": 1.2, \"end\": 4.0, \"props\": {\"title\": \"Slow mornings\", \"y\": 300}}. Positions are props in 1080×1920 frame pixels; \"accent\" (leaf, clay, teal or sun) picks the colour that leads; lists take \"times\" (seconds after the overlay starts) to cue each row; picture frames take \"image\"/\"images\" URLs and otherwise show a drawn stand-in scene. Kit: library/themes/lifestyle/kit.js. Files: library/themes/lifestyle/overlays/pieces/.",
+  "groups": [
+    "Frames",
+    "Titles & tags",
+    "Cards & lists",
+    "Notes",
+    "Atmosphere"
+  ],
+  "items": [
+    {
+      "id": "photo-mat",
+      "name": "Photo mat",
+      "group": "Frames",
+      "piece": "overlays/photo-mat",
+      "description": "A paper mat slides in around the whole picture like a mounted print, with a title and date on the wide bottom bar, a pill tag and a handwritten note.",
+      "over": true
+    },
+    {
+      "id": "collage-strip",
+      "name": "Collage strip",
+      "group": "Frames",
+      "piece": "overlays/collage-strip",
+      "description": "Three square-cornered pictures butted together with thin paper gutters along the top; each wipes open in turn and keeps pushing in.",
+      "over": true
+    },
+    {
+      "id": "photo-stack",
+      "name": "Photo stack",
+      "group": "Frames",
+      "piece": "overlays/photo-stack",
+      "description": "Two or three taped paper prints float down into a corner, turn a few degrees as they settle and carry a handwritten caption.",
+      "over": true
+    },
+    {
+      "id": "arch-window",
+      "name": "Arch window",
+      "group": "Frames",
+      "piece": "overlays/arch-window",
+      "description": "An arch-shaped picture window with a drawn outline, a pill tag on its foot and a handwritten note with an arrow.",
+      "over": true
+    },
+    {
+      "id": "title-lockup",
+      "name": "Title lockup",
+      "group": "Titles & tags",
+      "piece": "overlays/title-lockup",
+      "description": "Wide-caps kicker, a heavy cream title settling from wide tracking to tight, a short rule and a serif-italic subtitle, straight on the footage.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Titles & tags",
+      "piece": "overlays/counter",
+      "description": "A big number counts up on a long ease with a wide-caps label, a serif-italic unit and a brushed underline.",
+      "over": true
+    },
+    {
+      "id": "location-tag",
+      "name": "Location tag",
+      "group": "Titles & tags",
+      "piece": "overlays/location-tag",
+      "description": "A pin drops, a paper pill slides out with the place name and a caps caption line fades up underneath.",
+      "over": true
+    },
+    {
+      "id": "date-stamp",
+      "name": "Date stamp",
+      "group": "Titles & tags",
+      "piece": "overlays/date-stamp",
+      "description": "A diary stamp in a corner: day in wide caps, a big day number, the month in serif italic and the time of day.",
+      "over": true
+    },
+    {
+      "id": "price-tag",
+      "name": "Price tag",
+      "group": "Titles & tags",
+      "piece": "overlays/price-tag",
+      "description": "A paper swing tag on a string tilts into place with the product name, the price in heavy type and a struck-through old price. Sample values.",
+      "over": true
+    },
+    {
+      "id": "rating",
+      "name": "Rating",
+      "group": "Titles & tags",
+      "piece": "overlays/rating",
+      "description": "Five stars fill left to right to the value while the number counts up, with a caps label. Sample values.",
+      "over": true
+    },
+    {
+      "id": "progress-dots",
+      "name": "Progress dots",
+      "group": "Titles & tags",
+      "piece": "overlays/progress-dots",
+      "description": "Part 2 of 5: a row of dots where the current one stretches into an accent pill, with the section name in serif italic.",
+      "over": true
+    },
+    {
+      "id": "tips-card",
+      "name": "Tips card",
+      "group": "Cards & lists",
+      "piece": "overlays/tips-card",
+      "description": "A paper card slides up with a big accent number, a caps TIP label, a heavy title and a line or two of advice.",
+      "over": true
+    },
+    {
+      "id": "steps",
+      "name": "Steps",
+      "group": "Cards & lists",
+      "piece": "overlays/steps",
+      "description": "A numbered routine set on the footage; each step fades up on its cue and the current one sits on an accent pill.",
+      "over": true
+    },
+    {
+      "id": "checklist",
+      "name": "Checklist",
+      "group": "Cards & lists",
+      "piece": "overlays/checklist",
+      "description": "A paper checklist whose boxes fill and tick on cue while the header keeps count.",
+      "over": true
+    },
+    {
+      "id": "product-card",
+      "name": "Product card",
+      "group": "Cards & lists",
+      "piece": "overlays/product-card",
+      "description": "A paper card with a picture, category, product name, star row and price pill. Sample values.",
+      "over": true
+    },
+    {
+      "id": "quote-slip",
+      "name": "Quote slip",
+      "group": "Notes",
+      "piece": "overlays/quote-slip",
+      "description": "A short quote on a taped slip of paper: the words arrive one after another and a handwritten attribution signs itself.",
+      "over": true
+    },
+    {
+      "id": "hand-note",
+      "name": "Hand note",
+      "group": "Notes",
+      "piece": "overlays/hand-note",
+      "description": "A handwritten margin note writes itself on, gets a wavy underline and sends a hand-drawn arrow to a point in the shot.",
+      "over": true
+    },
+    {
+      "id": "colour-wash",
+      "name": "Colour wash",
+      "group": "Atmosphere",
+      "piece": "overlays/colour-wash",
+      "description": "Large soft washes of colour bloom in from the top and bottom edges and drift slowly; warms footage without covering the middle.",
+      "over": true
+    },
+    {
+      "id": "shape-accents",
+      "name": "Shape accents",
+      "group": "Atmosphere",
+      "piece": "overlays/shape-accents",
+      "description": "Soft shapes breathing in the corners: a blob and outlined arch, a brushed loop scribble, a sprig of leaves.",
+      "over": true
+    }
+  ]
+}

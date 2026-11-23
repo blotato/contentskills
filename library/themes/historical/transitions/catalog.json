@@ -1,0 +1,117 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the sample clip to a graphics frame: seven of its own (projector, film and paper: a dip to black with a projector flash, a cold film burn, a slipping film frame, a soft iris, a paper tear, a crimson brush wipe, a book page) and six from the shared set, drawn in the theme's colours (prints with bone edges on the dark table). Run them slower than in other themes: 0.6 to 1 second.",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"projector_dip\", \"seconds\": 0.9}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"paper_tear\", \"at\": 7.8, \"seconds\": 0.7}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Film",
+    "Paper",
+    "Camera"
+  ],
+  "items": [
+    {
+      "id": "projector_dip",
+      "name": "projector dip",
+      "group": "Film",
+      "src": "clips/projector_dip.mp4",
+      "portrait": true,
+      "description": "The lamp dims with a flicker and a weaving gate, the screen goes dark, a cold flash of the projector catches the middle of the frame, and the next shot comes up out of the dark. The theme default."
+    },
+    {
+      "id": "cold_burn",
+      "name": "cold burn",
+      "group": "Film",
+      "src": "clips/cold_burn.mp4",
+      "portrait": true,
+      "description": "Film burning through in the gate, in cold tones: a ragged hole spreads from one spot, the picture bleaches to steel white ahead of it and the rim chars."
+    },
+    {
+      "id": "film_slip",
+      "name": "film slip",
+      "group": "Film",
+      "src": "clips/film_slip.mp4",
+      "portrait": true,
+      "description": "The film slips in the gate: the shot runs up and out, the dark frame line passes, and the next shot seats itself from below in two pulls, with scratches while it moves."
+    },
+    {
+      "id": "iris_vignette",
+      "name": "iris vignette",
+      "group": "Film",
+      "src": "clips/iris_vignette.mp4",
+      "portrait": true,
+      "description": "A soft-edged iris closes on the shot to the dark, like an old lens, and opens again on the next."
+    },
+    {
+      "id": "luma_melt",
+      "name": "luma melt",
+      "group": "Film",
+      "src": "clips/luma_melt.mp4",
+      "portrait": true,
+      "description": "The bright parts of the picture melt away first with a cold steel fringe, like film running in the gate."
+    },
+    {
+      "id": "paper_tear",
+      "name": "paper tear",
+      "group": "Paper",
+      "src": "clips/paper_tear.mp4",
+      "portrait": true,
+      "description": "The shot is a sheet torn away from the left: a deckled edge crosses the frame, leaving pale paper fibre and a shadow on the next shot."
+    },
+    {
+      "id": "brush_wipe",
+      "name": "brush wipe",
+      "group": "Paper",
+      "src": "clips/brush_wipe.mp4",
+      "portrait": true,
+      "description": "Three dry strokes of crimson are dragged across from alternating sides; each covers the shot in paint and thins out to the next one."
+    },
+    {
+      "id": "book_page",
+      "name": "book page",
+      "group": "Paper",
+      "src": "clips/book_page.mp4",
+      "portrait": true,
+      "description": "A page of an old book turns: hinged on the left edge it comes over toward the camera, its free edge curling, pale paper on its back."
+    },
+    {
+      "id": "tile_flip",
+      "name": "tile flip",
+      "group": "Paper",
+      "src": "clips/tile_flip.mp4",
+      "portrait": true,
+      "description": "The picture turns over as a grid of cards, like photographs flipped on a table."
+    },
+    {
+      "id": "accordion_fold",
+      "name": "accordion fold",
+      "group": "Paper",
+      "src": "clips/accordion_fold.mp4",
+      "portrait": true,
+      "description": "The frame folds away in vertical pleats like a folded map."
+    },
+    {
+      "id": "swing_doors",
+      "name": "swing doors",
+      "group": "Camera",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The picture parts down the middle and swings open onto the next shot."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slice slide",
+      "group": "Camera",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "Horizontal strips slide apart in alternating directions."
+    },
+    {
+      "id": "zoom_through",
+      "name": "zoom through",
+      "group": "Camera",
+      "src": "clips/zoom_through.mp4",
+      "portrait": true,
+      "description": "A fast push through the picture into the next one, with motion blur. For jumps in time."
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the cold-graded sample clip to a title card: seven of its own (a flicker cut, a dip to black with a slow fade up, a vertical streak smear, a signal loss, a lamp failure, a cold melt, a creeping shadow) and eight from the shared set, drawn in the theme's colours (fog grey and cold blue in place of the shared cyan and amber). Atmosphere only.",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"black_dip\", \"seconds\": 0.9}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"flicker_cut\", \"at\": 7.8, \"seconds\": 0.5}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Dark",
+    "Decay",
+    "Signal",
+    "Moves"
+  ],
+  "items": [
+    {
+      "id": "black_dip",
+      "name": "black dip",
+      "group": "Dark",
+      "src": "clips/black_dip.mp4",
+      "portrait": true,
+      "description": "The shot drops quickly into black, the black holds, and the next comes up slowly, shadows last. The theme default."
+    },
+    {
+      "id": "flicker_cut",
+      "name": "flicker cut",
+      "group": "Dark",
+      "src": "clips/flicker_cut.mp4",
+      "portrait": true,
+      "description": "The light flickers between the two shots (full, half, out), is out for a beat in the middle, and the next shot wins."
+    },
+    {
+      "id": "lamp_out",
+      "name": "lamp out",
+      "group": "Dark",
+      "src": "clips/lamp_out.mp4",
+      "portrait": true,
+      "description": "The lamp fails: the light sputters and shrinks to a pool, goes out, and after a beat strikes again, unsteadily, on the next shot."
+    },
+    {
+      "id": "shadow_creep",
+      "name": "shadow creep",
+      "group": "Dark",
+      "src": "clips/shadow_creep.mp4",
+      "portrait": true,
+      "description": "Shadow creeps over the frame from the top corner in soft, uneven fingers; the next shot comes out of the dark behind it."
+    },
+    {
+      "id": "streak_smear",
+      "name": "streak smear",
+      "group": "Decay",
+      "src": "clips/streak_smear.mp4",
+      "portrait": true,
+      "description": "The shot comes apart into vertical streaks that smear, thin and go out, the way the theme's lettering leaves; the next assembles in reverse."
+    },
+    {
+      "id": "cold_melt",
+      "name": "cold melt",
+      "group": "Decay",
+      "src": "clips/cold_melt.mp4",
+      "portrait": true,
+      "description": "A slow melt: the picture sags and swims as if seen through cold water, drains to blue-grey and becomes the next shot through mist."
+    },
+    {
+      "id": "luma_melt",
+      "name": "luma melt",
+      "group": "Decay",
+      "src": "clips/luma_melt.mp4",
+      "portrait": true,
+      "description": "The outgoing shot drips down the frame in columns while its bright areas burn through first, with a cold blue fringe."
+    },
+    {
+      "id": "noise_dissolve",
+      "name": "noise dissolve",
+      "group": "Decay",
+      "src": "clips/noise_dissolve.mp4",
+      "portrait": true,
+      "description": "Three sizes of noise eat the picture away."
+    },
+    {
+      "id": "pixel_dissolve",
+      "name": "pixel dissolve",
+      "group": "Decay",
+      "src": "clips/pixel_dissolve.mp4",
+      "portrait": true,
+      "description": "The picture drops to coarser and coarser blocks, swaps, and resolves again."
+    },
+    {
+      "id": "signal_loss",
+      "name": "signal loss",
+      "group": "Signal",
+      "src": "clips/signal_loss.mp4",
+      "portrait": true,
+      "description": "The signal goes: rows tear sideways, colour drops out, grey static takes the frame with a rolling dark bar, and the next shot locks in."
+    },
+    {
+      "id": "crt_collapse",
+      "name": "tube switch-off",
+      "group": "Signal",
+      "src": "clips/crt_collapse.mp4",
+      "portrait": true,
+      "description": "The shot switches off like an old television (a line, then a dot) and the next one switches on."
+    },
+    {
+      "id": "datamosh",
+      "name": "datamosh",
+      "group": "Signal",
+      "src": "clips/datamosh.mp4",
+      "portrait": true,
+      "description": "Blocks freeze, smear along their motion and are replaced out of order."
+    },
+    {
+      "id": "zoom_through",
+      "name": "push through",
+      "group": "Moves",
+      "src": "clips/zoom_through.mp4",
+      "portrait": true,
+      "description": "The camera flies through the outgoing shot into the next one."
+    },
+    {
+      "id": "swing_doors",
+      "name": "doors",
+      "group": "Moves",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The shot splits down the middle into two doors that swing open on what lies beyond."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slices",
+      "group": "Moves",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "The shot is cut into horizontal slices that slide off to alternate sides."
+    }
+  ]
+}

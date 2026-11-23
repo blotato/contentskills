@@ -1,0 +1,288 @@
+{
+ "id": "overlays",
+ "title": "Overlays",
+ "summary": "See-through graphics for footage in the editorial look: serif headlines that rise from behind a hairline, one big word, pull quotes and drop caps, Didone figures, contents and strike lists, contact sheets and a storyboard strip, typed note and comment cards, a follow button, and page furniture (running heads, folios, keylines, tags, a timecode). Paper cards with hairline edges in the footage's own colours. Defaults keep the middle of the frame (the face) clear.",
+ "usage": "In a footage storyboard: {\"piece\": \"overlays/headline\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"lines\": [\"One message,\", \"a *finished* reel\"], \"y\": 250}}. Positions are 1080x1920 frame pixels; *asterisks* mark the italic accent word in any text; each piece leaves before its end when the player passes `life`. Cards take field: paper (default), stone, blush, ink, wine. Ink type on bright footage, paper type on dark; headline, masthead and caption-rule lay their own soft veil. Kit: library/themes/editorial/kit.js.",
+ "groups": [
+  "Type",
+  "Data",
+  "Lists",
+  "Pictures",
+  "Interface",
+  "Page furniture"
+ ],
+ "items": [
+  {
+   "id": "headline",
+   "name": "Headline",
+   "group": "Type",
+   "piece": "overlays/headline",
+   "description": "A magazine headline over footage: a tracked kicker, a hairline that draws, serif lines that rise from behind it one after another; *marked* words are italic in the accent. A soft paper (or ink) veil keeps it readable. Props: kicker, lines, y, x, width, size, align, ground (paper|ink|none), folio.",
+   "over": true
+  },
+  {
+   "id": "big-word",
+   "name": "Big word",
+   "group": "Type",
+   "piece": "overlays/big-word",
+   "description": "One big serif word across the frame, its letters fading up one after another; optionally italic, with a kicker and hairline. Works with \"behind\": \"person\". Props: word, y (baseline), size, width, italic, color, kicker, step, x.",
+   "over": true
+  },
+  {
+   "id": "pull-quote",
+   "name": "Pull quote",
+   "group": "Type",
+   "piece": "overlays/pull-quote",
+   "description": "A pull quote on a paper card: a large Didone quotation mark in the accent, serif lines rising one after another, a hairline and a tracked attribution. Props: quote, by, x, y, w, size, field.",
+   "over": true
+  },
+  {
+   "id": "drop-cap",
+   "name": "Drop cap",
+   "group": "Type",
+   "piece": "overlays/drop-cap",
+   "description": "The opening paragraph of an article: a Didone drop cap in the accent and a few lines of serif that rise beside and under it. Props: kicker, text, x, y, w, size, field.",
+   "over": true
+  },
+  {
+   "id": "caption-rule",
+   "name": "Picture caption",
+   "group": "Type",
+   "piece": "overlays/caption-rule",
+   "description": "A picture caption: a hairline draws, a serif line rises above it, a tracked credit and a mono index sit beneath. Lower frame by default. Props: caption, sub, index, y, x0, x1, color (ink|paper), size, ground.",
+   "over": true
+  },
+  {
+   "id": "byline",
+   "name": "Byline",
+   "group": "Type",
+   "piece": "overlays/byline",
+   "description": "A byline strap: a paper strip glides in from the left edge with a tracked role over a hairline and a name in serif. Props: role, name, y, field, size.",
+   "over": true
+  },
+  {
+   "id": "figure",
+   "name": "Figure",
+   "group": "Data",
+   "piece": "overlays/figure",
+   "description": "A big Didone numeral that counts up on a small paper card, a tracked label above a hairline and an italic note beneath. Props: value, prefix, suffix, decimals, label, note, x, y, w, size, field, startAt, seconds.",
+   "over": true
+  },
+  {
+   "id": "stat-row",
+   "name": "By the numbers",
+   "group": "Data",
+   "piece": "overlays/stat-row",
+   "description": "Two to four Didone figures in a row over hairlines, counting up, a tracked label under each. With \"use\": \"project\" an item may name a key of the project's own counts (graphics, effects, transitions, zooms, layouts, sounds, changes, cuts, pauses, before, after). Props: title, items [{value|key, label, suffix, decimals}], x, y, w, field, note, use.",
+   "over": true
+  },
+  {
+   "id": "swatches",
+   "name": "Swatches",
+   "group": "Data",
+   "piece": "overlays/swatches",
+   "description": "The palette as printed colour chips that wipe down in turn, each with its name and hex value. Defaults are the theme's colours as measured on its footage. Props: title, chips [{color, name}], x, y, w, field, step.",
+   "over": true
+  },
+  {
+   "id": "progress-rule",
+   "name": "Progress rule",
+   "group": "Data",
+   "piece": "overlays/progress-rule",
+   "description": "A job in progress drawn as a rule: a serif label and a thick wine rule that fills past named stage ticks and stops at holdAt; no percentage is printed. Props: label, stages [{label, at}], startAt, seconds, holdAt, x, y, w, field, note.",
+   "over": true
+  },
+  {
+   "id": "strike-list",
+   "name": "Strike list",
+   "group": "Lists",
+   "piece": "overlays/strike-list",
+   "description": "Things no longer needed: serif items rise one by one and a crimson rule draws through each at its strike time. Props: title, items [{label, at, strike, icon (app|timeline|file|clock)}], x, y, w, size, field, foot.",
+   "over": true
+  },
+  {
+   "id": "index-list",
+   "name": "Contents",
+   "group": "Lists",
+   "piece": "overlays/index-list",
+   "description": "A contents page: numbered serif entries rise one per step with hairlines between; the newest (or `active`) entry carries full ink. Props: title, items, step, startAt, x, y, w, size, field, active.",
+   "over": true
+  },
+  {
+   "id": "contact-sheet",
+   "name": "Contact sheet",
+   "group": "Pictures",
+   "piece": "overlays/contact-sheet",
+   "description": "A contact sheet: a grid of small frames laid down one after another (your images, or tints of the footage) with mono frame numbers and a running counter. Props: title, note, count, cols, images, step, startAt, x, y, w, field, ratio, pick, pickAt.",
+   "over": true
+  },
+  {
+   "id": "storyboard-strip",
+   "name": "Storyboard strip",
+   "group": "Pictures",
+   "piece": "overlays/storyboard-strip",
+   "description": "A storyboard, shot by shot: a row of small frames, the current shot large beneath with its number and title, changing on each step; an editor's note types on beside a crimson margin rule and is marked applied. Props: title, kicker, shots [{title}], images, steps [{shot, at}], note {text, at, seconds, done}, x, y, w, big, field.",
+   "over": true
+  },
+  {
+   "id": "screen-push",
+   "name": "Screen push",
+   "group": "Pictures",
+   "piece": "overlays/screen-push",
+   "description": "A real screenshot on a paper card: rises in showing the whole screen, then pushes in on one region (focus, shares of the image) and keeps drifting, a crimson outline settling on it. Use for showing the actual tool, e.g. the editor's review page for this video.",
+   "over": true
+  },
+  {
+   "id": "view-slam",
+   "name": "View slam",
+   "group": "Figures",
+   "piece": "overlays/view-slam",
+   "description": "Which posts worked, in your face: up to three rows of a cover thumbnail beside a huge serif figure that counts up as the row slams in; the biggest lands last in the accent colour with a Worked flag and a jolt. Real figures only.",
+   "over": true
+  },
+  {
+   "id": "note-card",
+   "name": "Note card",
+   "group": "Interface",
+   "piece": "overlays/note-card",
+   "description": "One message, typed and sent: a paper card, a line of serif italic typing with a caret, and a round wine send button that fills with a tick. Props: label, done, text, typeAt, typeFor, sendAt, x, y, w, size, field, folio.",
+   "over": true
+  },
+  {
+   "id": "comment-card",
+   "name": "Comment card",
+   "group": "Interface",
+   "piece": "overlays/comment-card",
+   "description": "A comment being left: the word typed in large Didone capitals with a caret, then posted; optionally a reply rises underneath. Props: label, text, name, typeAt, typeFor, postAt, reply {name, text, at}, x, y, w, size, field.",
+   "over": true
+  },
+  {
+   "id": "follow-card",
+   "name": "Follow card",
+   "group": "Interface",
+   "piece": "overlays/follow-card",
+   "description": "A follow button being pressed: a paper pill with a monogram and handle; the wine Follow button becomes an outlined Following with a tick at pressAt. Props: handle, sub, initial, label, done, pressAt, x, y, w, field.",
+   "over": true
+  },
+  {
+   "id": "margin-note",
+   "name": "Margin note",
+   "group": "Interface",
+   "piece": "overlays/margin-note",
+   "description": "An editor's note in the margin: a small paper slip with a tracked label and a line of italic, and a hairline with a dot that draws to the thing it is about. Props: label, note, x, y, w, to [x, y], size, field.",
+   "over": true
+  },
+  {
+   "id": "masthead",
+   "name": "Running head",
+   "group": "Page furniture",
+   "piece": "overlays/masthead",
+   "description": "A running head: a hairline with a tracked section label at the left and a mono folio at the right, optionally a small Didone title above. Can run a whole clip. Props: left, right, title, y, color (ink|paper), ground.",
+   "over": true
+  },
+  {
+   "id": "folio",
+   "name": "Folio",
+   "group": "Page furniture",
+   "piece": "overlays/folio",
+   "description": "A page number on a small tab in a corner: a Didone figure, a short hairline, a tracked section name. Props: index, total, label, x, y, align, field.",
+   "over": true
+  },
+  {
+   "id": "frame-lines",
+   "name": "Keyline frame",
+   "group": "Page furniture",
+   "piece": "overlays/frame-lines",
+   "description": "A thin printed frame inside the picture that draws from a corner, with small tracked labels in up to four corners. Props: inset, top, bottom, color (paper|ink), labels, width.",
+   "over": true
+  },
+  {
+   "id": "tag",
+   "name": "Section tag",
+   "group": "Page furniture",
+   "piece": "overlays/tag",
+   "description": "A small tracked label in a tight box that wipes open from the left, with an optional number. Props: text, number, x, y, field (ink|wine|paper|blush|crimson), size, align.",
+   "over": true
+  },
+  {
+   "id": "timecode",
+   "name": "Timecode",
+   "group": "Page furniture",
+   "piece": "overlays/timecode",
+   "description": "A running mm:ss:ff timecode of the clip on a small ink tab with a tracked label and a slow dot. Props: label, fps, x, y, align, field, from.",
+   "over": true
+  },
+  {
+   "id": "veil",
+   "name": "Veil",
+   "group": "Page furniture",
+   "piece": "overlays/veil",
+   "description": "A quiet ground for type on footage: a soft gradient of paper (or ink) from the top and/or bottom of the frame. Props: top, bottom, color, strength.",
+   "over": true
+  },
+  {
+   "id": "cover-field",
+   "name": "Cover field",
+   "group": "Type",
+   "piece": "overlays/cover-field",
+   "description": "A flat field of one of the theme's grounds fills the frame and a headline assembles on it fast: a rule snaps across, lines slide in from opposite sides out of a blur. Made for \"behind\": \"person\" (the speaker cut out in front of the field). Props: field, lines, left, right, y, size, step, at, slide, outAt.",
+   "over": true
+  },
+  {
+   "id": "reel-grid",
+   "name": "Reel grid",
+   "group": "Pictures",
+   "piece": "overlays/reel-grid",
+   "description": "A profile's grid of reels the way a phone shows it: three columns of 9:16 tiles with a small reel mark, under tab glyphs; tiles land fast, then the grid scrolls. No app logo or name, and no view counts unless `counts` is given. Props: title, note, images, count, startAt, step, scrollAt, scrollFor, rows, x, y, w, field, counts.",
+   "over": true
+  },
+  {
+   "id": "beacon",
+   "name": "Beacon lamps",
+   "group": "Page furniture",
+   "piece": "overlays/beacon",
+   "description": "Two emergency lamps in the theme's line style, one red and one blue, lighting in turn with a soft turning wedge each; for the top corners, with the siren_beams effect. Props: left, right, size, rate, colors, reach.",
+   "over": true
+  },
+  {
+   "id": "type-takeover",
+   "name": "Type takeover",
+   "group": "Type",
+   "piece": "overlays/type-takeover",
+   "description": "The words are the picture: a sequence of steps, each replacing the one before on its beat, giant lines in the serif, its italic, Didone capitals or a heavy condensed grotesque on a flat field that can flip with every step, each landing with its own move (slam, roll, track, letters, cut). Made for \"behind\": \"person\". Props: steps [{at, field, y, gap, enter, lines [{text, face, color, max, width, swipe, caps}]}], left, right, headY, x, width.",
+   "over": true
+  },
+  {
+   "id": "tile-burst",
+   "name": "Tile burst",
+   "group": "Pictures",
+   "piece": "overlays/tile-burst",
+   "description": "A wall of pictures tiled edge to edge that bursts open: tiles are pulled away one after another, alternately up and down, onto what is underneath. For the first half second of a video. Props: images, cols, rows, startAt, step, out, gap, order.",
+   "over": true
+  },
+  {
+   "id": "grid-ground",
+   "name": "Grid ground",
+   "group": "Grounds",
+   "piece": "overlays/grid-ground",
+   "description": "One colour with subtle grid squares (graph paper) instead of a flat ground. Put it behind the clip's windows (behind: true).",
+   "over": true
+  },
+  {
+   "id": "chat-thread",
+   "name": "AI assistant thread",
+   "group": "Cards",
+   "piece": "overlays/chat-thread",
+   "description": "A business's AI assistant answering customers: a paper card with a tracked label over a rule, customer messages sliding in left in a soft bubble, the assistant's replies typing on right in the accent with a small tag (Sales, Support). Props: label, messages [{from: them|bot, text, at, tag}], typeFor, x, y, w, size, field.",
+   "over": true
+  },
+  {
+   "id": "phone-app",
+   "name": "Phone app",
+   "group": "Cards",
+   "piece": "overlays/phone-app",
+   "over": true,
+   "description": "Your own app on a flat ink phone: the phone rises in, the app name sets in serif, list rows slide in with mono figures, a wide accent button lands and is pressed. Flat and printed, no glass. Props: name, kicker, rows [{label, value}], button, x (centre), y (top), h, rowAt, step, pressAt."
+  }
+ ]
+}

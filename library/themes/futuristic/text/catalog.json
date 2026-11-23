@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Bold kinetic typography in the theme’s look: heavy techno caps that slam, stretch and split on the dark grid, glowing targeting rings, notched plates, marquee strips, bracketed insets and mono readouts.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\" (a candidate may then omit \"visual\") or as its \"visual\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"accent\": \"cyan\"}}}, or as a footage \"cutaway\". Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"FOCUS\", \"y\": 330}}. Every word and position is a prop; \"accent\" (cyan, magenta or amber) picks the colour that leads. Kit: library/themes/futuristic/text/kit.js. Files: library/themes/futuristic/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline slam",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A headline slams onto the grid letter by letter with its colours split, with smearing targeting rings, spinning marks and readouts top and bottom.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two stacked words fly in from opposite sides, stretched by their speed, with a bracketed picture inset popping between them.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Marquee wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "A full frame of marquee strips scrolling in alternating directions, every other copy mirrored; plain, ruled and filled rows open one after another.",
+      "tall": true
+    },
+    {
+      "id": "ring-statement",
+      "name": "Ring Statement",
+      "group": "Title cards",
+      "piece": "text/ring-statement",
+      "description": "A wrapped statement rises word by word over large drifting targeting rings that leave smears behind them.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "One huge number or year: each digit rolls like an odometer and lands with a bounce, then a label wipes in on a filled plate.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote card",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quote in heavy caps; words slide in leaning into the move, then a filled bar swipes behind the last line.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A numbered list: rows fly in from the right and a filled bar steps down the list one row at a time.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two words on two tinted panels that slide in and meet on a slanted seam; a hex badge punches in and knocks both back.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter opener",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A giant outlined number flies in and fills with light, the title rises beneath it and a bracket frame snaps around the card.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Numbers slam in one per beat, each led by the next accent with a scan line and a ring running down, ending on a GO word with a burst.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "Call to action: headline rises from the floor, a filled button plate stretches open with a nudging arrow, the handle types on, a marquee runs below.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword slam",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One keyword slams letter by letter across a tilted notched plate at the top or bottom of the frame.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight swipe",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A short phrase on a dark plate; a filled bar swipes in behind the marked words and flips them to dark.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "Name plate: a filled notched plate whips in, the name rises out of it letter by letter, a role plate slides out underneath.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "Vertical text on a dark plate running up one edge of the frame, with a thin strip of readout text scrolling beside it.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Marquee band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A scrolling marquee band with mirrored copies and a thin counter-scrolling readout strip; springs open, folds shut.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Labels on filled chips pinned in the four corners with bracket marks, a reticle and a badge; the middle stays clear.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "A bracketed picture-in-picture frame that punches in, with a label tab, a smearing targeting ring and a spinning reticle.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A notched round seal that pops on with a spin, with a word in the middle and readout text turning around the edge.",
+      "over": true
+    }
+  ]
+}

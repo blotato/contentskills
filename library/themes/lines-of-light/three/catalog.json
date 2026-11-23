@@ -1,0 +1,61 @@
+{
+  "id": "three",
+  "title": "3D",
+  "summary": "3D scenes built only from lines of light: every line has a white core with a red echo up-left and a blue echo down-right in screen space, a soft lilac glow, and fades into the near-black teal haze with depth. Red marks the cause, blue the result. Pass \"clear\": true to float a scene over footage (transparent canvas).",
+  "usage": "{\"piece\": \"three/wire-tunnel\"} or {\"background\": {\"piece\": \"three/grid-horizon\"}}. Files: library/themes/lines-of-light/three/pieces/.",
+  "groups": [
+    "Scenes",
+    "Objects"
+  ],
+  "items": [
+    {
+      "id": "wire-tunnel",
+      "name": "Wire tunnel",
+      "group": "Scenes",
+      "piece": "three/wire-tunnel",
+      "description": "Flying down a tunnel of light rings along eight rails; a red pulse runs away down one rail and lands blue at the vanishing point. Loops."
+    },
+    {
+      "id": "grid-horizon",
+      "name": "Grid horizon",
+      "group": "Scenes",
+      "piece": "three/grid-horizon",
+      "description": "A grid of light streaming to the horizon under a rising sun made of banded lines and rays. Loops."
+    },
+    {
+      "id": "light-beam",
+      "name": "Light beam",
+      "group": "Scenes",
+      "piece": "three/light-beam",
+      "description": "Floor lines meet at an apex, a red line climbs to it and a fan of fine rays bursts upward into a beam. A title backdrop."
+    },
+    {
+      "id": "light-torus",
+      "name": "Torus of light",
+      "group": "Objects",
+      "piece": "three/light-torus",
+      "description": "A wire torus whose rings open one by one, turning slowly; a red spark runs the main ring and flashes blue at the front. Loops."
+    },
+    {
+      "id": "wire-globe",
+      "name": "Wire globe",
+      "group": "Objects",
+      "piece": "three/wire-globe",
+      "description": "A turning wire globe (no countries); a red point fires arcs that rise off the surface and land in blue flashes. Loops."
+    },
+    {
+      "id": "orbit-ribbons",
+      "name": "Orbit ribbons",
+      "group": "Objects",
+      "piece": "three/orbit-ribbons",
+      "description": "Tilted orbits round a wire core with comets of light running them; the red inner comet makes the core flash blue each lap. Loops."
+    },
+    {
+      "id": "light-strands",
+      "name": "Light strands",
+      "group": "Objects",
+      "piece": "three/light-strands",
+      "description": "Braided strands of light drawing on and twisting; a red pulse runs one strand and lands blue at its end. Loops."
+    }
+  ]
+}

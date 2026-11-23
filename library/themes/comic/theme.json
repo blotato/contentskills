@@ -1,0 +1,13 @@
+{
+  "id": "comic",
+  "title": "Comic Book",
+  "summary": "A printed comic page: flat primary-colour panels in wobbly ink boxes on cream paper gutters, Ben-Day halftone dots, thick black outlines with hard drop shadows, shouted Bangers lettering, caption boxes, speech balloons and jagged bursts that pop, boil and whip. All original artwork drawn in code.",
+  "categories": ["overlays", "text", "effects", "transitions", "fonts", "captions", "voiceover", "d3", "three", "lottie"],
+  "pieceFonts": ["20px Bangers", "20px \"Bebas Neue\"", "700 20px \"Comic Neue\""],
+  "look": {"surface":"#f7edd0","ink":"#16121c","dim":"#5a5262","line":"#16121c","accent":"#e2242c","accent2":"#ffd61e","head":"Bangers","headWeight":400,"body":"Comic Neue","mono":"Comic Neue","card":"outline","radius":14},
+  "colors": {
+    "ink": "#16121c", "paper": "#f7edd0", "red": "#e2242c", "yellow": "#ffd61e", "blue": "#2767d9", "sky": "#49b8ea",
+    "green": "#33a35b", "orange": "#f5811f", "purple": "#6b3fb8", "teal": "#168f8c", "pink": "#ef5d94", "sage": "#a8c2a0"
+  },
+  "frame": {"background": "#f3ead4", "headingFont": "Bangers", "headingColor": "#16121c"}
+}

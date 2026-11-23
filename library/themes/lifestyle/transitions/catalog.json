@@ -1,0 +1,109 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the sample clip to a graphics frame: seven of its own (a paper panel sliding up, a brushed reveal, a soft cross-zoom with a cream light leak, a cream dissolve, a blur-through, an arch window, a collage of drifting photos) and five calm ones from the shared set, drawn in the theme's colours (cream rims on pale paper). Keep them slow (0.6-0.9 s); most cuts in this style should stay plain cuts or use the cream_flash effect.",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"paper_slide\", \"seconds\": 0.8}}. In a footage storyboard, at a cut such as the start of a full-screen cutaway: \"transitions\": [{\"name\": \"cream_zoom\", \"at\": 7.8, \"seconds\": 0.6}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Soft",
+    "Paper",
+    "Panels"
+  ],
+  "items": [
+    {
+      "id": "cream_zoom",
+      "name": "cream zoom",
+      "group": "Soft",
+      "src": "clips/cream_zoom.mp4",
+      "portrait": true,
+      "description": "A gentle push through the shot into the next while a cream and sun-yellow light leak drifts across. The theme default."
+    },
+    {
+      "id": "cream_dissolve",
+      "name": "cream dissolve",
+      "group": "Soft",
+      "src": "clips/cream_dissolve.mp4",
+      "portrait": true,
+      "description": "The shot washes out to cream paper, highlights first, and the next comes up out of the cream, its darker shapes first."
+    },
+    {
+      "id": "blur_through",
+      "name": "blur through",
+      "group": "Soft",
+      "src": "clips/blur_through.mp4",
+      "portrait": true,
+      "description": "The shot goes softly out of focus, becomes the next while both are a blur, and comes back into focus."
+    },
+    {
+      "id": "warp_wipe",
+      "name": "warp wipe",
+      "group": "Soft",
+      "src": "clips/warp_wipe.mp4",
+      "portrait": true,
+      "description": "A soft cream edge sweeps across on a diagonal, bending the picture slightly as it passes."
+    },
+    {
+      "id": "paper_slide",
+      "name": "paper slide",
+      "group": "Paper",
+      "src": "clips/paper_slide.mp4",
+      "portrait": true,
+      "description": "A paper panel carrying the next shot slides up over the old one and settles, a cream mat on its top edge and a soft shadow ahead of it."
+    },
+    {
+      "id": "brush_reveal",
+      "name": "brush reveal",
+      "group": "Paper",
+      "src": "clips/brush_reveal.mp4",
+      "portrait": true,
+      "description": "The next shot is brushed on in five broad, soft strokes from alternating sides, each leaving a pale cream edge."
+    },
+    {
+      "id": "arch_reveal",
+      "name": "arch reveal",
+      "group": "Paper",
+      "src": "clips/arch_reveal.mp4",
+      "portrait": true,
+      "description": "An arch-topped window rises from the bottom and widens until it is the whole picture, the next shot inside a cream mat."
+    },
+    {
+      "id": "page_turn",
+      "name": "page turn",
+      "group": "Paper",
+      "src": "clips/page_turn.mp4",
+      "portrait": true,
+      "description": "The old shot lifts from a corner and curls away like a pale page, the new one lying underneath."
+    },
+    {
+      "id": "collage_split",
+      "name": "collage split",
+      "group": "Panels",
+      "src": "clips/collage_split.mp4",
+      "portrait": true,
+      "description": "The frame comes apart into square-cornered photos with paper gutters; they drift up and away, turning a little and fading."
+    },
+    {
+      "id": "slice_slide",
+      "name": "slice slide",
+      "group": "Panels",
+      "src": "clips/slice_slide.mp4",
+      "portrait": true,
+      "description": "The old shot is cut into horizontal strips that slide off to alternate sides, like collage strips being cleared."
+    },
+    {
+      "id": "swing_doors",
+      "name": "swing doors",
+      "group": "Panels",
+      "src": "clips/swing_doors.mp4",
+      "portrait": true,
+      "description": "The old shot splits down the middle and swings open like two doors onto the new one."
+    },
+    {
+      "id": "accordion_fold",
+      "name": "accordion fold",
+      "group": "Panels",
+      "src": "clips/accordion_fold.mp4",
+      "portrait": true,
+      "description": "The old shot folds away toward one edge in four vertical panels, uncovering the new one."
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "A magazine type cabinet: condensed and Didone high-contrast serifs with true italics for headlines, mastheads and numerals, clean grotesques for small tracked labels and captions, and a mono for folios and figures. All bundled locally with open licences (SIL OFL 1.1, from google/fonts).",
+  "usage": "The theme sets headlines in Instrument Serif (sentence case, tight leading) and the one accent word in Instrument Serif Italic; mastheads and huge numerals in Bodoni Moda; small labels in Inter Tight 600 capitals tracked .2em; folios, timecodes and table figures in DM Mono. Newsreader, Fraunces, Playfair Display and DM Serif Display are alternates for display; Hanken Grotesk, Archivo, Manrope and DM Sans for text. Kit names: F.head, F.italic, F.serif, F.sans, F.mono.",
+  "groups": ["Display serif", "Italic", "Grotesque", "Mono"],
+  "items": [
+    {"id": "instrument-serif", "family": "Instrument Serif", "file": "files/InstrumentSerif-Regular.ttf", "group": "Display serif", "weights": [400], "note": "Theme headline face: condensed, high contrast, so long headlines stay large in a narrow vertical frame. Sentence case.", "license": "OFL-1.1"},
+    {"id": "instrument-serif-italic", "family": "Instrument Serif Italic", "file": "files/InstrumentSerif-Italic.ttf", "group": "Italic", "weights": [400], "note": "The accent: the one word that matters, in the surface's accent colour. Written *like this* in text props.", "license": "OFL-1.1"},
+    {"id": "bodoni-moda", "family": "Bodoni Moda", "file": "files/BodoniModa-Variable.ttf", "group": "Display serif", "weights": [400, 900], "note": "Didone for mastheads, drop caps and big numerals: vertical stress, hairline serifs. Large sizes only.", "license": "OFL-1.1"},
+    {"id": "bodoni-moda-italic", "family": "Bodoni Moda Italic", "file": "files/BodoniModa-Italic-Variable.ttf", "group": "Italic", "weights": [400, 900], "note": "Didone italic for ampersands, issue numbers and large pull-quote marks.", "license": "OFL-1.1"},
+    {"id": "inter-tight", "family": "Inter Tight", "file": "files/InterTight-Variable.ttf", "group": "Grotesque", "weights": [100, 900], "note": "Theme label face: small capitals tracked .2em at 600; sentence-case UI text at 500.", "license": "OFL-1.1"},
+    {"id": "dm-mono", "family": "DM Mono", "file": "files/DMMono-Regular.ttf", "group": "Mono", "weights": [400], "note": "Folios, timecodes, figures in tables.", "license": "OFL-1.1"},
+    {"id": "dm-mono-medium", "family": "DM Mono", "file": "files/DMMono-Medium.ttf", "group": "Mono", "weights": [500], "note": "Medium weight of the folio face, for figures on footage.", "license": "OFL-1.1"},
+    {"id": "newsreader", "family": "Newsreader", "file": "files/Newsreader-Variable.ttf", "group": "Display serif", "weights": [200, 800], "note": "Wider news serif alternate: sturdier at small sizes, for standfirsts and longer quotes.", "license": "OFL-1.1"},
+    {"id": "newsreader-italic", "family": "Newsreader Italic", "file": "files/Newsreader-Italic-Variable.ttf", "group": "Italic", "weights": [200, 800], "note": "Its italic, for longer emphasised passages.", "license": "OFL-1.1"},
+    {"id": "fraunces", "family": "Fraunces", "file": "files/Fraunces-Variable.ttf", "group": "Display serif", "weights": [100, 900], "note": "Soft old-style alternate with more warmth; good at heavy weights for a friendlier cover line.", "license": "OFL-1.1"},
+    {"id": "fraunces-italic", "family": "Fraunces Italic", "file": "files/Fraunces-Italic-Variable.ttf", "group": "Italic", "weights": [100, 900], "note": "Lively italic alternate.", "license": "OFL-1.1"},
+    {"id": "playfair-display", "family": "Playfair Display", "file": "files/PlayfairDisplay-Variable.ttf", "group": "Display serif", "weights": [400, 900], "note": "Transitional display alternate with strong bold weights.", "license": "OFL-1.1"},
+    {"id": "dm-serif-display", "family": "DM Serif Display", "file": "files/DMSerifDisplay-Regular.ttf", "group": "Display serif", "weights": [400], "note": "Heavier display serif for a single short word that must hold on busy footage.", "license": "OFL-1.1"},
+    {"id": "hanken-grotesk", "family": "Hanken Grotesk", "file": "files/HankenGrotesk-Variable.ttf", "group": "Grotesque", "weights": [100, 900], "note": "Warmer grotesque alternate for labels and captions.", "license": "OFL-1.1"},
+    {"id": "archivo", "family": "Archivo", "file": "files/Archivo-Variable.ttf", "group": "Grotesque", "weights": [100, 900], "note": "Grotesque with a width axis; heavy weights for a bold sans cover line beside the serif.", "license": "OFL-1.1"},
+    {"id": "manrope", "family": "Manrope", "file": "files/Manrope-Variable.ttf", "group": "Grotesque", "weights": [200, 800], "note": "Light modern sans for sentence-case credits.", "license": "OFL-1.1"},
+    {"id": "dm-sans", "family": "DM Sans", "file": "files/DMSans-Variable.ttf", "group": "Grotesque", "weights": [100, 900], "note": "Quiet low-contrast sans for longer lines.", "license": "OFL-1.1"}
+  ]
+}

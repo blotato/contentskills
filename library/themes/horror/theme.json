@@ -1,0 +1,44 @@
+{
+  "id": "horror",
+  "title": "Horror",
+  "summary": "A minimal horror title-sequence look for scary stories and true crime: near-black slate, bone-white condensed capitals set small and wide with a single rose-red letter, grain, film scratches, fog and a failing lamp. Letters switch on in random order and leave as vertical streaks. Atmosphere only: no gore.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "20px \"Bebas Neue\"",
+    "500 20px \"Barlow Condensed\"",
+    "600 20px \"Barlow Condensed\"",
+    "20px \"Special Elite\"",
+    "700 20px \"Courier Prime\"",
+    "20px VT323",
+    "20px \"Homemade Apple\""
+  ],
+  "look": {"surface":"#0d1115","ink":"#e9e6df","dim":"#8d979f","line":"#2b343b","accent":"#e0556b","accent2":"#7c8cc4","head":"Bebas Neue","headWeight":400,"body":"Barlow Condensed","mono":"Courier Prime","card":"outline","radius":4},
+  "colors": {
+    "void": "#030405",
+    "slate": "#0d1115",
+    "ash": "#171c21",
+    "steel": "#2b343b",
+    "fog": "#8d979f",
+    "bone": "#e9e6df",
+    "rose": "#e0556b",
+    "blood": "#9c1c30",
+    "cold": "#7c8cc4",
+    "paper": "#b9b09a"
+  },
+  "frame": {
+    "background": "radial-gradient(120% 70% at 50% 45%,#1c2329 0%,#0a0d10 60%,#030405 100%)",
+    "headingFont": "\"Bebas Neue\"",
+    "headingColor": "#e9e6df"
+  }
+}

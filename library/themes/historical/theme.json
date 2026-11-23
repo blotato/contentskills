@@ -1,0 +1,34 @@
+{
+  "id": "historical",
+  "title": "Historical",
+  "summary": "An archive-documentary look: silver black-and-white photographs on torn paper sheets over a near-black navy field, dry crimson brush strokes and label bars, condensed white capitals with dates in dark boxes, old book serifs and typewriter references, all under grain, dust, scratches and a slow projector flicker. Everything drifts and pushes in slowly; nothing bounces.",
+  "categories": ["overlays", "text", "effects", "transitions", "fonts", "captions", "voiceover", "d3", "three", "lottie"],
+  "pieceFonts": [
+    "700 20px Oswald",
+    "500 20px Oswald",
+    "300 20px Oswald",
+    "20px \"Old Standard TT\"",
+    "20px \"Old Standard TT Italic\"",
+    "20px \"Special Elite\"",
+    "20px \"Pinyon Script\""
+  ],
+  "look": {"surface":"#efe9dc","ink":"#0b1017","dim":"#8d8872","line":"#2a3542","accent":"#a81e2d","accent2":"#6f8fb3","head":"Oswald","headWeight":700,"body":"Old Standard TT","mono":"Special Elite","card":"paper","radius":4},
+  "colors": {
+    "night": "#0b1017",
+    "navy": "#14202f",
+    "slate": "#2a3542",
+    "steel": "#6f8fb3",
+    "silver": "#c9d0d6",
+    "bone": "#efe9dc",
+    "paper": "#cbc3ae",
+    "putty": "#8d8872",
+    "crimson": "#a81e2d",
+    "blood": "#6d0f1b",
+    "sepia": "#8a6a43"
+  },
+  "frame": {
+    "background": "radial-gradient(ellipse at 50% 40%,#1b2636 0%,#0b1017 75%)",
+    "headingFont": "Oswald",
+    "headingColor": "#efe9dc"
+  }
+}

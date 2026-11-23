@@ -1,0 +1,59 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Ten caption styles in the theme look, playing over the sample clip with its real word timings: white sans capitals whose words or letters come up out of a soft blur as they are spoken. Nothing bounces; the two kinetic styles land each word a size too large and mark the storyboard’s emphasis words on a colour block.",
+  "usage": "In a storyboard: {\"captions\": \"one-word\"}. one-word is the theme default (the caption is the single word of this style); tall-word is its condensed voice; phrase, hairline and small-print show a few words at a time. On bone cards white type disappears: use ink-bar or ink-word there. Styles: library/themes/fashion/captions/styles.js.",
+  "groups": [
+    "One word",
+    "Phrases",
+    "On bone",
+    "Kinetic",
+    "Reel"
+  ],
+  "items": [
+    {
+      "id": "one-word",
+      "group": "One word"
+    },
+    {
+      "id": "tall-word",
+      "group": "One word"
+    },
+    {
+      "id": "phrase",
+      "group": "Phrases"
+    },
+    {
+      "id": "hairline",
+      "group": "Phrases"
+    },
+    {
+      "id": "small-print",
+      "group": "Phrases"
+    },
+    {
+      "id": "ink-bar",
+      "group": "On bone"
+    },
+    {
+      "id": "ink-word",
+      "group": "On bone"
+    },
+    {
+      "id": "kinetic",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-ink",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-bold",
+      "group": "Kinetic"
+    },
+    {
+      "id": "outline-pop",
+      "group": "Reel"
+    }
+  ]
+}

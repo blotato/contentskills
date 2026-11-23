@@ -1,0 +1,134 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through archive graphics made to sit on top of footage, shown here over the sample clip: stacked date and name captions, taped prints that pan like a documentary camera, a torn-paper map with a travelling route, a timeline, documents, stamps and old-film dressing. Bars wipe on, small type types itself, everything keeps drifting slowly, and each piece fades and sinks away before its time ends. By default they keep to the top band and the edges so the speaker's face stays clear.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/date-stamp\", \"start\": 1.2, \"end\": 4.4, \"props\": {\"date\": \"1962\", \"place\": \"A SMALL RIVER TOWN\", \"y\": 170}}. Positions are in 1080×1920 frame pixels. overlays/film-frame runs for the whole clip; overlays/face-tag follows the speaker automatically. Prints take \"scene\" (city, portrait, landscape, ship, group, ruins) or \"image\". Kit: library/themes/historical/kit.js.",
+  "groups": [
+    "Film",
+    "Captions",
+    "Prints",
+    "Diagrams"
+  ],
+  "items": [
+    {
+      "id": "film-frame",
+      "name": "Film frame",
+      "group": "Film",
+      "piece": "overlays/film-frame",
+      "description": "Old-film dressing for the whole clip: vignette, moving grain, dust, hairline scratches, projector flicker, a weaving gate edge and typed archive references in the corners.",
+      "over": true
+    },
+    {
+      "id": "date-stamp",
+      "name": "Date stamp",
+      "group": "Captions",
+      "piece": "overlays/date-stamp",
+      "description": "A year on a charcoal box, the place on a crimson bar and a note on a dark strip, wiping on over a brush stroke under a measuring rule.",
+      "over": true
+    },
+    {
+      "id": "name-plate",
+      "name": "Name plate",
+      "group": "Captions",
+      "piece": "overlays/name-plate",
+      "description": "A small taped portrait print beside a name bar, life dates typed on a dark strip and a line about the person in serif.",
+      "over": true
+    },
+    {
+      "id": "face-tag",
+      "name": "Face tag",
+      "group": "Captions",
+      "piece": "overlays/face-tag",
+      "description": "Photo-corner marks round the speaker's face with a caption stack hung above; follows the face in footage projects.",
+      "over": true
+    },
+    {
+      "id": "chapter-tag",
+      "name": "Chapter tag",
+      "group": "Captions",
+      "piece": "overlays/chapter-tag",
+      "description": "A numeral on a charcoal block behind a brush stroke, with the chapter word, title and years on bars.",
+      "over": true
+    },
+    {
+      "id": "source-note",
+      "name": "Source note",
+      "group": "Captions",
+      "piece": "overlays/source-note",
+      "description": "A citation typing itself on a dark strip beside a small label bar, tucked along the bottom edge.",
+      "over": true
+    },
+    {
+      "id": "photo-frame",
+      "name": "Photo frame",
+      "group": "Prints",
+      "piece": "overlays/photo-frame",
+      "description": "An archival print doing the documentary pan (push-in with sliding layers), with a year and caption across its lower edge. Stand-in scenes or your own image.",
+      "over": true
+    },
+    {
+      "id": "then-now",
+      "name": "Then and now",
+      "group": "Prints",
+      "piece": "overlays/then-now",
+      "description": "Two small prints leaning toward each other, old and new, each with its label and date, joined by a dashed crimson rule.",
+      "over": true
+    },
+    {
+      "id": "document",
+      "name": "Document",
+      "group": "Prints",
+      "piece": "overlays/document",
+      "description": "A letter, telegram or report on a sheet of paper: lines type or write themselves, a signature in pen, an archive stamp pressed on.",
+      "over": true
+    },
+    {
+      "id": "stamp",
+      "name": "Stamp",
+      "group": "Prints",
+      "piece": "overlays/stamp",
+      "description": "A rectangular rubber stamp struck onto a taped paper slip, large and faint to exact.",
+      "over": true
+    },
+    {
+      "id": "map-route",
+      "name": "Map route",
+      "group": "Diagrams",
+      "piece": "overlays/map-route",
+      "description": "A map torn from an atlas with an invented coastline, graticule and compass; a dashed crimson route travels between labelled places.",
+      "over": true
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "group": "Diagrams",
+      "piece": "overlays/timeline",
+      "description": "A tick rule of years across the top with a crimson marker travelling to the year in question while it counts.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Diagrams",
+      "piece": "overlays/counter",
+      "description": "Big numerals counting up on a torn charcoal slip over a crimson brush stroke, with a label bar.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "List",
+      "group": "Diagrams",
+      "piece": "overlays/list",
+      "description": "Items filed one at a time like index cards: numbered dark strips under a crimson title bar, each timed to a word.",
+      "over": true
+    },
+    {
+      "id": "quote-strip",
+      "name": "Quote strip",
+      "group": "Diagrams",
+      "piece": "overlays/quote-strip",
+      "description": "A quotation in old book italic on a torn charcoal slip, the words arriving one by one, with its source on a bar.",
+      "over": true
+    }
+  ]
+}

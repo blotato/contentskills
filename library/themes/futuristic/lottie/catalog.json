@@ -1,0 +1,261 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Vector accents and widgets in the theme style, generated from code in lottie/generate.mjs: status widgets, reactions, data accents, pointers, reveals and looping backgrounds.",
+  "usage": "{\"piece\": \"lottie/reticle-spin\"}. Files: library/themes/futuristic/lottie/animations/.",
+  "groups": [
+    "Status",
+    "Reactions",
+    "Data",
+    "Pointers",
+    "Reveals",
+    "Backgrounds"
+  ],
+  "items": [
+    {
+      "id": "reticle-spin",
+      "name": "Reticle spin",
+      "group": "Status",
+      "piece": "lottie/reticle-spin",
+      "description": "Counter-rotating arcs around a pulsing point: targeting, thinking, loading."
+    },
+    {
+      "id": "ping",
+      "name": "Ping",
+      "group": "Status",
+      "piece": "lottie/ping",
+      "description": "Diamond waves radiating from a point: \u201chere\u201d, \u201clive\u201d, \u201cdetected\u201d."
+    },
+    {
+      "id": "signal-bars",
+      "name": "Signal bars",
+      "group": "Status",
+      "piece": "lottie/signal-bars",
+      "description": "An equaliser of bars rising and falling: audio, activity, signal."
+    },
+    {
+      "id": "access-granted",
+      "name": "Access granted",
+      "group": "Reactions",
+      "piece": "lottie/access-granted",
+      "description": "A hexagon draws, flashes and a checkmark locks in."
+    },
+    {
+      "id": "loader-orbit",
+      "name": "Loader orbit",
+      "group": "Status",
+      "piece": "lottie/loader-orbit",
+      "description": "Arcs counter-rotating around a pulsing hexagon with two satellites in orbit (loop): loading, processing, standing by."
+    },
+    {
+      "id": "loader-segments",
+      "name": "Loader segments",
+      "group": "Status",
+      "piece": "lottie/loader-segments",
+      "description": "A ring of twelve segments with a light chasing round it (loop): working, buffering."
+    },
+    {
+      "id": "radar-sweep",
+      "name": "Radar sweep",
+      "group": "Status",
+      "piece": "lottie/radar-sweep",
+      "description": "A radar dial whose sweep lights up blips as it passes (loop): searching, scanning, detecting."
+    },
+    {
+      "id": "countdown-ring",
+      "name": "Countdown ring",
+      "group": "Status",
+      "piece": "lottie/countdown-ring",
+      "description": "3-2-1-0 in seven-segment digits inside a draining ring, ending in an amber burst."
+    },
+    {
+      "id": "progress-bar",
+      "name": "Progress bar",
+      "group": "Status",
+      "piece": "lottie/progress-bar",
+      "description": "A notched bar fills in three pushes, flashes and ticks itself done: progress, stages, complete."
+    },
+    {
+      "id": "power-up",
+      "name": "Power up",
+      "group": "Status",
+      "piece": "lottie/power-up",
+      "description": "A power symbol switches on with a drop, a burst of rays and a ring: start, activate, online."
+    },
+    {
+      "id": "toggle-on",
+      "name": "Toggle on",
+      "group": "Status",
+      "piece": "lottie/toggle-on",
+      "description": "A switch slides across with a squash and lights up: enabled, turned on, a setting."
+    },
+    {
+      "id": "lock-secure",
+      "name": "Lock secure",
+      "group": "Status",
+      "piece": "lottie/lock-secure",
+      "description": "An open padlock snaps shut, lights up and is sealed in a hexagon: secured, private, encrypted."
+    },
+    {
+      "id": "signal-wave",
+      "name": "Signal wave",
+      "group": "Status",
+      "piece": "lottie/signal-wave",
+      "description": "Three layered waveforms travelling through a window, with a marker riding the main one (loop): audio, signal, voice."
+    },
+    {
+      "id": "scan-brackets",
+      "name": "Scan brackets",
+      "group": "Status",
+      "piece": "lottie/scan-brackets",
+      "description": "Corner brackets that breathe while a beam scans up and down (loop): analysing, scanning a subject."
+    },
+    {
+      "id": "check-glitch",
+      "name": "Check glitch",
+      "group": "Reactions",
+      "piece": "lottie/check-glitch",
+      "description": "A ring draws, a checkmark snaps in with a split-second glitch and a burst: yes, correct, done."
+    },
+    {
+      "id": "cross-denied",
+      "name": "Cross denied",
+      "group": "Reactions",
+      "piece": "lottie/cross-denied",
+      "description": "An octagon draws, a red cross slams in and the whole thing shakes: no, wrong, denied."
+    },
+    {
+      "id": "warning-flash",
+      "name": "Warning flash",
+      "group": "Reactions",
+      "piece": "lottie/warning-flash",
+      "description": "An amber warning triangle with echoing outlines and marching hazard stripes (loop): caution, risk."
+    },
+    {
+      "id": "upload",
+      "name": "Upload",
+      "group": "Reactions",
+      "piece": "lottie/upload",
+      "description": "An arrow rising out of a tray with chevrons streaming up behind it (loop): send, publish, export."
+    },
+    {
+      "id": "download",
+      "name": "Download",
+      "group": "Reactions",
+      "piece": "lottie/download",
+      "description": "An arrow dropping into a tray with chevrons streaming down (loop): receive, save, import."
+    },
+    {
+      "id": "level-up",
+      "name": "Level up",
+      "group": "Reactions",
+      "piece": "lottie/level-up",
+      "description": "A star pops in with overshoot, sparks and rising chevrons: achievement, upgrade, win."
+    },
+    {
+      "id": "data-transfer",
+      "name": "Data transfer",
+      "group": "Data",
+      "piece": "lottie/data-transfer",
+      "description": "Packets travelling between two hexagon nodes, with replies coming back (loop): sync, exchange, API calls."
+    },
+    {
+      "id": "hex-assemble",
+      "name": "Hex assemble",
+      "group": "Data",
+      "piece": "lottie/hex-assemble",
+      "description": "Six cells fly in around an amber core and lock into a honeycomb inside a shell: building, modules, a team."
+    },
+    {
+      "id": "gauge-dial",
+      "name": "Gauge dial",
+      "group": "Data",
+      "piece": "lottie/gauge-dial",
+      "description": "A dial whose arc and needle swing up, overshoot and settle near the red zone: performance, load, level (no numbers shown)."
+    },
+    {
+      "id": "orbit-atoms",
+      "name": "Orbit atoms",
+      "group": "Data",
+      "piece": "lottie/orbit-atoms",
+      "description": "Three electrons on tilted orbits around a pulsing nucleus (loop): science, the core, a system in motion."
+    },
+    {
+      "id": "pulse-line",
+      "name": "Pulse line",
+      "group": "Data",
+      "piece": "lottie/pulse-line",
+      "description": "A heartbeat trace running across a grid (loop): alive, monitoring, a spike."
+    },
+    {
+      "id": "pointer-chevrons",
+      "name": "Pointer chevrons",
+      "group": "Pointers",
+      "piece": "lottie/pointer-chevrons",
+      "description": "Three chevrons rippling toward a pinging target (loop): look here, next, this way."
+    },
+    {
+      "id": "callout-line",
+      "name": "Callout line",
+      "group": "Pointers",
+      "piece": "lottie/callout-line",
+      "description": "A point pings, a leader line draws out and a label plate builds with placeholder text bars: annotation, detail."
+    },
+    {
+      "id": "target-lock",
+      "name": "Target lock",
+      "group": "Pointers",
+      "piece": "lottie/target-lock",
+      "description": "Wedges close in, crosshairs draw and the reticle locks amber: focus, found it, the key point."
+    },
+    {
+      "id": "ring-emphasis",
+      "name": "Ring emphasis",
+      "group": "Pointers",
+      "piece": "lottie/ring-emphasis",
+      "description": "A ring draws round the centre with a second arc, ticks and an underline: circle this, emphasis."
+    },
+    {
+      "id": "wipe-bars",
+      "name": "Wipe bars",
+      "group": "Reveals",
+      "piece": "lottie/wipe-bars",
+      "description": "Seven bars sweep in from the left and out to the right, staggered: a wipe between beats (ends empty)."
+    },
+    {
+      "id": "iris-hex",
+      "name": "Iris hex",
+      "group": "Reveals",
+      "piece": "lottie/iris-hex",
+      "description": "A hexagon floods the frame, then opens from the centre with echo rings: an iris reveal (ends empty)."
+    },
+    {
+      "id": "frame-reveal",
+      "name": "Frame reveal",
+      "group": "Reveals",
+      "piece": "lottie/frame-reveal",
+      "description": "A notched frame draws on and a scan beam uncovers a grid inside it: introducing a panel or a section."
+    },
+    {
+      "id": "grid-pulse",
+      "name": "Grid pulse",
+      "group": "Backgrounds",
+      "piece": "lottie/grid-pulse",
+      "description": "A grid with square pulses spreading from the centre and cells lighting up (loop): a quiet tech backdrop."
+    },
+    {
+      "id": "scan-lines",
+      "name": "Scan lines",
+      "group": "Backgrounds",
+      "piece": "lottie/scan-lines",
+      "description": "Horizontal lines with bright bands sweeping through and the odd glitch line (loop): monitor, surveillance."
+    },
+    {
+      "id": "particle-drift",
+      "name": "Particle drift",
+      "group": "Backgrounds",
+      "piece": "lottie/particle-drift",
+      "description": "Small diamonds and dots drifting upward and swaying (loop): calm ambient motion."
+    }
+  ]
+}

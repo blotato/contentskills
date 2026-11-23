@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Title cards and text overlays in light: tracked Michroma capitals that land saturated orange, burn through red and cool to white, always arriving where a line of light reaches them. Title cards start with the red dot top-left firing the first line, on near-black and deep teal haze.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"field\": \"teal\"}}}, or as a footage \"cutaway\". Fields: teal (default), black, deep, ember, violet (field names from other themes are mapped onto these). Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"LISTEN\", \"y\": 330}}. Every word and position is a prop; props match the other themes so storyboards can switch. Kit: library/themes/lines-of-light/kit.js. Files: library/themes/lines-of-light/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "The red dot fires down and across into an underline that opens both ways; the headline lands over it line by line (orange, red, white) in a blue flash, with a sunburst rising from a horizon low in the frame.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two words either side of a line of light: the top word lands as the line draws, a red pulse runs it, and the bottom word lands in a blue flash where the pulse arrives.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Drifting rows",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Rows of phrases drifting past each other in dim tracked capitals under hairlines of light; one row at a time comes up orange to white and settles back.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "A sentence beside a vertical rule of light: each line lands as the rule draws past it; the emphasis words land last with an underline opening from their centre.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "A figure inside a dial of light: the ring opens from where the red line touches it, ticks draw out, the digits roll and land, a blue flash locks it.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "Quote marks drawn in light, a rule down the left of the quote landing it line by line, the source under a short rule with a mono role.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A numbered list on a spine of light: a triple bar reaches each item in turn and the item lands beside it.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "A diagonal line of light splits two sides; a ring opens round VS where it passes the middle; a red pulse runs it and the second side lands in a blue flash.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A track of light past a row of stops; the current chapter's stop opens and flashes blue, then the number lands large with the title below.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Numbers landing inside a dial whose ring draws round as each second runs out, a red dot travelling the rim; GO bursts into a sunburst and a blue flash.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "A small ring with a plus opens where the red line touches it, a sunburst of uneven rays blinks blue, then the call to action and handle land below.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One word over the footage between two lines of light: a red dot fires the line above, the one below opens from the centre, the word lands in a blue flash.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A sentence over the footage; a line of light draws under the marked words and a red pulse runs it, landing each marked word as it passes.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A red dot fires a line under the name, a short vertical opens at its end, the name lands and the role types in mono.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "Text running up or down the frame edge beside a line of light fired by a red dot, with a mono line on the far side.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "Moving text between two lines of light that open from the centre across the frame, with a mono strip running the other way.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Four small labels under corner brackets of light that open from their corners; the top-left carries the red dot.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Picture frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "A frame of light for a screenshot or second clip, opening both ways from where the red line touches it, with a label above and a caption below.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Badge",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A ring of light opening round a point, a short sunburst, a mono ring of text turning inside and a word landing in the middle.",
+      "over": true
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Comic lettering that moves: shouted Bangers caps, inked and extruded, that slam, whip and letter themselves on over flat-colour panels with Ben-Day dots, bursts, zoom lines, slabs, caption boxes and balloons.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot’s \"background\" (a candidate may then omit \"visual\") or as its \"visual\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"YOUR\", \"WORDS\"], \"accent\": \"yellow\"}}}, or as a footage \"cutaway\". Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"word\": \"FOCUS\", \"y\": 330}}. Every word and position is a prop, with the same names as the other themes; \"accent\" (yellow, red, blue, green, purple, teal, orange, paper) picks the panel colour of a card or the plate colour of an overlay. Kit: library/themes/comic/kit.js. Files: library/themes/comic/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline slam",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "A cover line slams on letter by letter over a two-colour burst and zoom lines, with a caption box, a balloon and edge tags.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two stacked words whip in from opposite sides with speed streaks and a tilted picture panel pops between them.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Marquee wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "A tilted wall of printed bands in flat colours, each running its words sideways in alternating directions.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "A sentence lettered on word by word in shouted caps; the emphasised word lands harder with a burst behind it.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "One huge figure counts up inside a burst with zoom lines, a caption box above and a slab label below.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote card",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quotation in one big speech balloon that pops open line by line, with oversized quote marks and the speaker on a slab.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A numbered list as paper strips that pop out one at a time with burst numbers; the item being read turns yellow.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "The panel is torn in two colours along a slanted gutter; two words whip in and a burst with the mark pops on the tear.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A chapter number lands huge in a burst, a caption box on its corner and the title lettered onto a slab.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Every beat is an impact: zoom lines rush in and the next number slams down in a burst of the next colour.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The sign-off slams on over a burst, the call to action nudges on a slab, the handle speaks from a balloon and a band runs along the bottom.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "Keyword slam",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "One shouted word slams down letter by letter over a burst (or a slab), with a flash of zoom lines and a caption box.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Highlight swipe",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A sentence in inked caps; a marker slab whips in behind the words that matter.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Lower third",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A lopsided name slab pops out from a point, a dark plate drops out under it and both letter themselves on.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Side text",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "A tall slab shoots up one edge of the frame like a comic’s spine, its words lettered along it.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Marquee band",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "A printed band snaps open across the frame with its words running sideways between sparks.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Corner labels",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Cover small print: a caption box pops into each corner of the frame, with a burst badge.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "PiP frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "An inset comic panel frame (paper gutter, ink box, hard shadow) pops open around a window, with a slab label and caption.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Sticker",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A two-colour cover burst with dots is slapped on, spins to rest and keeps boiling, with a ribbon caption.",
+      "over": true
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Diagrams in the horror look: thin bone line-work and one rose accent on a dark, grainy 1000\u00d71000 card, with typed labels, aged-paper notes and a failing lamp. Half are charts, half are the investigator's tools: timeline, evidence board, search map, recording, clock, calendar. All sample data is illustrative. Use them full-screen as cutaways, or pass \"clear\": true to float the card over footage on a soft dark panel.",
+  "usage": "{\"piece\": \"d3/timeline\", \"props\": {\"title\": \"\u2026\", \"events\": [\u2026]}}. Files: library/themes/horror/d3/pieces/.",
+  "groups": [
+    "Charts",
+    "Evidence",
+    "Time"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Thin horizontal strips on hairline tracks, one of them rose; values count up."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "One unsteady line drawn across a faint grid, with a point ringed in rose and labelled."
+    },
+    {
+      "id": "versus",
+      "name": "Two columns",
+      "group": "Charts",
+      "piece": "d3/versus",
+      "description": "Two figures as tall thin columns, bone against rose, with the gap stated underneath."
+    },
+    {
+      "id": "ring-stat",
+      "name": "Ring percentage",
+      "group": "Charts",
+      "piece": "d3/ring-stat",
+      "description": "One percentage as a thin ring filling in rose, the figure rolling up in the middle."
+    },
+    {
+      "id": "night-hours",
+      "name": "Night hours dial",
+      "group": "Charts",
+      "piece": "d3/night-hours",
+      "description": "Twenty-four hours round a dial as spokes; the small hours stand out in rose as a hand sweeps round."
+    },
+    {
+      "id": "waveform",
+      "name": "Recording",
+      "group": "Evidence",
+      "piece": "d3/waveform",
+      "description": "A waveform played back under a playhead, with one burst of sound boxed and labelled in rose."
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline of a night",
+      "group": "Evidence",
+      "piece": "d3/timeline",
+      "description": "Times typed down a vertical line and what happened beside them, entry by entry; one in rose."
+    },
+    {
+      "id": "evidence-board",
+      "name": "Evidence board",
+      "group": "Evidence",
+      "piece": "d3/evidence-board",
+      "description": "Typed notes on scraps of aged paper, pinned up and joined by red string pulled from note to note."
+    },
+    {
+      "id": "map-search",
+      "name": "Search map",
+      "group": "Evidence",
+      "piece": "d3/map-search",
+      "description": "Faint roads and contours, a search radius spreading from the last known position, pins with typed labels."
+    },
+    {
+      "id": "clock",
+      "name": "Stopped clock",
+      "group": "Time",
+      "piece": "d3/clock",
+      "description": "Hands run forward fast and stop dead on the time that matters; the second hand twitches without advancing."
+    },
+    {
+      "id": "calendar",
+      "name": "Crossed-off calendar",
+      "group": "Time",
+      "piece": "d3/calendar",
+      "description": "A month of days crossed off in rough strokes up to the one ringed in rose."
+    },
+    {
+      "id": "moon-phases",
+      "name": "Moon phases",
+      "group": "Time",
+      "piece": "d3/moon-phases",
+      "description": "The eight phases in a row, with that night's moon large above them and a cloud drifting across it."
+    }
+  ]
+}

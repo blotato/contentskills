@@ -1,0 +1,198 @@
+{
+  "id": "hud",
+  "title": "Overlays",
+  "summary": "See-through interface graphics made to sit on top of footage, shown here over the sample clip. They flicker on, stay alive while they are up, and switch off before their time ends.",
+  "usage": "In a footage storyboard: {\"piece\": \"hud/counter\", \"start\": 1.2, \"end\": 3.4, \"props\": {\"value\": 5, \"label\": \"WAYS TO EARN\"}}. Positions are in 1080×1920 frame pixels. hud/face-lock follows the speaker automatically.",
+  "groups": [
+    "Frame",
+    "Callouts",
+    "Panels",
+    "Transitions"
+  ],
+  "items": [
+    {
+      "id": "viewfinder",
+      "name": "Viewfinder",
+      "group": "Frame",
+      "piece": "hud/viewfinder",
+      "description": "Corner brackets, a title readout, REC timecode and side rulers around the whole frame.",
+      "over": true
+    },
+    {
+      "id": "face-lock",
+      "name": "Face lock",
+      "group": "Frame",
+      "piece": "hud/face-lock",
+      "description": "A targeting reticle that follows the speaker’s face, with a callout beside it.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Callouts",
+      "piece": "hud/counter",
+      "description": "A big number that counts up with a label, for the stat just spoken.",
+      "over": true
+    },
+    {
+      "id": "tag",
+      "name": "Tag",
+      "group": "Callouts",
+      "piece": "hud/tag",
+      "description": "A small label with a leader line pointing at something in the shot.",
+      "over": true
+    },
+    {
+      "id": "title",
+      "name": "Title plate",
+      "group": "Panels",
+      "piece": "hud/title",
+      "description": "A kicker line over a large heading inside a notched frame.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Name plate",
+      "group": "Panels",
+      "piece": "hud/lower-third",
+      "description": "Introduces the speaker: name and role.",
+      "over": true
+    },
+    {
+      "id": "list",
+      "name": "List",
+      "group": "Panels",
+      "piece": "hud/list",
+      "description": "A numbered list revealing one row at a time, timed to the words.",
+      "over": true
+    },
+    {
+      "id": "progress",
+      "name": "Progress bar",
+      "group": "Panels",
+      "piece": "hud/progress",
+      "description": "A segmented loading bar with a percentage.",
+      "over": true
+    },
+    {
+      "id": "scan",
+      "name": "Scan line",
+      "group": "Transitions",
+      "piece": "hud/scan",
+      "description": "A line of light sweeping down the frame once.",
+      "over": true
+    },
+    {
+      "id": "target",
+      "name": "Target brackets",
+      "group": "Frame",
+      "piece": "hud/target",
+      "description": "Brackets that fly in from the frame edges and snap onto a box, then hold with a scan line and coordinates.",
+      "over": true
+    },
+    {
+      "id": "split",
+      "name": "Split frame",
+      "group": "Frame",
+      "piece": "hud/split",
+      "description": "A divider with a spinning badge and two labelled plates, for before/after and A/B footage.",
+      "over": true
+    },
+    {
+      "id": "pip",
+      "name": "Picture-in-picture",
+      "group": "Frame",
+      "piece": "hud/pip",
+      "description": "A window frame that opens from a line, with brackets, a label tab and REC timecode.",
+      "over": true
+    },
+    {
+      "id": "data-stream",
+      "name": "Data stream",
+      "group": "Frame",
+      "piece": "hud/data-stream",
+      "description": "A side column of scrolling hex telemetry with flagged rows.",
+      "over": true
+    },
+    {
+      "id": "grid-reveal",
+      "name": "Grid reveal",
+      "group": "Frame",
+      "piece": "hud/grid-reveal",
+      "description": "A full-frame grid that builds itself with a wave of lit cells, leaving the face area empty.",
+      "over": true
+    },
+    {
+      "id": "slam",
+      "name": "Word slam",
+      "group": "Callouts",
+      "piece": "hud/slam",
+      "description": "One big word that drops in oversized, overshoots and settles with a colour split.",
+      "over": true
+    },
+    {
+      "id": "alert",
+      "name": "Alert banner",
+      "group": "Callouts",
+      "piece": "hud/alert",
+      "description": "A warning banner that snaps open, with crawling hazard stripes and a typed message.",
+      "over": true
+    },
+    {
+      "id": "toast",
+      "name": "Toast",
+      "group": "Callouts",
+      "piece": "hud/toast",
+      "description": "A notification that shoots in from the side, bounces, and runs down a timer bar.",
+      "over": true
+    },
+    {
+      "id": "gauge-badge",
+      "name": "Gauge badge",
+      "group": "Callouts",
+      "piece": "hud/gauge-badge",
+      "description": "A round gauge that winds up to a value inside turning rings.",
+      "over": true
+    },
+    {
+      "id": "checklist",
+      "name": "Checklist",
+      "group": "Panels",
+      "piece": "hud/checklist",
+      "description": "Boxes that tick themselves off on cue while the header keeps count.",
+      "over": true
+    },
+    {
+      "id": "steps",
+      "name": "Step indicator",
+      "group": "Panels",
+      "piece": "hud/steps",
+      "description": "“02 / 05” with the step’s name over a segmented track that fills to the current step.",
+      "over": true
+    },
+    {
+      "id": "stat-cluster",
+      "name": "Stat cluster",
+      "group": "Panels",
+      "piece": "hud/stat-cluster",
+      "description": "A compact stack of small stats that decode from scrambled digits, each with a live meter.",
+      "over": true
+    },
+    {
+      "id": "waveform",
+      "name": "Waveform strip",
+      "group": "Panels",
+      "piece": "hud/waveform",
+      "description": "A voice-meter strip of mirrored bars with a playhead and timecode.",
+      "over": true
+    },
+    {
+      "id": "ticker",
+      "name": "Ticker tape",
+      "group": "Panels",
+      "piece": "hud/ticker",
+      "description": "A band across the frame with a labelled tab and items scrolling past.",
+      "over": true
+    }
+  ]
+}

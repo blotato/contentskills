@@ -1,0 +1,287 @@
+{
+  "id": "effects",
+  "title": "Filters",
+  "summary": "The footage treatments of a fashion film, shown on the sample clip: a gentle film grade as the base look, the frame devices that this style is built on (the shot as a card over a blurred copy of itself; the shot cut into tall panels) and soft, fast cuts — zoom-blur push, sideways whip, white dip, panels dropping in — plus one loud colour burst. Then the harder, shorter hits for fast edits (punch, streak smear, three-tone impact frame, shutter, stutter, tilt), siren light and a moody grade. Previews run at full strength.",
+  "usage": "In a footage storyboard: {\"footage\": {\"look\": {\"name\": \"film_grade\", \"amount\": 0.8}}}, {\"name\": \"inset_frame\", \"at\": 2.4, \"seconds\": 1.6, \"amount\": 1, \"where\": \"all\"} and, on a cut, {\"name\": \"push_blur\", \"at\": 5.2, \"seconds\": 0.25, \"amount\": 0.8, \"where\": \"in\"}. Effects apply to the finished picture, so captions travel with the card. On a shot candidate: {\"effect\": {\"name\": \"white_dip\", \"amount\": 0.7, \"where\": \"in\"}}. Theme effects: library/themes/fashion/effects/theme_effects.py; engine: library/_shared/effects_engine.py (OpenCV).",
+  "groups": [
+    "Look",
+    "Frames",
+    "Cuts",
+    "Light",
+    "Lighting"
+  ],
+  "items": [
+    {
+      "id": "film_grade",
+      "name": "film grade",
+      "group": "Look",
+      "src": "clips/film_grade.mp4",
+      "portrait": true,
+      "description": "The theme base look: gentle film. Soft contrast, slightly lifted blacks, warm highlights, natural colour, fine grain. Use around 0.8 as the footage look."
+    },
+    {
+      "id": "noir",
+      "name": "noir",
+      "group": "Look",
+      "src": "clips/noir.mp4",
+      "portrait": true,
+      "description": "Editorial black and white: soft silver greys, deep but not crushed blacks, darker corners, fine grain."
+    },
+    {
+      "id": "soft_vignette",
+      "name": "soft vignette",
+      "group": "Look",
+      "src": "clips/soft_vignette.mp4",
+      "portrait": true,
+      "description": "Darker, slightly softer corners that pull the eye to the middle."
+    },
+    {
+      "id": "soft_focus",
+      "name": "soft focus",
+      "group": "Look",
+      "src": "clips/soft_focus.mp4",
+      "portrait": true,
+      "description": "The whole picture slips out of focus and dims a little, so a word can sit on it."
+    },
+    {
+      "id": "inset_frame",
+      "name": "inset frame",
+      "group": "Frames",
+      "src": "clips/inset_frame.mp4",
+      "portrait": true,
+      "description": "THE frame device: the shot as a clean, sharp card over a blurred, enlarged, dimmed copy of itself. Pulls back at the start of its time and returns to full frame at the end."
+    },
+    {
+      "id": "inset_hold",
+      "name": "inset hold",
+      "group": "Frames",
+      "src": "clips/inset_hold.mp4",
+      "portrait": true,
+      "description": "The same card with no movement of its own: amount is how far it has pulled back (\"where\": \"in\" starts on the card and opens to full frame; \"out\" closes down to it)."
+    },
+    {
+      "id": "triptych",
+      "name": "triptych",
+      "group": "Frames",
+      "src": "clips/triptych.mp4",
+      "portrait": true,
+      "description": "The shot as three tall panels: the middle one untouched, the narrow outer two pushed in and slipped up and down. Opens and closes with its time."
+    },
+    {
+      "id": "panel_drop",
+      "name": "panel drop",
+      "group": "Cuts",
+      "src": "clips/panel_drop.mp4",
+      "portrait": true,
+      "description": "The picture arrives as tall panels of unequal width sliding in from above and below, then closes up. Use \"where\": \"in\" on a cut."
+    },
+    {
+      "id": "push_blur",
+      "name": "push blur",
+      "group": "Cuts",
+      "src": "clips/push_blur.mp4",
+      "portrait": true,
+      "description": "A soft zoom-blur push for cuts and punch-ins."
+    },
+    {
+      "id": "whip_smear",
+      "name": "whip smear",
+      "group": "Cuts",
+      "src": "clips/whip_smear.mp4",
+      "portrait": true,
+      "description": "A sideways whip: the picture smears and slides as if the camera snapped across."
+    },
+    {
+      "id": "chroma_burst",
+      "name": "chroma burst",
+      "group": "Cuts",
+      "src": "clips/chroma_burst.mp4",
+      "portrait": true,
+      "description": "The loud one: the picture’s own colours pushed to saturated primaries and stretched into radial streaks, channels split. Once or twice a video."
+    },
+    {
+      "id": "white_dip",
+      "name": "white dip",
+      "group": "Cuts",
+      "src": "clips/white_dip.mp4",
+      "portrait": true,
+      "description": "A soft dip to white: highlights bloom and the picture washes out, rather than flashing."
+    },
+    {
+      "id": "light_sweep",
+      "name": "light sweep",
+      "group": "Light",
+      "src": "clips/light_sweep.mp4",
+      "portrait": true,
+      "description": "A band of warm light travelling across the frame over its time, with a cool trailing edge."
+    },
+    {
+      "id": "halation",
+      "name": "halation",
+      "group": "Light",
+      "src": "clips/halation.mp4",
+      "portrait": true,
+      "description": "Shared engine: a red-orange glow around the brightest highlights, like film stock."
+    },
+    {
+      "id": "grain",
+      "name": "grain",
+      "group": "Look",
+      "src": "clips/grain.mp4",
+      "portrait": true,
+      "description": "Shared engine: plain film grain."
+    },
+    {
+      "id": "punch_hit",
+      "name": "punch hit",
+      "group": "Cuts",
+      "src": "clips/punch_hit.mp4",
+      "portrait": true,
+      "description": "A zoom hit for jump cuts: the picture pops to about 1.08x with a short radial blur. Use \"where\": \"in\", 0.15–0.25 s."
+    },
+    {
+      "id": "speed_smear",
+      "name": "speed smear",
+      "group": "Cuts",
+      "src": "clips/speed_smear.mp4",
+      "portrait": true,
+      "description": "Speed-ramp feel: every row dragged into long horizontal streaks, highlights longest. No slide."
+    },
+    {
+      "id": "flash_frame",
+      "name": "flash frame",
+      "group": "Cuts",
+      "src": "clips/flash_frame.mp4",
+      "portrait": true,
+      "description": "An impact frame: the picture in three tones — ink blacks, poppy mids, white highlights. Two to four frames at a hit; sparingly."
+    },
+    {
+      "id": "shutter_blink",
+      "name": "shutter blink",
+      "group": "Cuts",
+      "src": "clips/shutter_blink.mp4",
+      "portrait": true,
+      "description": "A camera shutter: soft-edged near-black blades close from top and bottom by the amount. Use \"pulse\"."
+    },
+    {
+      "id": "strobe_step",
+      "name": "strobe step",
+      "group": "Cuts",
+      "src": "clips/strobe_step.mp4",
+      "portrait": true,
+      "description": "A jump-in stutter: the picture steps in three hard stages up to 1.08x across its time. Use \"where\": \"all\" over 0.3–0.5 s."
+    },
+    {
+      "id": "tilt_snap",
+      "name": "tilt snap",
+      "group": "Cuts",
+      "src": "clips/tilt_snap.mp4",
+      "portrait": true,
+      "description": "A quick roll of up to 2.5 degrees with a slight push-in that snaps back level. Use \"where\": \"in\"."
+    },
+    {
+      "id": "siren_wash",
+      "name": "siren wash",
+      "group": "Light",
+      "src": "clips/siren_wash.mp4",
+      "portrait": true,
+      "description": "Emergency lights in the theme’s colours: poppy from the left and cobalt from the right alternating three times a second, screened softly over the picture."
+    },
+    {
+      "id": "moody_grade",
+      "name": "moody grade",
+      "group": "Look",
+      "src": "clips/moody_grade.mp4",
+      "portrait": true,
+      "description": "A low-key look: darker, less colour, cool teal-blue shadows under slightly warm highlights, heavy soft corners, fine grain."
+    },
+    {
+      "id": "light_spotlight",
+      "name": "spotlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_spotlight.mp4",
+      "portrait": true,
+      "description": "A warm pool of light from above on the person; the room falls away to near-black. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_rim",
+      "name": "rim light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_rim.mp4",
+      "portrait": true,
+      "description": "Dark, cool scene; a thin bright outline traces the person. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_flashlight",
+      "name": "flashlight",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_flashlight.mp4",
+      "portrait": true,
+      "description": "A hard round beam on the face that drifts a little; everything else dark. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_golden_hour",
+      "name": "golden hour",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_golden_hour.mp4",
+      "portrait": true,
+      "description": "Low warm sun with leaf shadows dappled across the scene. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_neon",
+      "name": "neon",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_neon.mp4",
+      "portrait": true,
+      "description": "Hot magenta from one side, a cyan touch from the other, dark in between. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_projector",
+      "name": "projector",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_projector.mp4",
+      "portrait": true,
+      "description": "A bright lamp flaring behind the head through haze, teal room. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_under_light",
+      "name": "under light",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_under_light.mp4",
+      "portrait": true,
+      "description": "Light from below: the campfire or horror look. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_low_key",
+      "name": "low key",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_low_key.mp4",
+      "portrait": true,
+      "description": "Mostly shadow: one small key on the face, deep blacks. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "light_silhouette",
+      "name": "silhouette",
+      "group": "Lighting",
+      "src": "../../../_shared/lighting/clips/light_silhouette.mp4",
+      "portrait": true,
+      "description": "Bright hazy background, the person a dark shape with a faint edge. Finds the person in each frame; use 0.6–1 over a whole clip or a section."
+    },
+    {
+      "id": "cop_lights",
+      "name": "cop lights",
+      "group": "Lighting",
+      "src": "../../../_shared/signature/clips/cop_lights.mp4",
+      "portrait": true,
+      "description": "The room drops dark and red and blue police lights strobe across the person from both sides. Options (\"props\"): color, color2 (hex), speed (flashes per second, 2.2), push (1.08)."
+    },
+    {
+      "id": "color_grade",
+      "name": "colour grade",
+      "group": "Look",
+      "src": "../../../_shared/signature/clips/color_grade.mp4",
+      "portrait": true,
+      "description": "The look changes on a word: moody, warm, cool, black and white or pop fades in (or ripples out from a point). Options (\"props\"): grade (moody, warm, cool, bw, pop), style (fade or ripple), dur (seconds to arrive), x, y (ripple origin, 0–1). Also works as a footage \"look\"."
+    }
+  ]
+}

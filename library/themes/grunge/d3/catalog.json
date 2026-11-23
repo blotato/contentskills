@@ -1,0 +1,97 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Hand-made data diagrams on the soot wall: torn-paper bars and strips, marker lines that draw themselves and boil, pencil hatching, tape, stamps and typewritten labels. Use them full-screen as cutaways, or pass \"clear\": true to float the diagram over footage on its own torn backing sheet.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"…\", \"items\": […]}}. Shared card chrome: library/themes/grunge/d3/pieces/_card.js. Files: library/themes/grunge/d3/pieces/.",
+  "groups": [
+    "Charts",
+    "Figures",
+    "Diagrams"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Torn-paper bars pasted up from a marker baseline; the highlighted one is red, the rest bone with pencil hatching."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "A red marker line drawn across hand-ruled axes with hatching under it; the last point is circled in lime and tagged."
+    },
+    {
+      "id": "donut",
+      "name": "Torn pie",
+      "group": "Charts",
+      "piece": "d3/donut",
+      "description": "A ring torn from different papers, each slice pasted down in turn, with a typed legend."
+    },
+    {
+      "id": "scatter",
+      "name": "Scatter",
+      "group": "Charts",
+      "piece": "d3/scatter",
+      "description": "Crosses marked on hand-ruled axes, a red trend line dragged through them, one point circled and tagged."
+    },
+    {
+      "id": "progress",
+      "name": "Brush bars",
+      "group": "Charts",
+      "piece": "d3/progress",
+      "description": "Loaded brush strokes dragged along hatched tracks, one per measure, the first in red."
+    },
+    {
+      "id": "ranking",
+      "name": "Ranking",
+      "group": "Figures",
+      "piece": "d3/ranking",
+      "description": "Paper strips taped to the wall, longest first; the winner is red."
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Figures",
+      "piece": "d3/big-number",
+      "description": "One figure counted up in huge worn capitals, its label on a lime marker stroke, a rubber stamp slammed in the corner."
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Figures",
+      "piece": "d3/versus",
+      "description": "Two torn sheets, bone against red, each with one big figure; a round stamp slams between them."
+    },
+    {
+      "id": "tally",
+      "name": "Tally marks",
+      "group": "Figures",
+      "piece": "d3/tally",
+      "description": "Counted the way you count on a wall: marker strokes in fives, every fifth struck through in red."
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "group": "Diagrams",
+      "piece": "d3/timeline",
+      "description": "A marker line down the wall with dates on torn tags and a typed note beside each."
+    },
+    {
+      "id": "steps",
+      "name": "Checklist",
+      "group": "Diagrams",
+      "piece": "d3/steps",
+      "description": "Hand-drawn boxes ticked off in red one by one; the step just done sits on a lime stroke."
+    },
+    {
+      "id": "table",
+      "name": "Ledger",
+      "group": "Diagrams",
+      "piece": "d3/table",
+      "description": "A typewritten ledger on a taped-up page: rows typed in, one highlighted in lime, the bottom line circled in red."
+    }
+  ]
+}

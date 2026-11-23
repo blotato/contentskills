@@ -1,0 +1,119 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Small vector accents in the theme look: thin bone-white line-work on near-black with one rose accent, generated from code in lottie/generate.mjs. They flicker in stepped frames or creep slowly; nothing bounces.",
+  "usage": "{\"piece\": \"lottie/bulb-flicker\"}. Files: library/themes/horror/lottie/animations/.",
+  "groups": [
+    "Signal",
+    "Signs",
+    "Light",
+    "Objects"
+  ],
+  "items": [
+    {
+      "id": "rec-blink",
+      "name": "Rec blink",
+      "group": "Signal",
+      "piece": "lottie/rec-blink",
+      "description": "A blinking record light inside corner brackets."
+    },
+    {
+      "id": "signal-lost",
+      "name": "Signal lost",
+      "group": "Signal",
+      "piece": "lottie/signal-lost",
+      "description": "Signal bars dropping out one by one, then a rose cross."
+    },
+    {
+      "id": "static-bars",
+      "name": "Static bars",
+      "group": "Signal",
+      "piece": "lottie/static-bars",
+      "description": "Stuttering horizontal bars of noise, one of them rose."
+    },
+    {
+      "id": "scan-frame",
+      "name": "Scan frame",
+      "group": "Signal",
+      "piece": "lottie/scan-frame",
+      "description": "A rose beam passing up and down over a figure inside flickering brackets."
+    },
+    {
+      "id": "pulse-line",
+      "name": "Pulse line",
+      "group": "Signs",
+      "piece": "lottie/pulse-line",
+      "description": "A heart-monitor trace drawn across by a bright head."
+    },
+    {
+      "id": "warning",
+      "name": "Warning",
+      "group": "Signs",
+      "piece": "lottie/warning",
+      "description": "A triangle with a flickering mark and a fading echo."
+    },
+    {
+      "id": "eye-open",
+      "name": "Eye open",
+      "group": "Signs",
+      "piece": "lottie/eye-open",
+      "description": "An eye that opens, looks one way, then the other, and closes."
+    },
+    {
+      "id": "cross-out",
+      "name": "Cross out",
+      "group": "Signs",
+      "piece": "lottie/cross-out",
+      "description": "A line of text struck through twice in rose."
+    },
+    {
+      "id": "bulb-flicker",
+      "name": "Bulb flicker",
+      "group": "Light",
+      "piece": "lottie/bulb-flicker",
+      "description": "A bare hanging bulb whose glow dips and cuts out."
+    },
+    {
+      "id": "candle",
+      "name": "Candle",
+      "group": "Light",
+      "piece": "lottie/candle",
+      "description": "A candle with a flame that leans and gutters."
+    },
+    {
+      "id": "moon-cloud",
+      "name": "Moon and cloud",
+      "group": "Light",
+      "piece": "lottie/moon-cloud",
+      "description": "A moon with a breathing halo and two bands of cloud drifting across."
+    },
+    {
+      "id": "clock-tick",
+      "name": "Clock tick",
+      "group": "Objects",
+      "piece": "lottie/clock-tick",
+      "description": "A clock whose second hand ticks toward a mark, then sticks and twitches."
+    },
+    {
+      "id": "door-creak",
+      "name": "Door creak",
+      "group": "Objects",
+      "piece": "lottie/door-creak",
+      "description": "A door easing open on a flickering cold light."
+    },
+    {
+      "id": "key-turn",
+      "name": "Key turn",
+      "group": "Objects",
+      "piece": "lottie/key-turn",
+      "description": "A key sliding into a lock plate and turning with a click."
+    },
+    {
+      "id": "magnifier",
+      "name": "Magnifier",
+      "group": "Objects",
+      "piece": "lottie/magnifier",
+      "description": "A magnifying glass passing over lines of text until it finds something."
+    }
+  ]
+}

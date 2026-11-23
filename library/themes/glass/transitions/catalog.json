@@ -1,0 +1,158 @@
+{
+  "id": "transitions",
+  "title": "Transitions",
+  "summary": "GPU shader transitions in the theme's look, shown going from the sample clip to a graphics frame: eight of its own (a soft zoom-blur push, a blur dissolve, a white dip, a whip pan, a light-leak wipe, the colour burst, tall panels dropping in, a card opening over the blurred shot) two calm ones from the shared set in the theme's colours, and eight fast hits for edits that change something every second (a punch-in, whips the other way and downwards, a streak smear, a three-tone impact frame, a shutter blink, a card landing from below, panels slipping apart). Keep them short (0.25–0.45 s; the hits 0.15–0.3 s): cuts in this style are soft and fast.",
+  "usage": "On a shot (the transition INTO it from the shot before): {\"transition\": {\"name\": \"soft_zoom\", \"seconds\": 0.4}}. In a footage storyboard, at a cut such as the start or end of a full-screen cutaway: \"transitions\": [{\"name\": \"panel_drop\", \"at\": 7.8, \"seconds\": 0.4}]. Engine: library/_shared/shader_transitions.py (moderngl); this theme's own shaders and its colours for the shared ones are in transitions/theme_transitions.py.",
+  "groups": [
+    "Soft",
+    "Light",
+    "Panels",
+    "Hits"
+  ],
+  "items": [
+    {
+      "id": "soft_zoom",
+      "name": "soft zoom",
+      "group": "Soft",
+      "src": "clips/soft_zoom.mp4",
+      "portrait": true,
+      "description": "A short, soft zoom-blur push through the shot into the next; no flash. The theme default."
+    },
+    {
+      "id": "blur_dissolve",
+      "name": "blur dissolve",
+      "group": "Soft",
+      "src": "clips/blur_dissolve.mp4",
+      "portrait": true,
+      "description": "The shot slips out of focus, becomes the next while both are a blur, and comes back sharp."
+    },
+    {
+      "id": "white_dip",
+      "name": "white dip",
+      "group": "Soft",
+      "src": "clips/white_dip.mp4",
+      "portrait": true,
+      "description": "A soft dip to white: highlights bloom, the picture washes out, the next comes down out of the white."
+    },
+    {
+      "id": "whip_pan",
+      "name": "whip pan",
+      "group": "Soft",
+      "src": "clips/whip_pan.mp4",
+      "portrait": true,
+      "description": "A whip pan: the camera snaps sideways off one shot and lands on the next, both smeared along the move."
+    },
+    {
+      "id": "leak_wipe",
+      "name": "leak wipe",
+      "group": "Light",
+      "src": "clips/leak_wipe.mp4",
+      "portrait": true,
+      "description": "A soft-edged wipe travelling behind a warm light leak, sun yellow melting to poppy, with a cool trail."
+    },
+    {
+      "id": "colour_burst",
+      "name": "colour burst",
+      "group": "Light",
+      "src": "clips/colour_burst.mp4",
+      "portrait": true,
+      "description": "The loud one: the picture streaks outward with its channels split and its colours pushed to saturated red, blue and yellow. Once a video."
+    },
+    {
+      "id": "panel_drop",
+      "name": "panel drop",
+      "group": "Panels",
+      "src": "clips/panel_drop.mp4",
+      "portrait": true,
+      "description": "The next shot arrives as five tall panels of unequal width sliding in from above and below at their own pace."
+    },
+    {
+      "id": "card_open",
+      "name": "card open",
+      "group": "Panels",
+      "src": "clips/card_open.mp4",
+      "portrait": true,
+      "description": "The frame device: the shot blurs, grows and dims, and the next opens over it as a clean card that widens to the whole picture."
+    },
+    {
+      "id": "accordion_fold",
+      "name": "accordion fold",
+      "group": "Panels",
+      "src": "clips/accordion_fold.mp4",
+      "portrait": true,
+      "description": "Shared engine, in the theme’s colours: the picture folds away as tall panels."
+    },
+    {
+      "id": "warp_wipe",
+      "name": "warp wipe",
+      "group": "Soft",
+      "src": "clips/warp_wipe.mp4",
+      "portrait": true,
+      "description": "Shared engine, in the theme’s colours: a soft wipe that bends the picture as it passes."
+    },
+    {
+      "id": "punch_zoom",
+      "name": "punch zoom",
+      "group": "Hits",
+      "src": "clips/punch_zoom.mp4",
+      "portrait": true,
+      "description": "A hard punch-in: the shot is driven through a short, strong zoom blur and the next lands slightly over-scaled and settles. No flash. 0.2–0.3 s."
+    },
+    {
+      "id": "whip_back",
+      "name": "whip back",
+      "group": "Hits",
+      "src": "clips/whip_back.mp4",
+      "portrait": true,
+      "description": "The whip pan in the opposite direction, so two whips in a row answer each other."
+    },
+    {
+      "id": "whip_down",
+      "name": "whip down",
+      "group": "Hits",
+      "src": "clips/whip_down.mp4",
+      "portrait": true,
+      "description": "A vertical whip: the camera snaps down off one shot and lands on the next."
+    },
+    {
+      "id": "speed_smear",
+      "name": "speed smear",
+      "group": "Hits",
+      "src": "clips/speed_smear.mp4",
+      "portrait": true,
+      "description": "Speed-ramp feel: a seam runs across dragging every row into one long streak, and the next shot resolves out of its own streaks."
+    },
+    {
+      "id": "flash_frame",
+      "name": "flash frame",
+      "group": "Hits",
+      "src": "clips/flash_frame.mp4",
+      "portrait": true,
+      "description": "An impact frame: for an instant the picture is three tones — ink blacks, poppy mids, white highlights — then it is the next shot. 0.15–0.25 s; a few times a video at most."
+    },
+    {
+      "id": "shutter_blink",
+      "name": "shutter blink",
+      "group": "Hits",
+      "src": "clips/shutter_blink.mp4",
+      "portrait": true,
+      "description": "A camera shutter: two soft-edged near-black blades close from top and bottom; the next shot is there when they open."
+    },
+    {
+      "id": "card_slam",
+      "name": "card slam",
+      "group": "Panels",
+      "src": "clips/card_slam.mp4",
+      "portrait": true,
+      "description": "The inverse of card open: the next shot comes up from below as a clean card larger than the frame and lands exactly on it, over the shot before dimmed and blurred."
+    },
+    {
+      "id": "split_shift",
+      "name": "split shift",
+      "group": "Panels",
+      "src": "clips/split_shift.mp4",
+      "portrait": true,
+      "description": "The theme’s three tall panels slip off vertically in alternate directions, smeared by their speed, with the next shot underneath."
+    }
+  ]
+}
