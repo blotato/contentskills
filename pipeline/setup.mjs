@@ -11,7 +11,7 @@
 // Needs `uv` and FFmpeg on PATH. Safe to run again: finished steps are skipped.
 import {spawnSync} from 'node:child_process';
 import {createHash} from 'node:crypto';
-import {cpSync, createReadStream, createWriteStream, existsSync, mkdirSync, openSync, readSync, closeSync, renameSync, rmSync, statSync} from 'node:fs';
+import {cpSync, createReadStream, createWriteStream, existsSync, mkdirSync, openSync, readdirSync, readSync, closeSync, renameSync, rmSync, statSync} from 'node:fs';
 import {Readable} from 'node:stream';
 import {pipeline} from 'node:stream/promises';
 import {join} from 'node:path';
@@ -38,22 +38,32 @@ function placeholder(file) {
     return text.startsWith('version https://git-lfs') ? text.match(/oid sha256:([0-9a-f]{64})/)?.[1] ?? null : null;
   } catch { return null; }
 }
+// Every file under the repository, as forward-slash paths relative to it, skipping folders the pipeline writes itself.
+const SKIP = new Set(['.git', '.tools', '.cache', 'node_modules', 'projects']);
+function walk(dir) {
+  return readdirSync(join(root, dir), {withFileTypes: true}).flatMap(entry => {
+    const rel = dir ? `${dir}/${entry.name}` : entry.name;
+    if (entry.isDirectory()) return dir === '' && SKIP.has(entry.name) ? [] : walk(rel);   // skipped at the top level only
+    return entry.isFile() ? [rel] : [];
+  });
+}
 async function media() {
   const git = (...args) => spawnSync('git', args, {cwd: root, encoding: 'utf8', maxBuffer: 1 << 26});
   const listed = git('ls-files', '-z');
-  if (listed.status !== 0) return;                                             // not a git clone (a downloaded zip has the same placeholders, but no commit to ask for)
-  const all = listed.stdout.split('\0').filter(f => MEDIA.test(f));
+  // A downloaded zip is not a git clone but has the same placeholders: find them on disk and fetch them from the main branch.
+  const clone = listed.status === 0;
+  const all = clone ? listed.stdout.split('\0').filter(f => MEDIA.test(f)) : walk('').filter(f => MEDIA.test(f));
   const missing = all.map(f => ({file: f, oid: placeholder(join(root, f))})).filter(m => m.oid);
-  const lfs = spawnSync('git', ['lfs', 'version']).status === 0;
+  const lfs = clone && spawnSync('git', ['lfs', 'version']).status === 0;
   // Without git-lfs, git would list every fetched file as changed: tell it to leave them alone. With git-lfs they are ordinary again.
-  const settle = () => { for (let i = 0; i < all.length; i += 40) git('update-index', lfs ? '--no-skip-worktree' : '--skip-worktree', '--', ...all.slice(i, i + 40)); };
+  const settle = () => { if (!clone) return; for (let i = 0; i < all.length; i += 40) git('update-index', lfs ? '--no-skip-worktree' : '--skip-worktree', '--', ...all.slice(i, i + 40)); };
   if (!missing.length) { settle(); console.log('✓ example and gallery videos'); return; }
   if (lfs) {
     console.log(`… fetching ${missing.length} videos and sounds (git lfs pull)`);
     if (git('lfs', 'pull').status === 0 && !missing.some(m => placeholder(join(root, m.file)))) { settle(); console.log('✓ example and gallery videos'); return; }
   }
-  const origin = git('remote', 'get-url', 'origin').stdout.trim().match(/github\.com[:/]([^/]+\/[^/]+?)(?:\.git)?$/)?.[1] ?? 'blotato/contentskills';
-  const commit = git('rev-parse', 'HEAD').stdout.trim();
+  const origin = (clone && git('remote', 'get-url', 'origin').stdout.trim().match(/github\.com[:/]([^/]+\/[^/]+?)(?:\.git)?$/)?.[1]) || 'blotato/contentskills';
+  const commit = (clone && git('rev-parse', 'HEAD').stdout.trim()) || 'main';   // a zip: its files match main, and the checksum below rejects any that do not
   console.log(`… downloading ${missing.length} videos and sounds (about 450 MB the first time)`);
   let failed = 0;
   for (const {file, oid} of missing) {
