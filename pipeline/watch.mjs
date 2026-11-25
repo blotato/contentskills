@@ -67,7 +67,8 @@ function changes(project, now, seen, first) {
   return lines;
 }
 
-const projects = () => readdirSync(projectsDir).filter(isProject);
+// A fresh install has no projects/ folder until the first video: treat it as empty rather than failing every hook call.
+const projects = () => existsSync(projectsDir) ? readdirSync(projectsDir).filter(isProject) : [];
 
 if (process.argv[2] === '--hook') {
   // Claude Code hook: stdin is {session_id, hook_event_name, …}; stdout is added to the agent's context.
@@ -94,6 +95,7 @@ if (process.argv[2] === '--hook') {
   for (const project of list) for (const line of changes(project, feedback(project), seen, true)) console.log(line);
   console.log(`Watching ${only ? `projects/${only}` : `${list.length} projects`} for the user's feedback…`);
   const timers = new Map();
+  mkdirSync(projectsDir, {recursive: true});   // fs.watch needs the folder to exist
   watch(projectsDir, {recursive: true}, (event, file) => {
     if (!file || !/(^|[\\/])(review|storyboard|approval)\.json$/.test(file)) return;
     const project = file.split(/[\\/]/)[0];
