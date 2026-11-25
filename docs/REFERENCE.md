@@ -523,7 +523,7 @@ Under the hood:
 ## Running it
 
 ```sh
-npm run setup            # once: installs the pipeline's tools into .tools/ (about 1.5 GB)
+npm run setup            # once: installs the pipeline's tools into .tools/ (about 2 GB)
 npm run dashboard        # http://localhost:4600/dashboard/ ,  /pipeline/draft/  and  /pipeline/review/
 ```
 

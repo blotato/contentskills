@@ -37,7 +37,7 @@ and explain in one plain sentence what you are installing and why.
      installer or Node's macOS installer asks for the Mac password: tell the user a macOS password prompt is coming and
      that typing it there is expected. Never ask them to paste a password into the chat.
    - Re-check each tool afterwards and add new install locations to PATH for the rest of the session if needed.
-3. `npm run setup` (about 1.5 GB of downloads; it prints progress and skips finished steps, so re-running is safe).
+3. `npm run setup` (about 2 GB of downloads; it prints progress and skips finished steps, so re-running is safe).
    Tell the user roughly how long it will take.
 4. Make the tool theirs: if `settings/user.json` does not exist, ask for their name, their social handle and (optionally)
    what they do, and write them there (see "The user's settings" below). Never guess these.

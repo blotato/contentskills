@@ -16,7 +16,7 @@ one up when the user asks for ContentSkills.
    `git clone https://github.com/blotato/contentskills ~/contentskills`
 2. Check the three tools and install what is missing (ask before installing): `node --version` (22 or newer),
    `ffmpeg -version`, `uv --version`.
-3. In the folder, run `npm run setup`. It downloads the voice and video tools (about 1.5 GB) into `.tools/` and is safe
+3. In the folder, run `npm run setup`. It downloads the voice and video tools (about 2 GB) into `.tools/` and is safe
    to run again.
 4. Run `npm run link` and open the address it prints: that is the dashboard.
 5. Tell the user to open Claude Code in that folder for video work, and that they can now say things like
