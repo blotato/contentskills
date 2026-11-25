@@ -32,9 +32,10 @@ Read the recipe file before every generation. Use gpt-image-2-text-to-image when
 
 ## Provider routing
 
-1. Default to the LOWEST COST provider that runs the model well. kie.ai first.
-2. If the cheapest route lacks the model, fails auth, or errors, fall back to fal.ai, then WaveSpeed AI.
-3. Never hide a provider swap. Say which route ran and why.
+1. kie.ai is the only provider with scripts and recipes in this skill. Use it.
+2. If kie.ai lacks the model, fails auth, or errors, STOP and report the error. Do not improvise calls to another paid
+   provider (fal.ai, WaveSpeed AI or any other): there are no scripts, recipes or cost checks for them here.
+3. Never hide a failure or a provider swap. Say what ran and what failed.
 
 ## Presets (channel consistency)
 

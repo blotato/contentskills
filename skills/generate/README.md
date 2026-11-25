@@ -5,7 +5,7 @@ A Claude skill that makes faceless video content cheaply: draft a still on a che
 ## Install
 
 1. Drop the `generate/` folder into `.claude/skills/` in your Claude Code workspace.
-2. Copy `.env.example` to `.env` and paste your kie.ai key (from kie.ai/api-key). fal.ai and WaveSpeed keys are optional fallbacks. Optionally set `GENERATIONS_DIR`; it defaults to `~/faceless/generations`.
+2. Copy `.env.example` to `.env` and paste your kie.ai key (from kie.ai/api-key). No other provider is wired up yet. Optionally set `GENERATIONS_DIR`; it defaults to `~/faceless/generations`.
 3. Start Claude Code and type `/generate` or "make me a POV clip."
 
 ## How it works
