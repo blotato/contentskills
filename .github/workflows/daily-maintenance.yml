@@ -15,6 +15,11 @@ on:
   schedule:
     - cron: "23 14 * * *" # every day, 14:23 UTC
   workflow_dispatch:
+    inputs:
+      finalize_now:
+        description: "Test only: skip the 3-day hold and run the final check on open pull requests now"
+        type: boolean
+        default: false
 
 permissions: {}
 
@@ -48,6 +53,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           HAS_KEY: ${{ secrets.OPENAI_API_KEY != '' }}
+          FINALIZE_NOW: ${{ inputs.finalize_now == true }}
         run: |
           set -euo pipefail
           if [ "$HAS_KEY" != "true" ]; then
@@ -75,7 +81,9 @@ jobs:
             fi
 
             started=$(jq -r --arg m "security-hold:$sha" '[.[] | select(.b | contains($m)) | .t] | min // empty' <<<"$bot")
-            if [ -z "$started" ]; then
+            if [ "$FINALIZE_NOW" = "true" ]; then
+              phase=final # manual test run: skip the hold
+            elif [ -z "$started" ]; then
               final_on=$(date -u -d "+${HOLD_DAYS} days" +%Y-%m-%d)
               gh pr comment "$num" --repo "$REPO" --body "<!-- security-hold:$sha -->
           Security hold started for commit \`${sha:0:7}\`. A first review follows below; the final check runs on or after **$final_on**. Please do not merge before then."
