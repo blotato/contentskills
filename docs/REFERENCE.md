@@ -116,8 +116,8 @@ effects and 16 layout changes. Watch it: `/pipeline/review/?project=talking-head
 
 ![talking-head walkthrough: ten moments from the video](readme/walkthrough-talking-head.jpg)
 
-1. **Cut.** `npm run cut talking-head <raw video> -- --list` prints the transcript and what it would remove;
-   then the same without `--list`. Pauses, fillers and false starts go: 79.7 s becomes 36.2 s in 13 cuts, levelled and
+1. **Cut.** `npm run cut talking-head <raw video> -- --list` prints the transcript and what it would remove. In PowerShell, run `pipeline/cut.mjs` directly with Node so `--list` reaches the script.
+   Run it again without `--list` to apply the cut. Pauses, fillers and false starts go: 79.7 s becomes 36.2 s in 13 cuts, levelled and
    normalised to the voice level in settings. It writes `edit/clean.mp4`, `edit/words.json` and `edit/edl.json`.
 2. **Prepare.** `npm run footage talking-head examples/talking-head/edit/clean.mp4 …/edit/words.json --theme gta6`
    finds the face at every moment (`faces.json`) and writes a starter storyboard.
