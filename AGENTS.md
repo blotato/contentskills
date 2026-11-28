@@ -421,3 +421,15 @@ performance script before paying for the take.
 
 **User-facing pages**: storyboard `http://localhost:4600/pipeline/storyboard/?project=<name>`, finished video
 `http://localhost:4600/pipeline/review/?project=<name>`. Get them from `npm run link <name>` and `npm run link <name> review`. Send the user these links, not image paths.
+
+## Commits to this repository
+
+For changes to the repository itself (not the user's videos, which are never committed):
+
+- **Conventional Commits 1.0** for every commit subject: `<type>(<scope>): <description>`. Types: `feat`, `fix`, `docs`,
+  `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`. The scope is optional and names the area
+  (`theme`, `pipeline`, `library`, `skills`, `dashboard`). The description is lower case, imperative, has no full stop and
+  the whole subject fits in 72 characters. A breaking change takes `!` after the type or scope and a `BREAKING CHANGE:` footer.
+  Example: `feat(theme): add psychedelic theme`.
+- **One piece of work is one commit on `main`.** Squash a branch when it lands; do not land its step-by-step commits.
+- Commit or push only when the user asks.
