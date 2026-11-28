@@ -22,6 +22,7 @@ import {spawnSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {join} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {root} from './check.mjs';
 import {measureLoudness} from './cut.mjs';
 import {effectsPython} from './tools.mjs';
@@ -219,7 +220,7 @@ export function trim(project, wanted, {make = false, log = console.log} = {}) {
   return {ranges, removed, before: D, after};
 }
 
-if (process.argv[1] === new URL(import.meta.url).pathname) try {
+if (process.argv[1] === fileURLToPath(import.meta.url)) try {
   const argv = process.argv.slice(2), project = argv[0], spec = argv[argv.indexOf('--cut') + 1];
   if (!/^[a-z0-9-]+$/.test(project || '') || !argv.includes('--cut') || !spec) throw Error('Usage: node pipeline/trim.mjs <project> --cut 3.20-3.45,12.0-12.2 [--make] [--round <n>]');
   let wanted = spec.split(',').map(p => p.split('-').map(Number)).filter(p => p.length === 2 && p.every(Number.isFinite));
