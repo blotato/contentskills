@@ -16,6 +16,7 @@
 import {spawnSync} from 'node:child_process';
 import {copyFileSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync} from 'node:fs';
 import {join, relative, resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {root} from './check.mjs';
 import {effectsPython, transcribePython, transcribeModels} from './tools.mjs';
 import {houseLufs} from './settings.mjs';
@@ -84,7 +85,7 @@ function finishAudio(rough, words, clean, target, dir) {
 // --relevel: redo only the audio of an existing cut (edit/clean.mp4 with edit/words.json): level every phrase and
 // normalise to the house level (or --lufs). The picture and timings do not change, so nothing else needs remapping;
 // run `npm run footage` again after it. The clip it replaces is kept as edit/clean-before-relevel.mp4.
-if (process.argv[1] === new URL(import.meta.url).pathname && process.argv.includes('--relevel')) try {
+if (process.argv[1] === fileURLToPath(import.meta.url) && process.argv.includes('--relevel')) try {
   const argv = process.argv.slice(2), project = argv.find(a => !a.startsWith('--') && argv[argv.indexOf(a) - 1] !== '--lufs');
   if (!/^[a-z0-9-]+$/.test(project || '')) throw Error('Usage: node pipeline/cut.mjs <project> --relevel [--lufs <LUFS>]');
   const dir = join(root, 'projects', project, 'edit'), clean = join(dir, 'clean.mp4'), keep = join(dir, 'clean-before-relevel.mp4'), rough = join(dir, '.rough.mp4');
@@ -97,7 +98,7 @@ if (process.argv[1] === new URL(import.meta.url).pathname && process.argv.includ
   writeFileSync(edlFile, JSON.stringify(edl, null, 1) + '\n');
   console.log(`Loudness ${before.input_i} LUFS / ${before.input_tp} dBTP  ->  ${after.input_i} LUFS / ${after.input_tp} dBTP\nNext:  npm run footage ${project} projects/${project}/edit/clean.mp4 projects/${project}/edit/words.json`);
 } catch (error) { console.error(error.message); process.exitCode = 1; }
-else if (process.argv[1] === new URL(import.meta.url).pathname) try {
+else if (process.argv[1] === fileURLToPath(import.meta.url)) try {
   const argv = process.argv.slice(2), valued = ['--gap', '--pad-in', '--pad-out', '--drop', '--keep', '--pad-end', '--tight', '--lufs'];
   const plain = argv.filter((a, i) => !a.startsWith('--') && !valued.includes(argv[i - 1])), [project, video, given] = plain;
   if (!/^[a-z0-9-]+$/.test(project || '') || !video) throw Error('Usage: node pipeline/cut.mjs <project> <video file> [words.json] [--list] [--gap 0.15] [--drop 12-15,40] [--keep 3-4]');
