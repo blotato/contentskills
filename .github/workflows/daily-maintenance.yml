@@ -503,9 +503,7 @@ jobs:
 
           $link_word #$ISSUE
 
-          $summary
-
-          Please read the change before merging, and squash-merge it so it lands as one commit with this title. It goes through the same ${HOLD_DAYS}-day security hold as every other pull request."
+          $summary"
 
           if url=$(gh pr create --repo "$REPO" --head "$branch" --title "$subject" --body "$body"); then
             gh issue comment "$ISSUE" --repo "$REPO" --body "Codex looked into this in the daily maintenance run and opened $url for a maintainer to review:
