@@ -48,7 +48,10 @@ while k < len(live):
     hit = None
     for size, reach in ((4, 16), (3, 14), (2, 6), (1, 1)):          # longer phrases may restart further on
         for later in range(k + size, min(k + reach, len(live) - size) + 1):
-            if all(norm[live[k + j]] == norm[live[later + j]] and norm[live[k + j]] for j in range(size)): hit = later
+            if all(norm[live[k + j]] == norm[live[later + j]] and norm[live[k + j]] for j in range(size)):
+                # The discarded stretch may end a sentence, but must not reach into the next one.
+                if any(words[i]['text'].rstrip().endswith(('.', '!', '?')) for i in range(live[k], live[later - 1])): break
+                hit = later
         if hit: break
     if hit and hit - k > 1:
         # A list, not a retake: "add some sirens, add some charts." The earlier phrase is a finished clause (it ends on
