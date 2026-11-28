@@ -1,0 +1,65 @@
+
+const BADGE = [BL.hot, BL.cyan, BL.lime, BL.coral, BL.violet, BL.cyan];
+
+/** @param {Borumi.Frame} frame */
+export function render({ ctx, media, time, duration, width: W, height: H, params }) {
+  const unit = Math.min(W, H) / 1080;
+  const items = String(params.items || "").toUpperCase().split("\n").map((l) => l.replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 8);
+  if (!items.length) return;
+  const given = String(params.times || "").split(",").map((v) => parseFloat(v)).filter((v) => !isNaN(v));
+  const times = items.map((_, i) => (i < given.length ? given[i] : (given.length ? given[given.length - 1] : 0) + (i - given.length + 1) * 2));
+  const out = Math.max(0.4, duration - 0.35);
+  if (time >= out + 0.3) return;
+  const lift = span(time, 0, 0.25) * (1 - span(time, out, out + 0.3));
+
+  // painted panel, fading out toward the speaker
+  const panelW = W * 0.46;
+  ctx.globalAlpha = lift;
+  ctx.layer(() => {
+    if (!blPlate(ctx, blPic(media, params.background), W, H, time, -5, 0.06, unit)) { ctx.fillStyle = BL.deep; ctx.fillRect(0, 0, panelW, H); }
+    ctx.fillStyle = borumi.withAlpha(BL.deep, 0.35); ctx.fillRect(0, 0, panelW, H);
+    ctx.applyShader(FADE, { a: [0, 0], b: [panelW, 0], soft: 0.55 });
+  });
+  blJelly(ctx, blPic(media, params.jellyfishA), W * 0.39, H * 0.3, H * 0.34, time, 3, 0.6 * lift);
+  blStars(ctx, blPic(media, params.sparkle), 9, { x: W * 0.01, y: H * 0.04, w: W * 0.32, h: H * 0.92 }, time, unit, 9, lift);
+  ctx.globalAlpha = 1;
+
+  const left = W * 0.025, badge = 32 * unit, numW = 90 * unit, maxW = W * 0.235 - left - numW; // ends before the speaker's hair so long items are not clipped
+  let size = 60 * unit;
+  const widest = Math.max(...items.map((l) => blMeasure(ctx, l, size, 0.02)));
+  if (widest > maxW) size *= maxW / widest;
+  const row = size * 1.95;
+  const top = (H * 0.9 - row * (items.length - 1)) / 2;
+
+  let newest = -1;
+  items.forEach((_, i) => { if (time >= times[i]) newest = i; });
+  const glow = 0.75 + 0.25 * blPulse(time, 2.4);
+
+  items.forEach((item, i) => {
+    const t = time - times[i];
+    if (t < 0) return;
+    const p = span(t, 0, 0.3), a = clamp01(p * 2.5) * (1 - span(time, out, out + 0.3));
+    const cy = top + i * row + Math.sin(time * 1.8 + i * 1.1) * 3 * unit;
+    const x = left + (1 - backOut(p)) * -60 * unit;
+    const neon = BADGE[i % BADGE.length];
+    const bx = x + badge, s = backOut(p);
+    // badge: dark blue disc, neon ring, glowing numeral
+    ctx.globalAlpha = a;
+    ctx.layer(() => { ctx.beginPath(); ctx.arc(bx, cy, badge * 1.1 * s, 0, TAU); ctx.fillStyle = neon; ctx.fill(); ctx.applyBlur(16 * unit * (0.7 + 0.3 * glow)); });
+    ctx.beginPath(); ctx.arc(bx, cy, badge * s, 0, TAU);
+    ctx.fillStyle = BL.navy; ctx.fill();
+    ctx.lineWidth = 5 * unit; ctx.strokeStyle = neon; ctx.stroke();
+    ctx.fillStyle = "#ffffff";
+    ctx.text(String(i + 1), { x: bx - badge, y: cy + 2 * unit, width: badge * 2, align: "center", baseline: "middle", font: `700 ${Math.round(34 * unit)}px Poppins` });
+    ctx.globalAlpha = 1;
+    // label
+    const isNew = i === newest;
+    const w = blMeasure(ctx, item, size, 0.02);
+    blLetters(ctx, item, x + numW + w / 2, cy + 2 * unit, size, {
+      track: 0.02, rim: isNew ? params.accent : params.rim, line: isNew ? params.accent : params.rim,
+      glow: isNew ? params.accent : BL.violet, pulse: (isNew ? glow : 0.55),
+      chars: () => ({ a, dx: 0, dy: 0, rot: 0 })
+    });
+  });
+  ctx.globalAlpha = 1;
+}

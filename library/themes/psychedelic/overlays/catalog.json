@@ -1,0 +1,282 @@
+{
+  "id": "overlays",
+  "title": "Overlays",
+  "summary": "See-through graphics for footage, shown over the sample clip. Big words are the theme lettering (dark navy body, thin cyan rim, soft magenta glow); small print is white; one highlighter accent. Nothing dims the footage.",
+  "usage": "In a footage storyboard: {\"piece\": \"overlays/word-sequence\", \"start\": 1.2, \"end\": 4.0, \"props\": {\"words\": [\"New\", \"Light\"], \"times\": [0, 1.3], \"y\": 330}}. Positions are props in 1080×1920 frame pixels; \"accent\" (highlighter, cyan, sun or white) picks the one colour; lists take \"times\" (seconds after the overlay starts). For the real framed inset (a sharp card over a blurred, enlarged copy of the shot) and the panel split of the picture itself, use the theme effects inset_frame and triptych. Kit: library/themes/psychedelic/kit.js. Files: library/themes/psychedelic/overlays/pieces/.",
+  "groups": [
+    "Words",
+    "Frames",
+    "Small print",
+    "Marks",
+    "Atmosphere",
+    "Interface",
+    "Kinetic",
+    "Charts"
+  ],
+  "items": [
+    {
+      "id": "word-sequence",
+      "name": "Word sequence",
+      "group": "Words",
+      "piece": "overlays/word-sequence",
+      "description": "One word at a time in the same place: each is revealed letter by letter out of blur at its cue and dims as the next arrives, alternating the heavy and the condensed voice.",
+      "over": true
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "group": "Words",
+      "piece": "overlays/counter",
+      "description": "The figure just spoken in thin tall numerals that come up out of blur while they count, over a short accent hairline and one line of small print.",
+      "over": true
+    },
+    {
+      "id": "credits-list",
+      "name": "Credits list",
+      "group": "Words",
+      "piece": "overlays/credits-list",
+      "description": "A short list set like film credits: thin numerals, caps and hairlines, one row as each item is named; strike draws the accent line through them.",
+      "over": true
+    },
+    {
+      "id": "issue-tag",
+      "name": "Issue tag",
+      "group": "Words",
+      "piece": "overlays/issue-tag",
+      "description": "A masthead mark for the top of the frame: a thin tall numeral between two lines of small print.",
+      "over": true
+    },
+    {
+      "id": "window",
+      "name": "Window",
+      "group": "Frames",
+      "piece": "overlays/window",
+      "description": "The card device as an overlay: everything outside a window is dimmed, the window keeps the footage at full strength with open corner ticks.",
+      "over": true
+    },
+    {
+      "id": "panel-lines",
+      "name": "Panel lines",
+      "group": "Frames",
+      "piece": "overlays/panel-lines",
+      "description": "Thin gutters travel down and up the frame and divide the picture into tall numbered panels of unequal width. For the picture itself slipping inside such panels use the triptych effect (which draws its own gutters) instead, not both.",
+      "over": true
+    },
+    {
+      "id": "hairline-frame",
+      "name": "Hairline frame",
+      "group": "Frames",
+      "piece": "overlays/hairline-frame",
+      "description": "A hairline frame drawn just inside the edge of the picture from two corners, with registration crosses and small print.",
+      "over": true
+    },
+    {
+      "id": "letterbox",
+      "name": "Letterbox",
+      "group": "Frames",
+      "piece": "overlays/letterbox",
+      "description": "Two soft deep navy cinema bars close in from the top and bottom, each carrying one piece of small print.",
+      "over": true
+    },
+    {
+      "id": "credit-line",
+      "name": "Credit line",
+      "group": "Small print",
+      "piece": "overlays/credit-line",
+      "description": "The tiny centred line of small print along the bottom of a shot, parts separated by thin bars.",
+      "over": true
+    },
+    {
+      "id": "pointer-note",
+      "name": "Pointer note",
+      "group": "Small print",
+      "piece": "overlays/pointer-note",
+      "description": "A hairline from a small ring on a detail out to a shelf holding two lines of small print.",
+      "over": true
+    },
+    {
+      "id": "progress-rule",
+      "name": "Progress rule",
+      "group": "Small print",
+      "piece": "overlays/progress-rule",
+      "description": "Progress as one hairline growing behind an accent dot, with small print and thin numerals.",
+      "over": true
+    },
+    {
+      "id": "monogram",
+      "name": "Monogram",
+      "group": "Marks",
+      "piece": "overlays/monogram",
+      "description": "The closing mark: the footage dims toward deep navy, a ring draws with one accent dot, initials settle inside.",
+      "over": true
+    },
+    {
+      "id": "scrim",
+      "name": "Scrim",
+      "group": "Atmosphere",
+      "piece": "overlays/scrim",
+      "description": "A soft darkening from the top and bottom so white type and captions sit comfortably on bright footage.",
+      "over": true
+    },
+    {
+      "id": "light-leak",
+      "name": "Light leak",
+      "group": "Atmosphere",
+      "piece": "overlays/light-leak",
+      "description": "Soft highlighter, sun and cyan light drifting in from one edge of the frame; it never reaches the middle.",
+      "over": true
+    },
+    {
+      "id": "ui-prompt",
+      "name": "Message box",
+      "group": "Interface",
+      "piece": "overlays/ui-prompt",
+      "description": "A message box that gets used: the message types itself with a caret, the pointer presses send, the message leaves upward as a sent line. Props: label, placeholder, text, typeAt, typeFor, sendAt, x, y, w, theme (bone | ink).",
+      "over": true
+    },
+    {
+      "id": "ui-terminal",
+      "name": "Command window",
+      "group": "Interface",
+      "piece": "overlays/ui-terminal",
+      "description": "A deep navy command window: commands type after a highlighter prompt, output fades up, finished steps get a tick. Props: title, lines [{text, at, kind: cmd | out | ok}], x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-timeline",
+      "name": "Timeline cut",
+      "group": "Interface",
+      "piece": "overlays/ui-timeline",
+      "description": "An editing timeline that edits itself: the raw take as a strip, pauses flash in the accent and are cut out, the takes close up and the duration counts down. use: \"project\" draws the real edit decision list of the video. Props: cutAt, closeFor, title, done, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-toggle",
+      "name": "Switches",
+      "group": "Interface",
+      "piece": "overlays/ui-toggle",
+      "description": "A settings card whose switches the pointer flips one by one. Props: title, rows [{label, at}], x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-files",
+      "name": "Clips pulled in",
+      "group": "Interface",
+      "piece": "overlays/ui-files",
+      "description": "Clip cards fly in from off-frame and land in rows inside an open corner-tick frame, the last one in the accent. No figures. Props: title, note, count, cols, step, x, y, w, theme (clear | bone | ink).",
+      "over": true
+    },
+    {
+      "id": "ui-notify",
+      "name": "Notifications",
+      "group": "Interface",
+      "piece": "overlays/ui-notify",
+      "description": "Notification cards drop in at their cues and push the earlier ones down. Props: items [{title, text, at}], x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-render",
+      "name": "Render bar",
+      "group": "Interface",
+      "piece": "overlays/ui-render",
+      "description": "A percentage in thin numerals over one hairline bar, with stages ticked off as the bar passes them; holdAt / resumeAt make it wait. Props: label, done, stages, startAt, seconds, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-checklist",
+      "name": "Checklist",
+      "group": "Interface",
+      "piece": "overlays/ui-checklist",
+      "description": "The pointer glides down a list ticking each box at its cue (strike: true draws the accent line through instead). Props: title, items [{label, at}], x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-storyboard",
+      "name": "Storyboard review",
+      "group": "Interface",
+      "piece": "overlays/ui-storyboard",
+      "description": "A storyboard as a contact sheet: shot cards with their pictures are dealt in (overshoot and settle), an accent frame steps through them, the pointer picks one, it is shown large, a note types beside it and a tick marks it applied. Props: shots [{title}], images (picture addresses from the server root; decoded before the piece mounts), layout (strip | grid), times, steps [{shot, at}], note {text, shot, at, seconds, done}, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-comment",
+      "name": "Comment",
+      "group": "Interface",
+      "piece": "overlays/ui-comment",
+      "description": "A word types into a comment field, the pointer presses the button, the comment lands above as posted. Props: text, name, button, typeAt, typeFor, postAt, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "ui-follow",
+      "name": "Button press",
+      "group": "Interface",
+      "piece": "overlays/ui-follow",
+      "description": "One button: the pointer presses it, it takes the accent, the label changes and a tick is drawn. Props: label, done, pressAt, from, x, y (centre), size, theme.",
+      "over": true
+    },
+    {
+      "id": "ui-swap",
+      "name": "Before / after cards",
+      "group": "Interface",
+      "piece": "overlays/ui-swap",
+      "description": "Two cards: the \"before\" slides aside and back as the \"after\" comes forward and takes the accent rule. Props: a, b {label, value, note}, swapAt, x, y, w, h.",
+      "over": true
+    },
+    {
+      "id": "kinetic-stack",
+      "name": "Kinetic stack",
+      "group": "Kinetic",
+      "piece": "overlays/kinetic-stack",
+      "description": "A stack of short lines, each landing large and soft at its cue and settling sharp; every line is fitted to the same width so short words come out huge. Props: lines [{text, at, face, accent}], x, y, w, theme (clear | ink).",
+      "over": true
+    },
+    {
+      "id": "count-slam",
+      "name": "Count and land",
+      "group": "Kinetic",
+      "piece": "overlays/count-slam",
+      "description": "Thin tall numerals race to the figure and land a size too large, an accent rule shooting out underneath; strike shows the old figure crossed out. Props: value, from, decimals, prefix, suffix, label, strike, startAt, seconds, x, y.",
+      "over": true
+    },
+    {
+      "id": "face-word",
+      "name": "Face word",
+      "group": "Kinetic",
+      "piece": "overlays/face-word",
+      "description": "A word that rides the speaker: placed from the face track every frame, so it follows punch-ins and layout moves and scales with the zoom. Props: word, kicker, side (above | below), gap, width, face.",
+      "over": true
+    },
+    {
+      "id": "hit-lines",
+      "name": "Hit lines",
+      "group": "Kinetic",
+      "piece": "overlays/hit-lines",
+      "description": "The theme’s impact frame: for a few frames hairlines shoot outward from behind the speaker’s head and a thin ring opens; centred on the face track. Props: n, seconds, reach.",
+      "over": true
+    },
+    {
+      "id": "edit-stats",
+      "name": "Edit numbers",
+      "group": "Charts",
+      "piece": "overlays/edit-stats",
+      "description": "Counting figures in thin numerals with small print. use: \"project\" reads them from the storyboard and its edit decision list (show: cuts, removed, before, after, graphics, effects, transitions, sounds, layouts, zooms), so they are always true of the video they appear in. Props: items, cols, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "duration-bars",
+      "name": "Length before and after",
+      "group": "Charts",
+      "piece": "overlays/duration-bars",
+      "description": "Two bars to one scale, the short one in the accent, with figures and the difference as a percentage. use: \"project\" takes the real recorded and kept lengths. Props: a, b {label, value}, unit, bAt, x, y, w.",
+      "over": true
+    },
+    {
+      "id": "reel-rank",
+      "name": "Which ones worked",
+      "group": "Charts",
+      "piece": "overlays/reel-rank",
+      "description": "A row of clip cards with a hairline bar over each; the row sorts itself and the tallest takes the accent. A sketch of the idea, deliberately without figures. Props: heights, flag, note, sortAt, x, y, w.",
+      "over": true
+    }
+  ]
+}

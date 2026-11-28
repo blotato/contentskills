@@ -1,0 +1,34 @@
+/* @borumi
+{
+  "formatVersion": 1,
+  "name": "Psychedelic keyword",
+  "category": "title",
+  "tags": ["keyword", "big text", "talking head", "psychedelic", "blacklight", "neon", "trippy", "emphasis"],
+  "sizing": "frame",
+  "duration": 3,
+  "fps": 60,
+  "previewAt": 1.5,
+  "defaultPlacement": { "fallback": { "horizontal": "stretch", "vertical": "stretch", "inset": 0 } },
+  "parameters": {
+    "text": { "type": "text", "level": 1, "order": 0, "default": "UNSTOPPABLE", "label": "Text (one line)", "maxLength": 60 },
+    "highlight": { "type": "text", "level": 1, "order": 1, "default": "", "label": "Emphasis: the 1 word or phrase in highlighter", "maxLength": 60 },
+    "layout": { "type": "text", "level": 1, "order": 2, "default": "top-behind", "label": "Layout: top-behind (about 80%, behind subject on) or side (about 20%, behind subject off). Never below the chin.", "maxLength": 12 },
+    "side": { "type": "text", "level": 1, "order": 3, "default": "right", "label": "Side layout: left or right (pick the empty side of the frame)", "maxLength": 5 },
+    "kicker": { "type": "text", "level": 2, "order": 0, "default": "", "label": "Kicker", "maxLength": 40 },
+    "accent": { "type": "color", "level": 2, "order": 1, "default": "#e6ff3d", "label": "Emphasis color (highlighter)" },
+    "rim": { "type": "color", "level": 2, "order": 2, "default": "#19e3ff", "label": "Neon rim color" },
+    "background": { "type": "media", "level": 2, "order": 3, "accept": ["image"], "default": null, "label": "Sky art (bg-space)" },
+    "jellyfishA": { "type": "media", "level": 2, "order": 4, "accept": ["image"], "default": null, "label": "Jellyfish left" },
+    "jellyfishB": { "type": "media", "level": 2, "order": 5, "accept": ["image"], "default": null, "label": "Jellyfish right" },
+    "sparkle": { "type": "media", "level": 2, "order": 6, "accept": ["image"], "default": null, "label": "Sparkle sprite" }
+  }
+}
+*/
+
+// Layout top-behind (1 line straight across behind the speaker's head, behind subject on) or
+// side (stacked beside the speaker's head, behind subject off). Never below the chin.
+// Big one-line keyword across the top of talking-head footage, blacklight
+// poster style. Painted sky art fades down from the top, two painted jellyfish
+// drift at the ends, sparkles twinkle, and the letters are dark blue with a
+// neon rim, an inner contour line and a coloured glow. Sits behind the
+// speaker's head (turn on "behind subject"), never over the mouth.

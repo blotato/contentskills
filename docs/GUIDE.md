@@ -51,7 +51,7 @@ Without a reference Claude uses the default theme.
   your Downloads folder). Claude cuts the pauses and ums, adds captions and graphics on your words.
 - *Make a 30-second video about 5 ways creators make money* — no camera: Claude writes the script, adds a free voice and a visual for every line.
 - *Make a video from ~/Downloads/take1.mov in the gta6 theme* — pick a whole look. Themes: modern (the default),
-  minimal, gta6, editorial, glass, fashion, futuristic, comic, lifestyle, historical, grunge, horror and lines-of-light.
+  minimal, gta6, editorial, glass, fashion, futuristic, comic, lifestyle, historical, grunge, horror, lines-of-light and psychedelic.
 
 **Add something specific** (names are under each tile in the showcase)
 

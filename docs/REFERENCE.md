@@ -599,6 +599,7 @@ names its theme (`"theme": "gta6"`).
 | `grunge` | Soot black with worn white type, orange and lime accents, torn paper, tape, stamps, marker scribbles, stop-motion boil. |
 | `horror` | Near-black slate, bone-white condensed capitals with one rose-red letter, grain, flicker, camcorder and case-file graphics. Mood only. |
 | `lines-of-light` | Thin lines of light on near-black and deep teal haze: every line has a white core with a red and a blue echo; timelines, waveforms and wireframes drawn in light. |
+| `psychedelic` | UV blacklight poster art: AI-painted grounds (space sky with a ringed planet, moonlit mushroom forest, jellyfish, sparkles) animated by code; Poppins Bold lettering with a dark navy body, thin cyan rim and magenta glow; highlighter yellow on the one emphasised word. Extends `fashion`; also ships Borumi compositions. |
 
 What each theme contains (overlays live in `panels/` in gta6, `scenes/` in minimal, `hud/` in futuristic, `overlays/` elsewhere; the dashboard calls them all Overlays). The 11 Effects (set pieces) are shared by every theme and not counted here:
 
@@ -617,6 +618,7 @@ What each theme contains (overlays live in `panels/` in gta6, `scenes/` in minim
 | `grunge` | 14 | 19 | 30 | 14 | 16 | 6 | 12 | 7 | 16 | 134 |
 | `horror` | 16 | 19 | 27 | 15 | 16 | 7 | 12 | 7 | 15 | 134 |
 | `lines-of-light` | 14 | 19 | 27 | 12 | 15 | 6 | 12 | 7 | 12 | 124 |
+| `psychedelic` | 33 | 19 | 34 | 18 | 14 | 11 | 16 | 7 | 12 | 164 |
 
 - **Text animations** (folder `text/`) are the same 19 pieces in every theme that has them (11 full-frame title cards, 8
   footage overlays), drawn in that theme's style, so a storyboard can switch themes and keep its text.

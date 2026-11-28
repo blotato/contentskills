@@ -1,0 +1,53 @@
+{
+  "id": "psychedelic",
+  "title": "Psychedelic",
+  "extends": "fashion",
+  "summary": "UV blacklight poster look: deep navy darkness with AI-painted art (a space sky with a ringed planet, a moonlit mushroom forest, floating jellyfish, twinkling sparkles) and Poppins Bold lettering with dark navy bodies, a thin neon cyan rim, a second line just inside it and a soft magenta glow. Highlighter yellow marks the one emphasised word. The image model paints the art; code only animates it and draws the letters. Motion is subtle and slow. Extends fashion for its piece set; ships Borumi editor compositions too (borumi/). Spec: STYLE.md.",
+  "categories": [
+    "overlays",
+    "text",
+    "effects",
+    "transitions",
+    "fonts",
+    "captions",
+    "voiceover",
+    "d3",
+    "three",
+    "lottie"
+  ],
+  "pieceFonts": [
+    "700 20px Poppins",
+    "600 20px Poppins"
+  ],
+  "look": {
+    "surface": "#0B1452",
+    "ink": "#FFFFFF",
+    "dim": "#B9B0E8",
+    "line": "#19E3FF",
+    "accent": "#E6FF3D",
+    "accent2": "#FF2BD6",
+    "head": "Poppins",
+    "headWeight": 700,
+    "body": "Poppins",
+    "mono": "Poppins",
+    "card": "outline",
+    "radius": 14
+  },
+  "colors": {
+    "deep": "#050826",
+    "navy": "#0B1452",
+    "ink": "#040A2E",
+    "cyan": "#19E3FF",
+    "magenta": "#FF2BD6",
+    "highlighter": "#E6FF3D",
+    "hotPink": "#FF4FE0",
+    "hotCoral": "#FF6A3D",
+    "violet": "#A24BFF",
+    "white": "#FFFFFF"
+  },
+  "frame": {
+    "background": "#050826",
+    "headingFont": "Poppins",
+    "headingColor": "#FFFFFF"
+  }
+}

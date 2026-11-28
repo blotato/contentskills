@@ -1,0 +1,92 @@
+{
+  "note": "Original AI-generated art for the psychedelic theme. Prompts are the summaries recorded when the images were made (27 Nov 2026); each was followed by the shared suffix, and cutouts by the isolation suffix. Cutouts were generated on pure black and keyed to alpha. Backgrounds were upscaled 2x to 2560x1440.",
+  "sharedSuffix": "UV blacklight poster art, deep navy #070a2a darkness, neon cyan, magenta, hot pink, lime green, orange glow accents, rich painted airbrushed illustration detail, fluorescent paint on black velvet, psychedelic 1970s blacklight poster, no text.",
+  "isolationSuffix": "On a perfectly flat pure black #000000 background with nothing else in the frame, no stars, no particles, lots of empty black margin.",
+  "model": "not recorded",
+  "date": "2026-11-27",
+  "images": [
+    {
+      "file": "16x9/bg-space.jpg",
+      "parameter": "background",
+      "usedBy": "keyword, list",
+      "aspect": "16:9",
+      "size": "2560x1440",
+      "prompt": "Blacklight poster, deep cosmic space, indigo and violet nebula, large ringed alien planet glowing magenta and cyan upper right, thousands of stars, faint distant jellyfish, darker calm centre and left. No text. 16:9.",
+      "isolated": false
+    },
+    {
+      "file": "16x9/bg-forest.jpg",
+      "parameter": "background",
+      "usedBy": "chapter card, wipe",
+      "aspect": "16:9",
+      "size": "2560x1440",
+      "prompt": "Blacklight poster, night mushroom forest from the forest floor, huge glowing full moon top centre with cyan halo, distant glowing waterfall, twisted trees with cyan and magenta rim light, fluorescent spotted mushrooms at far left and right, glowing ferns, stars and spores. Calm dark centre. No text. 16:9.",
+      "isolated": false
+    },
+    {
+      "file": "9x16/bg-space.jpg",
+      "parameter": "background",
+      "usedBy": "keyword, list (vertical frames)",
+      "aspect": "9:16",
+      "size": "1440x2560",
+      "prompt": "Tall version of 16x9/bg-space.jpg: same prompt, composed for 9:16 with the ringed planet in the upper third, nebula bands across the upper middle and bottom, calm dark star field in the lower middle. Exact prompt not recorded.",
+      "isolated": false,
+      "date": "2026-11-27"
+    },
+    {
+      "file": "9x16/bg-forest.jpg",
+      "parameter": "background",
+      "usedBy": "chapter card, wipe (vertical frames)",
+      "aspect": "9:16",
+      "size": "1440x2560",
+      "prompt": "Tall version of 16x9/bg-forest.jpg: same prompt, composed for 9:16 with the full moon top centre, waterfall in the middle distance, mushrooms and ferns along the bottom and sides, calm dark path in the lower centre. Exact prompt not recorded.",
+      "isolated": false,
+      "date": "2026-11-27"
+    },
+    {
+      "file": "cutouts/jellyfish-pink.png",
+      "parameter": "jellyfishA",
+      "usedBy": "keyword, list, chapter card, wipe",
+      "aspect": "cutout",
+      "size": "468x1058",
+      "prompt": "Single isolated jellyfish, hot pink and magenta bell with cyan inner contour lines, tentacles magenta to cyan and lime. 3:4.",
+      "isolated": true
+    },
+    {
+      "file": "cutouts/jellyfish-cyan.png",
+      "parameter": "jellyfishB",
+      "usedBy": "keyword, chapter card, wipe",
+      "aspect": "cutout",
+      "size": "485x940",
+      "prompt": "Single isolated jellyfish, cyan and electric blue bell with lime rim and violet contour lines, tentacles cyan, violet and orange. 3:4.",
+      "isolated": true
+    },
+    {
+      "file": "cutouts/mushrooms-a.png",
+      "parameter": "mushroomsLeft",
+      "usedBy": "chapter card, wipe",
+      "aspect": "cutout",
+      "size": "748x851",
+      "prompt": "Cluster on a mossy mound: 1 tall mushroom and 3 small ones, caps hot pink, orange and lime with spots, cyan gills, navy stems with cyan rim light, glowing ferns. 1:1.",
+      "isolated": true
+    },
+    {
+      "file": "cutouts/mushrooms-b.png",
+      "parameter": "mushroomsRight",
+      "usedBy": "chapter card, wipe",
+      "aspect": "cutout",
+      "size": "816x765",
+      "prompt": "Cluster: 2 large magenta and violet caps with lime spots, 1 small orange mushroom, curly alien sprouts with cyan tips. 1:1.",
+      "isolated": true
+    },
+    {
+      "file": "cutouts/sparkle.png",
+      "parameter": "sparkle",
+      "usedBy": "all",
+      "aspect": "cutout",
+      "size": "850x827",
+      "prompt": "Single 4-pointed sparkle glint, white core, cyan and magenta halo, long thin rays. 1:1.",
+      "isolated": true
+    }
+  ]
+}

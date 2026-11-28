@@ -1,0 +1,62 @@
+{
+  "id": "three",
+  "title": "Three.js",
+  "summary": "3D on the deep navy ground: white and cyan line forms, slow and quiet, with at most one highlighter accent.",
+  "usage": "{\"piece\": \"three/hoop\"}; every scene takes \"field\": \"noir\" (default), \"bone\" or a footage tone (sky, meadow, stone, dusk) and \"accent\". Data and text are props: {\"piece\": \"three/thin-bars\", \"props\": {\"items\": [{\"label\": \"A\", \"value\": 3}]}}. Files: library/themes/psychedelic/three/pieces/ (_studio.js is the shared studio stage, not a piece).",
+  "groups": [
+    "Backdrops",
+    "Objects",
+    "Explainers"
+  ],
+  "items": [
+    {
+      "id": "silk-sheet",
+      "name": "Silk sheet",
+      "group": "Backdrops",
+      "piece": "three/silk-sheet",
+      "description": "A pale sheet of cloth hanging in the dark, rolling slowly as if in a draught (loop). Props: field, tilt, amount."
+    },
+    {
+      "id": "bokeh-drift",
+      "name": "Bokeh drift",
+      "group": "Backdrops",
+      "piece": "three/bokeh-drift",
+      "description": "Soft out-of-focus discs of light drifting across the dark, one of them highlighter (loop): a ground for one white word. Props: count, partners (adds a cyan and a sun disc), seed."
+    },
+    {
+      "id": "wire-horizon",
+      "name": "Wire horizon",
+      "group": "Backdrops",
+      "piece": "three/wire-horizon",
+      "description": "A hairline floor running to the horizon under a thin wire globe turning slowly, one meridian in highlighter (loop). Props: globe, rows, lines."
+    },
+    {
+      "id": "hoop",
+      "name": "Hoops",
+      "group": "Objects",
+      "piece": "three/hoop",
+      "description": "Thin hoops turning slowly inside one another like a mobile, a small highlighter bead riding the inner one (loop). Props: rings, word (small print underneath)."
+    },
+    {
+      "id": "panel-row",
+      "name": "Panel row",
+      "group": "Objects",
+      "piece": "three/panel-row",
+      "description": "The theme’s vertical-panel motif: tall cards of unequal width slide in from above and below at their own pace and close up into a row, one in highlighter. Props: widths, accentAt, height, gap, speed, times."
+    },
+    {
+      "id": "floating-card",
+      "name": "Floating card",
+      "group": "Objects",
+      "piece": "three/floating-card",
+      "description": "One clean card floating over the out-of-focus ground, tilting a few degrees as it settles, carrying a tall condensed word, a hairline and small print. Props: word, kicker, note, paper, ratio, speed."
+    },
+    {
+      "id": "thin-bars",
+      "name": "Thin bars",
+      "group": "Explainers",
+      "piece": "three/thin-bars",
+      "description": "A bar chart as a row of thin standing blades on a hairline floor, figures in thin tall numerals above; the tallest (or highlight) is highlighter. Props: items [{label, value}], title, highlight, max, prefix, suffix, decimals, speed, times."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+
+/** @param {Borumi.Frame} frame */
+export function render({ ctx, media, time: t, duration, width: W, height: H, params }) {
+  const unit = Math.min(W, H) / 1080;
+  const wp = String(params.wipe || "").split(",").map((v) => parseFloat(v));
+  const wipeAt = isNaN(wp[0]) ? 0.5 : wp[0], wipeLen = isNaN(wp[1]) || wp[1] <= 0 ? 0.6 : wp[1];
+  const p = span(t, wipeAt, wipeAt + wipeLen);
+  if (p <= 0) return;
+  const e = p * p * (3 - 2 * p);
+  const tilt = 90 * unit;
+  const x = -tilt - 40 * unit + (W + 2 * tilt + 80 * unit) * e;
+
+  if (String(params.layer || "back").trim().toLowerCase() === "line") {
+    if (p >= 1) return;
+    const edge = (half, color, shift) => {
+      ctx.fillStyle = color;
+      ctx.beginPath();
+      ctx.moveTo(x + tilt - half + shift, 0);
+      ctx.lineTo(x + tilt + half + shift, 0);
+      ctx.lineTo(x - tilt + half + shift, H);
+      ctx.lineTo(x - tilt - half + shift, H);
+      ctx.closePath();
+      ctx.fill();
+    };
+    const fade = Math.min(1, p * 8, (1 - p) * 8);
+    ctx.layer(() => { edge(40 * unit, borumi.withAlpha(BL.violet, 0.6 * fade), 0); ctx.applyBlur(30 * unit); });
+    edge(6 * unit, borumi.withAlpha(BL.coral, 0.85 * fade), -34 * unit);
+    edge(10 * unit, borumi.withAlpha(BL.cyan, 0.8 * fade), 34 * unit);
+    edge(12 * unit, borumi.withAlpha(BL.hot, 0.8 * fade), 0);
+    edge(5 * unit, borumi.withAlpha("#ffffff", fade), 0);
+    return;
+  }
+
+  ctx.save();
+  ctx.beginPath();
+  ctx.moveTo(-10, 0);
+  ctx.lineTo(x + tilt, 0);
+  ctx.lineTo(x - tilt, H);
+  ctx.lineTo(-10, H);
+  ctx.closePath();
+  ctx.clip();
+
+  ctx.fillStyle = BL.deep;
+  ctx.fillRect(0, 0, W, H);
+  blPlate(ctx, blPic(media, params.background), W, H, t, 8, 0.08, unit);
+  blGlow(ctx, W * 0.52, H * 0.27, H * 0.45, BL.cyan, 0.55 + 0.45 * blPulse(t, 2.6));
+  blJelly(ctx, blPic(media, params.jellyfishA), W * 0.375, H * 0.05, H * 0.28, t, 1, 0.9);
+  blJelly(ctx, blPic(media, params.jellyfishB), W * 0.665, H * 0.08, H * 0.25, t, 2, 0.9);
+  blStars(ctx, blPic(media, params.sparkle), 16, { x: W * 0.03, y: H * 0.02, w: W * 0.94, h: H * 0.55 }, t, unit, 7, 1);
+  const shift = (t - 1) * -14 * unit;
+  blGround(ctx, blPic(media, params.mushroomsLeft), W * 0.09, H + 40 * unit, H * 0.6, t, 0.012, shift);
+  blGround(ctx, blPic(media, params.mushroomsRight), W * 0.91, H + 40 * unit, H * 0.56, t, 0.012, shift);
+  blSpots(ctx, [[W * 0.075 + shift, H * 0.55, 26], [W * 0.93 + shift, H * 0.6, 24]], t, unit);
+
+  // Words: left and right of the speaker.
+  const lines = (v) => String(v || "").toUpperCase().split("\n").map((l) => l.replace(/\s+/g, " ").trim()).filter(Boolean).slice(0, 3);
+  const L = lines(params.left), R = lines(params.right);
+  const given = String(params.times || "").split(",").map((v) => parseFloat(v)).filter((v) => !isNaN(v));
+  const at = (i) => (i < given.length ? given[i] : (given.length ? given[given.length - 1] : wipeAt + wipeLen) + 0.3 * (i - given.length + 1));
+  const colW = W * 0.26;
+  const all = L.concat(R);
+  if (all.length) {
+    let size = H * 0.17;
+    const widest = Math.max(...all.map((l) => blMeasure(ctx, l, size, 0.03)));
+    if (widest > colW) size *= colW / widest;
+    const row = size * 1.12;
+    const glow = 0.75 + 0.25 * blPulse(t, 2);
+    const column = (list, cx, offset, rimC, glowC, rot) => {
+      ctx.save();
+      ctx.translate(cx, H * 0.2 + size * 0.4);
+      ctx.rotate((rot * Math.PI) / 180);
+      list.forEach((l, i) => {
+        const q = span(t, at(offset + i), at(offset + i) + 0.26);
+        if (q <= 0) return;
+        const k = borumi.easeOut(q), s = 1.45 + (1 - 1.45) * k;
+        ctx.save();
+        ctx.translate(0, i * row + Math.sin(t * 2.4 + i) * 4 * unit - 50 * (1 - k) * unit);
+        ctx.scale(s, s);
+        blLetters(ctx, l, 0, 0, size, { track: 0.03, rim: rimC, line: rimC === BL.cyan ? BL.hot : rimC, glow: glowC, pulse: glow, chars: () => ({ a: Math.min(1, q * 5), dx: 0, dy: 0, rot: 0 }) });
+        ctx.restore();
+      });
+      ctx.restore();
+    };
+    column(L, W * 0.165, 0, BL.cyan, BL.magenta, -4);
+    column(R, W * 0.835, L.length, BL.hl, BL.cyan, 4); // right word = the emphasis, highlighter
+  }
+  ctx.restore();
+  void duration;
+}

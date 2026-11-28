@@ -89,6 +89,7 @@ More prompts, effects, themes and settings: [docs/GUIDE.md](docs/GUIDE.md). For 
 | <img src="docs/readme/themes/grunge.jpg" width="110" alt="grunge"> | `grunge` | Photocopied street poster: soot black and bone paper, torn edges, tape, stamps, marker scribbles. |
 | <img src="docs/readme/themes/horror.jpg" width="110" alt="horror"> | `horror` | Horror title sequence: near-black slate, bone-white condensed capitals, grain and flicker. |
 | <img src="docs/readme/themes/lines-of-light.jpg" width="110" alt="lines-of-light"> | `lines-of-light` | Thin neon lines on near-black and deep teal haze, each with a red and blue echo. |
+| <img src="docs/readme/themes/psychedelic.jpg" width="110" alt="psychedelic"> | `psychedelic` | UV blacklight poster: AI-painted space sky and mushroom forest, dark navy letters with a neon cyan rim and magenta glow. |
 
 **Effects**
 

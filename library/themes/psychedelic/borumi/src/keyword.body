@@ -1,0 +1,116 @@
+
+/** @param {Borumi.Frame} frame */
+export function render({ ctx, media, time, duration, width: W, height: H, params }) {
+  const unit = Math.min(W, H) / 1080;
+  const line = String(params.text || "").toUpperCase().replace(/\s+/g, " ").trim();
+  if (!line) return;
+  const hl = String(params.highlight || "").toUpperCase().replace(/\s+/g, " ").trim();
+  const out = Math.max(0.5, duration - 0.4);
+  const lift = span(time, 0, 0.22) * (1 - span(time, duration - 0.25, duration));
+  if (lift <= 0) return;
+
+  // Layout: "top-behind" (default, about 80% of keyword segments: sky band at
+  // the top, segment has behind subject on, 1 line straight behind the speaker's head) or
+  // "side" (about 20%: words stacked beside the speaker's head on the empty side, drawn in
+  // front, behind subject off). Big text never goes below the speaker's chin.
+  const sideMode = String(params.layout || "").trim().toLowerCase() === "side";
+  const onLeft = String(params.side || "right").trim().toLowerCase() === "left";
+  const num = (v, d) => { const n = parseFloat(v); return isNaN(n) ? d : n; };
+  const sky = blPic(media, params.background);
+  const jA = blPic(media, params.jellyfishA), jB = blPic(media, params.jellyfishB);
+  const words = line.split(" ");
+  let track = 0.03;
+
+  // highlighter: exactly 1 contiguous phrase, first match only
+  const hlWords = hl ? hl.split(" ") : [];
+  let hotFrom = -1;
+  for (let k = 0; hlWords.length && k + hlWords.length <= words.length; k++) {
+    if (hlWords.every((w, n) => words[k + n] === w)) { hotFrom = k; break; }
+  }
+  const isHotWord = (k) => hotFrom >= 0 && k >= hotFrom && k < hotFrom + hlWords.length;
+
+  // lay out word runs: [{text, firstWord, x, y}] plus one shared size
+  const runs = [];
+  const sp = (s) => s * 0.3 + track * s;
+  const runW = (ws, s) => ws.reduce((a, w, i) => a + blMeasure(ctx, w, s, track) + (i ? sp(s) : 0), 0);
+  let size;
+  ctx.globalAlpha = lift;
+  if (!sideMode) {
+    const bandH = H * 0.5;
+    ctx.layer(() => {
+      if (!blPlate(ctx, sky, W, H, time, 6, 0.06, unit)) { ctx.fillStyle = BL.deep; ctx.fillRect(0, 0, W, bandH); }
+      ctx.applyShader(FADE, { a: [0, 0], b: [0, bandH], soft: 0.35 });
+    });
+    // 1 line straight across behind the speaker's head
+    blJelly(ctx, jA, W * 0.04, H * 0.02, H * 0.34, time, 1, 0.9 * lift);
+    blJelly(ctx, jB, W * 0.962, H * 0.05, H * 0.3, time, 2, 0.9 * lift);
+    blStars(ctx, blPic(media, params.sparkle), 12, { x: W * 0.03, y: H * 0.02, w: W * 0.94, h: H * 0.3 }, time, unit, 3, lift);
+    size = H * 0.25;
+    let w = runW(words, size);
+    if (w > W * 0.82) { size *= (W * 0.82) / w; w = runW(words, size); }
+    const count0 = [...line].length;
+    if (w < W * 0.6 && count0 > 1) { track += (W * 0.6 - w) / ((count0 - 1) * size); w = runW(words, size); }
+    runs.push({ ws: words, k: 0, x: W / 2 - w / 2, w });
+    const cy = H * 0.07 + H * 0.25 * 0.42;
+    runs.forEach((r) => { r.y = cy; });
+  } else {
+    // side panel: sky art on the empty side, fading toward the speaker
+    const panelW = W * 0.44, x0 = onLeft ? 0 : W - panelW;
+    ctx.layer(() => {
+      if (!blPlate(ctx, sky, W, H, time, onLeft ? -5 : 5, 0.06, unit)) { ctx.fillStyle = BL.deep; ctx.fillRect(x0, 0, panelW, H); }
+      ctx.fillStyle = borumi.withAlpha(BL.deep, 0.4); ctx.fillRect(x0, 0, panelW, H);
+      ctx.applyShader(FADE, onLeft ? { a: [0, 0], b: [panelW, 0], soft: 0.55 } : { a: [W, 0], b: [W - panelW, 0], soft: 0.55 });
+    });
+    const jx = onLeft ? W * 0.05 : W * 0.95;
+    blJelly(ctx, onLeft ? jA : jB, jx, H * 0.62, H * 0.3, time, onLeft ? 1 : 2, 0.9 * lift);
+    blStars(ctx, blPic(media, params.sparkle), 8, { x: x0 + panelW * 0.1, y: H * 0.05, w: panelW * 0.8, h: H * 0.7 }, time, unit, 3, lift);
+    // stack on up to 3 lines, balanced by width
+    const colW = W * 0.29, cx = onLeft ? W * 0.18 : W * 0.82;
+    size = H * 0.2;
+    const lines = [];
+    const n = Math.min(3, words.length), per = Math.ceil(words.length / n);
+    for (let i = 0; i < words.length; i += per) lines.push({ ws: words.slice(i, i + per), k: i });
+    const widest = Math.max(...lines.map((l) => runW(l.ws, size)));
+    if (widest > colW) size *= colW / widest;
+    const row = size * 1.1, top = H * 0.4 - (row * (lines.length - 1)) / 2;
+    lines.forEach((l, i) => { const w = runW(l.ws, size); runs.push({ ws: l.ws, k: l.k, x: cx - w / 2, w, y: top + i * row }); });
+  }
+  ctx.globalAlpha = 1;
+
+  const count = [...line].length;
+  const step = Math.min(0.045, 0.5 / count), outStep = Math.min(0.025, 0.25 / count);
+  const anim = (i) => {
+    const pIn = span(time, 0.03 + i * step, 0.03 + i * step + 0.26);
+    const pOut = span(time, out + i * outStep, out + i * outStep + 0.14);
+    return {
+      a: clamp01(pIn * 2.5) * (1 - pOut),
+      dx: 0,
+      dy: Math.sin(time * 2.2 + i * 0.75) * size * 0.025 + (1 - backOut(pIn)) * size * -0.4 + pOut * size * 0.25,
+      rot: Math.sin(time * 1.6 + i * 0.9) * 0.035
+    };
+  };
+  const glow = 0.8 + 0.2 * blPulse(time, 1.8);
+  // character index of each word, for the staggered pop-in
+  const charAt = []; { let c = 0; words.forEach((w) => { charAt.push(c); c += [...w].length + 1; }); }
+  runs.forEach((r) => {
+    let x = r.x;
+    r.ws.forEach((w, j) => {
+      const k = r.k + j, ww = blMeasure(ctx, w, size, track), hot = isHotWord(k), base = charAt[k];
+      blLetters(ctx, w, x + ww / 2, r.y, size, {
+        track, rim: hot ? params.accent : params.rim, line: hot ? params.accent : BL.hot,
+        glow: hot ? params.accent : BL.magenta, pulse: glow, chars: (i) => anim(base + i)
+      });
+      x += ww + sp(size);
+    });
+  });
+
+  const kicker = String(params.kicker || "").toUpperCase().trim();
+  if (kicker && time > 0.15 && time < out && runs.length) {
+    const ks = 30 * unit, last = runs[runs.length - 1];
+    ctx.globalAlpha = lift;
+    ctx.fillStyle = "#ffffff";
+    const kx = sideMode ? last.x + last.w / 2 - W * 0.15 : 0, kw = sideMode ? W * 0.3 : W;
+    ctx.text(kicker, { x: kx, y: last.y + size * 0.55, width: kw, align: "center", baseline: "top", font: `700 ${Math.round(ks)}px Poppins`, letterSpacing: ks * 0.34 });
+  }
+  ctx.globalAlpha = 1;
+}

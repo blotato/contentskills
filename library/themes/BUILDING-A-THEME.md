@@ -11,7 +11,11 @@ Also read `docs/REFERENCE.md` (storyboard formats), `CLAUDE.md`, and `library/_s
 
 - **Original work in a genre.** A reference shows the look to aim for: palette, texture, shapes,
   type, rhythm of motion. Never reproduce its specific words, layouts, logos, characters or assets,
-  and never download art. Everything is drawn in code (SVG, canvas, shaders).
+  and never download art made by someone else. Pieces are drawn in code (SVG, canvas, shaders).
+- **Painted art is allowed when it is original.** Some looks cannot be drawn in code (painted,
+  airbrushed, photographic). A theme may ship images it generated itself with an AI image model, in
+  `library/themes/<theme>/art/`. See "Painted art" below for the conditions. Code still does all the
+  lettering and all the motion; the images are only scenery and cutouts.
 - **One kit.** Each theme has one drawing kit (`library/themes/<theme>/kit.js`) holding its colours,
   fonts, textures and shape helpers. Every piece draws with it. If two pieces disagree about what
   the theme looks like, the kit is missing something.
@@ -40,10 +44,44 @@ Also read `docs/REFERENCE.md` (storyboard formats), `CLAUDE.md`, and `library/_s
 | `d3/` | diagrams on 1000×1000 cards; support `clear: true` | 10 |
 | `three/` | 3D scenes | 6 |
 | `lottie/` | `generate.mjs` writing `animations/*.json` | 10 |
+| `art/` | optional: original painted images with `catalog.json` (see "Painted art") | |
+| `borumi/` | optional: the theme's graphics as Borumi editor compositions (see "Borumi compositions") | |
 
 Category order in `theme.json`: `overlays`, `text`, `effects`, `transitions`, `fonts`, `captions`,
 `voiceover`, `d3`, `three`, `lottie`. (`voiceover` is shared: list it, add no folder.) Catalog items
 keep the shape `{id, name, group, piece: "<category>/<id>", description}`.
+
+## Painted art (`art/`)
+
+For themes whose look is painted rather than drawn. The rule: the image model paints, code animates
+and draws the letters.
+
+- **Original only.** Every image is generated for this theme. Nothing taken from the web, a stock
+  site, a game, a film or another artist's work.
+- **Clean prompts.** No real people, no logos or brand names, no named characters, no "in the style
+  of <living artist>". No text inside the image; all words are drawn in code.
+- **Provenance.** `art/catalog.json` lists every image: file, role, aspect, size, the full prompt,
+  the model used and the date. An image without a catalog entry does not ship.
+- **Every frame shape.** Backgrounds come in each aspect the theme supports: `art/16x9/` and
+  `art/9x16/` (square frames centre-crop the tall one). Do not stretch, and do not crop a wide
+  painting to tall if it loses the subject; generate a tall version. Cutouts (transparent PNGs in
+  `art/cutouts/`) work at any shape and are placed by code.
+- **Calm centre.** Backgrounds keep a darker, quieter area where text and the speaker go.
+- **Weight.** Backgrounds are JPEG, at most 2560 px on the long side. Cutouts are PNG with alpha,
+  trimmed to their content. Keep a theme's `art/` under about 15 MB. Images in `art/` are stored
+  with Git LFS (see `.gitattributes`); `catalog.json` is a normal file.
+- **Still props.** Text, colours of the lettering, positions and timing stay props. The painted
+  palette is fixed, so the kit's colours are chosen to match the art, not the other way round.
+
+## Borumi compositions (`borumi/`)
+
+Optional. A theme may carry versions of its graphics for the Borumi editor, for editing real footage
+there: `library/themes/<theme>/borumi/*.js`, each a self-contained Borumi composition module
+(`/* @borumi {...} */` header plus `export function render(...)`), with readable sources in
+`borumi/src/`. They are a separate engine from the pieces above (no `mount`/`seek`, no D3 or
+Three.js) and are not loaded by the pipeline or the dashboard. They share the theme's `art/` and
+must follow the same style spec as its pieces. A theme may exist with only `art/` and `borumi/`
+while its pieces are being built; leave it out of `index.json` until the pieces meet the minimums.
 
 ## A theme that restyles another (`"extends"`)
 

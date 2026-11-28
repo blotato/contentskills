@@ -1,0 +1,125 @@
+{
+  "id": "d3",
+  "title": "D3.js",
+  "summary": "Diagrams on the painted night sky: thin cyan lines, neon numerals, tracked-out white small print and one highlighter accent for the item that matters.",
+  "usage": "{\"piece\": \"d3/bar-chart\", \"props\": {\"title\": \"…\", \"unit\": \"Illustrative · …\", \"items\": […], \"field\": \"bone\"}}. Every piece takes title, unit, field, clear, accent (highlighter, cyan, sun, white), speed (2 = entrances twice as fast) and times (seconds at which each item appears, e.g. when it is spoken; see each description for what the entries mean). Numbers take decimals, prefix, suffix. Sample data is illustrative. Files: library/themes/psychedelic/d3/pieces/ (_local.js holds shared timing helpers, not a piece).",
+  "groups": [
+    "Charts",
+    "Sequences",
+    "Compare"
+  ],
+  "items": [
+    {
+      "id": "bar-chart",
+      "name": "Bar chart",
+      "group": "Charts",
+      "piece": "d3/bar-chart",
+      "description": "Hairline-thin bars rising from one rule, figures above in thin tall numerals; the tallest (or highlight) is the single accent bar. Props: items [{label, value}], highlight, max, barWidth. times: one per bar."
+    },
+    {
+      "id": "line-chart",
+      "name": "Line chart",
+      "group": "Charts",
+      "piece": "d3/line-chart",
+      "description": "One hairline drawn across the card with the accent dot riding its tip; the latest value and a note sit beside the end point. Props: values, labels, note, min, max. times: [line, value]."
+    },
+    {
+      "id": "donut",
+      "name": "Thin ring",
+      "group": "Charts",
+      "piece": "d3/donut",
+      "description": "A faint circle with one hairline arc drawn round to the share, the accent dot on its tip and the figure in the middle. Props: value, total, label, note. times: [arc, small print]."
+    },
+    {
+      "id": "dot-grid",
+      "name": "Dot grid",
+      "group": "Charts",
+      "piece": "d3/dot-grid",
+      "description": "A share counted out in dots: a quiet grid of pin-points, the counted ones filling in one by one, the last in the accent, with the figure beside it. Props: value, total, cols, label. times: [count, small print]."
+    },
+    {
+      "id": "range",
+      "name": "Range and marker",
+      "group": "Charts",
+      "piece": "d3/range",
+      "description": "One to four ticked scales, each with a firmer segment for the usual range and the accent dot gliding to the value. Props: rows [{label, from, to, value}], min, max, ticks, ends. times: one per row."
+    },
+    {
+      "id": "steps",
+      "name": "Steps",
+      "group": "Sequences",
+      "piece": "d3/steps",
+      "description": "Three or four numbered stages standing on one hairline, names and notes as small print beneath; the accent dot marks the stage that arrived last (or active). Props: steps [{label, note, number}], active. times: one per step."
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "group": "Sequences",
+      "piece": "d3/timeline",
+      "description": "Dates in thin tall numerals down a vertical hairline with the event and a line of small print beside each; the accent dot follows the latest entry (or highlight). Props: items [{date, label, note}]. times: one per entry."
+    },
+    {
+      "id": "calendar",
+      "name": "Calendar strip",
+      "group": "Sequences",
+      "piece": "d3/calendar",
+      "description": "A week between two hairlines: weekdays as small print over tall dates, marked days dotted and listed below like credits. Props: days [{day, date}], events [{at, label, note}] (up to 3). times: [strip, event 1, event 2, …]."
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Compare",
+      "piece": "d3/versus",
+      "description": "Two columns either side of a vertical hairline: a name, one tall figure, then credits-style rows comparing them; the accent dot sits over the winner. Props: a, b {name, value, note}, rows [{label, a, b}] (up to 4), winner. times: [left, right, row 1, …]."
+    },
+    {
+      "id": "ranking",
+      "name": "Ranking list",
+      "group": "Compare",
+      "piece": "d3/ranking",
+      "description": "A credits-style list: number, name, figure and a hairline under each row; one row carries the accent dot. Props: items [{label, value}], highlight. times: one per row."
+    },
+    {
+      "id": "slope",
+      "name": "Slope",
+      "group": "Compare",
+      "piece": "d3/slope",
+      "description": "Before and after on two vertical hairlines with a thin line joining each pair; the biggest change (or highlight) takes the accent. Props: items [{label, from, to}], labels, min, max. times: one per line."
+    },
+    {
+      "id": "measure",
+      "name": "Measure",
+      "group": "Compare",
+      "piece": "d3/measure",
+      "description": "A measured panel drawn like a pattern piece: a hairline rectangle in true proportion with a dimension line under it and an accent one beside it. Props: width, height, labels {width, height}, suffix. times: [outline, width, height]."
+    },
+    {
+      "id": "pause-bars",
+      "name": "Pauses cut",
+      "group": "Charts",
+      "piece": "d3/pause-bars",
+      "description": "Every pause cut from a recording as bars in the order they happened; the longest take the accent and their figures and the total counts up. use: \"project\" draws the real pauses from the edit decision list. Props: pauses, top, note, field (bone, noir, highlighter, cyan, sun …)."
+    },
+    {
+      "id": "cut-strip",
+      "name": "Raw to edit",
+      "group": "Compare",
+      "piece": "d3/cut-strip",
+      "description": "Two strips to one scale joined by ribbons: the recording with its pauses in the accent, and the edit underneath, as much shorter as it really is; both lengths in thin tall numerals. use: \"project\" draws the real edit decision list. Props: before, segments, a, b, cutAt, closeFor, field."
+    },
+    {
+      "id": "edit-pulse",
+      "name": "Edit pulse",
+      "group": "Charts",
+      "piece": "d3/edit-pulse",
+      "description": "Changes per second across the clip as one filled line drawn left to right, the busiest second marked, the average in numerals and a row of counts beneath. use: \"project\" counts everything from the storyboard itself. Props: values, counts, show, drawFor, field."
+    },
+    {
+      "id": "bar-race",
+      "name": "Bar race",
+      "group": "Charts",
+      "piece": "d3/bar-race",
+      "description": "A bar-chart race: thick coloured bars spring out and re-sort as the figures change (bars slide past each other, rank numerals roll); at flagAt the leader pulls ahead, takes the accent and a flag lands on its bar. Props: items [{label, values: [per step], thumb}], times, flag, flagAt, axis, colors, field; labels (inside | above), showValues (with prefix, suffix, decimals) prints the figures counting at the bar tips; the default shows none and says it is illustrative."
+    }
+  ]
+}

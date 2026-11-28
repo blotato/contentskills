@@ -1,0 +1,28 @@
+/* @borumi
+{
+  "formatVersion": 1,
+  "name": "Psychedelic bullet list",
+  "category": "title",
+  "tags": ["list", "bullets", "listicle", "recap", "talking head", "psychedelic", "blacklight", "neon", "trippy"],
+  "sizing": "frame",
+  "duration": 12,
+  "fps": 60,
+  "previewAt": 10,
+  "defaultPlacement": { "fallback": { "horizontal": "stretch", "vertical": "stretch", "inset": 0 } },
+  "parameters": {
+    "items": { "type": "text", "level": 1, "order": 0, "multiline": true, "default": "FIRST POINT\nSECOND POINT\nTHIRD POINT", "label": "Items (one per line)", "maxLength": 300 },
+    "times": { "type": "text", "level": 1, "order": 1, "default": "0, 3, 6", "label": "Appear at (seconds, comma separated)", "maxLength": 120 },
+    "accent": { "type": "color", "level": 2, "order": 0, "default": "#e6ff3d", "label": "Newest item color (highlighter)" },
+    "rim": { "type": "color", "level": 2, "order": 1, "default": "#19e3ff", "label": "Earlier items rim color" },
+    "background": { "type": "media", "level": 2, "order": 2, "accept": ["image"], "default": null, "label": "Panel art (bg-space)" },
+    "jellyfishA": { "type": "media", "level": 2, "order": 3, "accept": ["image"], "default": null, "label": "Jellyfish" },
+    "sparkle": { "type": "media", "level": 2, "order": 4, "accept": ["image"], "default": null, "label": "Sparkle sprite" }
+  }
+}
+*/
+
+// Bullet list down the left side of talking-head footage, blacklight poster
+// style. Painted space art fills a panel that fades out toward the speaker, a
+// painted jellyfish drifts in it and sparkles twinkle. Each item pops in at its
+// own time with a glowing neon number badge; item labels use the dark-blue
+// neon lettering, with the newest item's rim in the accent colour.

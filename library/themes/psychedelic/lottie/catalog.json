@@ -1,0 +1,97 @@
+{
+  "id": "lottie",
+  "title": "Lottie",
+  "summary": "Thin-line vector accents generated from code in lottie/generate.mjs: cyan lines on a see-through ground with violet small print and one highlighter dot.",
+  "usage": "{\"piece\": \"lottie/hairline-underline\"}. Transparent, so they sit on footage or on any dark card. Files: library/themes/psychedelic/lottie/animations/.",
+  "groups": [
+    "Marks",
+    "Frames",
+    "Cues"
+  ],
+  "items": [
+    {
+      "id": "hairline-underline",
+      "name": "Hairline underline",
+      "group": "Marks",
+      "piece": "lottie/hairline-underline",
+      "description": "A hairline opening from its middle with a highlighter dot at its end and a short line of small print under it."
+    },
+    {
+      "id": "ring-draw",
+      "name": "Ring draw",
+      "group": "Marks",
+      "piece": "lottie/ring-draw",
+      "description": "A thin ring drawing round from a highlighter dot, a fainter ring following inside it."
+    },
+    {
+      "id": "registration-mark",
+      "name": "Registration mark",
+      "group": "Marks",
+      "piece": "lottie/registration-mark",
+      "description": "A printer’s cross-hair: two hairlines opening through a small ring, faint corner ticks and a highlighter centre."
+    },
+    {
+      "id": "arrow-draw",
+      "name": "Arrow draw",
+      "group": "Marks",
+      "piece": "lottie/arrow-draw",
+      "description": "A long hairline arrow drawing left to right from a highlighter dot, its head opening at the end."
+    },
+    {
+      "id": "plus-to-check",
+      "name": "Plus to check",
+      "group": "Marks",
+      "piece": "lottie/plus-to-check",
+      "description": "A plus inside a faint ring that folds into a tick, finished with a highlighter dot."
+    },
+    {
+      "id": "corner-ticks",
+      "name": "Corner ticks",
+      "group": "Frames",
+      "piece": "lottie/corner-ticks",
+      "description": "Four corner ticks opening outwards into a frame around a tiny centre cross and highlighter dot: marks a subject."
+    },
+    {
+      "id": "panels-open",
+      "name": "Panels open",
+      "group": "Frames",
+      "piece": "lottie/panels-open",
+      "description": "Three tall panel outlines of unequal width drawing on and sliding into a row: the theme’s vertical-panel motif."
+    },
+    {
+      "id": "scan-line",
+      "name": "Scan line",
+      "group": "Frames",
+      "piece": "lottie/scan-line",
+      "description": "A hairline with a highlighter dot sweeping slowly down inside faint corner ticks (loop)."
+    },
+    {
+      "id": "count-dots",
+      "name": "Count dots",
+      "group": "Cues",
+      "piece": "lottie/count-dots",
+      "description": "Three small rings drawn one after another as a highlighter dot steps through them: one, two, three."
+    },
+    {
+      "id": "dot-pulse",
+      "name": "Dot pulse",
+      "group": "Cues",
+      "piece": "lottie/dot-pulse",
+      "description": "A highlighter dot giving one soft pulse, a thin ring widening and fading away (loop)."
+    },
+    {
+      "id": "dashed-ring",
+      "name": "Dashed ring",
+      "group": "Cues",
+      "piece": "lottie/dashed-ring",
+      "description": "A ring of fine dashes turning very slowly around a thin ring with a highlighter dot travelling it (loop)."
+    },
+    {
+      "id": "swipe-up",
+      "name": "Swipe up",
+      "group": "Cues",
+      "piece": "lottie/swipe-up",
+      "description": "Three chevrons lighting upwards in turn over a highlighter dot (loop)."
+    }
+  ]
+}

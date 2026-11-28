@@ -1,0 +1,75 @@
+
+/** @param {Borumi.Frame} frame */
+export function render({ ctx, media, time, duration, width: W, height: H, params }) {
+  const unit = Math.min(W, H) / 1080;
+  const fade = span(time, 0, 0.22) * (1 - span(time, duration - 0.28, duration));
+  if (fade <= 0) return;
+  const number = String(params.number || "").toUpperCase().trim();
+  const title = String(params.title || "").toUpperCase().replace(/\s+/g, " ").trim();
+  const kicker = String(params.kicker || "").toUpperCase().trim();
+
+  ctx.globalAlpha = fade;
+  ctx.fillStyle = BL.deep;
+  ctx.fillRect(0, 0, W, H);
+  // far layer: painted forest, slow parallax
+  blPlate(ctx, blPic(media, params.background), W, H, time, 8, 0.08, unit);
+  // moon glow pulse (the painted moon sits near the top centre of bg-forest)
+  blGlow(ctx, W * 0.52, H * 0.27, H * 0.42, BL.cyan, 0.55 + 0.45 * blPulse(time, 2.6));
+  // darken the lower middle so the lettering reads
+  const shade = ctx.createRadialGradient(W / 2, H * 0.6, 0, W / 2, H * 0.6, W * 0.45);
+  shade.addColorStop(0, borumi.withAlpha(BL.deep, 0.55));
+  shade.addColorStop(1, borumi.withAlpha(BL.deep, 0));
+  ctx.fillStyle = shade; ctx.fillRect(0, 0, W, H);
+
+  // mid layer: jellyfish drifting through the sky
+  blJelly(ctx, blPic(media, params.jellyfishA), W * 0.2, H * 0.08, H * 0.42, time, 1, 0.92 * fade);
+  blJelly(ctx, blPic(media, params.jellyfishB), W * 0.8, H * 0.12, H * 0.36, time, 2, 0.92 * fade);
+  blStars(ctx, blPic(media, params.sparkle), 16, { x: W * 0.04, y: H * 0.03, w: W * 0.92, h: H * 0.5 }, time, unit, 5, fade);
+
+  // near layer: mushrooms rise from the bottom corners, faster parallax
+  const rise = (1 - borumi.easeOut(span(time, 0.05, 0.6))) * 260 * unit;
+  const shift = (time - 1.5) * -14 * unit;
+  blGround(ctx, blPic(media, params.mushroomsLeft), W * 0.075, H + 50 * unit + rise, H * 0.5, time, 0.012, shift);
+  blGround(ctx, blPic(media, params.mushroomsRight), W * 0.925, H + 50 * unit + rise, H * 0.47, time, 0.012, shift);
+  // accent glints on a few painted mushroom caps (hot pink / hot coral)
+  blSpots(ctx, [[W * 0.06 + shift, H * 0.62 + rise, 26], [W * 0.95 + shift, H * 0.66 + rise, 24], [W * 0.115 + shift, H * 0.83 + rise, 18]], time, unit);
+
+  // lettering
+  const pop = (delay) => (i, n) => {
+    const p = span(time, delay + i * Math.min(0.04, 0.3 / n), delay + 0.3 + i * Math.min(0.04, 0.3 / n));
+    return { a: clamp01(p * 2.5) * fade, dx: 0, dy: (1 - backOut(p)) * -40 * unit + Math.sin(time * 2 + i * 0.8) * 4 * unit, rot: Math.sin(time * 1.4 + i) * 0.025, s: 0.85 + 0.15 * backOut(p) };
+  };
+  const glow = 0.75 + 0.25 * blPulse(time, 2.2);
+  if (kicker) {
+    const ks = 38 * unit;
+    ctx.globalAlpha = fade * span(time, 0.15, 0.4);
+    ctx.layer(() => { ctx.fillStyle = BL.cyan; ctx.text(kicker, { x: 0, y: H * 0.07, width: W, align: "center", baseline: "middle", font: `700 ${Math.round(ks)}px Poppins`, letterSpacing: ks * 0.5 }); ctx.applyBlur(10 * unit); });
+    ctx.fillStyle = "#ffffff";
+    ctx.text(kicker, { x: 0, y: H * 0.07, width: W, align: "center", baseline: "middle", font: `700 ${Math.round(ks)}px Poppins`, letterSpacing: ks * 0.5 });
+    ctx.globalAlpha = 1;
+  }
+  if (number) {
+    let ns = 300 * unit; const nw = blMeasure(ctx, number, ns, 0.04);
+    if (nw > W * 0.5) ns *= (W * 0.5) / nw;
+    blLetters(ctx, number, W / 2, H * 0.43, ns, { track: 0.04, rim: params.numberRim, line: params.numberRim, glow: BL.violet, chars: pop(0.12), pulse: glow });
+  }
+  if (title) {
+    let ts = 170 * unit; const tw = blMeasure(ctx, title, ts, 0.03);
+    if (tw > W * 0.68) ts *= (W * 0.68) / tw;
+    const hl = String(params.highlight || "").toUpperCase().replace(/\s+/g, " ").trim();
+    const words = title.split(" "), hw = hl ? hl.split(" ") : [];
+    let from = -1;
+    for (let k = 0; hw.length && k + hw.length <= words.length; k++) if (hw.every((w, n) => words[k + n] === w)) { from = k; break; }
+    if (from < 0) {
+      blLetters(ctx, title, W / 2, H * 0.73, ts, { track: 0.03, rim: params.rim, line: params.rim, glow: BL.magenta, chars: pop(0.3), pulse: glow });
+    } else {
+      const tw2 = blMeasure(ctx, title, ts, 0.03); let x = W / 2 - tw2 / 2, idx = 0;
+      words.forEach((w, k) => {
+        const ww = blMeasure(ctx, w, ts, 0.03), hot = k >= from && k < from + hw.length, base = idx, p = pop(0.3);
+        blLetters(ctx, w, x + ww / 2, H * 0.73, ts, { track: 0.03, rim: hot ? BL.hl : params.rim, line: hot ? BL.hl : params.rim, glow: hot ? BL.hl : BL.magenta, chars: (i, n) => p(base + i, title.length), pulse: glow });
+        x += ww + ts * 0.3 + 0.03 * ts; idx += [...w].length + 1;
+      });
+    }
+  }
+  ctx.globalAlpha = 1;
+}

@@ -1,0 +1,59 @@
+{
+  "id": "captions",
+  "title": "Captions",
+  "summary": "Eleven caption styles in the theme look, playing over the sample clip with its real word timings: Poppins capitals in the theme lettering (navy body, cyan rim, magenta glow) or glowing white, words popping in as they are spoken, highlighter yellow on the spoken or emphasised word.",
+  "usage": "In a storyboard: {\"captions\": \"one-word\"}. one-word is the theme default (one big word in the theme lettering); tall-word is the same with a highlighter rim; phrase, hairline and small-print show a few words; ink-bar is the most readable on bright footage; ink-word is a plain glowing white word; the kinetic styles and outline-pop mark the storyboard's \"emphasis\" words. Style ids match the fashion theme so storyboards can switch themes.",
+  "groups": [
+    "One word",
+    "Phrases",
+    "Glow",
+    "Kinetic",
+    "Reel"
+  ],
+  "items": [
+    {
+      "id": "one-word",
+      "group": "One word"
+    },
+    {
+      "id": "tall-word",
+      "group": "One word"
+    },
+    {
+      "id": "phrase",
+      "group": "Phrases"
+    },
+    {
+      "id": "hairline",
+      "group": "Phrases"
+    },
+    {
+      "id": "small-print",
+      "group": "Phrases"
+    },
+    {
+      "id": "ink-bar",
+      "group": "Glow"
+    },
+    {
+      "id": "ink-word",
+      "group": "Glow"
+    },
+    {
+      "id": "kinetic",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-ink",
+      "group": "Kinetic"
+    },
+    {
+      "id": "kinetic-bold",
+      "group": "Kinetic"
+    },
+    {
+      "id": "outline-pop",
+      "group": "Reel"
+    }
+  ]
+}

@@ -4,3 +4,7 @@
 *.m4v filter=lfs diff=lfs merge=lfs -text
 *.mkv filter=lfs diff=lfs merge=lfs -text
 *.mp3 filter=lfs diff=lfs merge=lfs -text
+# Painted theme art (original, AI-generated; see library/themes/BUILDING-A-THEME.md)
+library/themes/*/art/**/*.jpg filter=lfs diff=lfs merge=lfs -text
+library/themes/*/art/**/*.png filter=lfs diff=lfs merge=lfs -text
+library/themes/*/art/**/*.webp filter=lfs diff=lfs merge=lfs -text

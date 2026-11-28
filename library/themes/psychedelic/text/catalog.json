@@ -1,0 +1,164 @@
+{
+  "id": "text",
+  "title": "Text animations",
+  "summary": "Blacklight poster typography: Poppins Bold capitals with a dark navy body, a thin cyan rim, a second line just inside it and a soft magenta glow, arriving letter by letter. Title cards sit on the theme's painted art (space sky or mushroom forest, with drifting jellyfish and twinkling sparkles); overlays sit straight on footage. Highlighter yellow marks one word or phrase.",
+  "usage": "Title cards fill the frame (any shape from square to 9:16): use one as a shot's \"background\" (a candidate may then omit \"visual\"), as its \"visual\", or as a footage \"cutaway\", e.g. {\"background\": {\"piece\": \"text/headline-slam\", \"props\": {\"lines\": [\"NEW\", \"SEASON\"], \"field\": \"stone\"}}}. Overlays are see-through, in 1080×1920 frame pixels: {\"piece\": \"text/keyword-slam\", \"start\": 1.2, \"end\": 2.4, \"props\": {\"word\": \"Effortless\", \"y\": 330, \"face\": \"wide\"}}. Every word and position is a prop; \"field\" picks the ground of a title card, \"face\" (wide or tall) the voice of a word, \"accent\" (highlighter, cyan, sun or white) the one colour; overlays dim away when given \"life\". Kit: library/themes/psychedelic/kit.js. Files: library/themes/psychedelic/text/pieces/.",
+  "groups": [
+    "Title cards",
+    "Overlays"
+  ],
+  "items": [
+    {
+      "id": "headline-slam",
+      "name": "Headline",
+      "group": "Title cards",
+      "piece": "text/headline-slam",
+      "description": "One to three short lines in the middle of an out-of-focus field, revealed letter by letter out of blur; small print above, a short accent hairline below, tiny labels in the corners.",
+      "tall": true
+    },
+    {
+      "id": "split-stack",
+      "name": "Split stack",
+      "group": "Title cards",
+      "piece": "text/split-stack",
+      "description": "Two words in the theme’s two voices on a clean card over the blurred field: tall condensed above a hairline, heavy caps below.",
+      "tall": true
+    },
+    {
+      "id": "marquee-wall",
+      "name": "Marquee wall",
+      "group": "Title cards",
+      "piece": "text/marquee-wall",
+      "description": "Rows of heavy caps crossing slowly in alternate directions as hairline outlines; only the middle row is solid.",
+      "tall": true
+    },
+    {
+      "id": "statement",
+      "name": "Statement",
+      "group": "Title cards",
+      "piece": "text/statement",
+      "description": "One sentence whose words fade up out of blur one after another; the emphasised words get the accent hairline.",
+      "tall": true
+    },
+    {
+      "id": "big-number",
+      "name": "Big number",
+      "group": "Title cards",
+      "piece": "text/big-number",
+      "description": "Thin tall numerals that count up in the middle of the field, with the unit typed on in heavy caps under one hairline.",
+      "tall": true
+    },
+    {
+      "id": "quote-card",
+      "name": "Quote card",
+      "group": "Title cards",
+      "piece": "text/quote-card",
+      "description": "A quotation set like a film title card between two short hairlines, credited in small print.",
+      "tall": true
+    },
+    {
+      "id": "agenda",
+      "name": "Agenda",
+      "group": "Title cards",
+      "piece": "text/agenda",
+      "description": "A running order set like film credits: thin numerals, caps and hairlines, one row at a time.",
+      "tall": true
+    },
+    {
+      "id": "versus",
+      "name": "Versus",
+      "group": "Title cards",
+      "piece": "text/versus",
+      "description": "Two options as the theme’s vertical panels sliding in from opposite ends, a condensed word in each, a small ring between.",
+      "tall": true
+    },
+    {
+      "id": "chapter",
+      "name": "Chapter",
+      "group": "Title cards",
+      "piece": "text/chapter",
+      "description": "A clean card opens over the blurred field holding a thin tall numeral; the chapter title is typed on beneath.",
+      "tall": true
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "group": "Title cards",
+      "piece": "text/countdown",
+      "description": "Thin numerals come up out of blur one after another inside a hairline ring, then the go word is typed on.",
+      "tall": true
+    },
+    {
+      "id": "end-card",
+      "name": "End card",
+      "group": "Title cards",
+      "piece": "text/end-card",
+      "description": "The close on deep navy: a ring draws with one accent dot, the lines are typed on, the call to action sits in small print.",
+      "tall": true
+    },
+    {
+      "id": "keyword-slam",
+      "name": "The word",
+      "group": "Overlays",
+      "piece": "text/keyword-slam",
+      "description": "THE word: one short white word on the footage, typed on letter by letter out of blur in heavy caps, or (face: tall) condensed with its tracking closing up.",
+      "over": true
+    },
+    {
+      "id": "highlight-swipe",
+      "name": "Underlined phrase",
+      "group": "Overlays",
+      "piece": "text/highlight-swipe",
+      "description": "A short phrase in caps whose words fade up one after another; the marked words get the accent hairline.",
+      "over": true
+    },
+    {
+      "id": "lower-third",
+      "name": "Credit",
+      "group": "Overlays",
+      "piece": "text/lower-third",
+      "description": "A name set like a film credit beside a short accent hairline, with the role in small print.",
+      "over": true
+    },
+    {
+      "id": "side-text",
+      "name": "Edge marking",
+      "group": "Overlays",
+      "piece": "text/side-text",
+      "description": "Small print running up the side of the frame along a hairline, like the edge of a film strip.",
+      "over": true
+    },
+    {
+      "id": "marquee-band",
+      "name": "Ticker",
+      "group": "Overlays",
+      "piece": "text/marquee-band",
+      "description": "Two hairlines open across the frame and small tracked-out caps travel between them.",
+      "over": true
+    },
+    {
+      "id": "corner-labels",
+      "name": "Slate",
+      "group": "Overlays",
+      "piece": "text/corner-labels",
+      "description": "Small print in the four corners, each behind a registration cross.",
+      "over": true
+    },
+    {
+      "id": "pip-frame",
+      "name": "Window frame",
+      "group": "Overlays",
+      "piece": "text/pip-frame",
+      "description": "Open corner ticks and a soft shadow around a picture-in-picture window, labelled in small print.",
+      "over": true
+    },
+    {
+      "id": "sticker",
+      "name": "Seal",
+      "group": "Overlays",
+      "piece": "text/sticker",
+      "description": "A hairline ring with small print running round it and a condensed word in the middle.",
+      "over": true
+    }
+  ]
+}

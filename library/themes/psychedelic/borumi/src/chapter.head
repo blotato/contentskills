@@ -1,0 +1,33 @@
+/* @borumi
+{
+  "formatVersion": 1,
+  "name": "Psychedelic chapter card",
+  "category": "title",
+  "tags": ["chapter", "full screen", "title card", "section", "psychedelic", "blacklight", "neon", "trippy"],
+  "sizing": "frame",
+  "duration": 3,
+  "fps": 60,
+  "previewAt": 1.6,
+  "defaultPlacement": { "fallback": { "horizontal": "stretch", "vertical": "stretch", "inset": 0 } },
+  "parameters": {
+    "number": { "type": "text", "level": 1, "order": 0, "default": "02", "label": "Number", "maxLength": 4 },
+    "title": { "type": "text", "level": 1, "order": 1, "default": "THE BUILD", "label": "Title", "maxLength": 40 },
+    "kicker": { "type": "text", "level": 2, "order": 0, "default": "CHAPTER", "label": "Kicker", "maxLength": 30 },
+    "highlight": { "type": "text", "level": 1, "order": 2, "default": "", "label": "Emphasis: 1 title word or phrase in highlighter (optional)", "maxLength": 40 },
+    "rim": { "type": "color", "level": 2, "order": 1, "default": "#19e3ff", "label": "Title rim color" },
+    "numberRim": { "type": "color", "level": 2, "order": 2, "default": "#ff4fe0", "label": "Number rim color (hot pink accent)" },
+    "background": { "type": "media", "level": 2, "order": 3, "accept": ["image"], "default": null, "label": "Background art (bg-forest)" },
+    "mushroomsLeft": { "type": "media", "level": 2, "order": 4, "accept": ["image"], "default": null, "label": "Mushrooms left" },
+    "mushroomsRight": { "type": "media", "level": 2, "order": 5, "accept": ["image"], "default": null, "label": "Mushrooms right" },
+    "jellyfishA": { "type": "media", "level": 2, "order": 6, "accept": ["image"], "default": null, "label": "Jellyfish A" },
+    "jellyfishB": { "type": "media", "level": 2, "order": 7, "accept": ["image"], "default": null, "label": "Jellyfish B" },
+    "sparkle": { "type": "media", "level": 2, "order": 8, "accept": ["image"], "default": null, "label": "Sparkle sprite" }
+  }
+}
+*/
+
+// Full-screen chapter card, blacklight poster style. A painted moonlit
+// mushroom forest drifts in slow parallax, painted mushroom clusters rise in
+// the foreground corners, two painted jellyfish drift across the sky, the moon
+// glow pulses and sparkles twinkle. Number and title use the dark-blue neon
+// lettering.

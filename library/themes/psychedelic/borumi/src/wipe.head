@@ -1,0 +1,34 @@
+/* @borumi
+{
+  "formatVersion": 1,
+  "name": "Psychedelic wipe reveal",
+  "category": "title",
+  "tags": ["wipe", "reveal", "before after", "background", "talking head", "psychedelic", "blacklight", "neon", "trippy"],
+  "sizing": "frame",
+  "duration": 2,
+  "fps": 60,
+  "previewAt": 1.8,
+  "defaultPlacement": { "fallback": { "horizontal": "stretch", "vertical": "stretch", "inset": 0 } },
+  "parameters": {
+    "left": { "type": "text", "level": 1, "order": 0, "multiline": true, "default": "VIDEO\nEDITING", "label": "Left words (one per line)", "maxLength": 60 },
+    "right": { "type": "text", "level": 1, "order": 1, "multiline": true, "default": "FOREVER", "label": "Right words (one per line)", "maxLength": 60 },
+    "times": { "type": "text", "level": 1, "order": 2, "default": "0.95, 1.27, 1.67", "label": "Word times (seconds: left lines, then right)", "maxLength": 80 },
+    "wipe": { "type": "text", "level": 1, "order": 3, "default": "0.5, 0.6", "label": "Wipe start, length (seconds)", "maxLength": 20 },
+    "layer": { "type": "text", "level": 2, "order": 0, "default": "back", "label": "Layer: back (scene, use behind subject) or line (glow, in front)", "maxLength": 8 },
+    "background": { "type": "media", "level": 2, "order": 1, "accept": ["image"], "default": null, "label": "Background art (bg-forest)" },
+    "mushroomsLeft": { "type": "media", "level": 2, "order": 2, "accept": ["image"], "default": null, "label": "Mushrooms left" },
+    "mushroomsRight": { "type": "media", "level": 2, "order": 3, "accept": ["image"], "default": null, "label": "Mushrooms right" },
+    "jellyfishA": { "type": "media", "level": 2, "order": 4, "accept": ["image"], "default": null, "label": "Jellyfish A" },
+    "jellyfishB": { "type": "media", "level": 2, "order": 5, "accept": ["image"], "default": null, "label": "Jellyfish B" },
+    "sparkle": { "type": "media", "level": 2, "order": 6, "accept": ["image"], "default": null, "label": "Sparkle sprite" }
+  }
+}
+*/
+
+// Before/after wipe for a talking-head opener, blacklight poster style. A neon
+// line sweeps left to right; behind it the room is replaced by the painted
+// moonlit mushroom forest (slow parallax, pulsing moon glow, drifting painted
+// jellyfish, painted mushrooms in the corners, twinkling sparkles), and words
+// slam in on either side of the speaker in dark-blue neon lettering. Use two
+// segments over the same range: layer "back" with behind-subject on, and
+// layer "line" on top.

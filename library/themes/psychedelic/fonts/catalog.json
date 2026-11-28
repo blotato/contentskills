@@ -1,0 +1,176 @@
+{
+  "id": "fonts",
+  "title": "Fonts",
+  "summary": "Poppins throughout: Bold capitals for words and numerals (drawn with the theme's dark-navy neon lettering), SemiBold for small print and sentences. The other faces are alternates. All bundled locally with open licences (see files/*-LICENSE.txt).",
+  "usage": "The theme uses Poppins 700 for words and numerals and Poppins 600 for labels and sentences. The others are alternates for a storyboard that wants a different word face.",
+  "groups": [
+    "Wide",
+    "Condensed",
+    "Text"
+  ],
+  "items": [
+    {
+      "id": "poppins-bold",
+      "family": "Poppins",
+      "file": "files/Poppins-Bold.ttf",
+      "group": "Wide",
+      "weights": [
+        700
+      ],
+      "note": "Theme word face: bold geometric caps for every big word and numeral, under the neon rim and glow.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "poppins-semibold",
+      "family": "Poppins",
+      "file": "files/Poppins-SemiBold.ttf",
+      "group": "Text",
+      "weights": [
+        600
+      ],
+      "note": "Theme small print and sentences: tracked-out caps for labels, plain for sentences.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "montserrat",
+      "family": "Montserrat",
+      "file": "files/Montserrat-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        500,
+        800
+      ],
+      "note": "Alternate word face: heavy geometric caps (800) for the single word, set tight; 500 with wide tracking for credits-style labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "oswald",
+      "family": "Oswald",
+      "file": "files/Oswald-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        500
+      ],
+      "note": "Alternate condensed face: tall light caps for the opening word (its tracking starts very wide and settles) and thin numerals.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "bebas-neue",
+      "family": "Bebas Neue",
+      "file": "files/BebasNeue-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "A blunter all-caps condensed alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "antonio",
+      "family": "Antonio",
+      "file": "files/Antonio-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        600
+      ],
+      "note": "A narrower, more refined condensed alternate.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "league-gothic",
+      "family": "League Gothic",
+      "file": "files/LeagueGothic-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "Very tall and tight: for one enormous word.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "big-shoulders",
+      "family": "Big Shoulders Display",
+      "file": "files/BigShouldersDisplay-Variable.ttf",
+      "group": "Condensed",
+      "weights": [
+        300,
+        800
+      ],
+      "note": "Squared condensed caps with a wide weight range.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "anton",
+      "family": "Anton",
+      "file": "files/Anton-Regular.ttf",
+      "group": "Condensed",
+      "weights": [
+        400
+      ],
+      "note": "Heavy condensed: the loudest alternate, use sparingly.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "unbounded",
+      "family": "Unbounded",
+      "file": "files/Unbounded-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        400,
+        800
+      ],
+      "note": "Extra-wide rounded caps: an alternate for the heavy word.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "syne",
+      "family": "Syne",
+      "file": "files/Syne-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        600,
+        800
+      ],
+      "note": "A wide display sans with character at 800.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "outfit",
+      "family": "Outfit",
+      "file": "files/Outfit-Variable.ttf",
+      "group": "Wide",
+      "weights": [
+        300,
+        700
+      ],
+      "note": "A clean geometric alternate for the word or labels.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "inter-tight",
+      "family": "Inter Tight",
+      "file": "files/InterTight-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        500,
+        700
+      ],
+      "note": "Neutral tight grotesque for longer lines.",
+      "license": "OFL-1.1"
+    },
+    {
+      "id": "dm-sans",
+      "family": "DM Sans",
+      "file": "files/DMSans-Variable.ttf",
+      "group": "Text",
+      "weights": [
+        400,
+        700
+      ],
+      "note": "Soft geometric text alternate.",
+      "license": "OFL-1.1"
+    }
+  ]
+}

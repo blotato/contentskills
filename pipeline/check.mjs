@@ -30,7 +30,7 @@ export function readLibrary(theme = DEFAULT_THEME) {
   if (!existsSync(dir)) throw Error(`No such theme "${theme}". Themes: ${readdirSync(join(root, 'library', 'themes')).filter(n => !n.includes('.')).join(', ')}`);
   for (const {category, file} of catalogFiles(theme)) {
     const data = JSON.parse(readFileSync(file, 'utf8'));
-    for (const item of [...data.items, ...(data.retired ?? [])]) {      // retired: off the menu for new storyboards, still valid in old ones
+    for (const item of [...(data.items ?? []), ...(data.retired ?? [])]) {      // no items: a theme's art/catalog.json lists images, not pieces. retired: off the menu for new storyboards, still valid in old ones
       if (item.piece) pieces.add(item.piece);
       if (category === 'captions') captions.add(item.id);
       // Effects that change one frame at a time; the time-bending ones and the footage demos are not wired in.
