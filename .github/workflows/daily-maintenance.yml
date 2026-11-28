@@ -321,6 +321,17 @@ jobs:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           permission-profile: ":workspace"
           model: gpt-6.2-astra
+          output-file: ${{ runner.temp }}/fix.json
+          output-schema: |
+            {
+              "type": "object",
+              "properties": {
+                "subject": { "type": "string" },
+                "summary": { "type": "string" }
+              },
+              "required": ["subject", "summary"],
+              "additionalProperties": false
+            }
           prompt: |
             Issue #${{ matrix.issue }} of ${{ github.repository }} is saved in
             `.maintenance/issue.json`. Read it.
@@ -345,6 +356,17 @@ jobs:
             - Do not install, build or run the project. Do not commit or create branches.
               Just edit files or leave them.
 
+            ## Your answer
+            `subject`: if you changed files, a Conventional Commits 1.0 subject for the
+            change, `<type>(<scope>): <description>`. Type is one of feat, fix, docs,
+            style, refactor, perf, test, build, ci, chore, revert (usually fix or docs).
+            The scope is optional and names the area: theme, pipeline, library, skills or
+            dashboard. The description is lower case, imperative, has no full stop, and
+            the whole subject fits in 72 characters. Example:
+            `fix(pipeline): retry temp chrome profile cleanup on windows`.
+            If you changed nothing, an empty string.
+            `summary`: one or two sentences on what you changed, or why you changed nothing.
+
       - name: Open a pull request if the change is small and safe
         if: always()
         env:
@@ -352,6 +374,7 @@ jobs:
           REPO: ${{ github.repository }}
           ISSUE: ${{ matrix.issue }}
           CODEX_OUTCOME: ${{ steps.codex.outcome }}
+          OUT: ${{ runner.temp }}/fix.json
         run: |
           set -euo pipefail
           if [ "$CODEX_OUTCOME" != "success" ]; then
@@ -377,6 +400,15 @@ jobs:
             exit 0
           fi
 
+          # Commit subject in Conventional Commits form. Codex proposes it; anything
+          # that does not match the format is replaced with a safe default.
+          subject=$(jq -r '.subject // ""' "$OUT" 2>/dev/null | head -n 1 || true)
+          pattern='^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9-]+\))?: [a-z0-9][ -~]*[^. ]$'
+          if [ "${#subject}" -gt 72 ] || ! LC_ALL=C grep -Eq "$pattern" <<<"$subject"; then
+            subject="fix: resolve issue #$ISSUE"
+          fi
+          echo "Commit subject: $subject"
+
           # Commit through the GitHub API: the commits are signed by GitHub and
           # attributed to the Actions bot, and no git credentials are needed.
           branch="codex/fix-issue-$ISSUE"
@@ -385,7 +417,7 @@ jobs:
             if [ ! -f "$path" ]; then
               echo "::warning::$path was deleted - not supported, skipping."; continue
             fi
-            args=(-X PUT "repos/$REPO/contents/$path" -f message="Fix #$ISSUE (automated minor fix)" -f branch="$branch" -f content="$(base64 -w0 "$path")")
+            args=(-X PUT "repos/$REPO/contents/$path" -f message="$subject"$'\n\n'"Refs #$ISSUE" -f branch="$branch" -f content="$(base64 -w0 "$path")")
             if old=$(git rev-parse -q --verify "HEAD:$path"); then args+=(-f sha="$old"); fi
             gh api "${args[@]}" >/dev/null
           done <<<"$files"
@@ -394,9 +426,9 @@ jobs:
 
           Closes #$ISSUE
 
-          Please read the change before merging. It goes through the same ${HOLD_DAYS}-day security hold as every other pull request."
+          Please read the change before merging, and squash-merge it so it lands as one commit with this title. It goes through the same ${HOLD_DAYS}-day security hold as every other pull request."
 
-          if url=$(gh pr create --repo "$REPO" --head "$branch" --title "Fix #$ISSUE (minor)" --body "$body"); then
+          if url=$(gh pr create --repo "$REPO" --head "$branch" --title "$subject" --body "$body"); then
             gh issue comment "$ISSUE" --repo "$REPO" --body "This looked like a small fix, so I opened $url for a maintainer to review."
           else
             # Happens when the repository does not let Actions create pull requests.
