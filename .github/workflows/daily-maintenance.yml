@@ -432,5 +432,7 @@ jobs:
             gh issue comment "$ISSUE" --repo "$REPO" --body "This looked like a small fix, so I opened $url for a maintainer to review."
           else
             # Happens when the repository does not let Actions create pull requests.
-            gh issue comment "$ISSUE" --repo "$REPO" --body "This looked like a small fix. It is on the branch \`$branch\` - a maintainer can open the pull request here: https://github.com/$REPO/compare/$branch?expand=1"
+            # The link opens the new pull request form with the title and description filled in.
+            link="https://github.com/$REPO/compare/$branch?expand=1&title=$(jq -rn --arg v "$subject" '$v | @uri')&body=$(jq -rn --arg v "$body" '$v | @uri')"
+            gh issue comment "$ISSUE" --repo "$REPO" --body "This looked like a small fix. It is on the branch \`$branch\`. A maintainer can [open the pull request]($link) with the title and description already filled in."
           fi
