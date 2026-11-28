@@ -117,8 +117,9 @@ else if (process.argv[1] === new URL(import.meta.url).pathname) try {
 
   // The cut: every kept segment trimmed on whole frames and joined; a short fade either side of each cut stops clicks.
   const {segments, fps} = plan;
-  const graph = segments.map((s, i) => { const d = s.out - s.in;
-    return `[0:v]trim=start=${s.in}:end=${s.out},setpts=PTS-STARTPTS[v${i}];[0:a]atrim=start=${s.in}:end=${s.out},asetpts=PTS-STARTPTS,afade=t=in:d=${FADE},afade=t=out:st=${(d - FADE).toFixed(4)}:d=${FADE}[a${i}]`; }).join(';')
+  const frames = segments.map((_, i) => `[src${i}]`).join('');
+  const graph = `[0:v]fps=${fps}:start_time=0,split=${segments.length}${frames};` + segments.map((s, i) => { const d = s.out - s.in;
+    return `[src${i}]trim=start_frame=${s.startFrame}:end_frame=${s.endFrame},setpts=PTS-STARTPTS[v${i}];[0:a]atrim=start=${s.in.toFixed(8)}:end=${s.out.toFixed(8)},asetpts=PTS-STARTPTS,afade=t=in:d=${FADE},afade=t=out:st=${(d - FADE).toFixed(4)}:d=${FADE}[a${i}]`; }).join(';')
     + `;${segments.map((_, i) => `[v${i}][a${i}]`).join('')}concat=n=${segments.length}:v=1:a=1[v][a]`;
   console.log(`Cutting ${segments.length} segments · ${plan.duration.before}s -> ${plan.duration.after}s`);
   run('ffmpeg', ['-v', 'error', '-y', '-i', source, '-filter_complex', graph, '-map', '[v]', '-map', '[a]', '-r', String(fps), '-c:v', 'libx264', '-crf', '12', '-preset', 'fast', '-pix_fmt', 'yuv420p', '-c:a', 'pcm_s24le', rough], 'Cutting');
