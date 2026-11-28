@@ -315,6 +315,7 @@ jobs:
       # in the checkout. The next step checks the size and location of the change
       # before anything is committed.
       - name: Let Codex try a minor fix
+        id: codex
         uses: openai/codex-action@306c6a196a99dcc6582530c396a19d2672d5e9ec # v1.14
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
@@ -350,9 +351,13 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPO: ${{ github.repository }}
           ISSUE: ${{ matrix.issue }}
+          CODEX_OUTCOME: ${{ steps.codex.outcome }}
         run: |
           set -euo pipefail
-          # Mark the issue as looked at, whatever happened, so it is not retried daily.
+          if [ "$CODEX_OUTCOME" != "success" ]; then
+            echo "::warning::Codex did not finish for #$ISSUE - it will be retried on the next run."; exit 0
+          fi
+          # Mark the issue as looked at, fixed or not, so it is not retried daily.
           gh issue edit "$ISSUE" --repo "$REPO" --add-label auto-triaged
 
           rm -rf .maintenance
