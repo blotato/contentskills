@@ -130,7 +130,7 @@ for group in groups:
 # A quiet run longer than GAP + both pads is cut down to the pads. Runs under 0.15 s are never touched (the closure
 # before a final t/k/ch), and a run after a sentence end keeps the sentence's tail (PAD_END).
 def split_silences(segs):
-    out, cursor = [], 0.0
+    out, kept_frames = [], 0
     for s in segs:
         pieces, a, t = [], s['in'], s['in']
         run_start = None
@@ -147,8 +147,12 @@ def split_silences(segs):
             t = round(t + .01, 2)
         pieces.append((a, s['out']))
         for p_in, p_out in pieces:
-            out.append({**s, 'in': round(float(p_in), 4), 'out': round(float(p_out), 4), 'at': round(cursor, 4)}); cursor += p_out - p_in
-    return out, cursor
+            start_frame, end_frame = round(p_in * fps), round(p_out * fps)
+            if end_frame <= start_frame: continue
+            out.append({**s, 'startFrame': start_frame, 'endFrame': end_frame,
+                        'in': start_frame / fps, 'out': end_frame / fps, 'at': kept_frames / fps})
+            kept_frames += end_frame - start_frame
+    return out, kept_frames / fps
 segments, cursor = split_silences(segments)
 for s in segments: s['text'] = ' '.join(words[i]['text'] for i in range(n) if not reason[i] and s['in'] - .02 <= words[i]['start'] < s['out'])
 
