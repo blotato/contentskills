@@ -92,6 +92,8 @@ jobs:
               phase=first
             elif [ $(( now - $(date -u -d "$started" +%s) )) -ge "$hold_seconds" ]; then
               phase=final
+            elif ! jq -e --arg m "security-first:$sha" 'any(.[]; .b | contains($m))' <<<"$bot" >/dev/null; then
+              phase=first # the first review did not finish on an earlier run
             else
               continue # still inside the hold
             fi
@@ -143,7 +145,8 @@ jobs:
         with:
           openai-api-key: ${{ secrets.OPENAI_API_KEY }}
           permission-profile: ":read-only"
-          codex-args: '["--search"]'
+          # Live web search (codex exec has no --search flag; this is the config form).
+          codex-args: '["-c", "web_search=\"live\""]'
           output-file: ${{ runner.temp }}/review.json
           output-schema: |
             {
@@ -238,6 +241,7 @@ jobs:
               echo "<!-- security-final:$SHA -->"
               echo "## Security review (final): $verdict"
             else
+              echo "<!-- security-first:$SHA -->"
               echo "## Security review (first pass): $verdict"
             fi
             echo
