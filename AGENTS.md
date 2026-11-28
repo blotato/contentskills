@@ -37,6 +37,7 @@ and explain in one plain sentence what you are installing and why.
      installer or Node's macOS installer asks for the Mac password: tell the user a macOS password prompt is coming and
      that typing it there is expected. Never ask them to paste a password into the chat.
    - Re-check each tool afterwards and add new install locations to PATH for the rest of the session if needed.
+   - If Windows reports that Smart App Control blocked a Python component, pause setup and tell the user which file was blocked if known. Keep Smart App Control and Defender enabled and leave their exclusions unchanged.
 3. `npm run setup` (about 1.5 GB of downloads; it prints progress and skips finished steps, so re-running is safe).
    Tell the user roughly how long it will take.
 4. Make the tool theirs: if `settings/user.json` does not exist, ask for their name, their social handle and (optionally)

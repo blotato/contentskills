@@ -156,6 +156,7 @@ Set `CONTENTSKILLS_SETTINGS=/path/to/file.json` to use a different settings file
 - If "Set me up" can't install a tool on its own, open **PowerShell** and run:
   `winget install OpenJS.NodeJS.LTS Gyan.FFmpeg astral-sh.uv`, then close and reopen the Claude app and say **Set me up** again.
 - On Windows on ARM (Snapdragon laptops), setup installs the x64 Python by itself: the video tools have no ARM builds for Windows.
+- Setup asks uv for Python 3.13. On Windows 11, Smart App Control may block a module in a uv-managed Python installation if Windows cannot verify its publisher. The voice import check can still pass because it tests only the packages used for narration. If Windows reports a block, pause setup, keep your security protections enabled and note the blocked filename from the Windows Code Integrity log when reporting the issue.
 
 **Linux**
 
