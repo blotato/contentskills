@@ -1,8 +1,9 @@
 # Daily maintenance, run by OpenAI Codex.
 #
 # Pull requests: every commit gets a security review, then a 3-day hold, then a
-# final check against current supply-chain attack news. Nothing is ever merged
-# or approved here - a human still merges.
+# final check against current supply-chain attack news. Only the fixes this
+# workflow wrote itself are merged automatically, after they pass; everything
+# else is left for a human to merge.
 #
 # Issues: each new issue is looked at once. If the fix is very minor, a pull
 # request is opened for it (which then goes through the same hold).
@@ -253,6 +254,52 @@ jobs:
           elif [ "$verdict" = "FLAGGED" ]; then
             gh pr edit "$NUM" --repo "$REPO" --add-label security-flagged
           fi
+
+  # Codex's own fixes are merged automatically once they pass the final check.
+  # Pull requests from anyone else are never merged here.
+  merge-codex-fixes:
+    needs: review-pull-request
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: read
+    steps:
+      - name: Squash-merge Codex fixes that passed the final check
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          # Only pull requests this workflow opened itself: from a codex/fix-issue-*
+          # branch in this repository, authored by the Actions bot, not flagged.
+          gh api "repos/$REPO/pulls?state=open&per_page=100" --jq '.[]
+              | select(.draft | not)
+              | select(.head.repo.full_name == env.REPO)
+              | select(.user.login == "github-actions[bot]")
+              | select(.head.ref | startswith("codex/fix-issue-"))
+              | select([.labels[].name] | index("security-flagged") | not)
+              | "\(.number) \(.head.sha) \(.head.ref) \(.title)"' |
+          while read -r num sha ref title; do
+            # The final verdict must be PASSED and must be for the commit that is
+            # on the branch right now.
+            passed=$(gh api "repos/$REPO/issues/$num/comments" --paginate \
+              --jq '[.[] | select(.user.login == "github-actions[bot]") | .body]' |
+              jq -s --arg m "security-final:$sha" 'add // [] | any(.[]; contains($m) and contains("Security review (final): PASSED"))')
+            if [ "$passed" != "true" ]; then
+              echo "#$num: no PASSED final check for ${sha:0:7} yet - leaving it."; continue
+            fi
+            if gh api -X PUT "repos/$REPO/pulls/$num/merge" -f merge_method=squash -f sha="$sha" \
+                 -f commit_title="$title (#$num)" \
+                 -f commit_message="Automated fix, merged by the daily maintenance workflow after the ${HOLD_DAYS}-day security hold." >/dev/null; then
+              echo "#$num: merged."
+              gh api -X DELETE "repos/$REPO/git/refs/heads/$ref" >/dev/null || true
+            else
+              echo "::warning::Could not merge #$num - leaving it for a maintainer."
+            fi
+          done
 
   # ───────────────────────────── Issues ─────────────────────────────
   pick-issues:
